@@ -1,0 +1,72 @@
+# Vorwort {.unnumbered}
+
+Diese Einführung in die Grundlagen und Herausforderungen der Nachhaltigen Entwicklung richtet sich an Studierende und Lehrende, die sich aus unterschiedlichen disziplinären Perspektiven mit den drängendsten Fragen unserer Zeit befassen. Sie entstand aus dem Wunsch, ein gemeinsames Verständnis zu fördern – über Disziplingrenzen hinweg, in Lehre, Forschung und gesellschaftlicher Praxis.
+
+Die Welt, wie wir sie heute kennen, ist von einer Vielzahl miteinander verflochtener Krisen geprägt: Klimawandel, Verlust der Biodiversität, soziale Ungleichheiten, wirtschaftliche Instabilität und politische Polarisierung – kurz: eine Polykrise. Diese Herausforderungen sind weder linear noch einfach zu lösen. Sie verlangen ein tiefgreifendes Umdenken in unseren wirtschaftlichen, sozialen und ökologischen Systemen, in unserem Handeln und in unserem Verständnis von Entwicklung und Fortschritt.
+
+Vor diesem Hintergrund versteht sich dieses Lehrbuch als gemeinsamer Lernraum: Es bietet einen systematischen Zugang zu zentralen Konzepten, wissenschaftlichen Perspektiven, normativen Fragen und konkreten Handlungsfeldern der Nachhaltigen Entwicklung. Ziel ist es dabei nicht nur, Wissen zu vermitteln, sondern auch die Fähigkeit zur Reflexion, zum kritischen Denken und zur Kreativität zu fördern.
+
+Dieses Buch entstand im Rahmen der Studienprogramme des Centre for Development and Environment (CDE) der Universität Bern. Es spiegelt die langjährige Erfahrung in Forschung und Lehre zur Nachhaltigen Entwicklung wider und vereint Beiträge aus verschiedenen Disziplinen – von den Umweltwissenschaften, der Geographie und der Ökonomie bis hin zu Soziologie, Ethik und Rechtswissenschaften.
+
+Unser besonderer Dank gilt allen Autor*innen, die mit ihrer Expertise, ihrer Leidenschaft und ihrem Engagement zur Entstehung dieses Buches beigetragen haben. Ebenso danken wir den Studierenden, deren kritische Fragen und Perspektiven ein entscheidender Motor für die Weiterentwicklung der Inhalte sind. Nachhaltige Entwicklung ist schliesslich nicht nur ein wissenschaftliches, sondern vor allem ein gesellschaftliches Projekt – und es beginnt bei der Bildung.
+
+Wir hoffen, dass dieses Buch Ihnen eine solide Grundlage für die eigene Auseinandersetzung mit Nachhaltigkeit bietet – und Sie dazu ermutigt, Verantwortung zu übernehmen und aktiv an der Gestaltung einer gerechten und nachhaltigen Welt mitzuwirken.
+
+## Zitierhinweis
+
+Bader, C. (Hrsg.). (2025). Grundlagen der Nachhaltigkeit (Version 1.0) \[Online-Lehrbuch\]. CDE, Universität Bern. Abgerufen von https://cdeteaching.github.io/Basics-of-sustainability/
+
+**Einzelne Kapitel zitieren:**
+
+Kapitel 1:
+
+Bader, C. (2025). Verständnis und Konzepte der Nachhaltigkeit. In C. Bader (Hrsg.), Grundlagen der Nachhaltigkeit (Version 1.0) \[Online-Lehrbuch\]. CDE, Universität Bern. Abgerufen von https://cdeteaching.github.io/Basics-of-sustainability/
+
+Kapitel 2:
+
+Bader, C. (2025). Ansätze zur Nachhaltigkeit. In C. Bader (Hrsg.), Grundlagen der Nachhaltigkeit (Version 1.0) \[Online-Lehrbuch\]. CDE, Universität Bern. Abgerufen von https://cdeteaching.github.io/Basics-of-sustainability/
+
+Kapitel 3:
+
+Fitz, J., & Bader, C. (2025). Ökologische Nachhaltigkeit. In C. Bader (Hrsg.), Grundlagen der Nachhaltigkeit (Version 1.0) \[Online-Lehrbuch\]. CDE, Universität Bern. Abgerufen von https://cdeteaching.github.io/Basics-of-sustainability/
+
+Kapitel 4:
+
+Poelsma, F., & Bader, C. (2025). Soziale Nachhaltigkeit. In C. Bader (Hrsg.), Grundlagen der Nachhaltigkeit (Version 1.0) \[Online-Lehrbuch\]. CDE, Universität Bern. Abgerufen von https://cdeteaching.github.io/Basics-of-sustainability/
+
+Kapitel 5:
+
+Bader, C., & Bezzola, N. (2025). Wirtschaftliche Nachhaltigkeit. In C. Bader (Hrsg.), Grundlagen der Nachhaltigkeit (Version 1.0) \[Online-Lehrbuch\]. CDE, Universität Bern. Abgerufen von https://cdeteaching.github.io/Basics-of-sustainability/
+
+::: {.callout-note collapse="true"}
+### Beitragsmatrix (CRediT-Taxonomie)
+
+| Name | Affiliation | ORCID | Rollen (CRediT) |
+|----|----|----|----|
+| Christoph Bader | CDE, Universität Bern | [0000-0002-8991-353X](https://orcid.org/0000-0002-8991-353X) | Conceptualization, Software, Supervision, Writing - original draft, Writing – review & editing, Project administration |
+| Nicolà Bezzola | CDE, Universität Bern | — | Writing - original draft, Writing – review & editing |
+| Juri Fitz | CDE, Universität Bern | — | Writing - original draft, Writing – review & editing |
+| Anna-Lisa Honegger | CDE, Universität Bern | — | Data curation, Visualization |
+| Helen Pérez | CDE, Universität Bern | — | Data curation, Visualization |
+| Tina Hirschbühl | CDE, Universität Bern | — | Writing – review & editing |
+| Felix Poelsma | CDE, Universität Bern | [0009-0002-0221-6414](https://orcid.org/0009-0002-0221-6414) | Writing - original draft, Writing – review & editing |
+:::
+
+## Lesehinweis
+
+Zur besseren Orientierung enthält das Lehrbuch drei Arten von Boxen:
+
+::: {.callout-note collapse="true"}
+### Definitionen und weiterführende Literatur
+Bieten prägnante Definitionen zentraler Begriffe sowie Hinweise auf vertiefende Literatur.
+:::
+
+::: {.callout-tip collapse="true"}
+### Beispiele und Reflexionsfragen
+Illustrieren Konzepte anhand konkreter Fälle und regen zur kritischen Auseinandersetzung mit dem Gelesenen an.
+:::
+
+::: {.callout-caution collapse="true"}
+### Übungen und Links zu ILIAS
+Enthalten praxisorientierte Aufgaben und Verweise auf ergänzende Materialien auf der Lernplattform ILIAS.
+:::

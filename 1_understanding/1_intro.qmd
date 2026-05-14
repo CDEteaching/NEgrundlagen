@@ -1,0 +1,36 @@
+---
+title: "Verständnisse und Konzepte Nachhaltiger Entwicklung"
+author: Christoph Bader
+lightbox: true
+format: html
+tbl-cap-location: top
+fig-cap-location: bottom
+---
+
+#  {.unnumbered}
+
+*Christoph Bader*
+
+Ist der Begriff „Nachhaltigkeit“ inzwischen so überstrapaziert, dass er langsam bedeutungslos wird? Selbst wenn dem so wäre, sollten wir zentrale Begriffe wie diesen nicht leichtfertig aufgeben. So ist es beispielsweise nach wie vor wichtig, dass Unternehmen eine Nachhaltigkeitsstrategie haben – auch wenn viele solcher Strategien unzureichend sind oder auf Greenwashing hinauslaufen. Wir müssen die Bedeutung von „Nachhaltigkeit“ klären und diejenigen, die den Begriff verwenden, zur Rechenschaft ziehen. Unsere Interpretation sollte sich dabei auf wissenschaftliche Erkenntnisse und historische Entwicklungen stützen.
+
+Die historischen Vorläufer des in diesem Lehrbuch erläuterten Nachhaltigkeitsleitbildes sind: Beginn der Diskussion über Nachhaltigkeit:
+
+-   Beginn der Diskussion um Nachhaltigkeit: Carlowitz\` Waldbewirtschaftungsprinzip 1713
+
+-   Zusammenprall von Ökonomie und Ökologie
+
+-   Erste und zweite UN-Dekade für Entwicklung
+
+-   Grenzen des Wachstums 1972
+
+-   Brundtland-Bericht 1987
+
+-   Rio Gipfel 1992
+
+-   Agenda 21
+
+-   Milleniumsziele der UN (MDG)
+
+-   Agenda 2030 mit den Nachhaltigkeitszielen (SDG)
+
+{{< include "sustainability.qmd" >}} {{< include "sustainability-science.qmd" >}}

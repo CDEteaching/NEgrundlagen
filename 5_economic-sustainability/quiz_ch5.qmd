@@ -1,0 +1,8 @@
+## Quiz me if you can
+
+```{r}
+#| echo: false
+#| results: asis
+exm_ch5 <- c("Exam_ch5_perfScie.Rmd", "Exam_ch5_EconSys.Rmd", "Exam_ch5_Capitalism.Rmd", "Exam_ch5_GDPhist.Rmd", "Exam_ch5_GDPcrit.Rmd", "Exam_ch5_Profit.Rmd", "Exam_ch5_Financial.Rmd","Exam_ch5_GrowthDep.Rmd", "Exam_ch5_SustEcon.Rmd")
+exams::exams2learnr(file.path(exam_path, exm_ch5), n = 1)
+```

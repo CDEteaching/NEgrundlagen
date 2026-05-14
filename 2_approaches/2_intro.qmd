@@ -1,0 +1,36 @@
+---
+title: "Ansätze zur Nachhaltigen Entwicklung"
+author: Christoph Bader
+lightbox: true
+format: html
+tbl-cap-location: top
+fig-cap-location: bottom
+---
+
+Die Welt steht vor zahlreichen Herausforderungen der Nachhaltigen Entwicklung, darunter drängende Umweltprobleme und soziale Ungleichheiten. Wissenschaftler*innen, Forscher*innen und Aktivist*innen suchen nach innovativen Ansätzen, um einen nachhaltigen und gerechten Wandel zu ermöglichen. Dieses Kapitel beleuchtet einige dieser Ansätze, die ein vollständiges Umdenken bestehender Paradigmen fordern.
+
+Im Kapitel behandelte Ansätze:
+
+-   Konzept der planetaren Grenzen
+
+-   Doughnut-Ökonomie
+
+-   Ansätze zur „Grossen Transformation"
+
+-   Grüne Wirtschaft
+
+-   Postwachstumsansätze
+
+-   Umsetzung der Agenda 2030
+
+{{< include "planetary-boundaries.qmd" >}}
+
+{{< include "Doughnut-model.qmd" >}}
+
+{{< include "Great-transformation.qmd" >}}
+
+{{< include "Green-economy.qmd" >}}
+
+{{< include "post-growth-societies.qmd" >}}
+
+{{< include "quiz_ch2.qmd" >}}

@@ -1,0 +1,1883 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrartcl}
+
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\@ifpackageloaded{fontawesome5}{}{\usepackage{fontawesome5}}
+\definecolor{quarto-callout-color}{HTML}{909090}
+\definecolor{quarto-callout-note-color}{HTML}{0758E5}
+\definecolor{quarto-callout-important-color}{HTML}{CC1914}
+\definecolor{quarto-callout-warning-color}{HTML}{EB9113}
+\definecolor{quarto-callout-tip-color}{HTML}{00A047}
+\definecolor{quarto-callout-caution-color}{HTML}{FC5300}
+\definecolor{quarto-callout-color-frame}{HTML}{acacac}
+\definecolor{quarto-callout-note-color-frame}{HTML}{4582ec}
+\definecolor{quarto-callout-important-color-frame}{HTML}{d9534f}
+\definecolor{quarto-callout-warning-color-frame}{HTML}{f0ad4e}
+\definecolor{quarto-callout-tip-color-frame}{HTML}{02b875}
+\definecolor{quarto-callout-caution-color-frame}{HTML}{fd7e14}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+
+\usepackage{bookmark}
+
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\author{}
+\date{}
+
+\begin{document}
+
+
+\subsection{Nachhaltigkeit?}\label{nachhaltigkeit}
+
+Woher kommen das Konzept, das Leitbild und die Handlungsprinzipien
+nachhaltiger Entwicklung? Wie ist das Konzept entstanden, wie hat es
+sich entwickelt -- und warum? Die folgenden Ausführungen geben einen
+Überblick über die Geschichte der Nachhaltigkeit, ihre politischen
+Hintergründe sowie über wichtige Konferenzen und Dokumente. Kurz gesagt:
+Es geht um das, was Nachhaltigkeit zu dem gemacht hat, was sie heute
+ist. Es geht darum, den Wald hinter den Bäumen zu sehen. Denn nur wer
+die Vergangenheit kennt, kann die Zukunft einschätzen.
+
+Nachhaltigkeit ist in den letzten Jahren zu einem Schlagwort geworden --
+in der Wissenschaft, der Politik, der Wirtschaft und den Medien. Der
+Begriff ist zunächst positiv besetzt, da er mit Langfristigkeit und
+Beständigkeit assoziiert wird. Heute ist vieles nachhaltig: der Kaffee,
+die Firmenphilosophie, selbst die Thunfischpizza. Dies sind die
+Ansprüche einer Konsumgesellschaft mit einem rücksichtslosen Appetit auf
+Überfluss. Gleich am Morgen entfernt uns das Shampoo «nachhaltig» die
+Schuppen. Dann fahren wir zur Arbeit in eine Firma, die sich mit einer
+«nachhaltigen Unternehmensphilosophie» schmückt, und beim Mittagessen
+diskutieren wir über nachhaltige Geldanlagen. Wieder zu Hause schieben
+wir eine Thunfischpizza in den Ofen -- selbstverständlich aus
+«nachhaltiger Erzeugung», wie es auf der Verpackung steht.
+
+Heute begegnet uns der Begriff «Nachhaltigkeit» überall: in Zusammenhang
+mit Energie, Mobilität, Gebäudesanierung, Ernährung,
+Bevölkerungsentwicklung, betrieblichem Umweltmanagement und Klimaschutz.
+Aber auch in Kunst, Kultur, Design und Werbung.
+
+\subsection{Ein normatives Konzept}\label{ein-normatives-konzept}
+
+Um Nachhaltigkeit zu erreichen, benötigen wir nachhaltige Entwicklung:
+einen strategischen Prozess, der Veränderungen in unseren
+sozial‑ökologischen Systemen und Institutionen erfordert. „Entwicklung``
+impliziert eine gesteuerte Verbesserung, und die ethische Frage, was
+genau „besser`` bedeutet, ist dabei zentral. Die Verwendung des Begriffs
+„Entwicklung`` wird von einigen Autor:innen (z.B. Lang et al.~2014;
+Kothari et al.~2019) kritisiert, da er häufig mit ungezügeltem Wachstum
+gleichgesetzt wird. Ein ungebremstes Wachstum des „ökologischen
+Fussabdrucks`` -- also des Anteils der Biosphäre, der für menschliche
+Produktion, Konsum und Abfall genutzt wird -- ist langfristig nicht
+nachhaltig. Dennoch gibt es unterschiedliche Interpretationen von
+„Entwicklung``, die von wirtschaftlichem Wachstum bis hin zur
+Verbesserung der Lebensqualität reichen. Nachhaltige Entwicklung bleibt
+daher ein anregendes und umstrittenes Konzept. Nachhaltigkeit und
+nachhaltige Entwicklung spielen heute eine Schlüsselrolle in politischen
+Diskursen. Der Begriff „Nicht‑Nachhaltigkeit`` verweist auf Zustände
+oder Entwicklungen, die als negativ bewertet werden, während
+„Nachhaltigkeit`` einen positiven Zustand beschreibt.
+
+Das Konzept nachhaltiger Entwicklung verpflichtet uns zu bestimmten
+Werten und Normen, die ethische Ziele und Handlungsregeln festlegen.
+Diese Werte und Normen prägen unsere Vorstellungen davon, was wir als
+wünschenswerten oder „positiven`` Wandel ansehen. Ein neutraler
+Standpunkt ist dabei nicht möglich, da unsere Wahrnehmung durch eine
+Vielzahl von Einflüssen geformt wird. Unsere persönlichen Erfahrungen,
+unsere Erziehung, unser soziales Umfeld und unsere kulturellen
+Hintergründe beeinflussen, wie wir die Welt sehen und interpretieren --
+und damit auch, was wir als „sein sollend`` wahrnehmen und welche
+Handlungen wir als notwendig ansehen. Ethik spielt eine Schlüsselrolle
+dabei, wie die aktuelle Situation verbessert werden kann, indem sie
+normative Ziele und Grenzen definiert. Nachhaltige Entwicklung ist somit
+ein konzeptioneller Rahmen, der stark von ethischen Überlegungen
+getragen wird.
+
+Nachhaltigkeitsherausforderungen wie Armutsbekämpfung und Klimawandel
+sind daher ethische Herausforderungen. Die Identifikation von
+Situationen als Nachhaltigkeitsprobleme (und damit als „negativ``) sowie
+die Auswahl von Lösungen beruhen auf ethischen Wertvorstellungen.
+Nachhaltigkeitsziele basieren ebenfalls auf solchen Werten, ebenso wie
+auf Wissen über Ursache‑Wirkungs‑Zusammenhänge. Fragen der
+Nachhaltigkeit werden häufig als „vertrackte Probleme`` (wicked
+problems) bezeichnet, da sie komplex und pluralistisch sind. Die globale
+Erwärmung wird sogar als „super wicked problem`` beschrieben, da
+Lösungen dringend sind, politische Institutionen häufig unzureichend
+agieren und Entscheidungsprozesse unter Kurzsichtigkeit leiden.
+
+\subsection{Globale Herausforderungen als vertrackte
+Probleme}\label{globale-herausforderungen-als-vertrackte-probleme}
+
+Mike Hulme, Autor von Why We Disagree About Climate Change (2009),
+schlägt vor, den Klimawandel als ein „vertracktes Problem`` (wicked
+problem) von enormem Ausmaß und wahrscheinlicher Langlebigkeit zu
+betrachten. Dieser Ansatz hilft uns, den Klimawandel nicht als ein
+Problem zu sehen, das gelöst werden muss, sondern als eine Bedingung, in
+der wir unmittelbar eingebunden sind. Die Kategorisierung von Problemen
+als „vertrackt``, also solcher, die sich keiner eindeutigen Lösung
+fügen, geht auf die Planungstheoretiker Horst Rittel und Melvin Webber
+(1973) zurück. Sie argumentierten, dass Planende mit unvorhersehbarem
+menschlichem Verhalten umgehen müssen und dass einige Probleme zu
+komplex sind, um vollständig gelöst zu werden. Manche „vertrackten
+Probleme`` lassen sich möglicherweise nie endgültig lösen, doch wir
+können lernen, besser mit ihnen umzugehen und uns nicht von ihnen
+beherrschen zu lassen.
+
+\begin{tcolorbox}[enhanced jigsaw, breakable, left=2mm, colback=white, leftrule=.75mm, opacityback=0, bottomrule=.15mm, toprule=.15mm, arc=.35mm, rightrule=.15mm, colframe=quarto-callout-note-color-frame]
+
+\vspace{-3mm}\textbf{Vertrackte Probleme}\vspace{3mm}
+
+Laut Bannink und Trommel (2019) entstehen vertrackte Probleme an der
+Schnittstelle zwischen faktischer Ungewissheit und einer Heterogenität
+von Präferenzen und Interessen. Vertrackte Probleme sind gekennzeichnet
+durch (Rittel \& Weber, 1973; Alford, 2017; Sediri, 2020):
+
+\begin{itemize}
+\item
+  Komplexität: Vertrackte Probleme sind durch zahlreiche miteinander
+  verknüpfte Faktoren und Wechselwirkungen gekennzeichnet. Es gibt keine
+  klaren Ursache‑Wirkungs‑Beziehungen, und Veränderungen in einem
+  Bereich können unvorhergesehene Auswirkungen in anderen Bereichen
+  haben.
+\item
+  Normative Konflikte: Vertrackte Probleme werden von unterschiedlichen
+  Akteur:innen und Interessengruppen unterschiedlich wahrgenommen und
+  interpretiert. Es gibt keine eindeutige Definition oder einen Konsens
+  darüber, was genau das Problem ist oder wie es gelöst werden sollte.
+\item
+  Interdisziplinarität: Vertrackte Probleme erfordern einen
+  interdisziplinären Ansatz, da sie verschiedene Themenfelder,
+  Perspektiven und Akteur:innen betreffen. Die Lösungsfindung erfordert
+  oft die Zusammenarbeit und Koordination verschiedener Disziplinen und
+  Fachleute.
+\item
+  Ungewissheit: Fehlerhafte, unvollständige oder nicht zugängliche
+  Informationen über die Problemsituation und über die Stabilität der
+  zugrunde liegenden Werte der beteiligten Variablen erschweren das
+  Verständnis.
+\item
+  Keine endgültige Lösung: Vertrackte Probleme entziehen sich
+  eindeutigen Lösungen. Sie sind dynamisch, verändern sich im Laufe der
+  Zeit und erfordern kontinuierliche Anpassung und wiederholte
+  Bearbeitung.
+\end{itemize}
+
+Beispiele für vertrackte Probleme sind u.a. der Klimawandel, die
+Armutsbekämpfung, die globale Gesundheitsversorgung und die
+Nachhaltigkeit. Die Komplexität und das Zusammenspiel verschiedener
+Faktoren in diesen Bereichen machen es schwierig, einfache und
+eindeutige Lösungen zu finden. Der Umgang mit vertrackten Problemen
+erfordert ein hohes Maß an Reflexion, Zusammenarbeit und den Einsatz von
+Methoden des systemischen Denkens.
+
+\end{tcolorbox}
+
+Wie haben wir uns in die heutige Lage manövriert, in der vertrackte
+Probleme eine so grosse Herausforderung für eine nachhaltige Entwicklung
+darstellen? In diesem Lehrbuch werden wir drei zentrale globale
+Herausforderungen analysieren und verstehen lernen:
+
+\begin{itemize}
+\item
+  die Entstehung der vom Menschen verursachten globalen Erwärmung;
+\item
+  die Persistenz globaler Armut und steigender Ungleichheiten;
+\item
+  sowie die Bedrohung durch Artensterben und die Übernutzung natürlicher
+  Ressourcen.
+\end{itemize}
+
+Die Debatte über den menschlichen Einfluss auf die globale Erwärmung und
+den Klimawandel hat sich seit den Veröffentlichungen des
+Intergovernmental Panel on Climate Change (IPCC) intensiviert. Die
+treibende Kraft hinter der globalen Erwärmung ist unsere Abhängigkeit
+von Erdöl und anderen fossilen Brennstoffen für Transport,
+(Strom-)Erzeugung, Landwirtschaft und viele Alltagsprodukte. Ein
+weiteres vertracktes Problem ist die globale Armut. Obwohl es seit
+Jahrzehnten weltweite Bemühungen gibt, die Armut zu verringern, führt
+die globalisierte Marktwirtschaft in bestimmten Regionen häufig zu
+zunehmender Armut, und die Kluft zwischen Arm und Reich scheint
+insgesamt größer zu werden (Chancel et al., 2021). Hocheinkommensländer
+haben ihren Wohlstand und Lebensstandard auf Kosten anderer
+aufrechterhalten. Diese „externalisierten Kosten`` umfassen auch
+Umweltzerstörung. So sind der Wohlstand und die Lebensstandards von
+Hocheinkommensländern maßgeblich für die Bedrohung durch Artensterben
+und die Übernutzung natürlicher Ressourcen verantwortlich (Lessenich,
+2018).
+
+Zusätzlich zu den oben genannten „grossen Drei`` -- Klimawandel, Armut
+und Biodiversitätsverlust -- gibt es viele weitere globale
+Nachhaltigkeitsherausforderungen, wie Entwaldung, Wüstenbildung,
+abnehmende Bodenfruchtbarkeit, Rückgang der Fischbestände,
+Umweltverschmutzung, Kriege, Konflikte und zunehmende Migration. Für die
+Analyse dieser umfassenden Herausforderungen müssen wir auch die
+zeitliche Dimension berücksichtigen. Im Jahr 2004 wurden erstmals
+Grafiken veröffentlicht, die sozioökonomische und Erdsystemtrends von
+1750 bis 2000 darstellen. Sie zeigen einen dramatischen Anstieg und
+wurden treffend als „Die grosse Beschleunigung`` (The Great
+Acceleration) bezeichnet (Steffen et al., 2004).
+
+Die grosse Beschleunigung beschreibt die exponentielle Wachstumsdynamik
+nach der Industriellen Revolution, die zu einem sprunghaften Anstieg der
+Produktivität in der Produktionsweise und zu einem erheblichen Zuwachs
+an materiellem Wohlstand führte. Gleichzeitig, aber deutlich weniger
+beachtet, kam es zu einem massiven Anstieg des Verbrauchs natürlicher
+Ressourcen und der Emissionen. Sozioökonomisches Wachstum ging Hand in
+Hand mit der Beschleunigung biophysischer Trends. Abbildungen 6 und 7
+zeigen Beispiele wichtiger biophysischer und sozioökonomischer
+Indikatoren, die alle mit der Industriellen Revolution zu steigen
+beginnen. Ab der Mitte des 20. Jahrhunderts wird die Tendenz zu
+exponentiellem Wachstum offensichtlich.
+
+\begin{tcolorbox}[enhanced jigsaw, breakable, left=2mm, colback=white, leftrule=.75mm, opacityback=0, bottomrule=.15mm, toprule=.15mm, arc=.35mm, rightrule=.15mm, colframe=quarto-callout-tip-color-frame]
+
+\vspace{-3mm}\textbf{Eine Veranschaulichung exponentiellen Wachstums}\vspace{3mm}
+
+Das Weizenkorn‑ und Schachbrett‑Problem ist ein mathematisches
+Gedankenexperiment, das häufig verwendet wird, um das Konzept
+exponentiellen Wachstums zu verdeutlichen. In der Geschichte bittet ein
+Diener den König, jedes Feld eines Schachbretts mit Weizenkörnern zu
+belegen und die Anzahl auf jedem Feld jeweils zu verdoppeln. Das
+Wachstum beginnt langsam, doch mit jeder Verdopplung steigt die Anzahl
+der Körner exponentiell. Auf dem 50. Feld wäre die Anzahl der Körner so
+gross, dass sie den 365 Meter hohen Berliner Fernsehturm am
+Alexanderplatz bedecken könnte. Diese Geschichte verdeutlicht die enorme
+Kraft des exponentiellen Wachstums und seine beeindruckenden Ergebnisse.
+
+Das Verständnis des Konzepts exponentiellen Wachstums ist entscheidend,
+um Phänomene wie Bevölkerungswachstum, technologischen Fortschritt,
+Umweltveränderungen und die Ausbreitung von Krankheiten zu analysieren.
+Es macht deutlich, wie selbst kleine Veränderungen oder Entwicklungen in
+einem System erhebliche Auswirkungen haben können. Die Geschichte
+erinnert uns daran, dass wir sorgfältig darüber nachdenken müssen, wie
+wir mit solchem Wachstum umgehen und welche langfristigen Folgen es
+haben kann.
+
+\end{tcolorbox}
+
+Die Ressourcengewinnung hat in den letzten Jahrzehnten erheblich
+zugenommen -- von 22 Milliarden Tonnen im Jahr 1970 auf 70 Milliarden
+Tonnen im Jahr 2010 (UNEP, 2016). Die globale Erwärmung ist ein weiteres
+drängendes Problem. Der neueste Bericht des IPCC (2023) prognostiziert
+einen Anstieg der globalen Durchschnittstemperatur zwischen 1,5 und 5,8
+Grad Celsius, abhängig von Szenario und künftigen Emissionen. Ein
+weiteres alarmierendes Phänomen ist die Entwaldung: Alle zwei Sekunden
+wird eine Waldfläche in der Grösse eines Fussballfeldes abgeholzt -- das
+entspricht einer Fläche in der Grösse von New York City pro Tag. Hinzu
+kommt der Rückgang der Biodiversität, der sich im Aussterben von Tier-
+und Pflanzenarten zeigt und die ökologische Vielfalt unseres Planeten
+bedroht.
+
+Die grosse Beschleunigung (The Great Acceleration, Abbildungen 6 und 7)
+beschreibt die beobachtbaren und messbaren (negativen) Entwicklungen
+zentraler sozioökonomischer und biophysischer Indikatoren seit 1950. Die
+Ursachen dieser Fehlentwicklungen können weit entfernt von dem Ort
+liegen, an dem die Probleme entstehen oder ihre gravierendsten Folgen
+sichtbar werden. So kann der Verlust von Arbeitsplätzen in einem Land
+durch die Entscheidung eines multinationalen Unternehmens verursacht
+sein, Teile seiner Tätigkeit in ein anderes Land zu verlagern, um
+Profite zu maximieren. Wir können solche Probleme nicht beheben, wenn
+wir nicht verstehen, wie das System -- in diesem Fall die globalisierte
+Wirtschaft -- funktioniert. Ähnlich benötigen wir ein Verständnis der
+globalen Klimasysteme der Erde, um uns vorzustellen, welche Folgen die
+globale Erwärmung in einem bestimmten Gebiet oder einer bestimmten
+Region haben könnte.
+
+Aus diesem Grund erfordern viele Methoden und Konzepte der
+Nachhaltigkeitswissenschaft systemisches Denken. Ein Ansatz systemischen
+Denkens beginnt häufig mit einem Brainstorming, um ein „reichhaltiges
+Bild`` aller Faktoren zu erstellen, die berücksichtigt werden müssen, um
+das aktuelle Verhalten des betreffenden Systems zu verstehen. Im Fall
+der Schliessung eines bestimmten Geschäftsbereichs durch ein
+multinationales Unternehmen wären dies die Faktoren, die die
+Entscheidung zur Fortführung, Erweiterung oder Schliessung bestimmter
+Geschäftsbereiche beeinflussen könnten. Während eine erste Darstellung
+möglicherweise überaus komplex oder unübersichtlich wirkt, kann die
+Erstellung eines linearen Flussdiagramms helfen, die Ströme von Inputs
+und Einflüssen zu verdeutlichen. Eine solche Abbildung kann bereits
+erste Möglichkeiten aufzeigen, die relevanten Einflüsse neu zu bewerten
+und das System so zu gestalten, dass unerwünschte Ergebnisse vermieden
+werden. In manchen Fällen ist jedoch zusätzliche Arbeit notwendig, um
+„konzeptionelle Modelle`` des Systems zu entwickeln, die bislang
+unerkannte Verbesserungsmöglichkeiten aufzeigen.
+
+Die Integration systemischen Denkens in die Methoden und Konzepte der
+Nachhaltigkeitswissenschaft ermöglicht es uns, die Komplexität von
+Problemen zu bewältigen und fundierte Strategien für eine nachhaltige
+Entwicklung zu entwickeln. Systemisches Denken bildet somit eine
+wichtige Grundlage, um die verschiedenen Verständnisse und Konzepte
+nachhaltiger Entwicklung zu erfassen und zu gestalten, wie im nächsten
+Kapitel näher ausgeführt wird.
+
+\subsection{Nachhaltigkeit: Wann haben wir begonnen, darüber zu
+sprechen?}\label{nachhaltigkeit-wann-haben-wir-begonnen-daruxfcber-zu-sprechen}
+
+Im Jahr 1713 zeigte der sächsische Oberberghauptmann Hans Carl von
+Carlowitz in seinem Werk Sylvicultura oeconomica, oder hauswirthliche
+Nachricht und Naturmässige Anweisung zur wilden Baum‑Zucht die
+Notwendigkeit und Möglichkeit einer „nachhaltigen Forstwirtschaft`` auf.
+Eine weitere Pionierin der Nachhaltigkeit war Herzogin Anna Amalia, die
+Mutter von Herzog Carl August. Sie leitete Ende des 18.Jahrhunderts die
+weltweit erste Forstreform ein, die darauf abzielte, eine
+kontinuierliche und gleichmässige Versorgung mit Holz sicherzustellen.
+Zu jener Zeit hatte Europa einen unstillbaren Hunger nach materia prima
+-- Rohstoffen, die zum Bau von Schiffen und Häusern sowie zum Kochen und
+Heizen benötigt wurden. Diese Nachfrage drohte, die Ressourcen zu
+erschöpfen und ihr langfristiges Bestehen zu gefährden.
+
+Im 18. Jahrhundert beschäftigten sich Gelehrte in Deutschland und
+anderen Teilen Europas mit der Endlichkeit natürlicher Ressourcen.
+Anders als von Carlowitz sprach jedoch niemand ausdrücklich von
+Nachhaltigkeit. Ein wichtiger Aspekt war die Versorgung einer wachsenden
+Bevölkerung mit Nahrungsmitteln. Vor der Industrialisierung wurde das
+Wirtschaftswachstum weitgehend von der Natur als Produktionsfaktor
+bestimmt -- etwa durch die Anzahl der Bergwerke oder Schiffe oder durch
+die verfügbare landwirtschaftliche Fläche. Der britische Ökonom Thomas
+Robert Malthus warnte jedoch davor, dass die Nahrungsmittelproduktion
+mit dem rasanten Bevölkerungswachstum infolge der Industriellen
+Revolution nicht Schritt halten könne. Malthus ging davon aus, dass die
+Bevölkerung exponentiell wachsen würde, während die
+Nahrungsmittelproduktion nur linear ansteigen könne. Obwohl sich
+Malthus' These nicht in der dramatischen Weise erfüllte, wie er es
+prognostiziert hatte, gilt sein Werk als erste systematische Abhandlung
+über die Grenzen des Wachstums in einer endlichen Welt.
+
+Eine Zeit lang gerieten Malthus' Ideen in Vergessenheit, da durch die
+Industrielle Revolution und den Aufstieg des Kapitalismus unbegrenztes
+Wachstum möglich schien. Erst in der Mitte des 20. Jahrhunderts tauchte
+die Debatte über natürliche Grenzen erneut auf -- diesmal in einer
+„neo‑malthusianischen`` Perspektive, im Kontext des 1968 gegründeten
+Club of Rome, der Diskussionen über planetare Grenzen und der
+Wachstumskritik. Während der Malthusianismus traditionell auf externe,
+physische Wachstumsgrenzen fokussiert, schlägt der ökologische Ökonom
+Giorgos Kallis einen anderen Ansatz vor. Kallis (2019) plädiert für
+persönliche Mässigung und freiwillige Zurückhaltung -- eine Lebensweise,
+die tief in der Romantik und der antiken griechischen Philosophie
+verwurzelt ist. Er fordert eine innere Begrenzung unserer Wünsche, um
+uns von der ökonomischen Annahme der Knappheit und der damit verbundenen
+Fixierung auf Wachstum zu befreien. Zwar anerkennt er die Realität
+externer Grenzen, hält es jedoch für problematisch, wenn diese die
+ökologische Argumentation gegen grenzenloses Wachstum dominieren. Kallis
+stellt daher die Frage, ob es sinnvoll ist, den Klimawandel in erster
+Linie als ein Problem externer Grenzen, von Knappheit oder einer
+endlichen Atmosphäre zu rahmen, die keine weiteren Emissionen mehr
+aufnehmen kann.
+
+In der malthusianischen Logik müssten wir unsere Produktion immer weiter
+steigern, um die Bedürfnisse einer Welt mit Grenzen zu befriedigen.
+Solange diese Denkweise fortbesteht, liegt der Fokus darauf, wie wir
+diese Grenzen überschreiten und die Aufnahmefähigkeit des Klimas für
+eine wachsende Bevölkerung und ihre Ansprüche erweitern können.
+
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, breakable, left=2mm, colback=white, leftrule=.75mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, toprule=.15mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Weiterführende Literatur}, colframe=quarto-callout-note-color-frame, bottomtitle=1mm, opacityback=0, arc=.35mm, toptitle=1mm, rightrule=.15mm, coltitle=black]
+
+Grober U. 2013. Von Freiburg nach Rio - Carlowitz und die Bildung des
+Begriffs ``Nachhaltigkeit.'' In: Die Erfindung der Nachhaltigkeit.
+München: oekom verlag.
+
+\end{tcolorbox}
+
+\subsubsection{Das Aufeinanderprallen von Ökonomie und
+Ökologie}\label{das-aufeinanderprallen-von-uxf6konomie-und-uxf6kologie}
+
+Ursprünglich war Nachhaltigkeit ein Prinzip der Ressourcenökonomie, das
+das wirtschaftliche Ziel einer langfristigen Maximierung der
+Waldbewirtschaftung mit den ökologischen Bedingungen für das Nachwachsen
+der Bäume verband. Im 19. Jahrhundert entstand das Konzept des „ewigen
+Waldes`` mit dem Ziel, der Übernutzung ein Ende zu setzen und eine
+langfristige Versorgung mit Holz -- einem lebenswichtigen Rohstoff --
+sicherzustellen. Forstwissenschaftler wie Heinrich Cotta entwickelten
+mathematische Methoden zur Berechnung von Holzvorräten und Zuwächsen.
+
+Im Laufe der Zeit verlagerte sich der Fokus jedoch hin zur reinen
+Ertragslehre, die auf kurze Umtriebszeiten, ertragreiche Monokulturen
+und die Maximierung des finanziellen Nutzens setzte. Plötzlich stand
+nicht mehr ein stetiger hoher Holzertrag im Vordergrund, sondern der
+höchstmögliche direkte Geldgewinn. Natürliche Kreisläufe wurden durch
+kapitalistische Dynamiken ersetzt; der Tauschwert verdrängte den
+Gebrauchswert. Dies entwertete das Leitprinzip der Nachhaltigkeit, und
+es dauerte über hundert Jahre -- bis in die 1960er und 70er Jahre --,
+bis die wissenschaftlichen Disziplinen Ökologie und Nachhaltigkeit
+wieder an Bedeutung gewannen.
+
+\subsubsection{Club of Rome and The Limits to
+Growth}\label{club-of-rome-and-the-limits-to-growth}
+
+\begin{quote}
+``If the present growth trends in world population, industrialization,
+pollution, food production, and resource depletion continue unchanged,
+the limits to growth on this planet will be reached sometime within the
+next one hundred years.'' Meadows et al.~(1972), p.23
+\end{quote}
+
+Im Jahr\,1972 veröffentlichte der Club of Rome den Bericht The Limits to
+Growth, der ein wesentlich breiteres Verständnis von „Nachhaltigkeit``
+einführte. Wissenschaftler:innen begannen, einen globalen
+Gleichgewichtszustand (homeostasis) zu fordern, der nur durch
+koordinierte internationale Maßnahmen möglich wäre. Sie integrierten
+wirtschaftliche, ökologische und soziale Aspekte von Nachhaltigkeit und
+nutzten das Modell der Dynamik komplexer Systeme (system dynamics), um
+die Welt besser zu verstehen. Dabei berücksichtigten sie die
+Wechselwirkungen zwischen Bevölkerungsdichte, Nahrungsressourcen,
+Energie, Materialien, Kapital, Umweltzerstörung und Landnutzung.
+Computersimulationen verschiedener Szenarien zeigten ähnliche
+Ergebnisse: einen katastrophalen Rückgang der Weltbevölkerung und des
+Lebensstandards innerhalb von 50 bis 100\,Jahren, wenn die damaligen
+Trends anhalten. Das Problem der ressourcen- und emissionsintensiven
+Industriegesellschaften bestehe darin, dass Wachstum nicht linear,
+sondern exponentiell verläuft. Langfristig führe eine solche Entwicklung
+zum Zusammenbruch. Ein ökologischer Kollaps könne nur durch eine
+Kurskorrektur verhindert werden, so das Fazit des Berichts.
+
+Der Meadows-Bericht, wie er auch genannt wird, wurde stark für seine
+Prognosen und Methoden kritisiert. Einige Kritiker:innen bemängelten,
+dass das Systemdynamik‑Modell zu vereinfachend sei und wichtige Faktoren
+wie Technologie und Innovation nicht ausreichend berücksichtige. Andere
+warfen den Autor:innen vor, menschliche Anpassungsfähigkeit und die
+Möglichkeit politischer Lösungen und Veränderungen zu wenig
+einzubeziehen. Wieder andere kritisierten eine malthusianische
+Sichtweise und einen zu pessimistischen Ausblick auf die Zukunft. Trotz
+dieser Kritik entfachte der Bericht eine wichtige Debatte über
+Nachhaltigkeit und die Notwendigkeit, die Umwelt zu schützen.
+
+Ein Jahr später veröffentlichte E.F. Schumacher Small is Beautiful:
+Economics as if People Mattered (1973). Schumacher stellte die
+vorherrschende Vorstellung von grenzenlosem wirtschaftlichem Wachstum
+und technologischem Fortschritt infrage. Stattdessen plädierte er für
+eine nachhaltige, menschenzentrierte Wirtschaft, die lokale
+Gemeinschaften und die Umwelt respektiert. Er argumentierte, dass eine
+dezentralisierte Wirtschaft, die auf menschlichen Werten und nicht nur
+auf Profit beruht, eine bessere Zukunft für alle schaffen könne. Zudem
+betonte er die Bedeutung von Bildung und kultureller Entwicklung für den
+Aufbau einer nachhaltigen Gesellschaft.
+
+\subsection{Von der Entwicklungs- zur
+Nachhaltigkeitsdebatte}\label{von-der-entwicklungs--zur-nachhaltigkeitsdebatte}
+
+Die zunehmende Luft- und Wasserverschmutzung trug dazu bei, dass
+Umweltthemen in Politik und Medien stärker in den Vordergrund rückten.
+\emph{Greenpeace} wurde 1971 gegründet. In den 1960er- und 1970er-Jahren
+untersuchten Paul Crutzen und sein Forschungsteam die Auswirkungen von
+Stickoxiden auf die Ozonschicht und prognostizierten, dass diese durch
+menschengemachte FCKWs stark abgebaut würde. In der Folge wurde die
+Verwendung von FCKWs in Kühlschränken und Klimaanlagen verboten.
+
+Als Reaktion auf die wachsende Bedeutung von Umweltthemen organisierte
+die UNO 1972 die erste grosse Umweltkonferenz in Stockholm. Die
+\emph{United Nations Conference on the Human Environment}, wie sie
+genannt wurde, führte zur Gründung des \emph{United Nations Environment
+Programme} (UNEP) sowie zur Einrichtung eigenständiger Umweltministerien
+in vielen Ländern.
+
+BILD
+
+Das Entstehen von Umweltproblemen in den 1970er- und 1980er-Jahren fiel
+mit den ersten „Entwicklungskrisen`` nach dem Zweiten Weltkrieg
+zusammen. Damals sprach man noch von „unterentwickelten Ländern``. Nach
+dem Erfolg des Marshallplans beim Wiederaufbau Europas nach dem Zweiten
+Weltkrieg wurde angenommen, dass ähnliche Programme -- etwa ein
+Marshallplan für Afrika -- zu einer schnellen sozioökonomischen
+Aufholentwicklung der armen Länder des Globalen Südens führen würden.
+Doch die 70er- und 80er-Jahre zeigten das Gegenteil. Selbst
+beispielhafte Länder wie Mexiko und Brasilien gerieten in
+Schuldenkrisen, was deutlich machte, dass die Erreichung
+sozioökonomischer Entwicklung und die Überwindung von Armut weitaus
+komplexere Herausforderungen darstellen.
+
+Von da an war klar, dass Fragen der Entwicklung und der Umwelt auf
+zwischenstaatlicher Ebene gemeinsam betrachtet werden mussten. 1983
+richteten die Vereinten Nationen eine World Commission on Environment
+and Development ein, die von der norwegischen Ministerpräsidentin Gro
+Harlem Brundtland geleitet wurde.
+
+\subsubsection{Die
+Brundtland-Kommission}\label{die-brundtland-kommission}
+
+Gro Harlem Brundtland berief 22 Kommissionsmitglieder, von denen drei
+Viertel aus dem Globalen Süden stammten. In dieser Zeit begann die
+Sowjetunion, die sich in wirtschaftlicher Stagnation befand, ihren
+politischen Kurs zu ändern. Da das Wettrüsten mit den USA zu einem
+erheblichen Haushaltsdefizit beigetragen hatte, führte Michail
+Gorbatschow, der neu ernannte Generalsekretär der Kommunistischen Partei
+der Sowjetunion, tiefgreifende Reformen ein. Gleichzeitig begann sich
+ein neues Weltbild und ein globales Bewusstsein zu entwickeln. Vor
+diesem Hintergrund erhielt die Brundtland-Kommission den Auftrag, einen
+Bericht über die Perspektive einer globalen, nachhaltigen und
+umweltfreundlichen Entwicklung bis und über das Jahr 2000 hinaus zu
+erstellen.
+
+Der 1987 vorgelegte Bericht trug den Titel \emph{Our Common Future},
+wird aber meist als \emph{Brundtland-Bericht} bezeichnet.
+
+Der Brundtland-Bericht stellte fest, dass die globalen Umweltprobleme
+vor allem auf nicht-nachhaltige Konsum- und Produktionsmuster im Norden
+sowie auf extreme Armut im Süden zurückzuführen sind. Die Übernutzung
+der Natur und die Erschöpfung natürlicher Ressourcen verschärften die
+Ungleichheiten (von Einkommen und Vermögen), erhöhten die absolute Armut
+und stellten eine Bedrohung für Frieden und Sicherheit dar. Der Bericht
+strebte eine faire und gerechte Definition von Nachhaltigkeit an:
+
+\begin{quote}
+Hauff Zitat hier
+\end{quote}
+
+Diese Definition brachte eine ethische Perspektive in die
+Nachhaltigkeitsdebatte ein und stellte das Prinzip der Verantwortung
+sowohl gegenüber heutigen als auch zukünftigen Generationen in den
+Mittelpunkt. Durch den Fokus auf menschliche Bedürfnisse nahm die
+Brundtland-Kommission eine anthropozentrische Position ein.
+
+Die Brundtland-Kommission identifizierte drei zentrale Prinzipien zur
+Analyse von Problemen und zur Orientierung des Handelns: Eine globale
+Perspektive, die Verknüpfung von Umwelt und Entwicklung, und das Streben
+nach Gerechtigkeit. Das Konzept der Gerechtigkeit wurde weiter in zwei
+unterschiedliche Perspektiven unterteilt:\\
+1. \textbf{Die intergenerationelle Perspektive:} Verantwortung gegenüber
+zukünftigen Generationen.\\
+2. \textbf{Die intragenerationelle Perspektive:} Verantwortung gegenüber
+den heute lebenden Menschen, insbesondere in Entwicklungsländern, und
+die Sicherstellung von Gerechtigkeit innerhalb von Ländern.
+
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, breakable, left=2mm, colback=white, leftrule=.75mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, toprule=.15mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Nachhaltigkeit und nachhaltige Entwicklung}, colframe=quarto-callout-note-color-frame, bottomtitle=1mm, opacityback=0, arc=.35mm, toptitle=1mm, rightrule=.15mm, coltitle=black]
+
+Die Konzepte „Nachhaltigkeit`` und „nachhaltige Entwicklung``
+unterscheiden sich in ihrem Schwerpunkt. Nachhaltigkeit ist statisch;
+sie betont einen beständigen Zustand. Nachhaltige Entwicklung hingegen
+ist der dynamische Prozess, diesen Zustand zu erreichen -- sie
+impliziert Bewegung und bezieht sich auf etwas, das im Entstehen ist.
+
+\end{tcolorbox}
+
+\subsection{1.5. Von Rio 1992 bis heute}\label{von-rio-1992-bis-heute}
+
+Nach dem Aufruf des Brundtland-Berichts zu internationalem Handeln
+richtete sich der Fokus darauf, Forderungen und Vorschläge in
+verbindliche Verträge und Konventionen zu übersetzen. Die UNO wählte
+hierfür das Instrument einer Konferenz, die genau 20 Jahre nach der
+Stockholmer Konferenz von 1972, der ersten globalen Umweltkonferenz,
+stattfand. Die United Nations Conference on Environment and Development
+in Rio de Janeiro, Brasilien, im Juni 1992 -- auch bekannt als Earth
+Summit -- war die bis dahin grösste internationale Konferenz mit
+Delegierten aus über 170 Nationen.
+
+Der Rio Earth Summit verabschiedete die folgenden fünf Dokumente:
+
+\begin{itemize}
+\tightlist
+\item
+  Eine Walddeklaration, die auf das ökologische Management und den
+  Schutz der weltweiten Wälder abzielt.\\
+\item
+  Eine Klimaschutzkonvention, in der sich die Staaten verpflichten, die
+  weltweiten Treibhausgasemissionen auf das Niveau von 1990 zu senken.\\
+\item
+  Eine Biodiversitätskonvention, um den Rückgang der biologischen
+  Vielfalt durch völkerrechtlich verbindliche Massnahmen zu bekämpfen.\\
+\item
+  Die Rio-Deklaration über Umwelt und Entwicklung.\\
+\item
+  Agenda 21, das bekannteste der fünf Abkommen, demzufolge die
+  nationalen Regierungen dafür verantwortlich sind, das
+  Nachhaltigkeitsmodell in ihren Ländern umzusetzen.
+\end{itemize}
+
+Die Rio-Deklaration über Umwelt und Entwicklung betont, dass
+langfristiger wirtschaftlicher Fortschritt nur durch einen
+Ökosystemansatz möglich ist. Dies erfordert wiederum eine neue und
+gerechte globale Partnerschaft zwischen Regierungen, Menschen und
+wichtigen gesellschaftlichen Gruppen. Um dies zu erreichen, sind
+internationale Vereinbarungen notwendig, die den Schutz der Umwelt und
+des Entwicklungssystems sicherstellen. Die Rio-Deklaration etablierte
+zentrale Prinzipien nachhaltiger Entwicklung, darunter das
+Vorsorgeprinzip und das Verursacherprinzip. So besagt beispielsweise
+Prinzip 15:
+
+\begin{quote}
+„In order to protect the environment, the precautionary approach shall
+be widely applied by States according to their capabilities. Where there
+are threats of serious or irreversible damage, lack of full scientific
+certainty shall not be used as a reason for postponing cost-effective
+measures to prevent environmental degradation`` (UN 1992).
+\end{quote}
+
+Im Dezember 1992 wurde die \emph{Commission on Sustainable Development
+(CSD)} eingerichtet, um die wirksame Nachverfolgung der Ergebnisse des
+Gipfels sicherzustellen.
+
+\subsubsection{Agenda 21: Global denken -- lokal
+handeln}\label{agenda-21-global-denken-lokal-handeln}
+
+Agenda 21, die 40 Kapitel umfasst, behandelt alle zentralen
+Politikbereiche und Handlungsfelder für nachhaltige Entwicklung. Im
+Vorwort heisst es:
+
+\begin{quote}
+\emph{„\ldots integration of environment and development concerns and
+greater attention to them will lead to the fulfilment of basic needs,
+improved living standards for all, better protected and managed
+ecosystems and a safer, more prosperous future. No nation can achieve
+this on its own; but together we can -- in a global partnership for
+sustainable development.``} (UN CSD, 1992)
+\end{quote}
+
+\subsubsection{Die Millenniums-Entwicklungsziele
+(MDGs)}\label{die-millenniums-entwicklungsziele-mdgs}
+
+Die Kernprinzipien der Agenda 21 -- die Stärkung von Frauen, der Schutz
+der Umwelt und die Förderung einer gerechten und inklusiven Gesellschaft
+-- legten den Grundstein für die Millennium Development Goals (MDGs).
+Diese wurden im Jahr 2000 von der UNO verabschiedet und umfassten acht
+konkrete Ziele, die bis 2015 erreicht werden sollten.
+
+Obwohl nicht alle dieser Ziele vollständig umgesetzt wurden, schufen die
+MDGs ein erhebliches Bewusstsein für die Notwendigkeit nachhaltiger
+Entwicklung. Auf die MDGs folgten die Sustainable Development Goals
+(SDGs), die 2015 von der UNO verabschiedet wurden.
+
+\subsubsection{Rio+20}\label{rio20}
+
+Die UN Conference on Sustainable Development, auch bekannt als Rio+20,
+fand 2012 in Rio de Janeiro statt -- 20 Jahre nach dem historischen
+Earth Summit von 1992, auf dem die Agenda 21 verabschiedet wurde.
+
+Das Hauptziel von Rio+20 war es, das globale politische Bekenntnis zu
+nachhaltiger Entwicklung zu erneuern. Die Teilnehmenden -- darunter
+Regierungschefs sowie Vertreter:innen von NGOs und dem Privatsektor --
+diskutierten eine Vielzahl von Themen, darunter Armutsbekämpfung,
+Umweltschutz, nachhaltige Energie, Ernährungssicherheit und
+Ressourcenmanagement.
+
+Das wichtigste Ergebnis des Gipfels war die Verabschiedung einer
+Erklärung mit dem Titel ``The Future We Want''. Diese Erklärung
+erneuerte das Bekenntnis der internationalen Gemeinschaft zu
+nachhaltiger Entwicklung, zu den Rio-Prinzipien und zu bisherigen
+Aktionsplänen und skizzierte weitere Massnahmen zur Erreichung dieser
+Ziele.
+
+Darüber hinaus bereitete Rio+20 den Weg für einen universellen
+Entwicklungsrahmen, der globale Nachhaltigkeitsziele und -prioritäten
+über das Jahr 2015 hinaus definieren sollte.
+
+\subsubsection{Die Agenda 2030 und Nachhaltigkeitsziele
+(SDGs)}\label{die-agenda-2030-und-nachhaltigkeitsziele-sdgs}
+
+\begin{quote}
+``We are the first generation that can put an end to poverty and we are
+the last generation that can put an end to climate change, so we
+{[}must{]} address climate change.'' Ban-Ki Moon, UN Secretary General
+2007--2016, on the 2030 Agenda
+\end{quote}
+
+Rio+20 legte den Grundstein für die Agenda 2030, die 2015 von der UNO
+verabschiedet wurde. Die Agenda 2030 baut auf den Ergebnissen von Rio+20
+auf und legt einen umfassenden Rahmen für nachhaltige Entwicklung fest.
+
+Die Agenda 2030 basiert auf fünf zentralen Prinzipien bzw. Säulen (den 5
+Ps) und führt die 17 Sustainable Development Goals (SDGs) ein, die
+darauf abzielen, bis 2030 eine nachhaltige und gerechte Welt zu
+schaffen.
+
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, breakable, left=2mm, colback=white, leftrule=.75mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, toprule=.15mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Die 5 Ps der SDGs}, colframe=quarto-callout-note-color-frame, bottomtitle=1mm, opacityback=0, arc=.35mm, toptitle=1mm, rightrule=.15mm, coltitle=black]
+
+Die 5 Ps stehen für fünf zentrale Prinzipien der Nachhaltigkeit:
+\textbf{People}, \textbf{Planet}, \textbf{Prosperity}, \textbf{Peace}
+und \textbf{Partnership}.
+
+\begin{itemize}
+\item
+  \textbf{People:} Dieses P steht für das Ziel, soziale Gerechtigkeit,
+  Chancengleichheit, gute Gesundheit und Bildung für alle Menschen zu
+  fördern. Es zielt auch darauf ab, Armut zu beenden,
+  Geschlechtergerechtigkeit zu fördern und das Wohlergehen der Menschen
+  zu verbessern.
+\item
+  \textbf{Planet:} Ziel dieses P ist es, natürliche Ressourcen zu
+  schützen und nachhaltig zu nutzen, die Biodiversität zu erhalten, das
+  Klima zu schützen und die Umweltverschmutzung zu reduzieren. Insgesamt
+  geht es darum, unseren Planeten zu bewahren und nachhaltige
+  Umweltpraktiken zu fördern.
+\item
+  \textbf{Prosperity:} Dieses P bezieht sich auf Wirtschaftswachstum,
+  nachhaltige Produktions- und Konsummuster sowie die Schaffung von
+  Arbeitsplätzen und wirtschaftlichem Wohlstand für alle. Es zielt
+  darauf ab, eine starke und nachhaltige Wirtschaft zu fördern, die
+  allen Menschen zugutekommt.
+\item
+  \textbf{Peace:} Hier geht es darum, Frieden, Gerechtigkeit, gute
+  Regierungsführung und starke Institutionen zu fördern. Es beinhaltet
+  auch die Verhinderung von Konflikten, die Verringerung von Gewalt und
+  den Aufbau inklusiver Gesellschaften.
+\item
+  \textbf{Partnership:} Dieses P betont die Bedeutung globaler
+  Zusammenarbeit, Partnerschaften und Solidarität zwischen allen
+  Akteur:innen. Es geht darum, gemeinsam an der Umsetzung der Agenda
+  2030 zu arbeiten und Ressourcen, Erfahrungen und Wissen zu teilen.\\
+\end{itemize}
+
+\end{tcolorbox}
+
+\subsubsection{Pariser Klimabakommen
+2015}\label{pariser-klimabakommen-2015}
+
+Das Pariser Klimaabkommen von 2015 ist ein wegweisendes internationales
+Abkommen, das auf der 21. KOnferenz (COP 21) zur \emph{UN Framework
+Convention on Climate Change (UNFCCC)} in Paris verabschiedet wurde. Das
+Abkommen zielt darauf ab, den globalen Temperaturanstieg im Vergleich
+zum vorindustriellen Niveau deutlich unter 2 Grad Celsius zu begrenzen
+und Anstrengungen zu unternehmen, ihn auf 1,5 Grad Celsius zu begrenzen.
+
+Das Pariser Abkommen basiert auf dem Prinzip der gemeinsamen, aber
+unterschiedlichen Verantwortlichkeiten und der Berücksichtigung
+nationaler Gegebenheiten. Es ermutigt alle Länder, Massnahmen zur
+Reduzierung ihrer Treibhausgasemissionen zu ergreifen und sich
+freiwillige Klimaziele zu setzen, die als Nationally Determined
+Contributions (NDCs) bekannt sind.
+
+Das Pariser Klimaabkommen von 2015 gilt für jedes Land, das es
+ratifiziert hat, darunter auch die Schweiz. Als Vertragsstaat hat sich
+die Schweiz verpflichtet, zur globalen Reduktion der
+Treibhausgasemissionen beizutragen und die Ziele des Abkommens
+umzusetzen.
+
+\subsubsection{Fazit}\label{fazit}
+
+Zwar wurden Ansätze der Nachhaltigkeit in Wirtschaft, Politik und
+anderen Bereichen teilweise institutionalisiert und verbreitet, doch
+eine grosse Zahl von Studien zeigt, dass sich die Welt insgesamt
+weiterhin auf einem nicht-nachhaltigen Kurs befindet (siehe Voluntary
+National Review of Switzerland 2022). Ein ähnliches Bild zeichnen
+verschiedene Studien zur globalen Umweltsituation, wie der Global
+Environment Outlook 5 (GEO-5) des UNEP von 2012, der Millennium
+Development Goals Report (MDGs Report 2010) sowie Berichte zur Agenda
+2030 und zum Klimawandel (IPCC 2022). Diese Studien verdeutlichen, dass
+die internationale Gemeinschaft noch weit von einer nachhaltigen,
+generationengerechten ökologischen, sozialen und wirtschaftlichen
+Entwicklung entfernt ist.
+
+So haben internationale Klimapolitiken den Anstieg der CO₂-Emissionen --
+der Hauptursache des menschengemachten Klimawandels -- nicht gestoppt;
+seit 1990 sind sie um rund 50\% gestiegen. Der Artenverlust beschleunigt
+sich in vielen Regionen weiter. Der weltweite Kampf gegen Armut bleibt
+hinter den gesteckten Zielen zurück, und die wirtschaftliche
+Globalisierung der vergangenen drei Jahrzehnte hat die sozioökonomische
+Ungleichheit in vielen Ländern verschärft, häufig verbunden mit
+soziopolitischen und soziokulturellen Disparitäten.
+
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, breakable, left=2mm, colback=white, leftrule=.75mm, colbacktitle=quarto-callout-caution-color!10!white, bottomrule=.15mm, toprule=.15mm, titlerule=0mm, title=\textcolor{quarto-callout-caution-color}{\faFire}\hspace{0.5em}{(Reflexions)übungen und Beispiele}, colframe=quarto-callout-caution-color-frame, bottomtitle=1mm, opacityback=0, arc=.35mm, toptitle=1mm, rightrule=.15mm, coltitle=black]
+
+Im Selbstlernmodul ``FOKUS Onlinekurs \emph{Grundlagen Nachhaltiger
+Entwicklung}'' finden Sie Reflexionsübungen, illustrative Beispiele
+sowie Selbsttests zu den unterschiedlichen
+Nachhaltigkeitsverständnissen.
+
+\end{tcolorbox}
+
+\subsection{Das Leitbild nachhaltiger Entwicklung als normatives
+Konzept}\label{das-leitbild-nachhaltiger-entwicklung-als-normatives-konzept}
+
+Das Konzept der Nachhaltigkeit in die Praxis umzusetzen und
+Umsetzungsstrategien zu entwickeln, ist eine grosse Herausforderung für
+unsere Gesellschaft. Es gibt unterschiedliche Verständnisse und Konzepte
+von Nachhaltigkeit und nachhaltiger Entwicklung, ohne Einigkeit darüber,
+wie Nachhaltigkeit erreicht und welche Massnahmen priorisiert werden
+sollen. Einige dieser Verständnisse werden im Folgenden vorgestellt. Die
+Vielfalt der Ansätze spiegelt die unterschiedlichen Perspektiven und
+Interessen verschiedener Akteur:innen wider. Um diese Komplexität zu
+bewältigen, müssen wirtschaftliche, soziale und ökologische Überlegungen
+miteinander in Einklang gebracht werden. Dies erfordert einen
+integrativen Ansatz. Die Herausforderung besteht darin, gemeinsame Ziele
+zu definieren und Strategien zu entwickeln, um Nachhaltigkeit auf allen
+Ebenen -- global, national, regional und lokal -- zu erreichen. Wir
+brauchen eine breite gesellschaftliche Beteiligung sowie Dialog und
+Zusammenarbeit zwischen Regierungen, Wirtschaft, Zivilgesellschaft und
+Forschungseinrichtungen, um Lösungen zu finden und den notwendigen
+Wandel voranzutreiben.
+
+\begin{quote}
+``When powerful metaphors become fashionable buzzwords, we risk that
+diversity is accompanied by vagueness, i.e.~the phenomenon of a term
+that has several meanings that `have so much in common that it is
+difficult to separate them'\,'' (Feola 2015: 377)
+\end{quote}
+
+Das Konzept der Nachhaltigkeit hat in der Regel eine positive
+Konnotation, kann jedoch aus unterschiedlichen Perspektiven betrachtet
+werden. Damit es als Leitbild (im ökologischen, sozialen und
+wirtschaftlichen Sinn) funktionieren kann, benötigt es klare Kriterien.
+Doch auf welcher Grundlage können wir diese Kriterien definieren?
+
+Nach Hirsch Hadorn \& Brun (2007) sollte ``Nachhaltigkeit'' „nachhaltige
+Entwicklung``:
+
+\begin{itemize}
+\tightlist
+\item
+  Bedürfnisse erfüllen \ldots{}
+\item
+  \ldots{} auf gerechte Weise,
+\item
+  \ldots{} mit Blick auf die heute und künftig lebenden Menschen und
+\item
+  unter Berücksichtigung der Vielfalt von Werten sowie der Grenzen der
+  Naturausbeutung.
+\end{itemize}
+
+Das Leitbild nachhaltiger Entwicklung ist daher nicht nur das Ergebnis
+wissenschaftlicher Forschung, sondern in erster Linie ein normatives,
+ethisch fundiertes Konzept. Es verbindet „ethische und analytische
+Ideen`` und formuliert „Normen, die ausdrücken, was wünschenswert ist
+und was geschehen soll`` (Renn et al.~2007: 39). Nachhaltige Entwicklung
+ist somit ein sozialer Aushandlungs- und Entscheidungsprozess -- ein
+Prozess des Suchens, Lernens und Erfahrens --, der von ethischen
+Überlegungen geleitet wird. Entsprechend muss sich die
+Nachhaltigkeitsforschung ihrer Einbettung in gesellschaftliche Prozesse
+der Wahrnehmung und Bewertung stets bewusst sein.
+
+\subsubsection{Von welchen Werten und Normen sollen wir uns leiten
+lassen -- und
+warum?}\label{von-welchen-werten-und-normen-sollen-wir-uns-leiten-lassen-und-warum}
+
+Wenn wir vom Konzept nachhaltiger Entwicklung zu seiner Umsetzung
+übergehen, kommt die Ethik ins Spiel. Ethik liefert Bewertungskriterien,
+methodische Verfahren oder Prinzipien zur „Rechtfertigung und Kritik von
+Handlungsregeln oder normativen Aussagen darüber, wie wir handeln
+sollen`` (Fenner 2008, S.\,5). Sie hilft ausserdem, komplexe
+Entscheidungen, wie sie in Dilemmasituationen auftreten, zu
+strukturieren und zu begründen. Im Gegensatz zu Problemen mit
+eindeutigen Lösungen sind Dilemmata komplexer und beinhalten Abwägungen
+sowie das Austarieren unterschiedlicher Handlungsoptionen.
+
+Ethik bietet daher Orientierung und Entscheidungsstrukturen, die einen
+Rahmen schaffen, um in solchen Situationen einen geeigneten Handlungsweg
+zu finden. Ihre Kernfunktion besteht folglich nicht darin, monokausale
+Probleme zu lösen, sondern darin, komplexe Dilemmata zu strukturieren
+und zu kategorisieren.
+
+Vereinfacht gesagt bezeichnet „Moral`` persönliche oder
+gesellschaftliche Überzeugungen darüber, was richtig und falsch ist,
+während „Ethik`` die philosophische Auseinandersetzung mit diesen
+Überzeugungen darstellt. Ethik untersucht die Regeln und Prinzipien, die
+das menschliche Verhalten leiten „sollen``. Sie lässt sich in allgemeine
+Ethik und angewandte Ethik unterteilen (Abbildung xy).
+
+ABBILDUNG
+
+Die allgemeine Ethik liefert uns Methoden und Konzepte, um grundlegende
+moralische Probleme zu diskutieren. Sie besteht aus drei Teilbereichen:
+normativer Ethik, deskriptiver Ethik und Metaethik. Die normative Ethik
+konzentriert sich darauf, zu bestimmen, was moralisch richtig oder
+falsch ist. Fragen danach, was ein gutes Leben ausmacht, können
+beispielsweise je nach den individuellen Werten von Menschen
+unterschiedliche Antworten haben.
+
+Aus diesem Grund wird die normative Ethik weiter in teleologische und
+deontologische Ansätze unterteilt. Die teleologische Ethik (abgeleitet
+von telos, dem griechischen Wort für „Zweck``, „Ziel`` oder „Ende``)
+bewertet Handlungen danach, welches Gute sie hervorbringen. Der
+Utilitarismus ist beispielsweise eine teleologische Theorie, die
+Handlungen nach dem daraus resultierenden Nutzen oder Glück bewertet.
+Eine der ersten systematischen Ausarbeitungen des Utilitarismus ist
+Jeremy Benthams (1748--1832) Werk An Introduction to the Principles of
+Morals and Legislation (1780).
+
+Die deontologische Ethik hingegen bewertet Handlungen anhand ihrer
+Merkmale und nicht nach ihren Konsequenzen. Ihr Ursprung liegt im
+griechischen deon („Pflicht``). Ein Beispiel für eine deontologische
+Theorie ist die kantische Ethik, entwickelt vom deutschen Philosophen
+Immanuel Kant.
+
+Die Unterscheidung zwischen teleologischen und deontologischen Ansätzen
+wird häufig am Beispiel des „Trolley-Problems`` diskutiert (siehe dazu
+Sandel {[}2009; 2013{]}).
+
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, breakable, left=2mm, colback=white, leftrule=.75mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, toprule=.15mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Weiterführende Literatur}, colframe=quarto-callout-note-color-frame, bottomtitle=1mm, opacityback=0, arc=.35mm, toptitle=1mm, rightrule=.15mm, coltitle=black]
+
+Sandel M. 2009. Justice: What's the Right Thing to Do? Episode 01 ``THE
+MORAL SIDE OF MURDER.'' https://www.youtube.com/watch?v=kBdfcR-8hEY.
+Sandel M. 2013. Gerechtigkeit. Berlin: Ullstein.
+
+\end{tcolorbox}
+
+\subsubsection{Das Prinzip Verantwortung -- Hans
+Jonas}\label{das-prinzip-verantwortung-hans-jonas}
+
+Hans Jonas' Prinzip Verantwortung (1979) liefert einen wichtigen Beitrag
+zur Nachhaltigkeitsdebatte, indem es unsere ethische Verantwortung
+gegenüber zukünftigen Generationen und der Natur betont. Jonas' Ansatz,
+der als eine Art „Ethik der Zukunft`` beschrieben wird, zielt darauf ab,
+die neuen Herausforderungen einer technologischen Zivilisation zu
+adressieren. Der Bezug zur Nachhaltigkeitsethik liegt in seinem
+Verständnis von ethischer Verantwortung gegenüber zukünftigen
+Generationen, die er als asymmetrische, nicht-reziproke Beziehung
+begreift (Jonas 1987a, S.\,177). Diese Asymmetrie ergibt sich aus der
+Macht eines „moralischen Subjekts`` über jemanden oder etwas, das
+Fürsorge benötigt; Jonas beschreibt die Verwundbarkeit des Lebens
+(ontologische Verwundbarkeit) und Verantwortung als unsere Pflicht,
+andere Wesen vor Schaden zu bewahren (Jonas 1987a, S.\,391).
+
+Jonas' Ansatz unterscheidet sich von anderen ethischen Theorien, indem
+er die Existenz der Menschheit nicht als selbstverständlich voraussetzt
+und stattdessen Pflichten gegenüber zukünftigen Generationen wie auch
+gegenüber der Natur einschliesst. Jonas argumentiert, dass die erste
+Pflicht einer Ethik der Zukunft darin bestehe, die fernen Folgen
+menschlichen Handelns anzuerkennen (Jonas 1987a, S.\,64). Angesichts der
+Unsicherheit über die langfristigen Folgen menschlichen Handelns schlägt
+er ein Entscheidungsprinzip vor, das auf dem lateinischen Ausdruck in
+dubio pro malo basiert, den er so interpretiert: „{[}\ldots{]} im
+Zweifel ist der schlechteren Prognose der Vorzug vor der besseren zu
+geben, da der Einsatz für das Spiel zu hoch geworden ist`` (Jonas 1987b,
+S.\,67).
+
+Jonas entwickelt damit einen neuen kategorischen Imperativ, der die
+Notwendigkeit betont, sowohl die Natur als auch die Menschheit zu
+bewahren. Dieser Imperativ gründet auf der Idee, dass die Natur einen
+inhärenten Wert und Zweck hat:
+
+\begin{quote}
+„Handle so, dass die Wirkungen deiner Handlung verträglich sind mit der
+Permanenz echten menschlichen Lebens auf Erden`` oder „Handle so, dass
+die Wirkungen deiner Handlung nicht zerstörerisch sind für die künftigen
+Möglichkeiten solchen Lebens`` (Jonas 1987a, S.36).
+\end{quote}
+
+Bereits in den späten 1970er-Jahren artikulierte Hans Jonas somit eine
+grundlegende Unsicherheit über die Risiken und Schäden, die sich aus den
+damals genutzten Technologien -- wie der Kernenergie -- für zukünftige
+Generationen ergeben könnten. Entscheidungen über neue Technologien
+erfordern eine kontinuierliche Bewertung von Risiken und Chancen, oft
+unter Bedingungen unvollständiger Informationen und unsicherer
+Zukunftsprognosen. Diese Entscheidungen betreffen nicht nur die Umwelt,
+sondern werfen auch ethische Fragen über unsere Verpflichtung auf,
+Nachhaltigkeit für zukünftige Generationen zu sichern. Jonas' Prinzip
+Verantwortung betont daher den Zusammenhang zwischen Verantwortung und
+Pflicht als zentrale Konzepte der Nachhaltigkeitsdebatte.
+
+Nach Jonas haben gegenwärtige Generationen eine vorausschauende
+Verantwortung gegenüber künftigen Generationen. Offen lässt er jedoch,
+wie weitreichend diese Pflicht ist und ob zukünftigen Generationen
+absolute oder vergleichende Standards zustehen.
+
+Das Prinzip Verantwortung kann zudem im Zusammenhang mit verschiedenen
+Verantwortungsbereichen betrachtet werden, die unterschiedliche ethische
+Ansätze repräsentieren: Anthropozentrismus, Pathozentrismus,
+Biozentrismus und Physiozentrismus.
+
+ABBILDUNG
+
+Anthropozentrismus betrachtet den Menschen als zentrales Wesen und
+betont die Verantwortung gegenüber der menschlichen Gesellschaft und
+ihrem Wohlergehen. Dies schliesst die Berücksichtigung der Bedürfnisse
+und Interessen sowohl heutiger als auch zukünftiger Generationen ein.
+
+Pathozentrismus hingegen betont die Verantwortung gegenüber
+empfindungsfähigen Lebewesen und ihrem Wohlergehen. Er erkennt an, dass
+nicht nur Menschen, sondern auch Tiere und andere Lebewesen ein Recht
+darauf haben, frei von Leid und Schaden zu sein.
+
+Biozentrismus wiederum erkennt den Eigenwert aller lebenden Organismen
+an und konzentriert sich auf den Schutz und die Bewahrung der
+biologischen Vielfalt. Er betont die Bedeutung des Respekts gegenüber
+der natürlichen Umwelt und die Förderung nachhaltiger Praktiken.
+
+Schliesslich fokussiert Physiozentrismus auf die Verantwortung gegenüber
+der gesamten physischen Umwelt, einschliesslich der unbelebten Natur und
+der Ökosysteme. Er erkennt den Eigenwert der Natur an und betont die
+komplexen Wechselwirkungen zwischen allen Komponenten des Ökosystems.
+
+Hans Jonas' Prinzip Verantwortung vereint all diese unterschiedlichen
+Verantwortungsbereiche. Es fordert uns auf, Verantwortung sowohl für
+Menschen als auch für andere Lebewesen, die Natur und die Umwelt zu
+übernehmen. Dabei ist es wichtig, eine ausgewogene und umfassende
+Perspektive einzunehmen, die langfristige Auswirkungen und das
+Wohlergehen aller berücksichtigt.
+
+Durch die Integration dieser verschiedenen Verantwortungsbereiche können
+wir eine ganzheitliche und nachhaltige Ethik entwickeln, die den
+Bedürfnissen und Interessen aller Aspekte des Lebens und der Natur in
+angemessener Weise Rechnung trägt.
+
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, breakable, left=2mm, colback=white, leftrule=.75mm, colbacktitle=quarto-callout-caution-color!10!white, bottomrule=.15mm, toprule=.15mm, titlerule=0mm, title=\textcolor{quarto-callout-caution-color}{\faFire}\hspace{0.5em}{(Reflexions)übungen und Beispiele}, colframe=quarto-callout-caution-color-frame, bottomtitle=1mm, opacityback=0, arc=.35mm, toptitle=1mm, rightrule=.15mm, coltitle=black]
+
+Im Selbstlernmodul ``FOKUS Onlinekurs \emph{Grundlagen Nachhaltiger
+Entwicklung}'' finden Sie Reflexionsübungen, illustrative Beispiele
+sowie Selbsttests zur normativen Orientierung einer nachhaltigen
+Entwicklung, Ethik und Dilemmatas.
+
+\end{tcolorbox}
+
+\subsection{Nachhaltige Entwicklung im Kontext von
+Entwicklungsdebatten}\label{nachhaltige-entwicklung-im-kontext-von-entwicklungsdebatten}
+
+Ist „nachhaltige Entwicklung`` eine Entwicklungstheorie? Ja und nein.
+Nein, weil nachhaltige Entwicklung ein breiteres Gesellschaftsmodell
+darstellt und als übergeordneter Rahmen fungiert, der verschiedene
+Entwicklungstheorien umfasst. Ja, weil nachhaltige Entwicklung eine
+normative Theorie ist, die in der wissenschaftlichen und
+gesellschaftlichen Praxis de facto mit anderen Theorien der sozialen und
+insbesondere der sozioökonomischen Entwicklung konkurriert.
+
+Entwicklungstheorien analysieren soziale Entwicklung, entweder
+retrospektiv oder prospektiv und entweder als Ganzes oder durch
+spezifische Aspekte (z.B. wirtschaftliche Entwicklung). Die
+retrospektive Untersuchung sozialer Entwicklung versucht, vergangene
+oder aktuelle gesellschaftliche Entwicklungen zu erklären und Lehren für
+zukünftige Planung und Entwicklungspolitik zu ziehen. Die prospektive
+Untersuchung sozialer Entwicklung zielt darauf ab, gesellschaftliches
+Entwicklungsmanagement und -politik zu informieren.
+
+Entwicklungstheorien lassen sich in verschiedene Typen einteilen:
+normative, strategische und explanative Theorien. Jeder Typ konzentriert
+sich auf unterschiedliche Aspekte und Ziele der Entwicklungsforschung.
+
+Normative Theorien befassen sich mit der Frage, wie Entwicklung aussehen
+sollte und welche normativen Ziele sie erreichen soll. Sie untersuchen
+Werte und Ziele, die mit Entwicklung verbunden sind, und beziehen sich
+häufig auf Konzepte wie soziale Gerechtigkeit, Nachhaltigkeit oder
+Armutsbekämpfung. Normative Theorien betonen die Definition von
+Kriterien für gute Entwicklung und liefern einen normativen Rahmen für
+politische Entscheidungen und Massnahmen. Beispiele sind die Theorie der
+nachhaltigen Entwicklung, John Rawls' Theorie der sozialen Gerechtigkeit
+oder Amartya Sens Capability Approach.
+
+Strategische Theorien untersuchen, welche Strategien und Massnahmen
+erforderlich sind, um gewünschte Entwicklungsergebnisse zu erzielen. Sie
+konzentrieren sich auf Fragen der politischen Gestaltung,
+Ressourcenallokation und Umsetzung von Massnahmen und analysieren, wie
+bestimmte Ansätze -- wie die neoklassische Wachstumstheorie --
+Entwicklung fördern können.
+
+Explanative Theorien zielen darauf ab, die Ursachen und Mechanismen von
+Entwicklung zu erklären. Sie analysieren Faktoren, die
+Entwicklungsprozesse in Gesellschaften antreiben, und untersuchen die
+Zusammenhänge zwischen verschiedenen Variablen. Dazu gehört die
+Betrachtung wirtschaftlicher, sozialer, politischer oder kultureller
+Faktoren, um Muster und Verbindungen zu identifizieren. Beispiele sind
+die Modernisierungstheorie und die Dependenztheorie.
+
+Hinweis: Alle Theorien basieren auf normativen Grundlagen -- also
+zugrunde liegenden Werten und Überzeugungen -- und implizieren daher,
+auch unbeabsichtigt, bestimmte Vorstellungen darüber, wie sich
+Gesellschaft entwickeln sollte.
+
+TABELLE
+
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, breakable, left=2mm, colback=white, leftrule=.75mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, toprule=.15mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Entwicklungstheorien}, colframe=quarto-callout-note-color-frame, bottomtitle=1mm, opacityback=0, arc=.35mm, toptitle=1mm, rightrule=.15mm, coltitle=black]
+
+\textbf{Modernisierungstheorie} (1950er--1980er-Jahre) betont den
+Übergang von traditionellen zu modernen, industrialisierten
+Gesellschaften als Grundlage für Entwicklung. Für Befürworter:innen der
+Modernisierungstheorie entwickeln sich die Länder des Globalen Südens in
+dieselbe Richtung wie die Industrieländer, jedoch in einem deutlich
+langsameren Tempo. Die Modernisierungstheorie legt Wert auf
+wirtschaftliches Wachstum, technologischen Fortschritt und
+institutionelle Anpassungen. Sie wird oft mit Stufentheorien in
+Verbindung gebracht, die in den 1950er- und 1960er-Jahren entstanden.
+Stufentheorien betrachten Entwicklung als einen allmählichen Prozess,
+der durch klar definierte Entwicklungsstufen oder -phasen gekennzeichnet
+ist, mit einem besonderen Fokus auf Wirtschaftswachstum und
+Modernisierung. Ein prominenter Vertreter ist Walt Rostow, der in seinem
+Werk The Stages of Economic Growth: A Non-Communist Manifesto fünf
+Entwicklungsstufen identifizierte (traditionelle Gesellschaft,
+Voraussetzungen für den Take-off, Take-off, Übergang zur Reife und
+Massenkonsum).
+
+\textbf{Dependenztheorie} (1970er- und 1980er-Jahre) betont die
+strukturelle Abhängigkeit und Ungleichheit zwischen entwickelten und
+Entwicklungsländern. Sie argumentiert, dass Entwicklungsländer in einem
+ungerechten globalen Wirtschaftssystem gefangen sind und in Abhängigkeit
+von den Industrieländern verbleiben.
+
+\textbf{Neoklassische Wachstumstheorie} (seit den 1990er-Jahren)
+konzentriert sich auf den Zusammenhang zwischen Kapitalakkumulation,
+technologischem Fortschritt und Wirtschaftswachstum. Sie betont freie
+Märkte, Handel und Investitionen als Treiber von Entwicklung.
+
+\textbf{Postkoloniale Theorien} (seit den 1990er-Jahren) betonen die
+historische und strukturelle Ungleichheit zwischen ehemaligen
+Kolonialmächten und Kolonien. Sie argumentieren, dass Entwicklung nur
+durch eine kritische Auseinandersetzung mit dem Erbe des Kolonialismus
+erreicht werden kann.
+
+\textbf{Sens Capability Approach} (seit den 1990er-Jahren) hebt die
+Bedeutung von Freiheit, sozialer Gerechtigkeit und menschlicher
+Entwicklung hervor. Er betont die Notwendigkeit, die Möglichkeiten und
+Fähigkeiten von Menschen zu verbessern, um Entwicklung zu erreichen.
+
+\textbf{Post-Development-Theorien} (seit den 1990er-Jahren) kritisieren
+lineare Entwicklungsmodelle, die westliche Fortschrittsvorstellungen
+aufzwingen, und betonen stattdessen lokale Praktiken und Werte.
+Bedeutende Denker:innen in diesem Feld sind Arturo Escobar, der in
+seinem Werk Encountering Development: The Making and Unmaking of the
+Third World kritisch über das Entwicklungsparadigma reflektiert, und
+Vandana Shiva, die in Decolonizing the North eine nachhaltige und
+gerechtere Entwicklungspolitik im Globalen Süden fordert, die den
+Einfluss des Globalen Nordens reduziert.
+
+\end{tcolorbox}
+
+\subsection{Nachhaltigkeitsmodelle}\label{nachhaltigkeitsmodelle}
+
+Es herrscht weitgehend Einigkeit darüber, dass nachhaltige Entwicklung
+verschiedene Dimensionen umfasst und dass Nachhaltigkeit nur durch deren
+Integration erreicht werden kann. Über die relative Bedeutung jeder
+Dimension besteht jedoch weiterhin Uneinigkeit.
+
+\subsubsection{Drei Dimensionen der
+Nachhaltigkeit}\label{drei-dimensionen-der-nachhaltigkeit}
+
+Das etablierte Drei-Säulen-Modell der Nachhaltigkeit, das im
+Brundtland-Bericht von 1987 eingeführt wurde, versucht, ökologische,
+ökonomische und soziale Belange miteinander in Einklang zu bringen.
+Dieses Modell, das später auch als Triple-Bottom-Line-Modell bekannt
+wurde, betont, dass wirtschaftliche Entwicklung profitabel sein sollte,
+während ökologische und soziale Auswirkungen neutral bleiben.
+
+Bei genauerer Betrachtung weist das Modell -- das ursprünglich als
+Gebäude mit drei Säulen dargestellt wurde -- jedoch eine grosse Schwäche
+auf. Während es suggerieren sollte, dass das System als Ganzes nicht
+nachhaltig ist, wenn eine der Säulen schwach ist, könnte man
+argumentieren, dass das Entfernen einer Säule -- oder sogar der beiden
+äusseren Säulen -- das Gebäude nicht zum Einsturz bringen würde, solange
+die verbleibende(n) Säule(n) stark genug sind.
+
+Trotz seiner weiten Verbreitung und seines Erfolgs hat das Modell
+Probleme mit Transparenz und Gerechtigkeit. So erfordert die Messung
+wirtschaftlichen Erfolgs quantitative Indikatoren, während es schwierig
+ist, vergleichbare Messgrössen für das soziale Wohlbefinden,
+insbesondere emotionale Aspekte, zu finden. Einige Kritiker:innen
+argumentieren, dass das Modell konventionelles ökonomisches Denken
+priorisiert und wichtige soziale Aspekte vernachlässigt. Eine
+Überbetonung menschlicher Wirtschaftssysteme kann uns zudem daran
+hindern, unsere Abhängigkeit von nicht-menschlichen ökologischen
+Systemen zu erkennen.
+
+\subsubsection{Nachhaltigkeit als
+Schnittmenge}\label{nachhaltigkeit-als-schnittmenge}
+
+Ein Modell, das die drei Sektoren als Venn-Diagramm (überlappende Ringe
+oder Kreise, auch bekannt als Schnittmengen- oder Triadenmodell)
+darstellt, bietet eine Alternative zu den getrennten Säulen und betont
+die Wechselwirkungen der drei Dimensionen. Dieses Modell verdeutlicht,
+dass es engere Verbindungen zwischen zwei Bereichen geben kann und dass
+die Grenzen fliessend sind.
+
+\subsubsection{Das Vorrangmodell}\label{das-vorrangmodell}
+
+Giddings et al.~(2002) stellen die Idee getrennter Sphären von
+Wirtschaft, Gesellschaft und Umwelt infrage. Sie schlagen ein
+\textbf{„verschachteltes`` Modell} vor, in dem die Wirtschaft als Teil
+der Gesellschaft verstanden wird, die wiederum in der Umwelt eingebettet
+ist. Dieses Modell soll sicherstellen, dass wirtschaftliche
+Entscheidungen stets durch soziale und ökologische Faktoren begrenzt
+werden.
+
+Globale Ökosysteme bilden die Grundlage für soziale Systeme (d.h. die
+Gesellschaft). Darin eingebettet ist die Wirtschaft, die den
+Bedürfnissen der Gesellschaft dient.
+
+Ein potenzieller Nachteil dieses Modells besteht jedoch darin, dass --
+wenn die Wirtschaft als Ausgangspunkt aller Nachhaltigkeitsüberlegungen
+gewählt wird -- das Risiko besteht, sie gegenüber sozialen und
+ökologischen Belangen zu priorisieren.
+
+\subsubsection{Nachhaltigkeit als
+Vier-Dimensionen-Modell}\label{nachhaltigkeit-als-vier-dimensionen-modell}
+
+Ein Problem des Drei-Säulen-Modells der Nachhaltigkeit ist, dass unklar
+bleibt, was genau in die breite „soziale`` Sphäre fällt. Daher wurde
+vorgeschlagen, eine vierte Dimension hinzuzufügen, um bestimmte Aspekte
+hervorzuheben, die sonst im sozialen Bereich verborgen bleiben könnten.
+
+So hat etwa der australische Kulturkommentator Jon Hawkes angeregt,
+``kulturelle Vitalität`` als vierte Säule der Nachhaltigkeit neben
+ökologischen, ökonomischen und sozialen Belangen aufzunehmen.
+
+Kulturelle Nachhaltigkeit wird häufig als Teil der sozialen
+Nachhaltigkeit betrachtet. Mitunter wird auch der Begriff
+„soziokulturelle Nachhaltigkeit`` verwendet. In diesem Kontext bezieht
+sich „Kultur`` auf Aspekte wie Gerechtigkeit,
+Partizipationsmöglichkeiten, Bewusstsein für Nachhaltigkeit sowie
+allgemeine Handlungs- und Verhaltensmuster (Murphy, 2017). Es ist
+offensichtlich, dass die sozialen und kulturellen Dimensionen eng
+miteinander verbunden sind. Kulturelle Prozesse beeinflussen unser
+soziales Leben und unsere Sichtweise auf soziale Nachhaltigkeit, etwa
+den Wert, den wir der Gleichheit als sozialem Ziel beimessen. Umgekehrt
+prägen soziale Strukturen und Institutionen kulturelle Praktiken und
+Bewertungen. Trotz dieser engen Verbindung können kulturelle und soziale
+Nachhaltigkeit auch als eigenständige Dimensionen oder Perspektiven von
+Nachhaltigkeit betrachtet werden.
+
+Kultur besitzt kein eigenes Sustainable Development Goal (SDG). In der
+Agenda 2030 wird Kultur im Zusammenhang mit „Zivilisation``,
+„Diversität``, „Interkulturalität``, „kulturellem Erbe`` und
+„Tourismus`` erwähnt -- und zwar im Rahmen der folgenden vier SDGs:
+hochwertige Bildung (SDG 4), menschenwürdige Arbeit und
+Wirtschaftswachstum (SDG 8), nachhaltige Städte und Gemeinden (SDG 11)
+sowie nachhaltiger Konsum und Produktion (SDG 12) (Duxbury et al.,
+2017).
+
+Das Konzept kultureller Nachhaltigkeit kann auf verschiedene Weise
+interpretiert werden: als vierte Dimension von Nachhaltigkeit, als
+Kultur für Nachhaltigkeit und als Kultur als Nachhaltigkeit. Die
+Interpretation von „Kultur als Nachhaltigkeit`` erfordert ein neues
+Denken und ein neues Paradigma in Bezug auf Nachhaltigkeit. In dieser
+Sichtweise wird Kultur selbst in Richtung Nachhaltigkeit transformiert.
+Kulturelle Nachhaltigkeit bedeutet hier, darüber nachzudenken, was
+bewahrt, was verändert und wie diese Veränderungen umgesetzt werden
+sollen. Diese Interpretation -- Kultur als nachhaltige Entwicklung zu
+begreifen -- definiert Kultur im weitesten Sinn als umfassenden
+Lebensstil und als kontinuierlich sich verändernden Prozess. Unsere
+gesellschaftliche Ordnung (wie Kapitalismus und Demokratie), unsere
+Werte und unsere Arbeitsweisen sind allesamt kulturelle Produkte. Kultur
+damit \ldots Kultur umfasst somit alle anderen Dimensionen der
+Nachhaltigkeit, und ihre Transformation wird zu einem zentralen Anliegen
+bzw. Paradigma für Nachhaltigkeit.
+
+Die Definition kultureller Nachhaltigkeit enthält mehrere wichtige
+Aspekte: Erstens betont sie die Bedeutung von intellektuellem Wachstum
+und Verantwortung. Das bedeutet, Wissen zu erwerben, ein besseres
+Verständnis für wichtige Themen zu entwickeln und an Bildungsaktivitäten
+und -veranstaltungen teilzunehmen. Es bedeutet auch, nicht nur als
+Individuen, sondern auch als Mitglieder verschiedener Gemeinschaften zu
+handeln. Alle problematischen und nicht-nachhaltigen Strukturen und
+Handlungsmodelle wurden von Menschen geschaffen und entwickelt. Wir
+Menschen haben daher auch die Möglichkeit, sie zu verändern.
+
+Kulturelle Nachhaltigkeit ist beispielsweise erforderlich für eine
+„Grosse Transformation``, wie sie von Uwe Schneidewind (2018) gefordert
+wird. In seinem Werk betont Schneidewind die Notwendigkeit umfassender
+Veränderungen in allen Dimensionen der Gesellschaft, einschliesslich der
+Kultur, um nachhaltige Entwicklung zu erreichen. Die Anerkennung
+kultureller Nachhaltigkeit als zentrales Paradigma der Nachhaltigkeit
+unterstützt die Vision einer umfassenden Transformation, die über
+technologische und wirtschaftliche Lösungen hinausgeht und einen
+grundlegenden gesellschaftlichen Kurswechsel anstrebt.
+
+\subsection{Schwache und starke
+Nachhaltigkeit}\label{schwache-und-starke-nachhaltigkeit}
+
+Die wissenschaftliche Debatte über Nachhaltigkeit unterscheidet zwischen
+\textbf{schwacher} und \textbf{starker Nachhaltigkeit} (vgl. z.\,B. Ott,
+2020). Keines dieser Konzepte lässt sich leicht verwerfen, da beide auf
+Annahmen beruhen, die nur schwer zu widerlegen sind. In der Praxis
+gelten beide Konzepte als teilweise zutreffend, mit Belegen sowohl dafür
+als auch dagegen.
+
+Der zentrale Unterschied zwischen schwacher und starker Nachhaltigkeit
+betrifft die Frage, \textbf{was wir erhalten sollen} und \textbf{in
+welchem Mass verschiedene Kapitalformen gegeneinander austauschbar
+sind}. Dabei geht es insbesondere um die folgenden drei Kapitalformen:
+
+\textbf{Natürliches Kapital:} Die natürlichen Ressourcen und Ökosysteme,
+die für das menschliche Wohlergehen und eine nachhaltige Entwicklung
+entscheidend sind. Dazu gehören Land, Wasser, Luft, Biodiversität und
+erneuerbare Energien. Natürliches Kapital ist die Grundlage vieler
+wirtschaftlicher Aktivitäten und liefert essenzielle
+Ökosystemdienstleistungen wie Nahrung, die Reinigung von Wasser und Luft
+sowie kulturelle und ästhetische Werte.
+
+\textbf{Produziertes Kapital:} Die materiellen Ressourcen und
+Infrastrukturen, die in Produktion und wirtschaftlicher Tätigkeit
+eingesetzt werden. Dazu zählen Gebäude, Maschinen, technische Geräte,
+Transportmittel und physische Infrastrukturen. Produziertes Kapital ist
+eng mit Wirtschaftswachstum und Produktivität verknüpft und spielt eine
+wichtige Rolle in der wirtschaftlichen Entwicklung.
+
+\textbf{Humankapital:} Das Wissen, die Fähigkeiten, der Bildungsstand,
+die Gesundheit und die kreativen Fähigkeiten der Menschen in einer
+Gesellschaft. Es umfasst individuelles und kollektives Wissen sowie die
+Fertigkeiten, die für wirtschaftliche Produktivität und sozialen
+Fortschritt notwendig sind. Humankapital ist entscheidend für
+Innovation, Arbeitsproduktivität, gesellschaftliche Teilhabe und die
+Fähigkeit einer Gesellschaft, Herausforderungen zu bewältigen und sich
+anzupassen.
+
+\subsubsection{Schwache Nachhaltigkeit}\label{schwache-nachhaltigkeit}
+
+\textbf{Schwache Nachhaltigkeit} kann als die „weiche`` oder flexible
+Option verstanden werden. Befürworter:innen der schwachen Nachhaltigkeit
+gehen davon aus, dass eine Handlung dann nachhaltig ist, wenn sie dem
+Gesamtsystem einen Vorteil bringt oder zumindest dessen Qualität nicht
+mindert. Schwache Nachhaltigkeit kann daher als grundlegende Anforderung
+an Nachhaltigkeit betrachtet werden, da sie darauf abzielt, ein
+bestimmtes Niveau an Wohlergehen/Lebensqualität zu erhalten oder
+Gleichheit sicherzustellen.
+
+Das Konzept der schwachen Nachhaltigkeit „geht von der weitgehenden und
+zumindest prinzipiell unbegrenzten {[}\ldots{]} Substituierbarkeit aller
+Kapitalarten aus`` (Ott \& Döring 2004: 41) und basiert damit auf den
+Prämissen der neoklassischen Ökonomie. Anhänger:innen der schwachen
+Nachhaltigkeit glauben, dass Naturkapital durch andere Kapitalformen
+ersetzt werden kann. Sie betonen das Konzept des „Gesamtkapitals`` und
+argumentieren, dass die konkrete Zusammensetzung des von künftigen
+Generationen geerbten Kapitals unerheblich sei, solange der Gesamtnutzen
+und das Wohlergehen erhalten bleiben. Dies entspricht der neoklassischen
+Nutzentheorie, nach der es unerheblich ist, wie Nutzen erzeugt wird.
+
+Unterstützer:innen schwacher Nachhaltigkeit halten daher Massnahmen auch
+dann für nachhaltig, wenn sie auf Kosten von Naturkapital durchgeführt
+werden -- solange dieser Verlust durch eine Zunahme an Humankapital oder
+produziertem Kapital ausgeglichen wird. So könnten beispielsweise die
+Förderung von Rohstoffen wie Kohle oder der übermässige Abbau von Erdöl
+gerechtfertigt werden. Auch Carlowitz' \emph{Sylvicultura
+oeconomica}-Wald könnte im Prinzip ersetzt oder abgebaut werden, sofern
+seine natürlichen und kulturellen Funktionen von künftigen Generationen
+auf andere Weise erfüllt werden können. Dieses
+Nachhaltigkeitsverständnis betont die Bedeutung des technologischen
+Fortschritts für nachhaltige Entwicklung.
+
+Die Bewertung von Massnahmen auf Grundlage der schwachen Nachhaltigkeit
+ist jedoch anspruchsvoll, da sie mit erheblichen Komplexitäten und
+zahlreichen Annahmen verbunden ist. Dies geht über grundlegende Fragen
+zur Nachhaltigkeit hinaus, wie etwa „Was ist ein gutes Leben?{}`` oder
+„Wie messen wir das Niveau des Wohlergehens?{}``. Eine zentrale
+Herausforderung besteht darin, verschiedenen Kapitalarten --
+insbesondere solchen ohne klaren Marktpreis -- einen monetären Wert
+zuzuordnen. Welche Faktoren sollen dabei berücksichtigt werden? Welchen
+Wert hat natürliche Schönheit? Welchen Wert hat ein seltener Vogel oder
+ein Wal? Bullers \emph{The Value of a Whale} (2022) zeigt eindrücklich
+die Probleme auf, die damit verbunden sind, der Natur einen Preis zu
+geben.
+
+Kritiker:innen des Konzepts der schwachen Nachhaltigkeit weisen auf
+mehrere Einschränkungen hin. Erstens stellen sie die Annahme infrage,
+dass natürliche Ressourcen unbegrenzt durch reproduzierbares Kapital
+ersetzt werden können. Zweitens bezweifeln sie, dass eine Zunahme
+materieller Güter den Verlust an Umweltqualität tatsächlich ausgleichen
+kann. Schliesslich bestehen Bedenken hinsichtlich unserer Fähigkeit,
+neue Ressourcen zu entwickeln, und der Gefahr, kritische Schwellenwerte
+zu überschreiten. Diese Kritik ebnete den Weg für das Konzept der
+\textbf{starken Nachhaltigkeit}.
+
+\subsubsection{Starke Nachhaltigkeit}\label{starke-nachhaltigkeit}
+
+Im Gegensatz zur schwachen Nachhaltigkeit betont die \textbf{starke
+Nachhaltigkeit} den Erhalt des Naturkapitals. Befürworter:innen dieser
+\textbf{ökologisch orientierten Theorie} sind weniger optimistisch, was
+unsere Fähigkeit betrifft, natürliche Ressourcen durch produzierte
+Ressourcen zu ersetzen. Sie gehen davon aus, dass diese Ressourcentypen
+nur begrenzt austauschbar sind (Daly 1990; 1999; Ott 2001; Ott \& Döring
+2004). Daher argumentieren sie, dass die einzelnen Elemente des
+Naturkapitals so konstant wie möglich erhalten werden sollten, um
+beispielsweise das Aussterben von Arten zu verhindern. Während
+neoklassische Ökonom:innen zuversichtlich hinsichtlich der
+Substituierbarkeit sind, betonen die Befürworter:innen der
+\textbf{starken Nachhaltigkeit} die Bedeutung von \textbf{Prävention und
+Vorsorge} anstelle von Nachsorge und Reaktion. So löst beispielsweise
+die Reaktion auf das Ozonloch durch Sonnencreme, Schutzkleidung oder
+medizinische Nachsorge nicht die Ursache des Problems. Ähnlich werden
+technologische Ansätze wie das \textbf{Geo-Engineering} kritisiert, da
+sie Probleme lediglich oberflächlich behandeln. Geo-Engineering
+bezeichnet technische Eingriffe in geochemische oder biogeochemische
+Kreisläufe, etwa zur Verlangsamung des Klimawandels oder der
+Ozeanversauerung.
+
+Bisher konzentrierte sich die Reduktion von Umweltverschmutzung
+hauptsächlich auf \textbf{End-of-Pipe-Technologien}, wie
+Rauchgasreinigungsanlagen an Fabrikschornsteinen oder Katalysatoren in
+Autos. Dies führte jedoch auch dazu, dass langfristige Umweltprobleme
+wie Klimawandel oder Biodiversitätsverlust hinausgezögert wurden,
+solange deren Auswirkungen nicht unmittelbar sichtbar waren.
+
+Dieses Phänomen steht im Zusammenhang mit dem Konzept der
+\textbf{Externalisierung}, bei dem Umwelt- und Sozialkosten ausgelagert
+werden, wie es Lessenich (2018) beschreibt. Das bedeutet, dass bei der
+Preisbildung nur die wirtschaftlichen Kosten berücksichtigt werden --
+teilweise, weil diese leichter zu quantifizieren sind --, während die
+sozialen und ökologischen Kosten der Bereitstellung von Gütern und
+Dienstleistungen ausgelassen oder externalisiert werden. Dies führt zu
+Verzerrungen in den Marktpreisen.
+
+\subsection{Nachhaltigkeitsstrategien}\label{nachhaltigkeitsstrategien}
+
+Drei zentrale Strategien zeichnen sich für die Erreichung nachhaltiger
+Entwicklung ab: \textbf{Effizienz}, \textbf{Konsistenz} und
+\textbf{Suffizienz}. Die Erreichung von Nachhaltigkeitszielen erfordert
+eine kluge Kombination dieser drei Ansätze.
+
+ABBILDUNG
+
+\subsubsection{Effizienzstrategie}\label{effizienzstrategie}
+
+Die Effizienzstrategie konzentriert sich darauf, den Ressourceneinsatz
+(d.h. Rohstoffe und Energie) bei der Herstellung von Produkten oder der
+Erbringung von Dienstleistungen zu minimieren. Das bedeutet, den
+Materialverbrauch (Materialintensität), den Energieverbrauch
+(Energieintensität) und die Emissionen schädlicher Substanzen wie CO₂ zu
+reduzieren.
+
+Auch als „Öko-Effizienz`` bekannt, ist diese Strategie sowohl für
+Unternehmen als auch für die Gesellschaft attraktiv, da sie Kosten,
+Ressourcenverbrauch und Umweltbelastungen senken kann. Die Umsetzung
+beginnt bei der Verbesserung von Produktionsprozessen, vor allem durch
+technologische Innovationen. Befürworter:innen glauben, dass es möglich
+ist, den Wohlstand zu verdoppeln und gleichzeitig den Naturverbrauch zu
+halbieren (Weizsäcker et al.~1995).
+
+Kritiker:innen der Effizienzstrategie sind weniger optimistisch und
+warnen davor, ihre Wirkung auf nachhaltiges Wirtschaften zu
+überschätzen. Sie verweisen auf Rebound-Effekte, die die
+Effizienzgewinne teilweise oder sogar vollständig zunichtemachen können
+(Paech 2012; Santarius 2014).
+
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, breakable, left=2mm, colback=white, leftrule=.75mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, toprule=.15mm, titlerule=0mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, colframe=quarto-callout-tip-color-frame, bottomtitle=1mm, opacityback=0, arc=.35mm, toptitle=1mm, rightrule=.15mm, coltitle=black]
+
+\textbf{Umsetzung der Effizienzstrategie: Beispiele} - Energieeffiziente
+Beleuchtung: Der Austausch herkömmlicher Glühbirnen durch
+energieeffiziente LED-Lampen senkt den Stromverbrauch und reduziert die
+Energienachfrage.
+
+\begin{itemize}
+\item
+  Kraftstoffsparende Fahrzeuge: Die Entwicklung von
+  kraftstoffeffizienten Hybrid- oder Elektrofahrzeugen kann zu einem
+  geringeren Kraftstoffverbrauch und reduzierten Emissionen im
+  Straßenverkehr führen.
+\item
+  Effiziente Gebäudetechnik: Die Installation intelligenter Heizungs-,
+  Lüftungs- und Klimasysteme (HVAC) in Gebäuden hilft, den
+  Energieverbrauch für Heizen und Kühlen zu senken.
+\item
+  Effiziente Wassernutzung: Der Einsatz von wassersparenden Armaturen
+  und Systemen in Haushalten und Industrieunternehmen reduziert den
+  Wasserverbrauch und minimiert Verschwendung.
+\end{itemize}
+
+\end{tcolorbox}
+
+\subsubsection{Konsistenzstrategie}\label{konsistenzstrategie}
+
+Während sich die Effizienzstrategie auf die Quantität konzentriert
+(Reduzierung des Ressourceneinsatzes bei gleichzeitig gesteigertem
+Output), strebt die Konsistenzstrategie (vom Lateinischen con = zusammen
++ sistere = stehenbleiben) danach, Natur und Technik in Einklang zu
+bringen, indem Ressourcen wiederholt statt nur einmal genutzt werden.
+
+Anstelle von fossilen Ressourcen, Produkten und Technologien setzt sie
+auf Materialien, die mit natürlichen Stoffkreisläufen und Prozessen
+kompatibel sind. Auch als „Öko-Effektivität`` bezeichnet, folgt dieses
+Konzept dem Prinzip „cradle to cradle`` statt „cradle to grave`` und
+basiert auf der Idee, dass intelligente Systeme ausschliesslich
+Produkte, nicht aber Abfälle erzeugen.
+
+Dies kann auf zwei Wegen erreicht werden:
+
+Materialien können biologisch abbaubar sein (z.B. ein Shampoo aus
+natürlichen Inhaltsstoffen).
+
+Oder sie werden so gestaltet, dass sie als „technische Nährstoffe`` im
+technischen Kreislauf verbleiben. Das bedeutet, dass ein ausgedientes
+Produkt nicht im Müll landet, sondern in den nächsten Nutzungskreislauf
+eintritt, etwa durch Upcycling (z.B. die Wiederverwendung eines
+Computergehäuses als Regal).
+
+Wie die Effizienzstrategie beginnt auch die Konsistenzstrategie mit der
+Optimierung von Produktionsprozessen. Viele sehen in ihr ein grösseres
+Potenzial als in der Effizienzstrategie, sowohl hinsichtlich der
+Problemlösung als auch für tiefgreifende Veränderungen.
+
+Manche Autor:innen sehen jedoch die Anwendbarkeit der Theorie als
+begrenzt. So argumentieren Gerolf Hanke und Benjamin West (2013), dass
+sie nicht auf alle Güter gleichermaßen übertragbar ist und die Umsetzung
+erhebliche Investitionen in Produktionsanlagen und Logistik erfordern
+würde. Zudem weisen sie darauf hin, dass Recyclingprozesse selbst mit
+einem erhöhten Energieverbrauch verbunden sind -- im Einklang mit dem
+Entropiegesetz: \textgreater{} ``Jeder materielle Wirtschaftsprozess hat
+eine Zunahme der Entropie zufolge, d.h. grob vereinfacht, dass sich die
+Elemente auf der stofflichen Ebene immer gleichmässiger verteilen, was
+letztlich nur bedeutet, dass die Dinge und auch die Körper sich abnutzen
+und eine erneute Konzentration einen immer höherer Energieaufwand
+benötigt.'' Hanke \& West 2013
+
+Ein besonderes Merkmal des Erdsystems ist die Sonnenenergie, die von
+aussen kontinuierlich zugeführt wird und dem Anstieg der Entropie auf
+der Erde entgegenwirkt. Dennoch wird für die Herstellung von
+Energieerzeugungssystemen -- wie Biokraftstoffanlagen, Solarzellen,
+Batterien für Elektroautos und Windkraftanlagen -- weiterhin sogenannte
+\textbf{graue Energie} benötigt. Konsistenzstrategien können hier
+Anreize für die Industrie schaffen, den Ressourcenverbrauch und die
+Emissionen bei der Herstellung und Nutzung solcher Systeme zu senken.
+
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, breakable, left=2mm, colback=white, leftrule=.75mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, toprule=.15mm, titlerule=0mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Umsetzung der Konsistenzstrategie: Beispiele}, colframe=quarto-callout-tip-color-frame, bottomtitle=1mm, opacityback=0, arc=.35mm, toptitle=1mm, rightrule=.15mm, coltitle=black]
+
+\begin{itemize}
+\tightlist
+\item
+  Erneuerbare Energiesysteme: Der Übergang von fossilen Brennstoffen zu
+  erneuerbaren Energiequellen wie Sonnenenergie, Windenergie und
+  Wasserkraft sorgt dafür, dass die Energieproduktion im Einklang mit
+  den natürlichen Rhythmen und Kreisläufen der Umwelt erfolgt.
+\item
+  Kreislauffähige Elektronik: Elektronische Geräte werden so konzipiert,
+  dass sie leicht repariert, aufgerüstet und recycelt werden können, um
+  den Ressourcenverbrauch und die Umweltbelastung zu minimieren.
+\item
+  Nachhaltige Bauweise: Beim Bau von Gebäuden werden nachhaltige
+  Materialien eingesetzt, die geringe Umweltauswirkungen haben und nach
+  Ende der Nutzungsdauer wiederverwendet oder recycelt werden können.
+\end{itemize}
+
+\end{tcolorbox}
+
+\subsubsection{Suffizienzstrategie}\label{suffizienzstrategie}
+
+Das Konzept der Suffizienz, abgeleitet vom lateinischen \emph{sufficere}
+(„ausreichen``), hinterfragt unsere Annahmen darüber, wie viel wir für
+ein gutes Leben wirklich brauchen. Es fördert eine Reduktion des
+Ressourcen- und Energieverbrauchs, indem es die Nachfrage nach
+ressourcenintensiven Gütern und Dienstleistungen verringert. Suffizienz,
+die auch als \textbf{Genügsamkeit} oder \textbf{Angemessenheit}
+beschrieben werden kann, übt Kritik an der ständigen Erzeugung neuer
+Bedürfnisse durch Technologie und Werbung angesichts begrenzter
+natürlicher Ressourcen. Sie fordert uns auf, nicht jedem neu
+geschaffenen Bedürfnis nachzujagen und unsere Bedürfnisse auch ohne
+Konsum zu erfüllen.
+
+Während Effizienz- und Konsistenzstrategien vor allem die Produktion in
+den Blick nehmen, richtet sich die Suffizienzstrategie auf den Konsum --
+wenn auch nicht ausschliesslich. Sie kann in unterschiedlichem Mass und
+auf verschiedenen Ebenen praktiziert werden: von kleinen
+Verhaltensänderungen (z.B. Teilen statt Kaufen) bis hin zu
+tiefgreifenden Veränderungen des Lebensstils (z.B. Verzicht auf
+Flugreisen). Auch wenn sie beim Individuum ansetzt, lässt sich
+Suffizienz auf weiteren Ebenen umsetzen, etwa durch Unternehmen
+(suffizienzorientierte Produktgestaltung) oder Regierungen
+(Suffizienzpolitiken). Damit sucht die Suffizienzstrategie nach dem
+richtigen Gleichgewicht: \textbf{Wie viel brauchen wir für ein gutes
+Leben -- und was brauchen wir nicht?}
+
+Kritiker:innen sehen in der Suffizienzstrategie nur begrenztes Potenzial
+und halten sie für schwer breit gesellschaftlich verankerbar.
+Befürworter:innen dagegen betrachten sie als entscheidend für eine
+nachhaltige Politik, insbesondere dort, wo Effizienz- und
+Konsistenzstrategien an ihre Grenzen stossen. Das Konzept der
+Postwachstumsökonomie greift die Prinzipien der Suffizienzstrategie auf.
+
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, breakable, left=2mm, colback=white, leftrule=.75mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, toprule=.15mm, titlerule=0mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Umsetzung der Suffizienzstrategie: Beispiele}, colframe=quarto-callout-tip-color-frame, bottomtitle=1mm, opacityback=0, arc=.35mm, toptitle=1mm, rightrule=.15mm, coltitle=black]
+
+\begin{itemize}
+\item
+  Plattformen und Initiativen zum Teilen und gemeinschaftlichen Nutzen
+  von Gegenständen, Werkzeugen oder Fahrzeugen ermöglichen eine
+  effizientere Nutzung von Ressourcen und verringern die Anzahl
+  hergestellter Produkte.
+\item
+  Eine überwiegend pflanzliche Ernährung senkt den Ressourcenverbrauch,
+  insbesondere von Wasser und Land, im Vergleich zur Fleischproduktion.
+\item
+  Die Reduktion der Arbeitszeit kann zu einem geringeren
+  Ressourcenverbrauch führen, da für die Produktion von Gütern und
+  Dienstleistungen weniger Energie und Materialien benötigt werden.
+\item
+  Lokaler Konsum, etwa durch die Unterstützung regionaler Produzenten
+  und Märkte, hilft, Transportwege und Emissionen zu reduzieren.
+\end{itemize}
+
+\end{tcolorbox}
+
+\subsubsection{Rebound-Effekte: Die Kehrseite der
+Effizienz}\label{rebound-effekte-die-kehrseite-der-effizienz}
+
+ABBILDUNG un ZITAT
+
+Kritiker:innen des Effizienzprinzips warnen vor dem Rebound-Effekt, auch
+bekannt als Jevons-Paradoxon (Jevons 1865/1965). Dieses Phänomen tritt
+auf, wenn Effizienzsteigerungen zu niedrigeren Preisen für Güter und
+Dienstleistungen führen, dadurch die Nachfrage steigt und die
+anfänglichen Einsparungen beim Ressourcenverbrauch wieder aufgehoben
+werden.
+
+Ein einfaches Beispiel: Werden Personenkraftwagen durch
+Effizienzverbesserungen günstiger, entscheiden sich Käufer:innen beim
+nächsten Autokauf möglicherweise für ein grösseres Modell. Zudem ist ein
+kraftstoffeffizientes Auto im Betrieb günstiger, da es weniger
+Treibstoff pro Kilometer benötigt. Dies motiviert viele Menschen,
+häufiger oder längere Strecken mit dem Auto zu fahren und öffentliche
+Verkehrsmittel oder das Fahrrad seltener zu nutzen. Dadurch werden die
+technisch möglichen Effizienzgewinne in der Praxis oft nicht realisiert,
+weil das Produkt häufiger oder intensiver genutzt wird (direkter
+Rebound).
+
+Darüber hinaus kann es zu weiteren Verhaltensänderungen kommen, die die
+Umwelt belasten (indirekter Rebound). Im Beispiel könnte das durch die
+Effizienz eingesparte Geld etwa für Flugreisen ausgegeben werden -- was
+wiederum einen Teil der Umweltvorteile zunichtemacht.
+
+ABBILDUNG
+
+Um den \textbf{Rebound-Effekt} zu verstehen, fokussiert sich die
+Literatur auf drei zentrale Bereiche: \textbf{1) finanzielle Faktoren,
+2) sozio-psychologische Einflüsse und 3) regulatorische Effekte}.
+
+\textbf{1) Finanzielle Faktoren} sind eine Hauptursache des
+Rebound-Effekts. Wenn Effizienz zu Kosteneinsparungen führt, werden
+finanzielle Mittel freigesetzt. Dies kann dazu führen, dass Menschen
+entweder \textbf{mehr vom gleichen Produkt konsumieren} (direkter
+Rebound-Effekt) oder in \textbf{andere Produkte investieren} (indirekter
+Rebound-Effekt). Der finanzielle Rebound-Effekt kann auf mehreren
+Mechanismen beruhen: dem \textbf{Einkommenseffekt}, bei dem
+Effizienzsteigerungen reale Einkommensgewinne bewirken, dem
+\textbf{Reinvestitionseffekt}, wenn Unternehmen Kosteneinsparungen zur
+Ausweitung der Produktion oder für Investitionen in andere Produkte
+nutzen, und dem \textbf{Marktpreiseffekt}, bei dem sinkende Nachfrage in
+einem Sektor (z.\,B. effizientere Autos führen zu weniger
+Kraftstoffbedarf) zu niedrigeren Preisen und dadurch zu steigender
+Nachfrage in anderen energieintensiven Sektoren führt. Das Ausmass
+dieses Effekts hängt von Faktoren wie Preiselastizität und
+Konsumverhalten ab und kann sich vom individuellen bis auf
+makroökonomische Ebene kumulieren.
+
+\textbf{2) Sozio-psychologische Einflüsse} umfassen das „mentale
+Buchführen`` von Konsument:innen. Wer ein effizientes Produkt kauft,
+„erlaubt`` sich möglicherweise, \textbf{mehr zu konsumieren}.
+Effizienzsteigerungen bei Produkten, die zuvor als umweltschädlich
+galten, können so paradoxerweise zu \textbf{steigendem Konsum} führen
+(bekannt als \textbf{Moral-Hazard-Effekt}). Wenn dieser Mehrkonsum nicht
+bewusst-rational erfolgt, spricht man vom \textbf{Moral-Leaking-Effekt}
+-- etwa wenn man nach dem Kauf eines sparsamen Autos mehr fährt, weil
+der Kauf allein schon als umweltfreundlich empfunden wird. Der
+\textbf{indirekte Rebound-Effekt} lässt sich ebenfalls durch solche
+Mechanismen erklären: Der \textbf{Moral-Licensing-Effekt} beschreibt,
+dass der Kauf eines ressourceneffizienten Produkts als Rechtfertigung
+für einen \textbf{höheren Konsum in anderen Bereichen} dient, z.\,B.
+häufigere Flugreisen nach dem Kauf eines sparsamen Autos.
+
+\textbf{3) Regulatorische Effekte} entstehen, wenn staatliche
+Vorschriften oder Anreize für effiziente Technologien
+\textbf{unerwünschte Nebenwirkungen} haben. Wenn Menschen durch
+Förderungen dazu ermutigt werden, grosse Elektrogeräte zu kaufen, kann
+dies dazu führen, dass häufiger neue Geräte angeschafft werden -- selbst
+wenn diese effizienter sind, hebt dies einen Teil der Energieeinsparung
+auf. Zudem führen neue Effizienztechnologien oft zu \textbf{zusätzlichen
+Kapazitäten und Infrastrukturen}, die neue Märkte schaffen (z.\,B.
+Windkraftanlagen mit neuen Infrastrukturen und Arbeitsplätzen, aber auch
+erheblichem Ressourcenverbrauch). Auch kommt es vor, dass
+Konsument:innen \textbf{alte Produkte nach dem Kauf effizienter Geräte
+weiter nutzen}, was den Gesamtverbrauch erhöht (Santarius 2012).
+
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, breakable, left=2mm, colback=white, leftrule=.75mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, toprule=.15mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Rebound-Effekte}, colframe=quarto-callout-note-color-frame, bottomtitle=1mm, opacityback=0, arc=.35mm, toptitle=1mm, rightrule=.15mm, coltitle=black]
+
+Der \textbf{direkte Rebound-Effekt} tritt auf, wenn verbesserte
+Energieeffizienz den Konsum einer Ressource günstiger macht und die
+Menschen daher mehr davon nutzen. Ein Beispiel: Ein
+kraftstoffeffizienteres Auto ist im Betrieb günstiger, was dazu führen
+kann, dass mehr gefahren wird und so die durch die Effizienzsteigerung
+erzielten Energieeinsparungen teilweise oder vollständig aufgehoben
+werden.
+
+Der \textbf{indirekte Rebound-Effekt} entsteht, wenn Energieeinsparungen
+oder Effizienzgewinne in einem Bereich dazu führen, dass die frei
+gewordenen Ressourcen in einem anderen Bereich genutzt werden. Dadurch
+verringern sich die insgesamt erzielten Einsparungen. Ein Beispiel: Das
+durch energieeffizienteres Wohnen eingesparte Geld wird stattdessen für
+häufigere Flugreisen ausgegeben.
+
+\end{tcolorbox}
+
+\textbf{Wie gross ist der Rebound-Effekt?}
+
+Es ist schwierig, die genaue Grösse des Rebound-Effekts zu bestimmen:
+Empirische Schätzungen variieren stark, abhängig von den verwendeten
+Methoden und den berücksichtigten Effekten. Besonders herausfordernd ist
+es, Rebound-Effekte klar von Wachstums- oder Strukturveränderungen
+abzugrenzen. Auch die Art der angebotenen Produkte und Dienstleistungen
+beeinflusst das Ausmass des Rebound-Effekts.
+
+Ein Beispiel: Wird für den täglichen Arbeitsweg ein sparsameres
+Transportmittel genutzt, etwa ein effizienteres Auto, sinken zwar die
+Kosten, doch bleibt die verfügbare Zeit begrenzt. Man kann also nicht
+beliebig häufiger oder länger pendeln, da ein Tag nur 24 Stunden hat.
+Der Rebound-Effekt ist in diesem Fall relativ gering. Anders sieht es
+bei Freizeitaktivitäten wie Flugreisen aus: Werden die Kosten durch
+effizientere Flugzeuge oder günstigere Preise gesenkt, steigt der
+Anreiz, häufiger zu fliegen -- beispielsweise ein zusätzliches
+Wochenendtrip statt nur einer Reise pro Jahr. Da die Zeit hier weniger
+einschränkend wirkt, kann der zusätzliche Konsum deutlich steigen -- und
+damit auch der Rebound-Effekt.
+
+Eine weitere wichtige Komponente ist der \textbf{Sättigungsgrad mit
+Gütern und Dienstleistungen}. Beobachtungen zeigen, dass Rebound-Effekte
+in \textbf{Hochlohnländern} tendenziell geringer ausfallen als in
+Entwicklungsländern, wo noch ein erheblicher Bedarf an zusätzlichem
+Konsum besteht.
+
+So können direkte Rebound-Effekte bei Effizienzverbesserungen im Bereich
+\textbf{Raumheizung} dazu führen, dass 10--30\% weniger Energie
+eingespart werden als technisch möglich wäre (z.B. Hediger et al.,
+2018). Die Rebound-Effekte im \textbf{Transportsektor} variieren noch
+stärker: Laut Anderson et al.~(2019) könnten sie die potenziellen
+Einsparungen bei privater Mobilität in Dänemark um 7,5\%, in Schweden um
+30\% und in Deutschland um 60\% reduzieren. Studien zur
+\textbf{Beleuchtung in Privathaushalten} zeigen dagegen sehr niedrige
+Rebound-Effekte von unter 10\% (Sorrell, 2007). Im Durchschnitt können
+die tatsächlichen Energieeinsparungen für diese Dienstleistungen also
+bis zu 25\% unter dem technisch möglichen und prognostizierten Niveau
+liegen. Das genaue Ausmass des Rebound-Effekts hängt jedoch stark vom
+jeweiligen Kontext ab und kann durch geeignete Massnahmen reduziert
+werden.
+
+In seltenen Fällen können die Einsparungen sogar
+\textbf{überkompensiert} werden -- dieser Effekt wird als
+\textbf{„Backfire``} bezeichnet. Dabei handelt es sich jedoch um eine
+Ausnahme, und der Backfire-Effekt ist kein reiner Rebound-Effekt, da er
+mit Wachstums- und Strukturveränderungen verbunden ist. Ein gutes
+Beispiel hierfür ist die \textbf{Digitalisierung}, die kurz- und
+mittelfristig zu Backfire-Effekten führen kann (Peng et al., 2023).
+
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, breakable, left=2mm, colback=white, leftrule=.75mm, colbacktitle=quarto-callout-caution-color!10!white, bottomrule=.15mm, toprule=.15mm, titlerule=0mm, title=\textcolor{quarto-callout-caution-color}{\faFire}\hspace{0.5em}{(Reflexions)übungen und Beispiele}, colframe=quarto-callout-caution-color-frame, bottomtitle=1mm, opacityback=0, arc=.35mm, toptitle=1mm, rightrule=.15mm, coltitle=black]
+
+Im Selbstlernmodul ``FOKUS Onlinekurs \emph{Grundlagen Nachhaltiger
+Entwicklung}'' finden Sie Reflexionsübungen, illustrative Beispiele
+sowie Selbsttests zu den unterschiedlichen Nachhaltigkeitsmodellen und
+Nachhaltigkeitsstrategien.
+
+\end{tcolorbox}
+
+
+
+
+\end{document}
