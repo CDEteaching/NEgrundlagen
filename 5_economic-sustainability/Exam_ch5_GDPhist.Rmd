@@ -1,0 +1,31 @@
+Question
+========
+Warum sind Volkswirtschaften (gemessen am BIP pro Kopf) vor dem 19. Jahrhundert nicht wesentlich gewachsen?
+(Mehr als eine Antwort kann richtig sein.)
+
+Answerlist
+----------
+* Die wirtschaftliche Produktion war weitgehend durch die Verfügbarkeit von Land und natürlichen Ressourcen begrenzt.
+* Die meisten Gesellschaften waren agrarisch geprägt, mit geringer Produktivität und wenig technologischer Innovation.
+* Globaler Handel und Industrialisierung hatten sich noch nicht in grossem Massstab entwickelt.
+* Regierungen schränkten das Wirtschaftswachstum gezielt ein, um Inflation zu vermeiden.
+
+
+Solution
+========
+Vor dem 19. Jahrhundert waren die meisten Volkswirtschaften durch agrarische Produktionssysteme mit geringer Produktivität und langsamem technologischem Wandel geprägt. Die wirtschaftliche Leistung war stark durch die Verfügbarkeit von Land und natürlichen Ressourcen begrenzt, und eine grossflächige Industrialisierung sowie globaler Handel hatten sich noch nicht entwickelt. Es gibt keine historischen Belege dafür, dass Regierungen das Wachstum systematisch einschränkten, um Inflation zu verhindern.
+
+Answerlist
+----------
+* True
+* True
+* True
+* False
+
+
+Meta-information
+================
+exname: Vorindustrielles Wirtschaftswachstum
+extype: mchoice
+exsolution: 1110
+exshuffle: 4

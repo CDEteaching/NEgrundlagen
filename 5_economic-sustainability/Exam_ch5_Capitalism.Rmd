@@ -1,0 +1,33 @@
+Question
+========
+Welche der folgenden Aussagen beschreiben den Kapitalismus korrekt als Ausgangspunkt für die Analyse wirtschaftlicher Nachhaltigkeitsfragen?
+(Mehr als eine Aussage kann richtig sein.)
+
+Answerlist
+----------
+* Viele gegenwärtige Nachhaltigkeitsherausforderungen wie Klimawandel und soziale Ungleichheit sind mit den strukturellen Dynamiken des modernen globalen Kapitalismus verknüpft.
+* Kapitalismus wird als historisch gewachsenes wirtschaftliches und gesellschaftliches System betrachtet, nicht als natürliche oder universelle Form der Wirtschaftsorganisation.
+* Die kapitalistische Produktionsweise ist gekennzeichnet durch die Trennung von Kapital und Arbeit, Privateigentum an den Produktionsmitteln und Gewinnmaximierung.
+* Nachhaltigkeitstransformationen lassen sich erreichen, ohne die zugrunde liegenden wirtschaftlichen Strukturen zu untersuchen, da Umweltprobleme weitgehend isolierte Phänomene sind.
+* Die Industrielle Revolution spielte eine Schlüsselrolle bei der Konsolidierung des Kapitalismus durch technologische Innovation, den Einsatz fossiler Energie und Massenproduktion.
+
+
+Solution
+========
+Aus einer systemischen Perspektive werden Nachhaltigkeitsherausforderungen als Ausdruck der strukturellen Dynamiken des globalen Kapitalismus verstanden und nicht als isolierte Probleme. Kapitalismus gilt als ein historisch spezifisches wirtschaftliches und gesellschaftliches System, das durch bestimmte institutionelle Entwicklungen entstand und sich während der Industriellen Revolution konsolidierte. Zu seinen Kernmerkmalen zählen die Trennung von Kapital und Arbeit, Privateigentum an den Produktionsmitteln und die Ausrichtung auf Gewinnmaximierung. Werden diese Strukturen ignoriert, schränkt dies die Fähigkeit ein, Nachhaltigkeitsherausforderungen wirksam zu begegnen.
+
+Answerlist
+----------
+* True
+* True
+* True
+* False
+* True
+
+
+Meta-information
+================
+exname: Kapitalismus und Nachhaltigkeitsherausforderungen
+extype: mchoice
+exsolution: 11101
+exshuffle: 5

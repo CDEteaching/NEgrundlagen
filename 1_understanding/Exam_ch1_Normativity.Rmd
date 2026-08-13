@@ -1,0 +1,28 @@
+Question
+========
+Was ist Normativität?
+
+Answerlist
+----------
+* Bezieht sich darauf, wie die Dinge gegenwärtig sind
+* Bezieht sich auf Werte und moralisch begründete Vorstellungen davon, was getan werden sollte und wie die Dinge sein sollten
+* Bedeutet, dass Handlungen auf gemeinsam vereinbarten Gesetzen und Normen beruhen sollten
+
+
+Solution
+========
+Normativität bezieht sich auf Werte, Normen und moralisch begründete Vorstellungen davon, was getan werden sollte und wie die Dinge sein sollten, anstatt zu beschreiben, wie die Dinge gegenwärtig sind.
+
+Answerlist
+----------
+* False
+* True
+* False
+
+
+Meta-information
+================
+exname: Normativität
+extype: schoice
+exsolution: 010
+exshuffle: 3

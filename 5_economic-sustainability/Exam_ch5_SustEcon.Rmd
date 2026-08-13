@@ -1,0 +1,37 @@
+Question
+========
+Welche der folgenden Aussagen beschreiben die Idee einer nachhaltigen Wirtschaft mit wachstumsunabhängigen Wirtschaftsbereichen korrekt?
+(Mehr als eine Aussage kann richtig sein.)
+
+Answerlist
+----------
+* Viele Kerninstitutionen wie Rentensysteme, Arbeitsmärkte und öffentliche Finanzen sind gegenwärtig strukturell vom Wirtschaftswachstum abhängig.
+* Die Gestaltung wachstumsunabhängiger Institutionen erfordert, Sozialsysteme und öffentliche Finanzen vom BIP-Wachstum zu entkoppeln und die politische Fixierung auf Wachstum infrage zu stellen.
+* Suffiziente Lebensstile konzentrieren sich ausschliesslich auf individuellen Konsumverzicht und beinhalten keine Veränderungen bei Infrastruktur oder Produktionssystemen.
+* Commons, Genossenschaften und solidarische Produktionsformen gelten als Wege, Resilienz, sozialen Zusammenhalt und ökologische Verantwortung zu stärken.
+* Eine sorgende Wirtschaft betont die systematische Aufwertung von Sorge- und Reproduktionsarbeit als Grundlage wirtschaftlicher Tätigkeit.
+* Die Überwindung der „imperialen Lebensweise" beinhaltet, globale Machtverhältnisse und die Externalisierung sozialer und ökologischer Kosten in den Globalen Süden infrage zu stellen.
+* Eine nachhaltige Wirtschaftstransformation lässt sich ohne unterstützende steuer-, regulierungs- oder investitionspolitische Rahmenbedingungen erreichen.
+
+
+Solution
+========
+Wachstumsunabhängige Wirtschaftsbereiche zielen darauf ab, die strukturelle Abhängigkeit von Gesellschaften vom kontinuierlichen Wirtschaftswachstum zu verringern. Dies umfasst die Neugestaltung von Institutionen, die Förderung suffizienter Lebensstile durch geeignete Infrastruktur, die Stärkung von Commons-basierten und genossenschaftlichen Produktionsformen sowie die Anerkennung von Sorgearbeit als zentraler Pfeiler wirtschaftlicher Tätigkeit. Aus globaler Perspektive erfordert dies zudem, ungleiche Machtverhältnisse und die Externalisierung von Kosten zu adressieren. Solche Transformationen sind auf unterstützende politische Rahmenbedingungen angewiesen – ohne diese bleiben alternative Wirtschaftspraktiken meist Nischenphänomene.
+
+Answerlist
+----------
+* True
+* True
+* False
+* True
+* True
+* True
+* False
+
+
+Meta-information
+================
+exname: Wachstumsunabhängige Wirtschaftsbereiche
+extype: mchoice
+exsolution: 1101110
+exshuffle: 7

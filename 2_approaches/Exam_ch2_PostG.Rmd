@@ -1,0 +1,31 @@
+Question
+========
+Welche der folgenden Aussagen beschreiben Postwachstumsansätze?
+(Mehr als eine Aussage kann richtig sein.)
+
+Answerlist
+----------
+* Kritik an der Wachstumsabhängigkeit
+* Fokus auf Suffizienz und Wohlbefinden
+* Betonung des BIP-Wachstums
+* Eintreten für strukturellen Wandel
+
+
+Solution
+========
+Postwachstumsansätze stellen die Abhängigkeit moderner Gesellschaften von kontinuierlichem Wirtschaftswachstum kritisch infrage. Sie betonen Suffizienz, Wohlbefinden und Lebensqualität anstelle von BIP-Wachstum und fordern strukturelle Veränderungen der wirtschaftlichen und sozialen Systeme, um nachhaltige und gerechte Zukünfte zu ermöglichen.
+
+Answerlist
+----------
+* True
+* True
+* False
+* True
+
+
+Meta-information
+================
+exname: Postwachstumsansätze
+extype: mchoice
+exsolution: 1101
+exshuffle: 4

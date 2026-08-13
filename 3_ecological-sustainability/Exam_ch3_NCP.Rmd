@@ -1,0 +1,31 @@
+Question
+========
+Welche Merkmale unterscheiden „Naturbeiträge für Menschen (NCP)" von „Ökosystemdienstleistungen"?
+(Mehr als eine Aussage kann richtig sein.)
+
+Answerlist
+----------
+* Umfasst intrinsische und relationale Werte
+* Beruht ausschliesslich auf monetärer Bewertung
+* Integriert indigene Perspektiven
+* Konzentriert sich ausschliesslich auf Versorgungsfunktionen
+
+
+Solution
+========
+Das von IPBES eingeführte Konzept der Naturbeiträge für Menschen (NCP) erweitert das Rahmenwerk der Ökosystemdienstleistungen, indem es ausdrücklich intrinsische und relationale Werte der Natur einbezieht und indigene sowie lokale Wissenssysteme integriert. Es ist weder auf monetäre Bewertung beschränkt, noch konzentriert es sich ausschliesslich auf Versorgungsfunktionen.
+
+Answerlist
+----------
+* True
+* False
+* True
+* False
+
+
+Meta-information
+================
+exname: NCP vs. Ökosystemdienstleistungen
+extype: mchoice
+exsolution: 1010
+exshuffle: 4

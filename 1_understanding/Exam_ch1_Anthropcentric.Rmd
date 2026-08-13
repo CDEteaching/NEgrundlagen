@@ -1,0 +1,31 @@
+Question
+========
+Welche der folgenden Aussagen sind korrekt?
+(Mehr als eine Aussage kann richtig sein.)
+
+Answerlist
+----------
+* Das Konzept der Nachhaltigen Entwicklung ist ein biozentrisches Konzept, weshalb es auch Tierrechte berücksichtigt.
+* Während das Konzept der Nachhaltigen Entwicklung anthropozentrisch ist, ist das Konzept der Ökosystemdienstleistungen biozentrisch.
+* Eine ganze Landschaft zu schützen, weil man sie als Selbstzweck betrachtet, ist eine ausschliesslich biozentrische Perspektive.
+* Pflanzen zu schützen, weil man sie als Selbstzweck betrachtet, ist eine biozentrische Perspektive.
+
+
+Solution
+========
+Biozentrische Perspektiven schreiben der Natur und nichtmenschlichen Lebewesen einen Eigenwert zu, d. h. sie werden als Selbstzweck geschützt. Eine Landschaft oder Pflanzen um ihrer selbst willen zu schützen, spiegelt eine solche biozentrische Sichtweise wider. Im Gegensatz dazu ist Nachhaltige Entwicklung im Allgemeinen anthropozentrisch, und auch das Konzept der Ökosystemdienstleistungen ist anthropozentrisch, da es die Natur anhand ihres Nutzens für den Menschen bewertet.
+
+Answerlist
+----------
+* False
+* False
+* True
+* True
+
+
+Meta-information
+================
+exname: Anthropozentrische vs. biozentrische Perspektiven
+extype: mchoice
+exsolution: 0011
+exshuffle: 4

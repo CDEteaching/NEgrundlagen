@@ -1,0 +1,30 @@
+Question
+========
+Was ist der Hauptkritikpunkt am BIP als Wohlstandsmass?
+
+Answerlist
+----------
+* Es berücksichtigt unbezahlte Arbeit und Umweltschäden.
+* Es misst nur die Wertentwicklung an den Finanzmärkten.
+* Es klammert unbezahlte Arbeit, Ungleichheit und Umweltschäden aus.
+* Es erfasst sowohl Wohlbefinden als auch Glück.
+
+
+Solution
+========
+Das BIP misst den monetären Wert der in einer Wirtschaft produzierten Güter und Dienstleistungen, berücksichtigt jedoch nicht unbezahlte Arbeit, soziale Ungleichheiten oder Umweltschäden. Dadurch liefert es ein begrenztes und möglicherweise irreführendes Bild des allgemeinen Wohlstands und Wohlergehens.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+
+Meta-information
+================
+exname: Kritik am BIP
+extype: schoice
+exsolution: 0010
+exshuffle: 4

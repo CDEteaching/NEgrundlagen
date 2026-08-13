@@ -1,0 +1,30 @@
+Question
+========
+Was ist die „Grosse Beschleunigung"?
+
+Answerlist
+----------
+* Ein rascher Anstieg des globalen Ressourcenverbrauchs nach dem Ersten Weltkrieg
+* Das exponentielle Wachstum sozioökonomischer und Erdsystem-Trends, das Mitte des 20. Jahrhunderts einsetzte
+* Der plötzliche Rückgang der Biodiversität zu Beginn des 21. Jahrhunderts
+* Der rasche Rückgang der Industrialisierung in den 1960er-Jahren
+
+
+Solution
+========
+Die „Grosse Beschleunigung" bezeichnet den raschen und exponentiellen Anstieg sozioökonomischer Aktivitäten (wie Bevölkerungswachstum, Industrialisierung und Ressourcenverbrauch) sowie die entsprechenden Veränderungen der Erdsystemprozesse, die etwa Mitte des 20. Jahrhunderts einsetzten.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: Grosse Beschleunigung
+extype: schoice
+exsolution: 0100
+exshuffle: 4

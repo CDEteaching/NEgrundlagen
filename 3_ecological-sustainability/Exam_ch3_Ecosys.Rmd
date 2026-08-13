@@ -1,0 +1,39 @@
+Question
+========
+Welche der folgenden Aussagen zum Konzept der Ökosystemdienstleistungen sind korrekt?
+(Mehr als eine Aussage kann richtig sein.)
+
+Answerlist
+----------
+* Das Konzept der Ökosystemdienstleistungen ist ein Mass für Biodiversität und damit auch ein Mass für die Resilienz eines Ökosystems.
+* Das Konzept der Ökosystemdienstleistungen bezeichnet die direkten und indirekten Vorteile, die Menschen aus Ökosystemen ziehen.
+* Das Konzept der Ökosystemdienstleistungen bezeichnet die jährliche Biomasseanhäufung innerhalb eines Ökosystems, gemessen in Kilojoule.
+* Es lassen sich vier Arten von Ökosystemdienstleistungen unterscheiden: Regulierungsdienstleistungen, Versorgungsdienstleistungen, kulturelle Dienstleistungen und Unterstützungsdienstleistungen.
+* Das Konzept der Ökosystemdienstleistungen umfasst alle Massnahmen, die Menschen zur Erhaltung von Ökosystemen ergreifen.
+* Im Gegensatz zum Konzept der Nachhaltigen Entwicklung ist das Konzept der Ökosystemdienstleistungen nicht anthropozentrisch, sondern ökozentrisch.
+* Es lassen sich drei Arten von Ökosystemdienstleistungen unterscheiden: Vermeidungs-, Verbesserungs- und Verlagerungsdienstleistungen.
+* Der Begriff „Ökosystemdienstleistungen" ist ein wissenschaftlicher Begriff, der die Zusammenkünfte naturbezogener Religionen (sogenannter Naturreligionen) wie des Animismus beschreibt, bei denen die Natur als Ganzes verehrt wird.
+
+
+Solution
+========
+Das Konzept der Ökosystemdienstleistungen bezeichnet die direkten und indirekten Vorteile, die Menschen aus Ökosystemen ziehen, und ist damit ausdrücklich anthropozentrisch. Eine gängige Klassifikation unterscheidet vier Arten von Ökosystemdienstleistungen: Versorgungs-, Regulierungs-, kulturelle und Unterstützungsdienstleistungen. Die übrigen Aussagen verwechseln Ökosystemdienstleistungen mit Biodiversitätsmassen, ökologischen Produktivitätsmassen, Schutzmassnahmen, alternativen Klassifikationen oder unverwandten kulturellen bzw. religiösen Konzepten.
+
+Answerlist
+----------
+* False
+* True
+* False
+* True
+* False
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: Ökosystemdienstleistungen
+extype: mchoice
+exsolution: 01010000
+exshuffle: 8

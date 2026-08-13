@@ -1,0 +1,35 @@
+Question
+========
+Welche der folgenden Aussagen beschreiben Landnutzungsveränderungen und verwandte Konzepte korrekt?
+(Mehr als eine Aussage kann richtig sein.)
+
+Answerlist
+----------
+* Landbedeckung bezeichnet die physischen und biologischen Eigenschaften der Landoberfläche, einschliesslich Vegetation, Topographie und menschlicher Bauwerke.
+* Landnutzung beschreibt, wie Menschen die Landbedeckung nutzen, beispielsweise für Landwirtschaft, Siedlung oder Infrastruktur.
+* Landnutzungsveränderung bezeichnet ausschliesslich Veränderungen der Landbedeckung, unabhängig von menschlichen Aktivitäten.
+* Landnutzungsveränderungen können Biodiversität, Ökosystemfunktionen und Ökosystemdienstleistungen negativ beeinflussen und dadurch das menschliche Wohlergehen einschränken.
+* Landdegradation bezeichnet die Verringerung oder den Verlust der biologischen oder wirtschaftlichen Produktivität von Land infolge von Landnutzung, insbesondere in Trockengebieten.
+* Landsysteme beschreiben ausschliesslich ökologische Prozesse und schliessen soziale, wirtschaftliche und technologische Faktoren aus.
+
+
+Solution
+========
+Landbedeckung beschreibt die biophysikalischen Eigenschaften der Landoberfläche, während Landnutzung bezeichnet, wie Menschen dieses Land nutzen. Landnutzungsveränderung umfasst den Wechsel von einer Landnutzungsart zu einer anderen und ist eng mit menschlichen Aktivitäten verknüpft. Solche Veränderungen können die Biodiversität bedrohen, Ökosystemfunktionen stören, Treibhausgasemissionen erhöhen und Ökosystemdienstleistungen verringern, was wiederum das menschliche Wohlergehen beeinträchtigt. Landdegradation erfasst den Verlust der Landproduktivität infolge von Landnutzung, und Landsysteme integrieren ausdrücklich soziale, wirtschaftliche, technologische und ökologische Dimensionen.
+
+Answerlist
+----------
+* True
+* True
+* False
+* True
+* True
+* False
+
+
+Meta-information
+================
+exname: Landnutzungsveränderungen und verwandte Konzepte
+extype: mchoice
+exsolution: 110110
+exshuffle: 6

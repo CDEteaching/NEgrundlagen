@@ -1,0 +1,30 @@
+Question
+========
+Was unterscheidet „starke" von „schwacher" Nachhaltigkeit?
+
+Answerlist
+----------
+* Starke Nachhaltigkeit erlaubt die vollständige Substitution von Naturkapital.
+* Schwache Nachhaltigkeit schränkt jegliche technologische Innovation ein.
+* Starke Nachhaltigkeit verlangt, Naturkapital als nicht substituierbar zu erhalten.
+* Beide Konzepte bedeuten dasselbe.
+
+
+Solution
+========
+Starke Nachhaltigkeit geht davon aus, dass bestimmte ökologische Funktionen und Naturkapitalbestände kritisch sind und nicht durch von Menschen geschaffenes oder technologisches Kapital ersetzt werden können, während schwache Nachhaltigkeit eine solche Substitution zulässt.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+
+Meta-information
+================
+exname: Starke vs. schwache Nachhaltigkeit
+extype: schoice
+exsolution: 0010
+exshuffle: 4

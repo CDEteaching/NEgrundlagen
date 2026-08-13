@@ -1,0 +1,33 @@
+Question
+========
+Welche der folgenden Aussagen beschreiben verschiedene Typen von Wirtschaftssystemen und ihre Eigentums- und Koordinationsformen korrekt?
+(Mehr als eine Aussage kann richtig sein.)
+
+Answerlist
+----------
+* In einer kapitalistischen Marktwirtschaft erfolgt die Koordination weitgehend dezentral über Märkte, und die Produktionsmittel befinden sich überwiegend in Privatbesitz.
+* In einer sozialistischen, zentralisierten Wirtschaft werden Produktion und Verteilung hauptsächlich durch staatliche Planung koordiniert, und die Produktionsmittel befinden sich in der Regel im öffentlichen Eigentum.
+* Gemischte Wirtschaftssysteme verbinden Privateigentum mit staatlichen Eingriffen, um Märkte zu regulieren und soziale Gerechtigkeit zu fördern.
+* Gemeinschaftsbasierte Netzwerke und Commons-Wirtschaften beruhen in erster Linie auf zentralisierter staatlicher Kontrolle und Privateigentum.
+* Das Konzept der „Spielarten des Kapitalismus" hebt hervor, dass kapitalistische Systeme im Laufe der Zeit und über Länder hinweg unterschiedliche institutionelle Formen angenommen haben.
+
+
+Solution
+========
+Wirtschaftssysteme unterscheiden sich darin, wie Eigentum und Koordination organisiert sind. Kapitalistische Marktwirtschaften beruhen auf dezentraler Marktkoordination und Privateigentum, während sozialistische Wirtschaften durch zentralisierte staatliche Planung und öffentliches Eigentum gekennzeichnet sind. Gemischte Wirtschaftssysteme verbinden Marktmechanismen mit staatlichen Eingriffen, um Marktversagen zu begegnen und soziale Ziele zu fördern. Gemeinschafts- und Commons-basierte Wirtschaftsformen betonen Selbstorganisation und Gemeinschaftseigentum statt zentralisierter Kontrolle. Das Konzept der „Spielarten des Kapitalismus" erfasst die Vielfalt kapitalistischer Modelle, die sich historisch entwickelt haben.
+
+Answerlist
+----------
+* True
+* True
+* True
+* False
+* True
+
+
+Meta-information
+================
+exname: Wirtschaftssysteme und Koordination
+extype: mchoice
+exsolution: 11101
+exshuffle: 5

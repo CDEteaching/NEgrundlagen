@@ -1,0 +1,30 @@
+Question
+========
+Was versteht man unter Gewinnmaximierung?
+
+Answerlist
+----------
+* Unternehmen streben an, zum niedrigstmöglichen Preis zu verkaufen.
+* Unternehmen streben die höchstmögliche Rendite auf ihre Investitionen an.
+* Unternehmen konzentrieren sich auf soziales Wohlergehen.
+* Unternehmen investieren ausschliesslich in öffentliche Güter.
+
+
+Solution
+========
+Gewinnmaximierung bezeichnet das Ziel von Unternehmen, die Differenz zwischen Einnahmen und Kosten zu maximieren und dadurch die höchstmögliche Rendite auf ihre Investitionen zu erzielen. Sie zielt weder in erster Linie auf Preisminimierung noch auf die Förderung sozialen Wohlergehens oder ausschliessliche Investitionen in öffentliche Güter ab.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: Gewinnmaximierung
+extype: schoice
+exsolution: 0100
+exshuffle: 4

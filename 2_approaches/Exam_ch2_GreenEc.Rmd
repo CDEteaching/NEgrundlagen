@@ -1,0 +1,30 @@
+Question
+========
+Welcher Begriff bezeichnet die Entkopplung von Wirtschaftswachstum und Umweltschäden bei gleichzeitiger Wahrung des Wohlstands?
+
+Answerlist
+----------
+* Resilienz
+* Grüne Wirtschaft
+* Doppelte Entkopplung
+* Planetare Grenzen
+
+
+Solution
+========
+Das Konzept der Grünen Wirtschaft bezeichnet ein Wirtschaftsmodell, das Wirtschaftswachstum und menschliches Wohlergehen bei gleichzeitiger Verringerung von Umweltrisiken und ökologischer Knappheit anstrebt und damit Wohlstand von Umweltschäden entkoppelt.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: Grüne Wirtschaft
+extype: schoice
+exsolution: 0100
+exshuffle: 4

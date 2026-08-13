@@ -1,0 +1,31 @@
+Question
+========
+Welche der folgenden sind direkte Treiber des Biodiversitätsverlusts?
+(Mehr als eine Aussage kann richtig sein.)
+
+Answerlist
+----------
+* Landnutzungsveränderungen
+* Umweltverschmutzung
+* Klimawandel
+* Wirtschaftspolitik
+
+
+Solution
+========
+Direkte Treiber des Biodiversitätsverlusts sind Faktoren, die unmittelbar auf Ökosysteme und Arten einwirken. Dazu gehören Landnutzungsveränderungen (z. B. Zerstörung von Lebensräumen), Umweltverschmutzung und Klimawandel. Wirtschaftspolitik hingegen gilt als indirekter Treiber, da sie den Biodiversitätsverlust über sozioökonomische Wirkungspfade beeinflusst und nicht durch direkten ökologischen Druck.
+
+Answerlist
+----------
+* True
+* True
+* True
+* False
+
+
+Meta-information
+================
+exname: Treiber des Biodiversitätsverlusts
+extype: mchoice
+exsolution: 1110
+exshuffle: 4

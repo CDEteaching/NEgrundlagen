@@ -1,0 +1,31 @@
+Question
+========
+Welche Aussagen beschreiben den Unterschied zwischen starker und schwacher Nachhaltigkeit korrekt?
+(Mehr als eine Aussage kann richtig sein.)
+
+Answerlist
+----------
+* Bei schwacher Nachhaltigkeit können sich verschiedene Kapitalformen gegenseitig ersetzen.
+* Bei starker Nachhaltigkeit gilt Naturkapital als nicht substituierbar.
+* Schwache Nachhaltigkeit geht davon aus, dass technologische Innovation die Funktionen der Natur vollständig ersetzen kann.
+* Starke Nachhaltigkeit akzeptiert eine unbegrenzte Substitution zwischen Natur- und von Menschen geschaffenem Kapital.
+
+
+Solution
+========
+Schwache Nachhaltigkeit beruht auf der Annahme, dass sich verschiedene Kapitalformen (Natur-, Sach- und Sozialkapital) gegenseitig ersetzen können und dass technologischer Fortschritt den Verlust von Naturkapital kompensieren kann. Starke Nachhaltigkeit hingegen geht davon aus, dass Naturkapital unverzichtbar ist und nicht ersetzt werden kann, ohne irreversible Schäden zu riskieren.
+
+Answerlist
+----------
+* True
+* True
+* True
+* False
+
+
+Meta-information
+================
+exname: Starke vs. schwache Nachhaltigkeit
+extype: mchoice
+exsolution: 1110
+exshuffle: 4

@@ -1,0 +1,30 @@
+Question
+========
+Welche der folgenden gehört NICHT zu den neun planetaren Grenzen, die von Rockström et al. identifiziert wurden?
+
+Answerlist
+----------
+* Klimawandel
+* Ozeanversauerung
+* Globale Finanzstabilität
+* Integrität der Biosphäre
+
+
+Solution
+========
+Das Rahmenwerk der planetaren Grenzen identifiziert biophysikalische Erdsystemprozesse, die die Stabilität und Resilienz des Planeten regulieren. Klimawandel, Ozeanversauerung und die Integrität der Biosphäre sind Teil dieses Rahmenwerks, während globale Finanzstabilität keine planetare Grenze ist.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+
+Meta-information
+================
+exname: Planetare Grenzen – Kein Mitglied
+extype: schoice
+exsolution: 0010
+exshuffle: 4

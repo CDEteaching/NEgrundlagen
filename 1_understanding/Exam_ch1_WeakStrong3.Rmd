@@ -1,0 +1,39 @@
+Question
+========
+Welche der folgenden Aussagen beschreiben schwache Nachhaltigkeit?
+(Mehr als eine Aussage kann richtig sein.)
+
+Answerlist
+----------
+* Ein Unternehmen erfüllt nur seine gesetzlichen Umwelt- und Sozialpflichten.
+* Die Erhaltung der Gesamtsumme aller Kapitalformen von einer Generation zur nächsten.
+* Kapitalformen sind grundsätzlich gegenseitig austauschbar.
+* Steigendes BIP.
+* Die Unersetzbarkeit von durch Menschen geschaffenem Kapital.
+* Die Erhaltung von Naturkapital, wenn dies das menschliche Wohlergehen fördert oder bewahrt.
+* Unzureichender Umweltschutz.
+* Die Bedürfnisse der gegenwärtigen Generation werden gegenüber jenen künftiger Generationen bevorzugt.
+
+
+Solution
+========
+Schwache Nachhaltigkeit konzentriert sich darauf, den Gesamtbestand an Kapital über Generationen hinweg zu erhalten, unter der Annahme, dass sich verschiedene Kapitalformen gegenseitig ersetzen können. Naturkapital wird vor allem insoweit erhalten, als es zum menschlichen Wohlergehen beiträgt, statt als grundsätzlich unersetzbar zu gelten.
+
+Answerlist
+----------
+* False
+* True
+* True
+* False
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: Schwache Nachhaltigkeit
+extype: mchoice
+exsolution: 01100100
+exshuffle: 8

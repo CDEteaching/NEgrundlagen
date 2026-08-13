@@ -1,0 +1,30 @@
+Question
+========
+Wofür steht der innere Ring des Doughnut-Modells?
+
+Answerlist
+----------
+* Die ökologische Decke
+* Der sichere und gerechte Raum für die Menschheit
+* Das soziale Fundament
+* Die planetaren Grenzen
+
+
+Solution
+========
+Im Doughnut-Modell repräsentiert der innere Ring das soziale Fundament, das die minimalen sozialen Standards definiert, die für ein gerechtes und würdevolles Leben aller Menschen notwendig sind.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+
+Meta-information
+================
+exname: Doughnut-Modell – Innerer Ring
+extype: schoice
+exsolution: 0010
+exshuffle: 4

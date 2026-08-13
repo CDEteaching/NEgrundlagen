@@ -1,0 +1,30 @@
+Question
+========
+Welche Aussage definiert „Nachhaltige Entwicklung" gemäss dem Brundtland-Bericht am treffendsten?
+
+Answerlist
+----------
+* Wirtschaftswachstum ohne Umweltschäden
+* Entwicklung, die die Bedürfnisse der Gegenwart befriedigt, ohne die Fähigkeit künftiger Generationen zu gefährden, ihre eigenen Bedürfnisse zu befriedigen
+* Die Verbesserung des Lebensstandards durch Industrialisierung
+* Die Senkung der CO₂-Emissionen um 50% bis 2030
+
+
+Solution
+========
+Der Brundtland-Bericht (1987) definiert Nachhaltige Entwicklung als eine Entwicklung, die die Bedürfnisse der Gegenwart befriedigt, ohne die Fähigkeit künftiger Generationen zu gefährden, ihre eigenen Bedürfnisse zu befriedigen.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: Brundtland-Definition
+extype: schoice
+exsolution: 0100
+exshuffle: 4

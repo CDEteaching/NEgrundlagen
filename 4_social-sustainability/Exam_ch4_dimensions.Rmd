@@ -1,0 +1,33 @@
+Question
+========
+Welche der folgenden Aussagen beschreiben zentrale Dimensionen der sozialen Nachhaltigkeit korrekt?
+(Mehr als eine Aussage kann richtig sein.)
+
+Answerlist
+----------
+* Inklusion bezeichnet den Zugang aller Individuen und Gruppen zu wirtschaftlichen, politischen, sozialen und kulturellen Bereichen.
+* Sozialer Zusammenhalt beschreibt ein gemeinsames Zugehörigkeits- und Vertrauensgefühl, das Zusammenarbeit innerhalb von Gemeinschaften ermöglicht.
+* Resilienz bezeichnet die Fähigkeit einer Gemeinschaft oder Gesellschaft, interne oder externe Schocks zu vermeiden, zu absorbieren oder zu bewältigen.
+* Inklusion konzentriert sich in erster Linie auf Wirtschaftswachstum statt auf die Teilhabe am sozialen und politischen Leben.
+* Sozialer Zusammenhalt wird hauptsächlich durch das Fehlen von Vielfalt innerhalb einer Gesellschaft definiert.
+
+
+Solution
+========
+Inklusion betrifft den gleichberechtigten Zugang und die Teilhabe in wirtschaftlichen, politischen, sozialen und kulturellen Bereichen. Sozialer Zusammenhalt betont Vertrauen, Zugehörigkeit und die Fähigkeit von Gruppen, konstruktiv zusammenzuarbeiten. Resilienz beschreibt die Fähigkeit von Gesellschaften oder Gemeinschaften, Schocks wie Umweltveränderungen oder politische Krisen zu bewältigen oder sich an sie anzupassen. Die übrigen Aussagen stellen diese Konzepte falsch dar, indem sie ihren Geltungsbereich einschränken oder ihnen unzutreffende Merkmale zuschreiben.
+
+Answerlist
+----------
+* True
+* True
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: Dimensionen der sozialen Nachhaltigkeit
+extype: mchoice
+exsolution: 11100
+exshuffle: 5

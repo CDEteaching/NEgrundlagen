@@ -1,0 +1,30 @@
+Question
+========
+Welche Strategie zum Aufbau von Resilienz konzentriert sich auf langfristigen systemischen Wandel statt auf unmittelbare Reaktionen auf Schocks?
+
+Answerlist
+----------
+* Bewältigungsstrategien, wie das Zurückgreifen auf Ersparnisse oder soziale Netzwerke.
+* Risikominderung und -reduktion, wie Impfungen oder Schutzinfrastruktur.
+* Transformative Strategien, wie institutionelle Reformen und Veränderungen sozialer Normen.
+* Sofortmassnahmen zur Nothilfe unmittelbar nach einer Katastrophe.
+
+
+Solution
+========
+Transformative Strategien zielen auf eine langfristige Steigerung der Resilienz ab, indem sie weitreichende Reformen oder neue Institutionen einführen. Sie kombinieren typischerweise Elemente der Risikominderung und Bewältigung, gehen aber über kurzfristige Reaktionen hinaus, indem sie zugrunde liegende Verwundbarkeiten adressieren und soziale, institutionelle oder strukturelle Bedingungen verändern.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+
+Meta-information
+================
+exname: Resilienzstrategien
+extype: schoice
+exsolution: 0010
+exshuffle: 4

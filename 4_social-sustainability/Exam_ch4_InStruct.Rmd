@@ -1,0 +1,33 @@
+Question
+========
+Welche der folgenden Aussagen unterscheiden individuelle und strukturelle Ansätze zur Analyse von Ungleichheit korrekt?
+(Mehr als eine Aussage kann richtig sein.)
+
+Answerlist
+----------
+* Analysen individueller Ungleichheit konzentrieren sich auf sozioökonomische Merkmale wie Einkommen, Bildung und Berufsstatus.
+* Analysen individueller Ungleichheit gehen davon aus, dass wirtschaftliche Unterschiede hauptsächlich auf persönliche Eigenschaften und individuellen Einsatz zurückzuführen sind.
+* Strukturelle Ungleichheit wird als Ergebnis des sozialen Rahmens verstanden, z. B. der Position innerhalb der Produktionsweise, sozialer Hierarchien oder der Nationalität.
+* Strukturelle Ansätze zur Ungleichheit orientieren sich eng an der Wohlfahrtsökonomie und dem Konzept der absoluten Ungleichheit.
+* Analysen struktureller Ungleichheit sind mit Konzepten wie Gerechtigkeit, dem Fähigkeitenansatz und relativer Ungleichheit verknüpft.
+
+
+Solution
+========
+Individuelle Ansätze zur Ungleichheit betonen Unterschiede zwischen Einzelpersonen und stützen sich typischerweise auf die Wohlfahrtsökonomie und absolute Ungleichheit, wobei Ungleichheiten weitgehend auf persönliche Eigenschaften und Einsatz zurückgeführt werden. Strukturelle Ansätze hingegen konzentrieren sich auf die sozialen, wirtschaftlichen und politischen Rahmenbedingungen, die ungleiche Ergebnisse prägen, und sind eng mit Konzepten wie Gerechtigkeit, dem Fähigkeitenansatz und relativer Ungleichheit verbunden.
+
+Answerlist
+----------
+* True
+* True
+* True
+* False
+* True
+
+
+Meta-information
+================
+exname: Individuelle vs. strukturelle Ungleichheit
+extype: mchoice
+exsolution: 11101
+exshuffle: 5

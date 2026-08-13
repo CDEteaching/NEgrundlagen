@@ -1,0 +1,33 @@
+Question
+========
+Welche der folgenden Aussagen beschreiben die Wirtschaftswissenschaft als performative Wissenschaft korrekt?
+(Mehr als eine Aussage kann richtig sein.)
+
+Answerlist
+----------
+* Die Wirtschaftswissenschaft beschreibt die soziale Wirklichkeit nicht nur, sondern prägt auch wirtschaftliches Denken, Politik und Praxis.
+* Konzepte wie der Homo oeconomicus, Gewinnmaximierung und Effizienz haben reale wirtschaftliche Institutionen und Politiken beeinflusst.
+* Die Geschichte der Wirtschaftswissenschaft ist auch eine Geschichte ihrer praktischen Auswirkungen auf Märkte, Politiken und gesellschaftliche Strukturen.
+* Die Wirtschaftswissenschaft ist eine rein deskriptive Wissenschaft ohne Einfluss auf politische oder wirtschaftliche Entscheidungen.
+* Alle Definitionen der Wirtschaftswissenschaft sind theorieneutral und unabhängig von zugrunde liegenden Denkschulen.
+
+
+Solution
+========
+Die Wirtschaftswissenschaft hat einen performativen Charakter, da sie aktiv mitgestaltet, wie Gesellschaften wirtschaftliche Aktivität verstehen und organisieren. Kernkonzepte wie rationale Entscheidungsfindung, Effizienz und Wachstum haben Politiken und Praktiken beeinflusst, von der Marktliberalisierung bis zu klimapolitischen Instrumenten. Verschiedene Definitionen der Wirtschaftswissenschaft spiegeln unterschiedliche theoretische Ausrichtungen wider, und die Geschichte der Disziplin ist eng mit ihren realen Auswirkungen verwoben.
+
+Answerlist
+----------
+* True
+* True
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: Wirtschaftswissenschaft als performative Wissenschaft
+extype: mchoice
+exsolution: 11100
+exshuffle: 5

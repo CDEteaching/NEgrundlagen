@@ -1,0 +1,33 @@
+Question
+========
+Welche der folgenden Aussagen beschreiben Wachstumsabhängigkeit und strukturelle Wachstumszwänge in kapitalistischen Volkswirtschaften korrekt?
+(Mehr als eine Aussage kann richtig sein.)
+
+Answerlist
+----------
+* Moderne kapitalistische Volkswirtschaften sind strukturell auf kontinuierliches Wirtschaftswachstum angewiesen, um Beschäftigung, Sozialsysteme und öffentliche Finanzen aufrechtzuerhalten.
+* Wirtschaftliche Stagnation oder Wachstumsrückgang kann Krisen wie Arbeitslosigkeit, Armut und Kürzungen bei Sozialleistungen auslösen.
+* Der Wachstumszwang resultiert teilweise aus dem Marktwettbewerb, da Unternehmen expandieren und ihre Produktivität steigern müssen, um wettbewerbsfähig zu bleiben.
+* Unternehmen können langfristig profitabel und wettbewerbsfähig bleiben, ohne Gewinne zu erzielen oder die Produktion auszuweiten.
+* Die Logik kapitalistischer Investitionen wird oft mit der Formel G–W–G' beschrieben, die das Ziel widerspiegelt, aus Geld mehr Geld zu machen.
+
+
+Solution
+========
+In kapitalistischen Volkswirtschaften ist kontinuierliches Wirtschaftswachstum strukturell notwendig, um die Stabilität von Arbeitsmärkten, Sozialsystemen und öffentlichen Finanzen zu gewährleisten. Marktwettbewerb und finanzieller Druck verstärken auf Unternehmensebene eine „Wachsen oder Sterben"-Logik, die sich in der Investitionsformel G–W–G' widerspiegelt. Wenn das Wachstum stockt oder sich umkehrt, können wirtschaftliche Krisen mit erheblichen sozialen und politischen Folgen entstehen. Die übrige Aussage widerspricht der Grundlogik kapitalistischen Wettbewerbs und kapitalistischer Investition.
+
+Answerlist
+----------
+* True
+* True
+* True
+* False
+* True
+
+
+Meta-information
+================
+exname: Wachstumsabhängigkeit und Kapitalismus
+extype: mchoice
+exsolution: 11101
+exshuffle: 5

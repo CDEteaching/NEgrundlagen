@@ -1,0 +1,28 @@
+Question
+========
+Was sind die vier Hauptkategorien von Ökosystemdienstleistungen?
+
+Answerlist
+----------
+* Versorgungs-, Regulierungs-, kulturelle und Unterstützungsdienstleistungen
+* Materielle, spirituelle, industrielle und soziale Dienstleistungen
+* Wirtschaftliche, soziale, ökologische und kulturelle Dienstleistungen
+
+
+Solution
+========
+Ökosystemdienstleistungen werden gängigerweise in vier Hauptkategorien eingeteilt: Versorgungsdienstleistungen (z. B. Nahrung und Rohstoffe), Regulierungsdienstleistungen (z. B. Klimaregulierung), kulturelle Dienstleistungen (z. B. Erholung und spirituelle Werte) und Unterstützungsdienstleistungen (z. B. Nährstoffkreisläufe und Bodenbildung).
+
+Answerlist
+----------
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: Kategorien von Ökosystemdienstleistungen
+extype: schoice
+exsolution: 100
+exshuffle: 3

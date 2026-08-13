@@ -1,0 +1,31 @@
+Question
+========
+Welche der folgenden Aussagen treffen auf das Konzept der Ökosystemdienstleistungen zu, welche nicht?
+(Mehr als eine Aussage kann richtig sein.)
+
+Answerlist
+----------
+* Ökosystemdienstleistungen sind ein Mass für Biodiversität und folglich für die Resilienz eines Ökosystems.
+* Ökosystemdienstleistungen bezeichnen die direkten und indirekten Beiträge von Ökosystemen zum menschlichen Wohlergehen.
+* Ökosystemdienstleistungen bezeichnen die jährliche Biomasseanhäufung innerhalb eines Ökosystems, gemessen in Kilojoule.
+* Ökosystemdienstleistungen lassen sich in folgende Kategorien einteilen: Unterstützungs-, Versorgungs-, Regulierungs- und kulturelle Dienstleistungen.
+
+
+Solution
+========
+Das Konzept der Ökosystemdienstleistungen bezeichnet die direkten und indirekten Beiträge von Ökosystemen zum menschlichen Wohlergehen und wird meist in vier Kategorien gegliedert: Versorgungs-, Regulierungs-, kulturelle und Unterstützungsdienstleistungen. Es dient weder als direktes Mass für Biodiversität oder Ökosystemresilienz, noch beschreibt es biophysikalische Produktivitätsmasse wie die jährliche Biomasseanhäufung.
+
+Answerlist
+----------
+* False
+* True
+* False
+* True
+
+
+Meta-information
+================
+exname: Ökosystemdienstleistungen – Anwendbarkeit
+extype: mchoice
+exsolution: 0101
+exshuffle: 4

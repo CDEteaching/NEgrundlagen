@@ -1,0 +1,30 @@
+Question
+========
+Welche der folgenden Aussagen ist gemäss dem Fähigkeitenansatz korrekt?
+
+Answerlist
+----------
+* Gleiche Rechtsansprüche reichen aus, damit eine Gesellschaft gerecht ist.
+* Ressourcen wie sauberes Trinkwasser müssen gleichmässig verteilt werden.
+* Entwicklung muss anhand des BIP gemessen werden.
+* Ressourcen müssen so verteilt werden, dass alle Menschen Zugang zu den Fähigkeiten und Zuständen haben, die für ein gutes Leben notwendig sind.
+
+
+Solution
+========
+Der Fähigkeitenansatz fragt danach, was Menschen tatsächlich sein und tun können. Er betont daher, dass Ressourcen so verteilt werden sollten, dass alle Individuen die wesentlichen Fähigkeiten und Zustände erreichen können, die für ein gutes Leben notwendig sind, anstatt sich allein auf formale Rechte, eine gleichmässige Ressourcenverteilung oder BIP-Wachstum zu konzentrieren.
+
+Answerlist
+----------
+* False
+* False
+* False
+* True
+
+
+Meta-information
+================
+exname: Fähigkeitenansatz
+extype: schoice
+exsolution: 0001
+exshuffle: 4

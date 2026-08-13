@@ -1,0 +1,33 @@
+Question
+========
+Welche der folgenden Aussagen geben korrekt wieder, wie verschiedene Gerechtigkeitstheorien die Idee eines bedingungslosen Grundeinkommens beurteilen?
+(Mehr als eine Aussage kann richtig sein.)
+
+Answerlist
+----------
+* Libertäre Theorien lehnen ein bedingungsloses Grundeinkommen im Allgemeinen ab, da Umverteilung durch Besteuerung als Eingriff in die individuelle Freiheit und Eigentumsrechte gilt.
+* Liberale Theorien können ein bedingungsloses Grundeinkommen befürworten, da es den Gesamtnutzen steigern oder gleiche Grundfreiheiten stärken kann.
+* Egalitaristische Perspektiven befürworten ein bedingungsloses Grundeinkommen unkritisch, da strikte Gleichheit automatisch Gerechtigkeit garantiert.
+* Kollektive Gerechtigkeitstheorien bewerten ein bedingungsloses Grundeinkommen abhängig vom historischen, kulturellen und sozialen Kontext.
+* Alle Gerechtigkeitstheorien sind sich einig, dass ein bedingungsloses Grundeinkommen die gerechteste Form der Umverteilung ist.
+
+
+Solution
+========
+Verschiedene Gerechtigkeitstheorien kommen zu unterschiedlichen Schlüssen hinsichtlich eines bedingungslosen Grundeinkommens. Libertäre Theorien lehnen es typischerweise wegen Bedenken über staatliche Eingriffe und Eigentumsrechte ab. Liberale Theorien wie der Utilitarismus oder der Rawls'sche Kontraktarismus können es unter bestimmten Bedingungen befürworten, während egalitaristische Ansätze betonen, dass Gleichheit von Fairness unterschieden werden muss. Kollektive Theorien betonen, dass Urteile vom sozialen und kulturellen Kontext abhängen. Es besteht kein universeller Konsens unter allen Theorien.
+
+Answerlist
+----------
+* True
+* True
+* False
+* True
+* False
+
+
+Meta-information
+================
+exname: Gerechtigkeitstheorien und Grundeinkommen
+extype: mchoice
+exsolution: 11010
+exshuffle: 5

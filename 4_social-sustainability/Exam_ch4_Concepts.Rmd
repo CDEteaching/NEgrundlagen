@@ -1,0 +1,33 @@
+Question
+========
+Welche der folgenden Aussagen beschreiben die drei Dimensionen der Gerechtigkeit, die in der sozialen Nachhaltigkeit häufig diskutiert werden, korrekt?
+(Mehr als eine Aussage kann richtig sein.)
+
+Answerlist
+----------
+* Verteilungsgerechtigkeit konzentriert sich auf die faire Verteilung von Gütern und Lasten, z. B. den Zugang zu sauberem Wasser oder die Belastung durch Umweltverschmutzung.
+* Verfahrensgerechtigkeit betont die Inklusivität und Fairness von Entscheidungsprozessen und der Repräsentation.
+* Anerkennungsgerechtigkeit konzentriert sich auf den Respekt vor sozialen und kulturellen Unterschieden und die Anerkennung struktureller Ungerechtigkeiten.
+* Verteilungsgerechtigkeit betrifft in erster Linie die Anerkennung kultureller Identitäten und historischer Erfahrungen.
+* Verfahrensgerechtigkeit befasst sich hauptsächlich mit den Ergebnissen von Politiken und nicht damit, wie Entscheidungen getroffen werden.
+
+
+Solution
+========
+In Debatten zur sozialen Nachhaltigkeit befasst sich Verteilungsgerechtigkeit mit der fairen Verteilung von Vorteilen und Lasten. Verfahrensgerechtigkeit konzentriert sich darauf, wer in Entscheidungsprozesse einbezogen wird und wie Entscheidungen getroffen werden. Anerkennungsgerechtigkeit betont die Bedeutung des Respekts vor vielfältigen Identitäten, kulturellen Kontexten und historischen Erfahrungen sowie die Auseinandersetzung mit strukturellen Ungerechtigkeiten. Die übrigen Aussagen ordnen den Schwerpunkt einer Gerechtigkeitsdimension fälschlicherweise einer anderen zu.
+
+Answerlist
+----------
+* True
+* True
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: Dimensionen der Gerechtigkeit in der sozialen Nachhaltigkeit
+extype: mchoice
+exsolution: 11100
+exshuffle: 5

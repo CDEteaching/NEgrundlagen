@@ -1,0 +1,30 @@
+Question
+========
+Was versteht man unter dem Begriff Finanzialisierung?
+
+Answerlist
+----------
+* Die wachsende Bedeutung von Finanzmärkten, -institutionen und -motiven in der Wirtschaft.
+* Die Ablösung der Bankensysteme durch Genossenschaften.
+* Den Rückzug des Finanzsektors aus der Realwirtschaft.
+* Die vollständige Abschaffung privater Kredite.
+
+
+Solution
+========
+Finanzialisierung bezeichnet die zunehmende Dominanz von Finanzmärkten, Finanzinstitutionen und finanziellen Motiven bei der Gestaltung wirtschaftlicher Aktivitäten, unternehmerischen Verhaltens und öffentlicher Politik. Sie bedeutet weder das Verschwinden der Bankensysteme noch einen Rückzug des Finanzsektors aus der Realwirtschaft oder die Abschaffung privater Kredite.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: Finanzialisierung
+extype: schoice
+exsolution: 1000
+exshuffle: 4

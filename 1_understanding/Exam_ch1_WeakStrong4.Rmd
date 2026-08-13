@@ -1,0 +1,35 @@
+Question
+========
+Welche der folgenden Aussagen beschreiben starke Nachhaltigkeit?
+(Mehr als eine Aussage kann richtig sein.)
+
+Answerlist
+----------
+* Naturkapital und von Menschen geschaffenes Kapital ergänzen sich, und Menschen können ohne beide nicht überleben.
+* Das sechste Massenaussterben gilt als das wichtigste Nachhaltigkeitsproblem.
+* Umweltprobleme werden durch innovative Energietechnologien gelöst.
+* Die Erhaltung kritischen Naturkapitals von einer Generation zur nächsten ist erforderlich.
+* Eine Zunahme der Gesamtsumme aller Kapitalformen wird gefordert.
+* Die Natur wird als eine Form von Kapital betrachtet, die auf unschätzbare Weise zum Wohlergehen der Menschen beiträgt.
+
+
+Solution
+========
+Starke Nachhaltigkeit betont die wesentliche und nicht substituierbare Rolle des Naturkapitals für das Überleben und Wohlergehen des Menschen. Sie verlangt die Erhaltung kritischen Naturkapitals über Generationen hinweg und erkennt an, dass die Natur unverzichtbare Beiträge zum menschlichen Wohlergehen leistet, die nicht vollständig durch von Menschen geschaffenes Kapital oder technologische Innovation ersetzt werden können.
+
+Answerlist
+----------
+* True
+* False
+* False
+* True
+* False
+* True
+
+
+Meta-information
+================
+exname: Starke Nachhaltigkeit
+extype: mchoice
+exsolution: 100101
+exshuffle: 6

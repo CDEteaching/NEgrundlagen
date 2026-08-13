@@ -1,0 +1,31 @@
+Question
+========
+Welche der folgenden Aussagen zu Nachhaltigkeitsstrategien sind korrekt?
+(Mehr als eine Aussage kann richtig sein.)
+
+Answerlist
+----------
+* Effizienz zielt darauf ab, weniger Ressourcen pro Produktionseinheit einzusetzen.
+* Konsistenz bedeutet, Güter herzustellen, die unendlich oft recycelt werden können.
+* Suffizienz fördert höhere Produktionsmengen.
+* Alle drei Nachhaltigkeitsstrategien wirken sich gleich auf den Konsum aus.
+
+
+Solution
+========
+Effizienz konzentriert sich auf die Senkung des Ressourceneinsatzes pro Produktionseinheit. Konsistenz zielt darauf ab, die Produktion an natürliche Kreisläufe anzupassen, etwa durch geschlossene oder unendlich recycelbare Systeme. Suffizienz stellt das Ausmass von Produktion und Konsum infrage, weshalb sich die drei Strategien in ihrer Wirkung auf den Konsum unterscheiden.
+
+Answerlist
+----------
+* True
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: Nachhaltigkeitsstrategien – Multiple Choice
+extype: mchoice
+exsolution: 1100
+exshuffle: 4

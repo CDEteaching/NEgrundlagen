@@ -1,0 +1,30 @@
+Question
+========
+Welche zwei planetaren Grenzen gelten als „Kerngrenzen"?
+
+Answerlist
+----------
+* Klimawandel und Integrität der Biosphäre
+* Ozonabbau und Landnutzung
+* Ozeanversauerung und Stickstoffkreisläufe
+* Süsswasser und Aerosole
+
+
+Solution
+========
+Innerhalb des Rahmenwerks der planetaren Grenzen gelten Klimawandel und Integrität der Biosphäre als Kerngrenzen, da sie eine grundlegende Rolle bei der Regulierung des Zustands des Erdsystems spielen und die übrigen planetaren Grenzen stark beeinflussen.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: Kern-Planetare-Grenzen
+extype: schoice
+exsolution: 1000
+exshuffle: 4

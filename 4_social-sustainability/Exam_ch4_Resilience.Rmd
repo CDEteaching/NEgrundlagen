@@ -1,0 +1,30 @@
+Question
+========
+Was beschreibt Resilienz im Kontext sozialer Nachhaltigkeit am treffendsten?
+
+Answerlist
+----------
+* Die Fähigkeit von Gesellschaften, sämtliche internen und externen Schocks vollständig zu vermeiden.
+* Die Fähigkeit von Individuen und Gesellschaften, sich auf Schocks vorzubereiten, mit ihnen umzugehen und sich von ihnen zu erholen.
+* Der kurzfristige Einsatz von Ressourcen, um das Wirtschaftswachstum nach einer Krise zu stabilisieren.
+* Die gleichmässige Verteilung von Einkommen, um soziale Konflikte zu verhindern.
+
+
+Solution
+========
+Resilienz bezeichnet die Fähigkeit von Individuen, Haushalten, Gemeinschaften oder ganzen Gesellschaften, sich auf Schocks wie Wirtschaftskrisen, Naturkatastrophen oder soziale Konflikte vorzubereiten, mit ihnen umzugehen und sich von ihnen zu erholen. Sie bedeutet nicht die vollständige Vermeidung von Schocks, sondern die Fähigkeit, mit ihnen umzugehen und Lebensqualität und Stabilität wiederzuerlangen.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: Definition von Resilienz
+extype: schoice
+exsolution: 0100
+exshuffle: 4

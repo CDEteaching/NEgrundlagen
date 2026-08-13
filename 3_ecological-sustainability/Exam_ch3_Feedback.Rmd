@@ -1,0 +1,29 @@
+Question
+========
+Welche der folgenden sind Arten von Rückkopplungsmechanismen im Klimasystem?
+(Mehr als eine Aussage kann richtig sein.)
+
+Answerlist
+----------
+* Positive Rückkopplung
+* Neutrale Rückkopplung
+* Negative Rückkopplung
+
+
+Solution
+========
+Rückkopplungsmechanismen im Klimasystem beschreiben Prozesse, die Veränderungen im Klimasystem entweder verstärken (positive Rückkopplung) oder abschwächen (negative Rückkopplung). Neutrale Rückkopplung wird in der Klimawissenschaft üblicherweise nicht als eigene Kategorie verwendet.
+
+Answerlist
+----------
+* True
+* False
+* True
+
+
+Meta-information
+================
+exname: Rückkopplungsmechanismen im Klimasystem
+extype: mchoice
+exsolution: 101
+exshuffle: 3

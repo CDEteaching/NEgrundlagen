@@ -1,0 +1,30 @@
+Question
+========
+Welcher der folgenden Kipppunkte gehört NICHT zum Klimasystem der Erde?
+
+Answerlist
+----------
+* Abschmelzen des grönländischen Eisschilds
+* Kollaps des Golfstroms
+* Verschmutzung der Ozeane durch Plastik
+* Kollaps des Amazonas-Regenwaldes
+
+
+Solution
+========
+Kipppunkte im Klimasystem der Erde bezeichnen grossräumige Komponenten des Klimas, die abrupte und potenziell irreversible Veränderungen durchlaufen können. Der grönländische Eisschild, der Golfstrom (AMOC) und der Amazonas-Regenwald gelten allesamt als häufig diskutierte klimatische Kippelemente, während die Verschmutzung der Ozeane durch Plastik zwar ein Umweltproblem, aber kein Kipppunkt des Klimasystems ist.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+
+Meta-information
+================
+exname: Kipppunkte des Klimasystems
+extype: schoice
+exsolution: 0010
+exshuffle: 4
