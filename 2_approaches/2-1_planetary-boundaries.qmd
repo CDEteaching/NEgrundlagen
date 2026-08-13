@@ -4,7 +4,7 @@ Im Jahr 1798 veröffentlichte der britische Ökonom Thomas Robert Malthus seinen
 
 Eine bedeutende Entwicklung in der Nachhaltigkeitswissenschaft ist das Konzept der planetaren Grenzen, das 2009 eingeführt wurde. Im Gegensatz zu früheren Theorien, die sich ausschliesslich auf Bevölkerungsgrenzen konzentrierten, verwendet dieses Konzept Parameter der Erdsystemwissenschaft. Die Forscher*innen identifizierten das Holozän als Ausgangspunkt, da es eine Periode bemerkenswerter Stabilität für die menschliche Entwicklung war. Erhebliche Abweichungen von diesem idealen Zustand könnten die Menschheit auf ungewisse „Kipppunkte" zutreiben – kritische Schwellen, die entweder den bisherigen Fortschritt unterbrechen, seinen Verlauf verändern oder ihn sogar in unbeabsichtigte Richtungen beschleunigen könnten. Ein Beispiel könnte das Aussterben der Megafauna am Ende der letzten Eiszeit sein, das möglicherweise mit der Ankunft des Menschen in Amerika zusammenhing. Das Konzept der planetaren Grenzen fördert das Vorsorgeprinzip und mahnt zur Handlung, um potenzielle Schäden für Menschen und Umwelt zu minimieren.
 
-Das Konzept, das neun planetare Grenzen benennt, wurde erstmals von Johan Rockström et al. [-@rockstromPlanetaryBoundariesExploring2009] vorgestellt. Es wurde von Will Steffen et al. [-@steffenPlanetaryBoundariesGuiding2015] aktualisiert. Eine aktuelle Aktualisierung von Richardson et al. [-@richardsonEarthSixNine2023] zeigt, dass sechs von neun planetaren Grenzen bereits überschritten wurden.
+Das Konzept, das neun planetare Grenzen benennt, wurde erstmals von Rockström et al. [-@rockstromPlanetaryBoundariesExploring2009] vorgestellt. Es wurde von Steffen et al. [-@steffenPlanetaryBoundariesGuiding2015] aktualisiert. Eine aktuelle Aktualisierung von @richardsonEarthSixNine2023 zeigt, dass sechs von neun planetaren Grenzen bereits überschritten wurden.
 
 Das Rahmenwerk der planetaren Grenzen identifiziert neun kritische Erdsystemprozesse. Diese Prozesse regulieren die Stabilität des Planeten und umfassen beispielsweise Landnutzungsveränderungen und Ozeanversauerung (alle planetaren Grenzen sind hier dargestellt: @fig-development-planetary-boundaries). Jede Grenze hat einen inneren Kreis, innerhalb dessen sie sicher betrieben werden kann („sicherer Handlungsraum"), und einen äusseren Kreis, der erhöhte Unsicherheit darstellt.
 
@@ -50,12 +50,12 @@ Das Konzept der planetaren Grenzen versucht, komplexe ökologische Zusammenhäng
 
 -   Das Rahmenwerk der planetaren Grenzen kann genutzt werden, um konkrete Ziele in der Umweltdimension festzulegen (z. B. auf globaler oder nationaler Ebene).
 
-::: {.callout-note collapse="true"}
+::: {.callout-caution collapse="true"}
 #### Weiterführende Literatur
 
-Folke, Carl, Stephen R. Carpenter, Brian Walker, Marten Scheffer, Terry Chapin, and Johan Rockström. 2010. 'Resilience Thinking: Integrating Resilience, Adaptability and Transformability'. *Ecology and Society* 15 (4). [https://www.jstor.org/stable/26268226](https://www.jstor.org/stable/26268226){target="_blank"}.
+- Folke, Carl, Stephen R. Carpenter, Brian Walker, Marten Scheffer, Terry Chapin, and Johan Rockström. 2010. 'Resilience Thinking: Integrating Resilience, Adaptability and Transformability'. *Ecology and Society* 15 (4). [https://www.jstor.org/stable/26268226](https://www.jstor.org/stable/26268226){target="_blank"}.
 
-Lenton, Timothy M., Johan Rockström, Owen Gaffney, et al. 2019. 'Climate Tipping Points — Too Risky to Bet Against'. *Nature* 575 (7784): 7784. [https://doi.org/10.1038/d41586-019-03595-0](https://doi.org/10.1038/d41586-019-03595-0){target="_blank"}.
+- Lenton, Timothy M., Johan Rockström, Owen Gaffney, et al. 2019. 'Climate Tipping Points — Too Risky to Bet Against'. *Nature* 575 (7784): 7784. [https://doi.org/10.1038/d41586-019-03595-0](https://doi.org/10.1038/d41586-019-03595-0){target="_blank"}.
 
-Rockström, Johan, Joyeeta Gupta, Dahe Qin, et al. 2023. 'Safe and Just Earth System Boundaries'. *Nature* 619 (7968): 102–11. [https://doi.org/10.1038/s41586-023-06083-8](https://doi.org/10.1038/s41586-023-06083-8){target="_blank"}.
+- Rockström, Johan, Joyeeta Gupta, Dahe Qin, et al. 2023. 'Safe and Just Earth System Boundaries'. *Nature* 619 (7968): 102–11. [https://doi.org/10.1038/s41586-023-06083-8](https://doi.org/10.1038/s41586-023-06083-8){target="_blank"}.
 :::

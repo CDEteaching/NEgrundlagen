@@ -57,13 +57,15 @@ Plurale Ökonomik betont, dass es nicht „die eine" Wirtschaftswissenschaft gib
 
 Dabei geht es jedoch nicht um eine pauschale Ablehnung der neoklassischen Wirtschaft. Stattdessen liegt der Schlüssel darin, zu erkennen, welche Perspektive für eine gegebene Frage am besten geeignet ist. Neoklassische Analyse bietet nützliche Einblicke in Märkte, Preisbildung und Anreizstrukturen. Ihr Nutzen ist jedoch begrenzt, wenn es um nicht-monetäre Prozesse, Machtverhältnisse oder soziale Reproduktionsarbeit geht. Ihr Fokus auf marktbasierte Austauschbeziehungen und Preismechanismen macht es beispielsweise schwierig, unbezahlte Arbeit zu berücksichtigen. Hier setzen alternative Ansätze wie die feministische Wirtschaft an, die Pflegearbeit, soziale Beziehungen und Machtstrukturen systematisch in die Wirtschaftsanalyse einbeziehen. Folglich befürwortet plurale Ökonomik einen methodisch offenen, problemorientierten Ansatz und betrachtet die Vielfalt theoretischer Ansätze als Bereicherung – insbesondere angesichts der komplexen Herausforderungen nachhaltiger Entwicklung.
 
-Eine detaillierte Auseinandersetzung mit neoklassischer Wirtschaft und anderen Denkschulen würde den Rahmen dieser Diskussion sprengen. Tiefer in dieses Thema einsteigen können Sie in unserem Kurs *Einführung in die nachhaltige Wirtschaft*. Weitere Informationen zur pluralen Ökonomik finden Sie auch auf der E-Learning-Plattform *Exploring Economics*.
+Eine detaillierte Auseinandersetzung mit neoklassischer Wirtschaft und anderen Denkschulen würde den Rahmen dieser Diskussion sprengen. Tiefer in dieses Thema einsteigen können Sie in unserem Kurs [*Einführung in die nachhaltige Wirtschaft*](https://cdeteaching.github.io/SP_SustainableEconomics/){target="_blank"}. Weitere Informationen zur pluralen Ökonomik finden Sie auch auf der E-Learning-Plattform [*Exploring Economics*](https://www.exploring-economics.org/en/){target="_blank"}.
 
 In diesem Video – *Economics is for Everyone* – gibt Ha-Joon Chang eine klare und prägnante Einführung in die Idee der pluralen Ökonomik. Er erklärt, warum wirtschaftliches Denken nie neutral ist – und warum wir dringend mehr wirtschaftlichen Pluralismus brauchen.
+
+{{< https://youtu.be/NdbbcO35arw?si=VlUrTTLGlvQTN1vQ >}}
 :::
 
-{{< include "5_key-elements.qmd" >}}
+{{< include "5-1_key-elements.qmd" >}}
 
-{{< include "5_strategic-approaches.qmd" >}}
+{{< include "5-2_strategic-approaches.qmd" >}}
 
 {{< include "quiz_ch5.qmd" >}}

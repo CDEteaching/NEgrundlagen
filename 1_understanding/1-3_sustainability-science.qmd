@@ -32,15 +32,42 @@ Ein häufig verwendetes Motto – „Die Gesellschaft hat Probleme – die Unive
 
 Die Nachhaltigkeitswissenschaft unterscheidet sich in zwei zentralen Punkten: Erstens ist sie – im Gegensatz zur traditionellen („Mode 1") Forschung – nicht durch ein originäres wissenschaftliches Programm getrieben. Stattdessen wird sie durch das normative Konzept der Nachhaltigkeit geleitet und nutzt dieses als Rahmen für wissenschaftliche Analysen. Zweitens unterscheidet sie sich als eigenständiger Typ problemorientierter Forschung sowohl von Grundlagen- als auch von angewandter Forschung. @clarkSustainabilityScienceRoom2007 prägte hierfür den Begriff der „anwendungsorientierten Grundlagenforschung", die darauf abzielt, neues Wissen zu generieren und gleichzeitig dessen potenzielle Anwendungen zu berücksichtigen.
 
-| **Mode-1-Wissenschaft** | **Mode-2-Wissenschaft**              |
-|:------------------------|:-------------------------------------|
-| Akademisch              | Akademisch und gesellschaftlich      |
-| Monodisziplinär         | Trans- und interdisziplinär          |
-| Technokratisch          | Partizipativ                         |
-| Gewiss                  | Unsicher                             |
-| Prädiktiv               | Explorativ                           |
+```{r}
+#| label: tbl-mode1-mode2-science
+#| tbl-cap: "Mode-1- und Mode-2-Wissenschaft. Quelle: Basierend auf @gibbonsNewProductionKnowledge2010 und @martensSustainabilityScienceFiction2006."
 
-: Mode-1- und Mode-2-Wissenschaft. Quelle: Basierend auf @gibbonsNewProductionKnowledge2010 und @martensSustainabilityScienceFiction2006. {#tbl-modes-science}
+library(kableExtra)
+is_pdf <- knitr::is_latex_output()
+
+df <- data.frame(
+  Dimension = c("Orientierung", "Disziplinarität", "Steuerung", "Wissensstatus", "Ansatz"),
+  `Mode-1-Wissenschaft` = c(
+    "Akademisch",
+    "Monodisziplinär",
+    "Technokratisch",
+    "Gewiss",
+    "Prädiktiv"),
+  `Mode-2-Wissenschaft` = c(
+    "Akademisch und gesellschaftlich",
+    "Trans- und interdisziplinär",
+    "Partizipativ",
+    "Unsicher",
+    "Explorativ"),
+  check.names = FALSE
+)
+
+df |>
+  kbl(booktabs = TRUE, align = "l", longtable = is_pdf) |>
+  kable_styling(
+    bootstrap_options = c("striped", "hover", "condensed"),
+    latex_options = if (is_pdf) c("hold_position", "repeat_header") else NULL,
+    full_width = !is_pdf,
+    font_size = if (is_pdf) 8 else NULL
+  ) |>
+  row_spec(0, bold = TRUE) |>
+  column_spec(1, width = if (is_pdf) "4.5cm" else NA, bold = TRUE) |>
+  column_spec(2, width = if (is_pdf) "4.5cm" else NA)
+```
 
 ### Empirisch-analytisch versus normativ
 
@@ -52,15 +79,15 @@ Es ist wichtig zu beachten, dass „Sein"- und „Sollen"-Aussagen unterschiedli
 
 > „In every system of morality, which I have hitherto met with, I have always remark'd, that the author proceeds for some time in the ordinary ways of reasoning, and establishes the being of a God, or makes observations concerning human affairs; when of a sudden I am surpriz'd to find, that instead of the usual copulations of propositions, is, and is not, I meet with no proposition that is not connected with an ought, or an ought not. This change is imperceptible; but is however, of the last consequence. For as this ought, or ought not, expresses some new relation or affirmation, 'tis necessary that it shou'd be observ'd and explain'd; and at the same time that a reason should be given; for what seems altogether inconceivable, how this new relation can be a deduction from others, which are entirely different from it... \[I\] am persuaded, that a small attention wou'd subvert all the vulgar systems of morality, and let us see, that the distinction of vice and virtue is not founded merely on the relations of objects, nor is perceiv'd by reason." [@humeTreatiseHumanNature1739, Book 3, Part 1, Section 1]
 
-Die Erkenntnis, dass sich Sein- und Soll-Aussagen unterscheiden, bedeutet nicht, dass Wissenschaftler*innen keine Soll-Aussagen machen dürfen. Vielmehr bedeutet sie, dass aufgrund der epistemologischen Unterschiede zwischen den beiden Kategorien bestimmte Regeln gelten müssen, wenn sie miteinander verknüpft werden. Hume versuchte, die Beziehung zwischen diesen beiden Aussagearten durch sogenannte „Brückenprinzipien" herzustellen. Max Weber formalisierte diese Überlegungen weiter, indem er die Brückenprinzipien durch das Konzept der „Wertbeziehungen" ersetzte. Webers Forderung nach Wertfreiheit (bzw. Wertneutralität) in der empirischen Wissenschaft ergibt sich aus seiner Beobachtung, dass es eine klare Unterscheidung zwischen Tatsachenfragen („Sein") und Wertfragen („Sollen") gibt (Weber 1999, S. 245 f., 509 f.). Er argumentierte, dass es nicht Aufgabe der empirischen Wissenschaften sei, Werturteile zu fällen. Wenn Wissenschaftler*innen die analytische Trennung zwischen ihren persönlichen Werten und ihren Forschungszielen nicht vollziehen, könne dies die Fähigkeit der Wissenschaft gefährden, überprüfbare und sinnvolle Ergebnisse zu erzeugen (Weber 1999, S. 150 f.; Strauss 1953). Dies könnte wiederum zu einer Verwischung der Grenzen zwischen wissenschaftlichem Wissen und Wissen aus Politik, Religion oder Alltagsdiskussionen führen.
+Die Erkenntnis, dass sich Sein- und Soll-Aussagen unterscheiden, bedeutet nicht, dass Wissenschaftler*innen keine Soll-Aussagen machen dürfen. Vielmehr bedeutet sie, dass aufgrund der epistemologischen Unterschiede zwischen den beiden Kategorien bestimmte Regeln gelten müssen, wenn sie miteinander verknüpft werden. Hume versuchte, die Beziehung zwischen diesen beiden Aussagearten durch sogenannte „Brückenprinzipien" herzustellen. Max Weber formalisierte diese Überlegungen weiter, indem er die Brückenprinzipien durch das Konzept der „Wertbeziehungen" ersetzte. Webers Forderung nach Wertfreiheit (bzw. Wertneutralität) in der empirischen Wissenschaft ergibt sich aus seiner Beobachtung, dass es eine klare Unterscheidung zwischen Tatsachenfragen („Sein") und Wertfragen („Sollen") gibt [@weberGesammelteAufsatzeZur1999, pp. 245f, 509f]. Er argumentierte, dass es nicht Aufgabe der empirischen Wissenschaften sei, Werturteile zu fällen. Wenn Wissenschaftler*innen die analytische Trennung zwischen ihren persönlichen Werten und ihren Forschungszielen nicht vollziehen, könne dies die Fähigkeit der Wissenschaft gefährden, überprüfbare und sinnvolle Ergebnisse zu erzeugen [@weberGesammelteAufsatzeZur1999, pp. 150f]. Dies könnte wiederum zu einer Verwischung der Grenzen zwischen wissenschaftlichem Wissen und Wissen aus Politik, Religion oder Alltagsdiskussionen führen.
 
-Webers Forderung nach Wertfreiheit in der empirischen Wissenschaft wurde häufig missverstanden (Jonas 1980, S. 189 f.; Weber 1999, S. 499 f.). Sie bedeutet nicht, dass Forschung ohne Werte auskommen sollte. (Ausserwissenschaftliche) Werte haben in der empirischen Forschung – insbesondere im Kontext Nachhaltiger Entwicklung – auf verschiedene Weise ihren Platz:
+Webers Forderung nach Wertfreiheit in der empirischen Wissenschaft wurde häufig missverstanden [@weberGesammelteAufsatzeZur1999, pp. 499f]. Sie bedeutet nicht, dass Forschung ohne Werte auskommen sollte. (Ausserwissenschaftliche) Werte haben in der empirischen Forschung – insbesondere im Kontext Nachhaltiger Entwicklung – auf verschiedene Weise ihren Platz:
 
 -   **Werte können Forschungsgegenstand sein:** Werte spielen beispielsweise im Bereich der Umwelt- und Nachhaltigkeitspsychologie eine zentrale Rolle. In Diskussionen über Lebensstile und subjektives Wohlbefinden untersuchen Forschende die persönlichen Werte und Überzeugungen von Individuen.
 
 -   **Werte beeinflussen die Wahl des Forschungsthemas:** Werte wirken sich auf die Auswahl von Forschungsgegenständen und Fragestellungen (Erkenntnisinteresse) und damit auf die Ausrichtung der Forschung aus. Dies ist besonders relevant in anwendungsorientierter und transdisziplinärer Forschung, in der die Bedürfnisse und Informationen relevanter gesellschaftlicher Akteur*innen in den Forschungsprozess integriert werden, beispielsweise durch *joint problem framing* oder *participatory vision development* [@schneiderHowCanScience2019].
 
--   **Wertinterpretationen sollten klar benannt werden:** Forschende können Wertbeziehungen herstellen oder Wertinterpretationen vornehmen (vgl. Weber 1999, S. 522). Eine Wertinterpretation, angelehnt an die hermeneutische Methode, konkretisiert die Bedeutung übergeordneter Wertvorstellungen und leitet daraus logische Werte und Normen ab. Beispielsweise können Forschende die SDGs analysieren, indem sie die den Zielen Nachhaltiger Entwicklung zugrunde liegenden Werte untersuchen. Weitere Beispiele sind Normen, die aus dem Gerechtigkeitsbegriff abgeleitet werden – wie etwa die Norm der menschlichen Verantwortung gegenüber der Umwelt, der sozialen Mitwelt und uns selbst [vgl. @michelsenNachhaltigeEntwicklungHintergruende2014, pp. 25; @schneiderHowCanScience2019]. Wichtig ist, den ursprünglichen Wert explizit zu machen.
+-   **Wertinterpretationen sollten klar benannt werden:** Forschende können Wertbeziehungen herstellen oder Wertinterpretationen vornehmen [vgl. @weberGesammelteAufsatzeZur1999, pp. 522]. Eine Wertinterpretation, angelehnt an die hermeneutische Methode, konkretisiert die Bedeutung übergeordneter Wertvorstellungen und leitet daraus logische Werte und Normen ab. Beispielsweise können Forschende die SDGs analysieren, indem sie die den Zielen Nachhaltiger Entwicklung zugrunde liegenden Werte untersuchen. Weitere Beispiele sind Normen, die aus dem Gerechtigkeitsbegriff abgeleitet werden – wie etwa die Norm der menschlichen Verantwortung gegenüber der Umwelt, der sozialen Mitwelt und uns selbst [vgl. @michelsenNachhaltigeEntwicklungHintergruende2014, pp. 25; @schneiderHowCanScience2019]. Wichtig ist, den ursprünglichen Wert explizit zu machen.
 
 -   **Zweck-Mittel-Schlüsse:** Die Forschung zur Nachhaltigen Entwicklung stützt sich häufig auf Werturteile, um evidenzbasierte Lösungen zu entwickeln. Dies ist vergleichbar mit der Politikwissenschaft, in der normative Theorien darauf abzielen, eine optimale – d. h. gerechte – Staatsform zu entwerfen, basierend auf der positiven Bewertung dessen, was eine gerechte Gesellschaft ausmacht. Die Wissenschaft kann den Wert von Gerechtigkeit nicht beweisen, aber sie kann Strategien und Mittel entwickeln, um dieses gewünschte Ziel zu erreichen. Diese Beziehung zwischen Zweck und Mitteln stellt eine logische Verbindung zwischen Werten und normativen Aussagen dar. Der übergeordnete Zweck wird durch ausserwissenschaftliche Werte bestimmt. Forschende müssen diese Beziehung klar benennen und ihre Mittel entsprechend formulieren. Ein solcher Zweck-Mittel-Zusammenhang könnte etwa so aussehen: „Um Ziel X zu erreichen, ist Y unter den Bedingungen b1, b2 und b3 das erfolgreichste Mittel." Nachhaltige Entwicklung kann als eine ausserwissenschaftlich gegebene Fundamentalnorm betrachtet werden. Wenn die Forschung beispielsweise Aussagen darüber treffen will, wie Nachhaltige Entwicklung durch Solarenergie erreicht werden kann, könnte sie folgendermassen vorgehen: „Die Umstellung auf eine solare Produktionsweise könnte ein vielversprechender Weg sein, Nachhaltige Entwicklung zu erreichen. Dies würde Produktion und Verteilung entsprechend den Bedürfnissen vieler Menschen organisieren, soziale Ungleichheiten minimieren und Bedingungen für individuelles Wohlbefinden schaffen."
 

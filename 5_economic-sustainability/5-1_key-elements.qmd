@@ -58,7 +58,7 @@ Heute ist es leichter, sich das Ende der Welt vorzustellen als das Ende des Kapi
 
 ### Kapitalismus als Ausgangspunkt für Fragen wirtschaftlicher Nachhaltigkeit
 
-Viele Nachhaltigkeitsherausforderungen – z. B. die Klimakrise, soziale Ungleichheit, Ressourcenübernutzung, Finanzmarktturbulenz – sind keine isolierten Phänomene. Sie sind Ausdruck eines übergreifenden Kontexts, d. h. der strukturellen Dynamiken des modernen globalen Kapitalismus. Dieses Lehrbuch nimmt daher eine systemische Perspektive ein, wie sie von Wissenschaftler*innen wie Polanyi [-@polanyiGreatTransformationPolitical1944], Brand und Wissen (2017), Hickel [-@hickelLessMoreHow2020], Seidl und Zahrnt [-@seidlPostwachstumsgesellschaftKonzepteFur2010], Schneidewind [-@schneidewindetalTransformativeWirtschaftswissenschaftIm2016] und Binswanger [-@binswangerWachstumsspirale2006] vertreten wird. Aus dieser Perspektive erfordert eine Hinwendung zur Nachhaltigkeit eine Auseinandersetzung mit unseren zugrundeliegenden wirtschaftlichen Strukturen und ihren politischen und kulturellen Voraussetzungen – und damit mit dem kapitalistischen System der Gegenwart.
+Viele Nachhaltigkeitsherausforderungen – z. B. die Klimakrise, soziale Ungleichheit, Ressourcenübernutzung, Finanzmarktturbulenz – sind keine isolierten Phänomene. Sie sind Ausdruck eines übergreifenden Kontexts, d. h. der strukturellen Dynamiken des modernen globalen Kapitalismus. Dieses Lehrbuch nimmt daher eine systemische Perspektive ein, wie sie von Wissenschaftler*innen wie Polanyi [-@polanyiGreatTransformationPolitical1944], Brand und Wissen [-@brandImperialeLebensweiseZur2017b], Hickel [-@hickelLessMoreHow2020], Seidl und Zahrnt [-@seidlPostwachstumsgesellschaftKonzepteFur2010], Schneidewind [-@schneidewindetalTransformativeWirtschaftswissenschaftIm2016] und Binswanger [-@binswangerWachstumsspirale2006] vertreten wird. Aus dieser Perspektive erfordert eine Hinwendung zur Nachhaltigkeit eine Auseinandersetzung mit unseren zugrundeliegenden wirtschaftlichen Strukturen und ihren politischen und kulturellen Voraussetzungen – und damit mit dem kapitalistischen System der Gegenwart.
 
 In diesem Lehrbuch betrachten wir Kapitalismus nicht nur als Wirtschaftssystem, sondern als das gegenwärtige Wirtschafts- und Gesellschaftssystem in seiner Gesamtheit. Dies umfasst wirtschaftliche, soziale, rechtliche, kulturelle und ökologische Strukturen und Dynamiken, die alle miteinander interagieren (vgl. Kasten). Kapitalismus ist kein natürlicher Zustand wirtschaftlicher Aktivität, sondern das Ergebnis einer spezifischen historischen Entwicklung. Seine Wurzeln reichen in das spätmittelalterliche Europa, insbesondere England, zurück, wo durch die Aneignung von Land (eine Praxis, die als „Einhegung" bekannt ist), die Entstehung eines freien Arbeitsmarktes und frühe Formen kapitalistischer Landwirtschaft entscheidende institutionelle Grundlagen gelegt wurden [vgl. @woodOriginCapitalismLonger2017].
 
@@ -114,14 +114,14 @@ Neoklassische Wirtschaft betrachtet externe Kosten generell als Anomalie innerha
 Während liberale Markttheorien die Bedeutung von Preissignalen betonen, stellen andere Denkschulen in Frage, ob wir wirklich allem einen Preis zuweisen müssen, sogar der Natur. Diese grundlegenden Debatten sind entscheidend für die Erreichung einer nachhaltigen Wirtschaft und werden im Kurs *Einführung in die nachhaltige Wirtschaft* vertieft behandelt.
 :::
 
-::: {.callout-note collapse="true"}
+::: {.callout-caution collapse="true"}
 #### Weiterführende Literatur
 
--   Karl Polanyi (1944): The Great Transformation
+- Polanyi, Karl. (1944) *The Great Transformation: The Political and Economic Origins of Our Time*. Beacon Press.
 
--   Ellen Meiksins Wood (2017): The Origin of Capitalism: A Longer View
+- Wood, Ellen Meiksins. 2017. *The Origin of Capitalism: A Longer View*. Verso.
 
--   Maja Göpel (2016): The Great Mindshift, Kapitel 3
+- Göpel, Maja. 2016. 'Why the Mainstream Economic Paradigm Cannot Inform Sustainability Transformations'. In *The Great Mindshift: How a New Economic Paradigm and Sustainability Transformations Go Hand in Hand*, edited by Maja Göpel. Springer International Publishing. [https://doi.org/10.1007/978-3-319-43766-8_3](https://doi.org/10.1007/978-3-319-43766-8_3){target="_blank"}.
 :::
 
 ### Wirtschaftswachstum: Entstehung, Normalisierung und Kritik
@@ -132,7 +132,7 @@ Heute nehmen wir Wirtschaftswachstum als selbstverständlich hin, doch aus histo
 2.  Der Zugang zu billigen fossilen Brennstoffen – insbesondere Öl – aus dem Nahen Osten senkte die Produktionskosten drastisch.
 3.  Das fordistische Konsummodell kombinierte hohe Löhne mit billiger Massenproduktion: Henry Fords Vision von „Autos für alle" wurde zum Leitprinzip einer neuen Produktions- und Konsumlogik.
 
-![Der Hockeyschläger der Geschichte: Bruttoinlandsprodukt pro Kopf in fünf Ländern (1000–2018). Das Pro-Kopf-Einkommen stagnierte jahrhundertelang. Erst mit der Industriellen Revolution und dem fossilen Kapitalismus stiegen Einkommen und Produktionsvolumen exponentiell – wenn auch sehr ungleich von Region zu Region. Quelle: <https://books.core-econ.org/the-economy/microeconomics/01-prosperity-inequality-02-historys-hockey-stick.html#figure-1-1>.](images/Fig5_5__GDP1000_2000.png){#fig-history-hockey-stick}
+![Der Hockeyschläger der Geschichte: Bruttoinlandsprodukt pro Kopf in fünf Ländern (1000–2018). Das Pro-Kopf-Einkommen stagnierte jahrhundertelang. Erst mit der Industriellen Revolution und dem fossilen Kapitalismus stiegen Einkommen und Produktionsvolumen exponentiell – wenn auch sehr ungleich von Region zu Region. Quelle: [https://books.core-econ.org/the-economy/microeconomics/01-prosperity-inequality-02-historys-hockey-stick.html#figure-1-1](https://books.core-econ.org/the-economy/microeconomics/01-prosperity-inequality-02-historys-hockey-stick.html#figure-1-1){target="_blank"}.](images/Fig5_5__GDP1000_2000.png){#fig-history-hockey-stick}
 
 Ein entscheidender Wendepunkt war, dass Kapital Land als zentralen Produktionsfaktor ersetzte. Während Land naturgemäss begrenzt ist, hatte Kapital – verstanden als Maschinen, Technologie und Infrastruktur – zunächst keine offensichtlichen Grenzen. Für Wirtschaftswissenschaftler wie Malthus, der noch davon ausging, dass natürliche Ressourcen knapp sind, war langfristiges Wachstum kaum vorstellbar. Die industrielle Produktion unter kapitalistischen Bedingungen veränderte dieses Paradigma grundlegend.
 
@@ -179,7 +179,7 @@ Geld ist weit mehr als nur ein neutrales Tauschmittel. Es erfüllt vier zentrale
 
 **Ermöglicher der Kapitalakkumulation**: Im Kapitalismus wird Geld investiert, um mehr Geld zu generieren. Diese Dynamik kann, wenn sie unkontrolliert bleibt, zu einer zunehmenden Vermögenskonzentration führen.
 
-Durch diese letzte Funktion ist Geld eng mit Schulden verknüpft: Im heutigen Finanzsystem wird der Grossteil des Geldes nicht durch staatliche Münzprägung oder Zentralbankaktivitäten geschaffen, sondern durch die Kreditvergabe privater Geschäftsbanken. Das bedeutet, dass jedes Mal, wenn ein Kredit vergeben wird, neues Geld entsteht – zusammen mit einer entsprechenden Schuld. Daher hat jedes Guthaben auf der Habenseite eine Schuld auf der Sollseite (vgl. Graeber 2012). Ohne laufende Schulden gäbe es kein Geldwachstum – und damit kein Vermögenswachstum. Dies gilt sowohl für private Haushalte als auch für Regierungen. In einem System wachsender Ungleichheit sind Schuldner*innen oft strukturell benachteiligt – sie sind abhängig von Kreditgeber*innen und Sparmassnahmen sowie politischen Zwängen ausgesetzt.
+Durch diese letzte Funktion ist Geld eng mit Schulden verknüpft: Im heutigen Finanzsystem wird der Grossteil des Geldes nicht durch staatliche Münzprägung oder Zentralbankaktivitäten geschaffen, sondern durch die Kreditvergabe privater Geschäftsbanken. Das bedeutet, dass jedes Mal, wenn ein Kredit vergeben wird, neues Geld entsteht – zusammen mit einer entsprechenden Schuld. Daher hat jedes Guthaben auf der Habenseite eine Schuld auf der Sollseite [vgl. @graeberDebtFirst50002012]. Ohne laufende Schulden gäbe es kein Geldwachstum – und damit kein Vermögenswachstum. Dies gilt sowohl für private Haushalte als auch für Regierungen. In einem System wachsender Ungleichheit sind Schuldner*innen oft strukturell benachteiligt – sie sind abhängig von Kreditgeber*innen und Sparmassnahmen sowie politischen Zwängen ausgesetzt.
 
 Das heutige Finanzsystem schafft daher nicht nur wirtschaftliche, sondern auch politische Abhängigkeiten. Wer Geld hat, kann nicht nur konsumieren, sondern verfügt auch über Macht – und kann sie z. B. durch politischen Einfluss, Medieneigentum oder strategische Investitionen ausüben. Finanzialisierung, Spekulation und globale Kapitalflüsse verschärfen diese Entwicklung weiter.
 
@@ -188,7 +188,7 @@ Das heutige Finanzsystem schafft daher nicht nur wirtschaftliche, sondern auch p
 
 Deregulierung und ihre Folgen ermöglichten es Banken, ihre Kreditvergabe erheblich auszuweiten – zunehmend auch an Haushalte mit niedrigen Kreditratings (d. h. begrenzter Rückzahlungsfähigkeit oder geringer Kreditwürdigkeit). Um die damit verbundenen Risiken zu mindern, wurden die Kredite gebündelt und als scheinbar sichere „Subprime"-Anleihen weiterverkauft. Solche Mechanismen legten letztlich den Grundstein für die Finanzkrise von 2008, als sich herausstellte, dass ein grosser Teil dieser Finanzprodukte auf hochriskanten Kreditvergaben basierte.
 
-Diese Verschiebung der wirtschaftlichen Dynamik und Macht hin zum Finanzsektor wird als Finanzialisierung bezeichnet. Sie schuf einen Machtkomplex aus Zentralbanken, Geschäftsbanken, anderen Finanzinstitutionen, privaten Pensionsfonds und Eigentümer*innen verschiedener Vermögenswerte. In diesem Prozess wachsen die Finanzmärkte im Verhältnis zur Realwirtschaft unverhältnismässig stark, ein Trend, der durch nationale Deregulierungsmassnahmen begünstigt wird. Finanzialisierung intensiviert den Wachstumszwang und erhöht nicht nur die Ungleichheit, sondern auch die ökologische Fragilität, beispielsweise durch spekulative Investitionen in Ressourcen, Rohstoffe oder Land. Beispiele wie der Derivatehandel mit Nahrungsmitteln oder Ressourcen (Link zur CDE-Forschung) zeigen, wie finanzierte Märkte soziale Vulnerabilitäten und ökologische Risiken verschärfen können.
+Diese Verschiebung der wirtschaftlichen Dynamik und Macht hin zum Finanzsektor wird als Finanzialisierung bezeichnet. Sie schuf einen Machtkomplex aus Zentralbanken, Geschäftsbanken, anderen Finanzinstitutionen, privaten Pensionsfonds und Eigentümer*innen verschiedener Vermögenswerte. In diesem Prozess wachsen die Finanzmärkte im Verhältnis zur Realwirtschaft unverhältnismässig stark, ein Trend, der durch nationale Deregulierungsmassnahmen begünstigt wird. Finanzialisierung intensiviert den Wachstumszwang und erhöht nicht nur die Ungleichheit, sondern auch die ökologische Fragilität, beispielsweise durch spekulative Investitionen in Ressourcen, Rohstoffe oder Land. Beispiele wie der Derivatehandel mit Nahrungsmitteln oder Ressourcen zeigen, wie finanzierte Märkte soziale Vulnerabilitäten und ökologische Risiken verschärfen können.
 
 ::: {.callout-note collapse="true"}
 #### Was sind Derivate und wie tragen sie zur Finanzialisierung bei?
@@ -196,10 +196,10 @@ Diese Verschiebung der wirtschaftlichen Dynamik und Macht hin zum Finanzsektor w
 Derivate sind Finanzinstrumente, deren Wert aus den zukünftigen Kursen oder Preisen anderer Güter, Vermögenswerte oder Referenzwerte wie Zinssätze, Rohstoffpreise oder Aktienindizes abgeleitet wird. Verbreitete Derivate umfassen Optionen, Futures und Swaps. Beim Derivatehandel findet keine reale wirtschaftliche Produktion statt – es werden keine Güter oder Dienstleistungen geschaffen. Derivate sollten ursprünglich gegen Preisschwankungen „absichern", z. B. im Rohstoffhandel. Die zunehmende Deregulierung und Technologisierung der Finanzmärkte führte jedoch zur weit verbreiteten Nutzung von Derivaten als spekulative Anlageinstrumente. Dies trug erheblich zur Entkopplung der Finanzmärkte von der Realwirtschaft bei und förderte einen massiven Markt für Finanzwetten, der die realen Wirtschaftswerte, auf denen die Derivate basieren, oft bei weitem übersteigt. Diese Dynamik ist eine Schlüsselkomponente der „Finanzialisierung" und erhöht die wirtschaftliche Instabilität sowie soziale und ökologische Risiken.
 :::
 
-::: {.callout-note collapse="true"}
+::: {.callout-caution collapse="true"}
 #### Weiterführende Literatur
 
-Blakeley, Grace. 2019. *Stolen: How to Save the World from Financialisation*. Repeater.
+- Blakeley, Grace. 2019. *Stolen: How to Save the World from Financialisation*. Repeater.
 :::
 
 ### Unternehmen als Schlüsselakteure wirtschaftlicher Nachhaltigkeit

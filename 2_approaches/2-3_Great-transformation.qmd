@@ -64,8 +64,8 @@ Konzepte der „Grossen Transformation"
 
 -   schlagen Schlüsselbereiche mit grosser Hebelwirkung vor (z. B. schlägt der WBGU eine Energietransformation, eine Stadttransformation, eine Landnutzungstransformation und transformative Bildung und Forschung vor).
 
-::: {.callout-note collapse="true"}
+::: {.callout-caution collapse="true"}
 #### Weiterführende Literatur
 
-Polanyi, Karl. 1944. *The Great Transformation: The Political and Economic Origins of Our Time*. Beacon Press.
+- Polanyi, Karl. 1944. *The Great Transformation: The Political and Economic Origins of Our Time*. Beacon Press.
 :::

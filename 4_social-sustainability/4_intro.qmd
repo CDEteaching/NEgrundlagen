@@ -2,9 +2,10 @@
 title: "Soziale Nachhaltigkeit"
 author: Felix Poelsma, Christoph Bader
 lightbox: true
-format: html
 tbl-cap-location: top
 fig-cap-location: bottom
+language:
+  crossref-tip-prefix: "Kasten"
 ---
 
 **Soziale Nachhaltigkeit** betrifft das Wohlergehen einer Gemeinschaft und umfasst Elemente wie Inklusion, Gerechtigkeit und sozialen Zusammenhalt. Oft wird argumentiert, dass diese Dimension der nachhaltigen Entwicklung schwerer zu erfassen ist als ökologische oder wirtschaftliche Nachhaltigkeit [@foladoriAdvancesLimitsSocial2005]. Das liegt daran, dass soziale Probleme möglicherweise nicht so unmittelbar sichtbar sind wie etwa die Zerstörung von Regenwäldern oder Hyperinflation. Was bedeutet Nachhaltigkeit, wenn Gemeinschaften durch Ereignisse wie Überschwemmungen ungleich betroffen sind oder wenn indigene Völker durch Infrastrukturprojekte vertrieben werden? Diese Auswirkungen offenbaren tief verwurzelte Ungleichheiten, die weitgehend auf den sozialen Strukturen von Gesellschaften beruhen.
@@ -25,9 +26,9 @@ Als normatives Konzept zielt soziale Nachhaltigkeit auf eine gerechte Verteilung
 
 Diese Aspekte werden durch Kate Raworths Donut-Ökonomik [-@raworthDoughnutAnthropoceneHumanitys2017] veranschaulicht, einem Rahmen, der die SDGs und Menschenrechte als Grundlage für sozial nachhaltige und gerechte menschliche Aktivitäten betrachtet. In der Donut-Ökonomik ist die Befriedigung der Grundbedürfnisse aller Menschen zentral. Diese Grundbedürfnisse, die das soziale Fundament des Rahmens bilden, umfassen Zugang zu sauberem Wasser, Sanitärversorgung, Gesundheitsversorgung, Bildung, Nahrung, sauberen Kochgelegenheiten, Strom, Wohnraum sowie Informations- und Unterstützungsnetzwerken, sowie die Möglichkeit zu arbeiten und ein Einkommen zu erzielen. Weitere Faktoren, die das soziale Fundament bilden, sind Geschlechtergleichstellung, soziale Gleichheit, Frieden und Gerechtigkeit sowie politische Teilhabe – d. h. die Möglichkeit, gesellschaftlichen Einfluss auszuüben.
 
-In der Donut-Ökonomik könnten Wirtschaftspolitiken dazu beitragen, soziale Gerechtigkeit zu erreichen, indem Vorteile und Kosten verteilt werden, ohne planetare Grenzen zu überschreiten. Und darin liegt die Herausforderung: Länder, die hinsichtlich sozialer Nachhaltigkeitsindikatoren – z. B. Zugang zu Nahrung, Bildung oder Wohnraum – gut abschneiden, überschreiten häufig ökologische Grenzen. Umgekehrt schneiden Länder, die innerhalb dieser ökologischen Grenzen bleiben, oft in sozialen Bereichen schlecht ab [vgl. @fig-SocEcoBoundaries; @oneillGoodLifeAll2018a]. Ein Gleichgewicht zwischen sozialen und ökologischen Anforderungen herzustellen ist daher entscheidend.
+In der Donut-Ökonomik könnten Wirtschaftspolitiken dazu beitragen, soziale Gerechtigkeit zu erreichen, indem Vorteile und Kosten verteilt werden, ohne planetare Grenzen zu überschreiten. Und darin liegt die Herausforderung: Länder, die hinsichtlich sozialer Nachhaltigkeitsindikatoren – z. B. Zugang zu Nahrung, Bildung oder Wohnraum – gut abschneiden, überschreiten häufig ökologische Grenzen. Umgekehrt schneiden Länder, die innerhalb dieser ökologischen Grenzen bleiben, oft in sozialen Bereichen schlecht ab [vgl. @fig-SocEcoBoundaries; @oneillGoodLifeAll2018]. Ein Gleichgewicht zwischen sozialen und ökologischen Anforderungen herzustellen ist daher entscheidend.
 
-![Erreichte soziale Schwellenwerte gegenüber überschrittenen biophysikalischen Grenzen für verschiedene Länder, Ergebnisse gewichtet nach der jeweiligen Bevölkerungsgrösse. Quelle: UN/DESA, basierend auf O'Neill and others (2018), Abbildung 2.](images/Fig4_2_SocialEcologicalBoundaries.png){#fig-SocEcoBoundaries}
+![Erreichte soziale Schwellenwerte gegenüber überschrittenen biophysikalischen Grenzen für verschiedene Länder, Ergebnisse gewichtet nach der jeweiligen Bevölkerungsgrösse. Quelle: @undesaWorldEconomicSocial2018 basierend auf @oneillGoodLifeAll2018, Abbildung 2.](images/Fig4_2_SocialEcologicalBoundaries.png){#fig-SocEcoBoundaries}
 
 Um eine nachhaltige Zukunft zu erreichen, argumentiert @raworthDoughnutAnthropoceneHumanitys2017, dass die Ressourcen der Erde gerechter verteilt werden müssen. Dies würde es allen ermöglichen, ihre Grundbedürfnisse zu erfüllen und gleichzeitig die Grenzen des Planeten zu respektieren. Es würde Veränderungen im Lebensstil erfordern – insbesondere bei den Wohlhabenden, die für den Grossteil der Emissionen verantwortlich sind. Derzeit tendieren diejenigen, die mehr Emissionen verursachen, zu einem besseren Zugang zu wesentlichen Gütern wie Nahrung, Wasser, Energie und Bildung – genau jenen Dingen, an denen es Menschen in einkommensschwächeren Ländern oft mangelt. In wohlhabenderen Ländern werden die Grundbedürfnisse der Menschen in der Regel umfassender erfüllt, was zu mehr Wohlstand, Gleichheit und Gerechtigkeit führt. Gleichzeitig sind höhere Lebensstandards oft mit erhöhten Treibhausgasemissionen und erhöhtem Konsum verbunden – wie in westlichen Industrieländern (z. B. USA, Europa) und China zu beobachten.
 
@@ -37,7 +38,7 @@ Ein weiterer Ansatz zur sozialen Nachhaltigkeit findet sich in den Human Develop
 
 Donut-Ökonomik und Fähigkeitenansatz sind zwei Beispiele für prägnante und einflussreiche normative Rahmenwerke. In diesem Kapitel behandeln wir eine Reihe von Konzepten und Ansätzen, die – durch ihre sozialen Dimensionen – inhärent normative und ethische Überlegungen beinhalten.
 
-Die vielen Theorien und Konzepte sozialer Nachhaltigkeit sind auch mit unterschiedlichen Vorstellungen von „Gerechtigkeit" verknüpft. Einige davon werden in @sec-justice näher beschrieben. Drei häufig genannte Dimensionen sind: Verteilungsgerechtigkeit, Verfahrensgerechtigkeit und Anerkennungsgerechtigkeit [@debruinEasierSaidDefined2024; @tribaldosJustTransitionPrinciples2022a; @wijsmanWhatWeMean2022].
+Die vielen Theorien und Konzepte sozialer Nachhaltigkeit sind auch mit unterschiedlichen Vorstellungen von „Gerechtigkeit" verknüpft. Einige davon werden in @sec-justice näher beschrieben. Drei häufig genannte Dimensionen sind: Verteilungsgerechtigkeit, Verfahrensgerechtigkeit und Anerkennungsgerechtigkeit [@debruinEasierSaidDefined2024; @tribaldosJustTransitionPrinciples2022; @wijsmanWhatWeMean2022].
 
 ![Die jeweiligen Schwerpunktbereiche von Verteilungsgerechtigkeit, Verfahrensgerechtigkeit und Anerkennungsgerechtigkeit. Quelle: Eigene Darstellung, adaptiert nach @seeMultidimensionalFrameworkAssessing2022.](images/Fig4_3_Justice.png){#fig-justice}
 
@@ -49,17 +50,44 @@ Die vielen Theorien und Konzepte sozialer Nachhaltigkeit sind auch mit unterschi
 
 @tbl-justice zeigt, wie sich diese drei Dimensionen gegenseitig beeinflussen [@wijsmanWhatWeMean2022]. Eine ausführlichere Diskussion von Verteilungs- und Verfahrensgerechtigkeit folgt in @sec-justice, da dies die Dimensionen sind, die Debatten über soziale Nachhaltigkeit am stärksten beeinflussen.
 
-+--------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                          | Verteilungsgerechtigkeit                                                                                                                                                              | Verfahrensgerechtigkeit                                                                                                                                                                                                                                        | Anerkennungsgerechtigkeit                                                                                                                                               |
-+==========================+=======================================================================================================================================================================================+================================================================================================================================================================================================================================================================+=========================================================================================================================================================================+
-| **Verteilungsgerechtigkeit** |                                                                                                                                                                                   | Die Verteilung von Ressourcen kann beeinflussen, wie leicht oder schwer es für Einzelpersonen oder Gemeinschaften ist, an Entscheidungsprozessen teilzunehmen. Dies liegt daran, dass Teilhabe Zeit, Energie und finanzielle Ressourcen erfordert.             | Die Verteilung von Ressourcen kann beeinflussen, wessen Interessen in Entscheidungsprozessen berücksichtigt werden – und wessen Identität anerkannt und als wichtig erachtet wird. |
-+--------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Verfahrensgerechtigkeit** | Die Teilnahme an Entscheidungsprozessen kann deren Ergebnisse beeinflussen – und damit, wie Vor- und Nachteile zwischen Einzelpersonen und Gruppen verteilt werden.               |                                                                                                                                                                                                                                                                | Die Teilnahme an Entscheidungsprozessen kann beeinflussen, wessen Interessen gehört werden und welche Einzelpersonen oder Gemeinschaften als wichtig anerkannt werden.  |
-+--------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Anerkennungsgerechtigkeit** | Die Anerkennung von Einzelpersonen oder Gruppen als wertvoll kann beeinflussen, wie Ressourcen verteilt werden.                                                                | Die Anerkennung von Einzelpersonen oder Gruppen als wertvoll kann auch bestimmen, wer zur Teilnahme an Entscheidungsprozessen eingeladen wird.                                                                                                                 |                                                                                                                                                                         |
-+--------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+```{r}
+#| label: tbl-justice
+#| tbl-cap: "Zusammenhänge zwischen Verteilungsgerechtigkeit, Verfahrensgerechtigkeit und Anerkennungsgerechtigkeit. Quelle: Basierend auf @wijsmanWhatWeMean2022."
 
-: Zusammenhänge zwischen Verteilungsgerechtigkeit, Verfahrensgerechtigkeit und Anerkennungsgerechtigkeit. {#tbl-justice}
+library(kableExtra)
+is_pdf <- knitr::is_latex_output()
+
+df <- data.frame(
+  Dimension = c("Verteilungsgerechtigkeit", "Verfahrensgerechtigkeit", "Anerkennungsgerechtigkeit"),
+  `Verteilungsgerechtigkeit` = c(
+    "—",
+    "Die Teilnahme an Entscheidungsprozessen kann deren Ergebnisse beeinflussen – und damit, wie Vor- und Nachteile zwischen Einzelpersonen und Gruppen verteilt werden.",
+    "Die Anerkennung von Einzelpersonen oder Gruppen als wertvoll kann beeinflussen, wie Ressourcen verteilt werden."),
+  `Verfahrensgerechtigkeit` = c(
+    "Die Verteilung von Ressourcen kann beeinflussen, wie leicht oder schwer es für Einzelpersonen oder Gemeinschaften ist, an Entscheidungsprozessen teilzunehmen. Dies liegt daran, dass Teilhabe Zeit, Energie und finanzielle Ressourcen erfordert.",
+    "—",
+    "Die Anerkennung von Einzelpersonen oder Gruppen als wertvoll kann auch bestimmen, wer zur Teilnahme an Entscheidungsprozessen eingeladen wird."),
+  `Anerkennungsgerechtigkeit` = c(
+    "Die Verteilung von Ressourcen kann beeinflussen, wessen Interessen in Entscheidungsprozessen berücksichtigt werden – und wessen Identität anerkannt und als wichtig erachtet wird.",
+    "Die Teilnahme an Entscheidungsprozessen kann beeinflussen, wessen Interessen gehört werden und welche Einzelpersonen oder Gemeinschaften als wichtig anerkannt werden.",
+    "—"),
+  check.names = FALSE
+)
+
+df |>
+  kbl(booktabs = TRUE, align = "l", longtable = is_pdf) |>
+  kable_styling(
+    bootstrap_options = c("striped", "hover", "condensed"),
+    latex_options = if (is_pdf) c("hold_position", "repeat_header") else NULL,
+    full_width = !is_pdf,
+    font_size = if (is_pdf) 8 else NULL
+  ) |>
+  row_spec(0, bold = TRUE) |>
+  column_spec(1, width = if (is_pdf) "1.6cm" else NA, bold = TRUE) |>
+  column_spec(2:4, width = if (is_pdf) "3.25cm" else NA)
+
+
+```
 
 ## Soziale Nachhaltigkeit definieren
 
@@ -121,13 +149,13 @@ Der Fähigkeitenansatz verlagert den Fokus daher von **Gleichheit** zu **Gerecht
 
 **Ungleichheit betrachten: Wo und wen?**
 
-Aufbauend auf dem Fähigkeitenansatz, der die realen Möglichkeiten der Menschen betont, das Leben zu führen, das sie schätzen, ist es entscheidend anzuerkennen, dass Ungleichheit auf unterschiedliche Weise manifest werden und über verschiedene Dimensionen hinweg bewertet werden kann. Ungleichheit kann in verschiedenen Räumen analysiert werden, beispielsweise durch die Unterscheidung zwischen **absoluter** und **relativer Ungleichheit** [@nino-zarazuaGlobalInequalityRelatively2017a] oder zwischen **vertikaler** und **horizontaler Ungleichheit** [@stewartHorizontalInequalitiesNeglected2005a].
+Aufbauend auf dem Fähigkeitenansatz, der die realen Möglichkeiten der Menschen betont, das Leben zu führen, das sie schätzen, ist es entscheidend anzuerkennen, dass Ungleichheit auf unterschiedliche Weise manifest werden und über verschiedene Dimensionen hinweg bewertet werden kann. Ungleichheit kann in verschiedenen Räumen analysiert werden, beispielsweise durch die Unterscheidung zwischen **absoluter** und **relativer Ungleichheit** [@nino-zarazuaGlobalInequalityRelatively2017] oder zwischen **vertikaler** und **horizontaler Ungleichheit** [@stewartHorizontalInequalitiesNeglected2005].
 
 **Absolute Ungleichheit** beschreibt eine Situation, in der Menschen nicht in der Lage sind, ihre grundlegendsten Überlebensbedürfnisse zu erfüllen. Dies ist beispielsweise dann der Fall, wenn eine Person keinen Zugang zu sauberem Trinkwasser, ausreichend Nahrung oder sicherem Wohnraum hat und unter der Armutsgrenze lebt. Diese Form der Ungleichheit wird oft durch feste Einkommensschwellen definiert, wie z. B. die internationale Armutsgrenze der Weltbank.
 
-**Relative Ungleichheit** misst den Nachteil einer Person im Verhältnis zum durchschnittlichen Lebensstandard innerhalb einer bestimmten Gesellschaft oder Gemeinschaft. Eine Familie in einem reichen Land mag beispielsweise über ausreichendes Einkommen für Nahrung und Wohnraum verfügen, aber möglicherweise nicht über die Ressourcen, um vollständig an der Gesellschaft teilzunehmen – wenn sie sich beispielsweise keinen Internetzugang oder Schulausflüge für ihre Kinder leisten können. Relative Ungleichheit wird deutlich, wenn die Lebensbedingungen erheblich unter dem sozialen Durchschnitt liegen. Sie führt häufig zu sozialer Ausgrenzung und schränkt den Zugang zu Ressourcen und den Möglichkeiten ein, die notwendig sind, um in einem bestimmten sozialen Kontext ein würdiges und selbstbestimmtes Leben zu führen. Der wesentliche Unterschied zwischen den beiden Konzepten besteht darin, dass **absolute Armut** einen objektiven Mangel an wesentlichen Gütern bezeichnet, während **relative Armut** den sozialen und wirtschaftlichen Status einer Person im Verhältnis zu anderen in einer Gesellschaft beschreibt (@nino-zarazuaGlobalInequalityRelatively2017a).
+**Relative Ungleichheit** misst den Nachteil einer Person im Verhältnis zum durchschnittlichen Lebensstandard innerhalb einer bestimmten Gesellschaft oder Gemeinschaft. Eine Familie in einem reichen Land mag beispielsweise über ausreichendes Einkommen für Nahrung und Wohnraum verfügen, aber möglicherweise nicht über die Ressourcen, um vollständig an der Gesellschaft teilzunehmen – wenn sie sich beispielsweise keinen Internetzugang oder Schulausflüge für ihre Kinder leisten können. Relative Ungleichheit wird deutlich, wenn die Lebensbedingungen erheblich unter dem sozialen Durchschnitt liegen. Sie führt häufig zu sozialer Ausgrenzung und schränkt den Zugang zu Ressourcen und den Möglichkeiten ein, die notwendig sind, um in einem bestimmten sozialen Kontext ein würdiges und selbstbestimmtes Leben zu führen. Der wesentliche Unterschied zwischen den beiden Konzepten besteht darin, dass **absolute Armut** einen objektiven Mangel an wesentlichen Gütern bezeichnet, während **relative Armut** den sozialen und wirtschaftlichen Status einer Person im Verhältnis zu anderen in einer Gesellschaft beschreibt (@nino-zarazuaGlobalInequalityRelatively2017).
 
-Ein weiteres Konzept unterscheidet zwischen **vertikaler** und **horizontaler Ungleichheit**. Vertikale Ungleichheit konzentriert sich auf sozioökonomische Unterschiede zwischen Individuen – etwa bei Einkommen, Berufsstatus oder Bildung. Im Gegensatz dazu bezieht sich horizontale Ungleichheit auf Unterschiede zwischen kulturell definierten Gruppen, basierend beispielsweise auf Geschlecht, Alter, Familienstand, Nationalität, Region oder Wohnort [@stewartHorizontalInequalitiesNeglected2005a].
+Ein weiteres Konzept unterscheidet zwischen **vertikaler** und **horizontaler Ungleichheit**. Vertikale Ungleichheit konzentriert sich auf sozioökonomische Unterschiede zwischen Individuen – etwa bei Einkommen, Berufsstatus oder Bildung. Im Gegensatz dazu bezieht sich horizontale Ungleichheit auf Unterschiede zwischen kulturell definierten Gruppen, basierend beispielsweise auf Geschlecht, Alter, Familienstand, Nationalität, Region oder Wohnort [@stewartHorizontalInequalitiesNeglected2005].
 
 **Wie analysiert man Ungleichheit? Individuelle vs. strukturelle Ansätze**
 
@@ -135,23 +163,52 @@ Analysen von Ungleichheit unterscheiden oft zwischen **individueller Ungleichhei
 
 Im Gegensatz dazu orientieren sich Analysen struktureller Ungleichheit stärker an den Konzepten der Fairness/Gerechtigkeit, des Fähigkeitenansatzes und der relativen Ungleichheit. Strukturelle Ungleichheit wird nicht als Produkt der Eigenschaften einer Einzelperson betrachtet, sondern als Ergebnis des sozialen Rahmens – wie z. B. der Position einer Person innerhalb der Produktionsweise oder der sozialen Hierarchie; ihres Zugangs zu Löhnen, Gewinnen oder einer Rente; oder ihrer Nationalität, die allesamt Schlüsselfaktoren globaler Ungleichheit sind [vgl. @milanovicCapitalismAloneFuture2019].
 
-Dieses Kapitel hat verschiedene Perspektiven auf Ungleichheit vorgestellt, darunter den weit verbreiteten Fähigkeitenansatz, der eine übergreifende und normative Perspektive bietet. Die anderen Perspektiven mögen ähnlich klingen, unterscheiden sich aber tatsächlich in ihrem Schwerpunkt (vgl. @tbl-FormsInequality).
+Dieses Kapitel hat verschiedene Perspektiven auf Ungleichheit vorgestellt, darunter den weit verbreiteten Fähigkeitenansatz, der eine übergreifende und normative Perspektive bietet. Die anderen Perspektiven mögen ähnlich klingen, unterscheiden sich aber tatsächlich in ihrem Schwerpunkt (vgl. @tbl-inequality-categories).
 
-+-----------------------------+----------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-|                             | relativ vs. absolut                                                                                                        | vertikal vs. horizontal                                                                                                | individuell vs. strukturell                                                                                                               |
-+=============================+============================================================================================================================+========================================================================================================================+===========================================================================================================================================+
-| **Was wird verglichen?**    | Im Verhältnis zu Unterschieden gemessene Ungleichheit vs. absolute Unterschiede                                            | Unterschiede zwischen Einkommensniveaus vs. Unterschiede zwischen sozialen Gruppen                                     | Unterschiede aufgrund persönlicher Merkmale vs. Unterschiede aufgrund sozialer Strukturen                                                 |
-+-----------------------------+----------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-| **Schwerpunkt**             | Kategorisierung von Ungleichheit:                                                                                          | Kategorisierung von Ungleichheit:                                                                                      | Analysedimension von Ungleichheit:                                                                                                        |
-|                             |                                                                                                                            |                                                                                                                        |                                                                                                                                           |
-|                             | Wer hat mehr/weniger?                                                                                                      | Wie wird Ungleichheit quantifiziert und dargestellt?                                                                   | Was sind die Ursachen von Ungleichheit?                                                                                                   |
-+-----------------------------+----------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-| **Typisches Beispiel**      | Die Wohlhabenden erhalten 40% des Einkommens, während die Armen 10% erhalten (relativ) vs. die zur Deckung von Grundbedürfnissen erforderliche Einkommenslücke (absolut) | Ein CEO verdient 100-mal mehr als eine Reinigungskraft (vertikal) vs. Frauen verdienen weniger als Männer für die gleiche Arbeit (horizontal) | Individuell: jemand wird durch Talent und Einsatz erfolgreich vs. strukturell: jemand ist aufgrund seiner Herkunft benachteiligt |
-+-----------------------------+----------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-| **Politische Relevanz**     | Verteilungsgerechtigkeit vs. Armutsbekämpfung                                                                              | Umverteilung vs. Antidiskriminierung                                                                                   | Förderung der Chancengleichheit vs. Reform sozialer Strukturen                                                                            |
-+-----------------------------+----------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
+```{r}
+#| label: tbl-inequality-categories
+#| tbl-cap: "Kategorien und Analysedimensionen von Ungleichheit."
 
-: Kategorien und Analysedimensionen von Ungleichheit. {#tbl-FormsInequality}
+library(kableExtra)
+is_pdf <- knitr::is_latex_output()
+
+esc_pct <- function(x) if (is_pdf) gsub("%", "\\\\%", x) else x
+
+df <- data.frame(
+  Kategorie = c("relativ vs. absolut", "vertikal vs. horizontal", "individuell vs. strukturell"),
+  `Was wird verglichen?` = c(
+    "Im Verhältnis zu Unterschieden gemessene Ungleichheit vs. absolute Unterschiede",
+    "Unterschiede zwischen Einkommensniveaus vs. Unterschiede zwischen sozialen Gruppen",
+    "Unterschiede aufgrund persönlicher Merkmale vs. Unterschiede aufgrund sozialer Strukturen"),
+  `Schwerpunkt` = c(
+    "Kategorisierung von Ungleichheit: Wer hat mehr/weniger?",
+    "Kategorisierung von Ungleichheit: Wie wird Ungleichheit quantifiziert und dargestellt?",
+    "Analysedimension von Ungleichheit: Was sind die Ursachen von Ungleichheit?"),
+  `Typisches Beispiel` = c(
+    esc_pct("Die Wohlhabenden erhalten 40% des Einkommens, während die Armen 10% erhalten (relativ) vs. die zur Deckung von Grundbedürfnissen erforderliche Einkommenslücke (absolut)"),
+    "Ein CEO verdient 100-mal mehr als eine Reinigungskraft (vertikal) vs. Frauen verdienen weniger als Männer für die gleiche Arbeit (horizontal)",
+    "Individuell: jemand wird durch Talent und Einsatz erfolgreich vs. strukturell: jemand ist aufgrund seiner Herkunft benachteiligt"),
+  `Politische Relevanz` = c(
+    "Verteilungsgerechtigkeit vs. Armutsbekämpfung",
+    "Umverteilung vs. Antidiskriminierung",
+    "Förderung der Chancengleichheit vs. Reform sozialer Strukturen"),
+  check.names = FALSE
+)
+
+df |>
+  kbl(booktabs = TRUE, align = "l", longtable = is_pdf) |>
+  kable_styling(
+    bootstrap_options = c("striped", "hover", "condensed"),
+    latex_options = if (is_pdf) c("hold_position", "repeat_header") else NULL,
+    full_width = !is_pdf,
+    font_size = if (is_pdf) 8 else NULL
+  ) |>
+  row_spec(0, bold = TRUE) |>
+  column_spec(1, width = if (is_pdf) "1.6cm" else NA, bold = TRUE) |>
+  column_spec(2:4, width = if (is_pdf) "3.0cm" else NA)
+
+
+```
 
 ## Sozialer Zusammenhalt
 
@@ -161,7 +218,7 @@ Ein funktionierender sozialer Zusammenhalt und das Wohlergehen einer Bevölkerun
 
 Sozialer Zusammenhalt ist die Grundlage für gegenseitiges Vertrauen und kollektives Handeln. Er gilt als zentrale Voraussetzung für Frieden und Wohlstand [@chatterjeeLeveragingSocialCohesion2023]. Studien zeigen beispielsweise, dass Gesellschaften mit einem hohen Vertrauensniveau weniger Konflikte erleben [@putnamBowlingAloneCollapse2000; @rothsteinAllAllEquality2005]. Im Gegensatz dazu ist geringeres soziales Vertrauen oft mit grösserer wirtschaftlicher Ungleichheit verbunden [@jordahlInequalityTrust2007] (vgl. @fig-TrustInequality).
 
-![Interpersonelles Vertrauen vs. Einkommensungleichheit. Quelle: Our World in Data (2024).](images/Fig4_7_TrustInequality.png){#fig-TrustInequality}
+![Interpersonelles Vertrauen vs. Einkommensungleichheit. Quelle: <https://ourworldindata.org/grapher/interpersonal-trust-vs-income-inequality>.](images/Fig4_7_TrustInequality.png){#fig-TrustInequality}
 
 Das obige Streudiagramm veranschaulicht den Zusammenhang zwischen interpersonellem Vertrauen und Einkommensungleichheit. Jeder Punkt repräsentiert ein Land. Die Punktfarbe kategorisiert Länder nach ihrer jeweiligen Region; die Punktgrösse spiegelt die Bevölkerungsgrösse des Landes wider. Die Y-Achse zeigt den Prozentsatz der Bevölkerung eines Landes, der der Aussage „Den meisten Menschen kann man vertrauen" zustimmt. Die X-Achse zeigt den Gini-Koeffizienten, ein weit verbreitetes Mass für Einkommensungleichheit: Ein Wert von 0 entspricht vollständiger Einkommensgleichheit, während ein Wert von 1 (oder 100%) maximale Einkommensungleichheit darstellt – d. h. eine einzelne Person hält das gesamte Einkommen, während alle anderen nichts erhalten.
 
@@ -179,7 +236,7 @@ Das Diagramm zeigt, dass das Niveau des sozialen Vertrauens in Ländern mit eine
 
 Sozialer Zusammenhalt spiegelt sich in den Einstellungen und im Verhalten aller sozialen Gruppen wider und umfasst sowohl normative als auch relationale Dimensionen. Er sollte als Kontinuum verstanden werden, entlang dessen Gesellschaften unterschiedliche Grade des Zusammenhalts aufweisen können.
 
-Um zu veranschaulichen, wie diese Elemente operationalisiert werden, lohnt ein Blick darauf, wie sozialer Zusammenhalt in der Schweiz gemessen wird, wo er eine besondere Bedeutung hat: Die Förderung des „inneren Zusammenhalts" ist in der Bundesverfassung als Ziel der Schweizerischen Eidgenossenschaft verankert (Art. 2). Eine entscheidende Rolle bei der Verbindung der Menschen in der mehrsprachigen Schweiz spielt die Kultur, die als „gesellschaftlicher Kitt" wirkt. Obwohl sozialer Zusammenhalt in der Agenda 2030 kein explizites Ziel ist, wird er implizit in mehreren ihrer Zielvorgaben angesprochen. In der Schweiz wird sozialer Zusammenhalt vom Bundesamt für Statistik anhand einer Reihe von Indikatoren definiert und gemessen [vgl. @tbl-socialCohesion; @fsoSocialCohesion2025].
+Um zu veranschaulichen, wie diese Elemente operationalisiert werden, lohnt ein Blick darauf, wie sozialer Zusammenhalt in der Schweiz gemessen wird, wo er eine besondere Bedeutung hat: Die Förderung des „inneren Zusammenhalts" ist in der Bundesverfassung als Ziel der Schweizerischen Eidgenossenschaft verankert (Art. 2). Eine entscheidende Rolle bei der Verbindung der Menschen in der mehrsprachigen Schweiz spielt die Kultur, die als „gesellschaftlicher Kitt" wirkt. Obwohl sozialer Zusammenhalt in der Agenda 2030 kein explizites Ziel ist, wird er implizit in mehreren ihrer Zielvorgaben angesprochen. In der Schweiz wird sozialer Zusammenhalt vom Bundesamt für Statistik anhand einer Reihe von Indikatoren definiert und gemessen [vgl. @tbl-social-cohesion-switzerland; @fsoSocialCohesion2025].
 
 Das erste Element, **soziale Beziehungen**, zeigt sich in der politischen Teilhabe, etwa beim Wählen und Abstimmen. Dieses Element umfasst auch die kulturelle Teilhabe, die als Anteil der Bevölkerung gemessen wird, der an kulturellen Aktivitäten teilnimmt. Soziale Beziehungen werden durch Faktoren wie Diskriminierung negativ beeinflusst, die das Vertrauen der Menschen in Mitmenschen und Institutionen sowie das Zugehörigkeitsgefühl zu einem sozialen Netzwerk untergräbt.
 
@@ -189,29 +246,57 @@ Das dritte Element, **Orientierung am Gemeinwohl**, umfasst Aspekte der sozialen
 
 **Bildung** ist ein Querschnittsthema, das alle drei Elemente betrifft: Bildung fördert soziale Beziehungen, stärkt die Identifikation mit der Gesellschaft und unterstützt die Orientierung am Gemeinwohl, indem soziale Normen und Werte vermittelt werden. Relevante Indikatoren umfassen die Abschlussquote der Sekundarstufe II und den Anteil junger Menschen, die weder in Ausbildung noch in Beschäftigung sind.
 
-+----------------------------------------------------------+-------------------------------------------------------------------------------------------+
-| **Schlüsselelement** [@schieferEssentialsSocialCohesion2017]: | **Indikatoren** [@fsoSocialCohesion2025]: \|                                         |
-+----------------------------------------------------------+-------------------------------------------------------------------------------------------+
-| Soziale Beziehungen                                      | -   Politische Teilhabe (z. B. Wahlen und Abstimmungen)                                   |
-|                                                          |                                                                                           |
-|                                                          | -   Kulturelle Teilhabe                                                                   |
-|                                                          |                                                                                           |
-|                                                          | -   Erfahrung von Diskriminierung                                                         |
-+----------------------------------------------------------+-------------------------------------------------------------------------------------------+
-| Identifikation mit der Gesellschaft                      | -   Regionale Unterschiede (z. B. Finanzkraft der Kantone)                                |
-|                                                          |                                                                                           |
-|                                                          | -   Mehrsprachigkeit/kulturelle Integration                                               |
-+----------------------------------------------------------+-------------------------------------------------------------------------------------------+
-| Orientierung am Gemeinwohl                               | -   Arbeitsmarktbeteiligung (z. B. Erwerbsquote von Menschen mit Behinderungen)           |
-|                                                          |                                                                                           |
-|                                                          | -   Soziale Ungleichheit (z. B. Armutsniveau)                                             |
-|                                                          |                                                                                           |
-|                                                          | -   Ehrenamtliche Arbeit                                                                  |
-+----------------------------------------------------------+-------------------------------------------------------------------------------------------+
-| Querschnittsthema                                        | -   Bildung                                                                               |
-+----------------------------------------------------------+-------------------------------------------------------------------------------------------+
+```{r}
+#| label: tbl-social-cohesion-switzerland
+#| tbl-cap: "Messung des sozialen Zusammenhalts in der Schweiz."
 
-: Messung des sozialen Zusammenhalts in der Schweiz {#tbl-socialCohesion}
+library(kableExtra)
+is_pdf <- knitr::is_latex_output()
+
+# Hilfsfunktion: Aufzählungstext je nach Ausgabeformat
+make_bullets <- function(items, pdf = is_pdf) {
+  if (pdf) {
+    text <- paste0("• ", items, collapse = "\n")
+    linebreak(text, align = "l")
+  } else {
+    paste0("• ", items, collapse = "<br>")
+  }
+}
+
+df <- data.frame(
+  `Schlüsselelement [@schieferEssentialsSocialCohesion2017]` = c(
+    "Soziale Beziehungen",
+    "Identifikation mit der Gesellschaft",
+    "Orientierung am Gemeinwohl",
+    "Querschnittsthema"),
+  `Indikatoren [@fsoSocialCohesion2025]`= c(
+    make_bullets(c("Politische Teilhabe (z. B. Wahlen und Abstimmungen)",
+                   "Kulturelle Teilhabe",
+                   "Erfahrung von Diskriminierung")),
+    make_bullets(c("Regionale Unterschiede (z. B. Finanzkraft der Kantone)",
+                   "Mehrsprachigkeit/kulturelle Integration")),
+    make_bullets(c("Arbeitsmarktbeteiligung (z. B. Erwerbsquote von Menschen mit Behinderungen)",
+                   "Soziale Ungleichheit (z. B. Armutsniveau)",
+                   "Ehrenamtliche Arbeit")),
+    make_bullets(c("Bildung"))
+  ),
+  check.names = FALSE
+)
+
+df |>
+  kbl(booktabs = TRUE, align = "l", longtable = is_pdf) |>
+  kable_styling(
+    bootstrap_options = c("striped", "hover", "condensed"),
+    latex_options = if (is_pdf) c("hold_position", "repeat_header") else NULL,
+    full_width = !is_pdf,
+    font_size = if (is_pdf) 8 else NULL
+  ) |>
+  row_spec(0, bold = TRUE) |>
+  column_spec(1, width = if (is_pdf) "5.5cm" else NA, bold = TRUE) |>
+  column_spec(2, width = if (is_pdf) "5.5cm" else NA)
+
+
+```
 
 ## Resilienz
 
@@ -318,7 +403,7 @@ In anderen Fragen der Verteilungsgerechtigkeit ist ein gesellschaftlicher Konsen
 
     2.  Gerechte soziale und wirtschaftliche Ungleichheiten: Ungleichheiten gelten nur dann als gerecht, wenn sie zwei Bedingungen erfüllen: Sie kommen den am wenigsten Begünstigten in der Gesellschaft zugute („Differenzprinzip"), und Ämter und Positionen sind unter Bedingungen fairer Chancengleichheit für alle zugänglich.
 
--   **Egalitarismus**: Ziel ist die Gleichbehandlung aller, da alle in Bezug auf Würde und moralischen Status gleich sind. Ein prominenter Ansatz ist der Fähigkeitenansatz (vgl. Abschnitte 3.2.1 und 3.2.3). **Ronald Dworkin** bot einen weiteren Schlüsselansatz und formulierte die Theorie der Ressourcengleichheit in *Was ist Gleichheit?* (1981). Dworkin postulierte, dass eine Gesellschaft gerecht ist, wenn Ressourcen so verteilt sind, dass keine Umverteilung eine gleichmässigere Verteilung ermöglichen würde. Das Ziel ist nicht, gleiche Lebenszufriedenheit oder gleichen Wohlstand zu erreichen, sondern faire Ausgangsbedingungen zu gewährleisten, die es Einzelpersonen ermöglichen, ihre eigenen Lebenspläne zu verfolgen.
+-   **Egalitarismus**: Ziel ist die Gleichbehandlung aller, da alle in Bezug auf Würde und moralischen Status gleich sind. Ein prominenter Ansatz ist der Fähigkeitenansatz. **Ronald Dworkin** bot einen weiteren Schlüsselansatz und formulierte die Theorie der Ressourcengleichheit in *Was ist Gleichheit?* (1981). Dworkin postulierte, dass eine Gesellschaft gerecht ist, wenn Ressourcen so verteilt sind, dass keine Umverteilung eine gleichmässigere Verteilung ermöglichen würde. Das Ziel ist nicht, gleiche Lebenszufriedenheit oder gleichen Wohlstand zu erreichen, sondern faire Ausgangsbedingungen zu gewährleisten, die es Einzelpersonen ermöglichen, ihre eigenen Lebenspläne zu verfolgen.
 
 **Kollektive Theorien** betrachten Gesellschaften als Verbände sozialer Gruppen oder Klassen, die sich in ihren Beziehungen zu Produktionsmitteln und Ressourcen unterscheiden. Sie lehnen universalistische, abstrakte Prinzipien ab und argumentieren stattdessen, dass jede Gemeinschaft das Produkt spezifischer historischer und kultureller Bedingungen ist. Daher gibt es keine universellen Gerechtigkeitsnormen; stattdessen entstehen kontextabhängige Regeln, die aus sozialen Praktiken und Traditionen abgeleitet werden. Gerechtigkeit wird hier im Sinne des Gemeinwohls verstanden: Was sozial gerecht ist, stärkt den Zusammenhalt und den Fortbestand einer Gemeinschaft.
 
@@ -327,19 +412,43 @@ In anderen Fragen der Verteilungsgerechtigkeit ist ein gesellschaftlicher Konsen
 -   **Michael Sandel** betont die Bedeutung von Gemeinschaft und moralischer Verantwortung. Für Sandel sind Gerechtigkeit und Gemeinwohl untrennbar mit der Zugehörigkeit zu einer identitätsstiftenden Gemeinschaft verbunden.
 :::
 
-Bei der Überlegung zur Einführung eines bedingungslosen Grundeinkommens würden Vertreter*innen der verschiedenen Theorien zu sehr unterschiedlichen Schlüssen kommen – wie @tbl-EvalJustice zeigt.
+Bei der Überlegung zur Einführung eines bedingungslosen Grundeinkommens würden Vertreter*innen der verschiedenen Theorien zu sehr unterschiedlichen Schlüssen kommen – wie @tbl-basic-income-justice zeigt.
 
-+---------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Gerechtigkeitstheorien                                              | Ist die Idee eines Grundeinkommens gut?   | Begründung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-+=====================================================================+===========================================+==========================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================+
-| Libertäre Theorien (Nozick, Hayek)                                  | Nein                                      | Soziale Gerechtigkeit kann nicht zentral gesteuert werden. Der Staat sollte nur minimale Schutzfunktionen übernehmen, und Ressourcen sollten über den Markt zugeteilt werden. Umverteilung durch Steuern zur Finanzierung eines Grundeinkommens ist ein Eingriff in die individuelle Freiheit und Eigentumsrechte.                                                                                                                                                                                                        |
-+---------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Liberale Theorien (Utilitarismus, Kontraktarismus, Egalitarismus)   | Ja/Vielleicht                             | Aus utilitaristischer Perspektive könnte ein Grundeinkommen den Gesamtnutzen (oder Nutzen) steigern. Der Kontraktarismus (Rawls) unterstützt es ebenfalls mit dem Argument, dass es gleiche Grundfreiheiten stärkt. Aus egalitaristischer Perspektive kann ein Grundeinkommen Chancen fördern, wird aber kritisch betrachtet, weil es *Gleichheit* betont (d. h. dass alle dasselbe erhalten) statt Gerechtigkeit im Sinne von *Fairness* (d. h. dass jede Person das bekommt, was sie braucht). Zusätzliche Massnahmen wären notwendig, um Fairness zu gewährleisten. |
-+---------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Kollektive Gerechtigkeitstheorien (Walzer, Sandel)                  | Kontextabhängig                           | Wie diese Frage bewertet wird, hängt von spezifischen historischen, kulturellen und sozialen Bedingungen ab. Ein Grundeinkommen könnte als sozial gerecht angesehen werden, wenn es den sozialen Zusammenhalt und das Gemeinwohl stärkt.                                                                                                                                                                                                                                                                                   |
-+---------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+```{r}
+#| label: tbl-basic-income-justice
+#| tbl-cap: "Bewertung der Einführung eines bedingungslosen Grundeinkommens, basierend auf verschiedenen Gerechtigkeitstheorien."
 
-: Bewertung der Einführung eines bedingungslosen Grundeinkommens, basierend auf verschiedenen Gerechtigkeitstheorien. {#tbl-EvalJustice}
+library(kableExtra)
+is_pdf <- knitr::is_latex_output()
+
+df <- data.frame(
+  `Gerechtigkeitstheorien` = c(
+    "Libertäre Theorien (Nozick, Hayek)",
+    "Liberale Theorien (Utilitarismus, Kontraktarismus, Egalitarismus)",
+    "Kollektive Gerechtigkeitstheorien (Walzer, Sandel)"),
+  `Ist die Idee eines Grundeinkommens gut?` = c(
+    "Nein", "Ja/Vielleicht", "Kontextabhängig"),
+  Begründung = c(
+    "Soziale Gerechtigkeit kann nicht zentral gesteuert werden. Der Staat sollte nur minimale Schutzfunktionen übernehmen, und Ressourcen sollten über den Markt zugeteilt werden. Umverteilung durch Steuern zur Finanzierung eines Grundeinkommens ist ein Eingriff in die individuelle Freiheit und Eigentumsrechte.",
+    "Aus utilitaristischer Perspektive könnte ein Grundeinkommen den Gesamtnutzen (oder Nutzen) steigern. Der Kontraktarismus (Rawls) unterstützt es ebenfalls mit dem Argument, dass es gleiche Grundfreiheiten stärkt. Aus egalitaristischer Perspektive kann ein Grundeinkommen Chancen fördern, wird aber kritisch betrachtet, weil es Gleichheit betont (d. h. dass alle dasselbe erhalten) statt Gerechtigkeit im Sinne von Fairness (d. h. dass jede Person das bekommt, was sie braucht). Zusätzliche Massnahmen wären notwendig, um Fairness zu gewährleisten.",
+    "Wie diese Frage bewertet wird, hängt von spezifischen historischen, kulturellen und sozialen Bedingungen ab. Ein Grundeinkommen könnte als sozial gerecht angesehen werden, wenn es den sozialen Zusammenhalt und das Gemeinwohl stärkt."),
+  check.names = FALSE
+)
+
+df |>
+  kbl(booktabs = TRUE, align = "l", longtable = is_pdf) |>
+  kable_styling(
+    bootstrap_options = c("striped", "hover", "condensed"),
+    latex_options = if (is_pdf) c("hold_position", "repeat_header") else NULL,
+    full_width = !is_pdf,
+    font_size = if (is_pdf) 9 else NULL
+  ) |>
+  row_spec(0, bold = TRUE) |>
+  column_spec(1, width = if (is_pdf) "3.2cm" else NA, bold = TRUE) |>
+  column_spec(2, width = if (is_pdf) "2.5cm" else NA) |>
+  column_spec(3, width = if (is_pdf) "9.3cm" else NA)
+
+```
 
 Während **Gerechtigkeitstheorien** allgemeine Rahmenwerke oder Modelle sind, die definieren, was Gerechtigkeit ist und wie sie in einer Gesellschaft erreicht werden kann, konzentrieren sich **Gerechtigkeitskonzepte** stärker auf spezifische Aspekte. Wie der Überblick in @tip-concepts zeigt, können Fragen der Verteilungsgerechtigkeit aus einer Vielzahl unterschiedlicher Perspektiven betrachtet werden.
 

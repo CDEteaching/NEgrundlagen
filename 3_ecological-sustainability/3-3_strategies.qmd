@@ -42,8 +42,8 @@ Der Kapazitätsaufbau zur Unterstützung der Transformation zur Erreichung der S
 
 Hinweis: Es ist wichtig zu beachten, dass Ansätze nicht immer synergetisch sind; oft gehen Ansätze, die eine ökologische Dimension der Nachhaltigkeit adressieren, mit Zielkonflikten mit anderen Ansätzen oder mit der sozialen oder wirtschaftlichen Dimension der Nachhaltigkeit einher.
 
-::: {.callout-note collapse="true"}
+::: {.callout-caution collapse="true"}
 #### Weiterführende Literatur
 
-Guyer, Madeleine, Myriam Steinemann, and Nina Saalismaa. 2022. *Biodiversity and Sustainable Development*. Climate Change & Environment Nexus Brief. Swiss Agency for Development and Cooperation.
+- Guyer, Madeleine, Myriam Steinemann, and Nina Saalismaa. 2022. *Biodiversity and Sustainable Development*. Climate Change & Environment Nexus Brief. Swiss Agency for Development and Cooperation.
 :::

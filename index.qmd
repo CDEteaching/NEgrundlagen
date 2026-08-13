@@ -14,29 +14,29 @@ Wir hoffen, dass dieses Buch Ihnen eine solide Grundlage für die eigene Auseina
 
 ## Zitierhinweis
 
-Bader, C. (Hrsg.). (2025). Grundlagen der Nachhaltigkeit (Version 1.0) \[Online-Lehrbuch\]. CDE, Universität Bern. Abgerufen von https://cdeteaching.github.io/Basics-of-sustainability/
+Bader, C. (Hrsg.). (2025). Grundlagen der Nachhaltigkeit (Version 1.3) \[Online-Lehrbuch\]. CDE, Universität Bern. Abgerufen von https://cdeteaching.github.io/Basics-of-sustainability/
 
 **Einzelne Kapitel zitieren:**
 
 Kapitel 1:
 
-Bader, C. (2025). Verständnis und Konzepte der Nachhaltigkeit. In C. Bader (Hrsg.), Grundlagen der Nachhaltigkeit (Version 1.0) \[Online-Lehrbuch\]. CDE, Universität Bern. Abgerufen von https://cdeteaching.github.io/Basics-of-sustainability/
+Bader, C. (2025). Verständnis und Konzepte der Nachhaltigkeit. In C. Bader (Hrsg.), Grundlagen der Nachhaltigkeit (Version 1.3) \[Online-Lehrbuch\]. CDE, Universität Bern. Abgerufen von https://cdeteaching.github.io/Basics-of-sustainability/
 
 Kapitel 2:
 
-Bader, C. (2025). Ansätze zur Nachhaltigkeit. In C. Bader (Hrsg.), Grundlagen der Nachhaltigkeit (Version 1.0) \[Online-Lehrbuch\]. CDE, Universität Bern. Abgerufen von https://cdeteaching.github.io/Basics-of-sustainability/
+Bader, C. (2025). Ansätze zur Nachhaltigkeit. In C. Bader (Hrsg.), Grundlagen der Nachhaltigkeit (Version 1.3) \[Online-Lehrbuch\]. CDE, Universität Bern. Abgerufen von https://cdeteaching.github.io/Basics-of-sustainability/
 
 Kapitel 3:
 
-Fitz, J., & Bader, C. (2025). Ökologische Nachhaltigkeit. In C. Bader (Hrsg.), Grundlagen der Nachhaltigkeit (Version 1.0) \[Online-Lehrbuch\]. CDE, Universität Bern. Abgerufen von https://cdeteaching.github.io/Basics-of-sustainability/
+Fitz, J., & Bader, C. (2025). Ökologische Nachhaltigkeit. In C. Bader (Hrsg.), Grundlagen der Nachhaltigkeit (Version 1.3) \[Online-Lehrbuch\]. CDE, Universität Bern. Abgerufen von https://cdeteaching.github.io/Basics-of-sustainability/
 
 Kapitel 4:
 
-Poelsma, F., & Bader, C. (2025). Soziale Nachhaltigkeit. In C. Bader (Hrsg.), Grundlagen der Nachhaltigkeit (Version 1.0) \[Online-Lehrbuch\]. CDE, Universität Bern. Abgerufen von https://cdeteaching.github.io/Basics-of-sustainability/
+Poelsma, F., & Bader, C. (2025). Soziale Nachhaltigkeit. In C. Bader (Hrsg.), Grundlagen der Nachhaltigkeit (Version 1.3) \[Online-Lehrbuch\]. CDE, Universität Bern. Abgerufen von https://cdeteaching.github.io/Basics-of-sustainability/
 
 Kapitel 5:
 
-Bader, C., & Bezzola, N. (2025). Wirtschaftliche Nachhaltigkeit. In C. Bader (Hrsg.), Grundlagen der Nachhaltigkeit (Version 1.0) \[Online-Lehrbuch\]. CDE, Universität Bern. Abgerufen von https://cdeteaching.github.io/Basics-of-sustainability/
+Bader, C., & Bezzola, N. (2025). Wirtschaftliche Nachhaltigkeit. In C. Bader (Hrsg.), Grundlagen der Nachhaltigkeit (Version 1.3) \[Online-Lehrbuch\]. CDE, Universität Bern. Abgerufen von https://cdeteaching.github.io/Basics-of-sustainability/
 
 ::: {.callout-note collapse="true"}
 ### Beitragsmatrix (CRediT-Taxonomie)

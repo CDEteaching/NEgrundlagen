@@ -30,10 +30,10 @@ Schutz gefährdeter Arten: Sollten wir uns auf den Schutz und die Erhaltung gef�
 Schutz von Ökosystemen: Sollten wir Schutzgebiete einrichten, um bedrohte Ökosysteme und Arten zu erhalten, auch wenn dies lokale Gemeinschaften in ihren wirtschaftlichen Aktivitäten einschränkt? Wie können wir eine Balance zwischen Schutz und nachhaltiger Nutzung herstellen?
 :::
 
-{{< include "3_Ecosystems.qmd" >}}
+{{< include "3-1_Ecosystems.qmd" >}}
 
-{{< include "3_Planetaryboundaries.qmd" >}}
+{{< include "3-2_Planetaryboundaries.qmd" >}}
 
-{{< include "3_strategies.qmd" >}}
+{{< include "3-3_strategies.qmd" >}}
 
 {{< include "quiz_ch3.qmd" >}}
