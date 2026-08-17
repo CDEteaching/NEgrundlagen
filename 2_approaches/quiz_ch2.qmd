@@ -1,4 +1,4 @@
-## Quiz
+## Grundlagen der Nachhaltigkeit: Das Quiz -- Kapitel 2
 
 ```{r quiz-ch2-setup, include = FALSE}
 ## package and list of various exercises

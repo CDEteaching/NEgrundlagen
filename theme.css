@@ -86,6 +86,9 @@ a {
 
 .sidebar-logo{
   max-width: 100% !important;
+  max-height: 42px;
+  width: auto;
+  height: auto;
 }
 
 .readings {

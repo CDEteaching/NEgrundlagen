@@ -11,16 +11,20 @@ execute:
   engine: knitr
   echo: false
 
+lang: de-CH
+
 book:
   title: "Nachhaltigkeit: Grundlagen und Herausforderungen"
   subtitle: "Skript zur Grundlagenvorlesung M1_1 im Bachelor Studienprogramm Nachhaltige Entwicklung"
+  cover-image: CoverLehrbuch.png
   favicon: images/
   reader-mode: true
   page-navigation: true
   back-to-top-navigation: true
   search: true
   site-url: https://cdeteaching.github.io/NEgrundlagen/
-  
+  repo-actions: [issue]
+
   sidebar:
     search: true
     logo: images/cdelogo_e.png
@@ -46,22 +50,21 @@ book:
   - part: "Die Herausforderungen des 21. Jahrhunderts für Nachhaltigkeit erfassen und verstehen lernen"
     chapters:
     - 1_understanding/1_intro.qmd
+  - part: "Ansätze zur Nachhaltigen Entwicklung"
+    chapters:
     - 2_approaches/2_intro.qmd
   - part: "Handlungsfelder der Nachhaltigkeit: Analyse und Strategien zur Transformation von (un-)nachhaltigen Systemen"
     chapters:
     - 3_ecological-sustainability/3_intro.qmd
     - 4_social-sustainability/4_intro.qmd
     - 5_economic-sustainability/5_intro.qmd
-
-    
-    
-  appendices:
-    - references.qmd
+  - references.qmd
 
 bibliography: references.bib
 
 format:
   html:
+    cover-image: cover.png
     mainfont: Roboto
     monofont: Fira Code
     highlight-style: arrow
@@ -69,11 +72,14 @@ format:
     theme:
       - theme.css
       - theme.scss
+    css: webex.css
+    include-after-body: webex.js
     df-print: kable
 
   pdf:
   # render pdf to separate folder -> do it manually via terminal
   # "quarto render --to pdf --output SP_IDTD.pdf --output-dir pdf"
+    cover-image: cover.png
     documentclass: book
     mainfont: "Times New Roman"
     sansfont: "Arial"
@@ -94,10 +100,5 @@ format:
         \usepackage{booktabs}
         \usepackage{longtable}
         \usepackage{microtype}
-        \hyphenpenalty=10000
-        \exhyphenpenalty=10000
-        \usepackage[skins]{tcolorbox}
-        \makeatletter
-        \pgfkeys{/tcb/breakable/.code=\relax}
-        \makeatother
+        \usepackage[skins,breakable]{tcolorbox}
 

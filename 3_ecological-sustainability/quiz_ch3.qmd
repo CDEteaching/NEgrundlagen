@@ -1,4 +1,4 @@
-## Quiz me if you can
+## Grundlagen der Nachhaltigkeit: Das Quiz -- Kapitel 3
 
 ```{r quiz-ch3-setup, include = FALSE}
 ## package and list of various exercises

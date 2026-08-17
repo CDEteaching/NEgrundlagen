@@ -5,7 +5,7 @@ Was ist das primäre Ziel der Konsistenzstrategie in der Nachhaltigkeit?
 Answerlist
 ----------
 * Den Energieverbrauch in der Produktion senken
-* Bedürfnisse der Konsument*innen mit ökologisch verträglichen Methoden erfüllen
+* Bedürfnisse der Konsument\*innen mit ökologisch verträglichen Methoden erfüllen
 * Den Rohstoffeinsatz in der Produktion minimieren
 * Soziale Ungleichheit verringern
 

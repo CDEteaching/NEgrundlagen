@@ -1,6 +1,7 @@
 ::: {.callout-note collapse="false"}
-### Disclaimer deutsche Übersetzung
-Die Originalfassung dieses Lehrbuch wurde auf Englisch geschrieben und vollständig editiert (https://cdeteaching.github.io/Basics-of-sustainability/). Die deutsche Version wurde basierend auf dem CDE Style Guide mittels Claude Code Sonnet 5 (Anthropic) erarbeitet und redigiert durch die Autorenschaft. Die deutsche Version ist aktuell auf EN V1.3 synchronisiert.
+### Disclaimer deutsche Übersetzung {.unnumbered}
+
+Die Originalfassung dieses Lehrbuch wurde auf Englisch geschrieben und vollständig editiert (<https://cdeteaching.github.io/Basics-of-sustainability/>). Die deutsche Version wurde basierend auf dem CDE Style Guide mittels Claude Code Sonnet 5 (Anthropic) erarbeitet und redigiert durch die Autorenschaft. Die deutsche Version ist aktuell auf EN V1.3 synchronisiert.
 :::
 
 # Vorwort {.unnumbered}
@@ -13,7 +14,7 @@ Vor diesem Hintergrund versteht sich dieses Lehrbuch als gemeinsamer Lernraum: E
 
 Dieses Buch entstand im Rahmen der Studienprogramme des Centre for Development and Environment (CDE) der Universität Bern. Es spiegelt die langjährige Erfahrung in Forschung und Lehre zur Nachhaltigen Entwicklung wider und vereint Beiträge aus verschiedenen Disziplinen – von den Umweltwissenschaften, der Geographie und der Ökonomie bis hin zu Soziologie, Ethik und Rechtswissenschaften.
 
-Unser besonderer Dank gilt allen Autor*innen, die mit ihrer Expertise, ihrer Leidenschaft und ihrem Engagement zur Entstehung dieses Buches beigetragen haben. Ebenso danken wir den Studierenden, deren kritische Fragen und Perspektiven ein entscheidender Motor für die Weiterentwicklung der Inhalte sind. Nachhaltige Entwicklung ist schliesslich nicht nur ein wissenschaftliches, sondern vor allem ein gesellschaftliches Projekt – und es beginnt bei der Bildung.
+Unser besonderer Dank gilt allen Autor\*innen, die mit ihrer Expertise, ihrer Leidenschaft und ihrem Engagement zur Entstehung dieses Buches beigetragen haben. Ebenso danken wir den Studierenden, deren kritische Fragen und Perspektiven ein entscheidender Motor für die Weiterentwicklung der Inhalte sind. Nachhaltige Entwicklung ist schliesslich nicht nur ein wissenschaftliches, sondern vor allem ein gesellschaftliches Projekt – und es beginnt bei der Bildung.
 
 Wir hoffen, dass dieses Buch Ihnen eine solide Grundlage für die eigene Auseinandersetzung mit Nachhaltigkeit bietet – und Sie dazu ermutigt, Verantwortung zu übernehmen und aktiv an der Gestaltung einer gerechten und nachhaltigen Welt mitzuwirken.
 
@@ -47,7 +48,7 @@ Bader, C., & Bezzola, N. (2025). Wirtschaftliche Nachhaltigkeit. In C. Bader (Hr
 ### Beitragsmatrix (CRediT-Taxonomie)
 
 | Name | Affiliation | ORCID | Rollen (CRediT) |
-|----|----|----|----|
+|------------------|------------------|------------------|------------------|
 | Christoph Bader | CDE, Universität Bern | [0000-0002-8991-353X](https://orcid.org/0000-0002-8991-353X) | Conceptualization, Software, Supervision, Writing - original draft, Writing – review & editing, Project administration |
 | Nicolà Bezzola | CDE, Universität Bern | — | Writing - original draft, Writing – review & editing |
 | Juri Fitz | CDE, Universität Bern | — | Writing - original draft, Writing – review & editing |
@@ -63,15 +64,18 @@ Zur besseren Orientierung enthält das Lehrbuch drei Arten von Boxen:
 
 ::: {.callout-note collapse="false"}
 ### Definitionen
+
 Bieten prägnante Definitionen zentraler Begriffe.
 :::
 
 ::: {.callout-tip collapse="false"}
 ### Beispiele und Reflexionsfragen
+
 Illustrieren Konzepte anhand konkreter Fälle und regen zur kritischen Auseinandersetzung mit dem Gelesenen an.
 :::
 
 ::: {.callout-caution collapse="false"}
 ### Weiterführende Literatur
+
 Verweise auf ergänzende Materialien.
 :::

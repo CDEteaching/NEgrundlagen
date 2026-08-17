@@ -7,7 +7,7 @@ tbl-cap-location: top
 fig-cap-location: bottom
 ---
 
-Die Welt steht vor zahlreichen Herausforderungen der Nachhaltigen Entwicklung, darunter drängende Umweltprobleme und soziale Ungleichheiten. Wissenschaftler*innen, Forscher*innen und Aktivist*innen suchen nach innovativen Ansätzen, um einen nachhaltigen und gerechten Wandel zu ermöglichen. Dieses Kapitel beleuchtet einige dieser Ansätze, die ein vollständiges Umdenken bestehender Paradigmen fordern.
+Die Welt steht vor zahlreichen Herausforderungen der Nachhaltigen Entwicklung, darunter drängende Umweltprobleme und soziale Ungleichheiten. Wissenschaftler\*innen, Forscher\*innen und Aktivist\*innen suchen nach innovativen Ansätzen, um einen nachhaltigen und gerechten Wandel zu ermöglichen. Dieses Kapitel beleuchtet einige dieser Ansätze, die ein vollständiges Umdenken bestehender Paradigmen fordern.
 
 Im Kapitel behandelte Ansätze:
 

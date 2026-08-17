@@ -8,7 +8,7 @@ Die Philosophie des Doughnut-Ansatzes basiert auf drei Grundprinzipien: gerechte
 
 ### Fazit
 
-Trotz der Fokussierung des Doughnut-Modells auf die Wirtschaft bemängeln Kritiker*innen, dass es die zugrundeliegenden Rahmenbedingungen (d. h. die Strukturen, Regeln und die institutionelle Organisation der Wirtschaft) oder die Frage, wie Geld geschaffen und verwaltet wird (d. h. den Finanzsektor), nicht thematisiert. Das Doughnut-Modell konzentriert sich darauf, welche Art wirtschaftlicher Aktivität wünschenswert ist (d. h. innerhalb des Doughnuts zu bleiben), erklärt aber nicht, wie man dorthin gelangt. Diese Kritikpunkte werden vom Doughnut Economics Action Lab [@dealDoughnutEconomicsAction] aufgegriffen, das Werkzeuge und Strategien bereitstellt, um das Doughnut-Modell in der Praxis umzusetzen.
+Trotz der Fokussierung des Doughnut-Modells auf die Wirtschaft bemängeln Kritiker\*innen, dass es die zugrundeliegenden Rahmenbedingungen (d. h. die Strukturen, Regeln und die institutionelle Organisation der Wirtschaft) oder die Frage, wie Geld geschaffen und verwaltet wird (d. h. den Finanzsektor), nicht thematisiert. Das Doughnut-Modell konzentriert sich darauf, welche Art wirtschaftlicher Aktivität wünschenswert ist (d. h. innerhalb des Doughnuts zu bleiben), erklärt aber nicht, wie man dorthin gelangt. Diese Kritikpunkte werden vom Doughnut Economics Action Lab [@dealDoughnutEconomicsAction] aufgegriffen, das Werkzeuge und Strategien bereitstellt, um das Doughnut-Modell in der Praxis umzusetzen.
 
 -   Das Doughnut-Modell baut auf dem Konzept der planetaren Grenzen auf und ergänzt es um eine soziale Dimension sowie um Ziele und Grade der Zielerreichung.
 
