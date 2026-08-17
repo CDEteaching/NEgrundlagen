@@ -14,11 +14,11 @@ Die Studie fügte die menschliche Aneignung der Nettoprimärproduktion als Kontr
 
 Zwei der neun planetaren Grenzen – die Integrität der Biosphäre und der Klimawandel – gelten als „Kerngrenzen". Diese Kernsysteme umfassen Prozesse vieler anderer Teilsysteme und wirken auf globaler Ebene. Das Erreichen von Kipppunkten in diesen Kernsystemen könnte daher das gesamte Erdsystem in einen neuen Zustand treiben.
 
-![Entwicklung der Kontrollvariablen für alle neun planetaren Grenzen. Quelle: Azote für Stockholm Resilience Centre, Stockholms Universität. Basierend auf @rockstromPlanetaryBoundariesExploring2009, @steffenPlanetaryBoundariesGuiding2015, @richardsonEarthSixNine2023. Lizenziert unter CC BY-NC-ND 3.0.](Images/Fig2_1__planetaryboundaries.png){#fig-development-planetary-boundaries}
+![Entwicklung der Kontrollvariablen für alle neun planetaren Grenzen. Quelle: Azote für Stockholm Resilience Centre, Stockholms Universität. Basierend auf @rockstromPlanetaryBoundariesExploring2009, @steffenPlanetaryBoundariesGuiding2015, @richardsonEarthSixNine2023. Lizenziert unter CC BY-NC-ND 3.0.](images/Fig2_1__planetaryboundaries.png){#fig-development-planetary-boundaries}
 
 ### Kipppunkte des Klimasystems der Erde
 
-![Räumliche Verteilung globaler und regionaler Kipppunkte. Die Farben zeigen den Temperaturbereich an, in dem ein Kippen wahrscheinlich ist. Quelle: Erstellt am PIK, basierend auf @armstrongmckayExceeding15degCGlobal2022, erweitert um Wechselwirkungen basierend auf @lentonClimateTippingPoints2019. Lizenziert unter CC-BY.](Images/Tippingpoints.png){#fig-tippingspoints}
+![Räumliche Verteilung globaler und regionaler Kipppunkte. Die Farben zeigen den Temperaturbereich an, in dem ein Kippen wahrscheinlich ist. Quelle: Erstellt am PIK, basierend auf @armstrongmckayExceeding15degCGlobal2022, erweitert um Wechselwirkungen basierend auf @lentonClimateTippingPoints2019. Lizenziert unter CC-BY.](images/Tippingpoints.png){#fig-tippingspoints}
 
 Kipppunkte im Klimasystem der Erde sind kritische Schwellen, deren Überschreitung abrupte und oft irreversible Veränderungen im Klimasystem auslösen kann. Diese Kipppunkte können das Klima destabilisieren und zu einem beschleunigten Klimawandel führen. Beispiele für Kipppunkte sind das Schmelzen des grönländischen Eisschildes, der Kollaps des Amazonas-Regenwaldes, das Auftauen von Permafrostböden und Veränderungen im Golfstrom. Wenn diese Kipppunkte erreicht oder überschritten werden, können sie selbstverstärkende Rückkopplungseffekte auslösen, die zu weiterer Erwärmung und einer Intensivierung des Klimawandels führen.
 

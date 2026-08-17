@@ -30,7 +30,7 @@ book:
     logo: images/cdelogo_e.png
     tools:
       - icon: file-earmark-pdf
-        href: https://cdeteaching.github.io/NEgrundlagen/pdf/NEgrundlagen.pdf
+        href: https://cdeteaching.github.io/NEgrundlagen/pdf/Lehrbuch_M1_1.pdf
         text: "Skript (PDF)"
     
   page-footer:
@@ -40,7 +40,7 @@ book:
     center: |
 
     right: |
-      Dieses Buch wurde mit <a href="https://quarto.org/">Quarto</a> erstellt. Dieses Werk ist lizenziert unter einer [CC-BY-NC-ND 4.0 Int Lizenz](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+      Dieses Buch wurde mit <a href="https://quarto.org/">Quarto</a> erstellt. Dieses Werk ist lizenziert unter einer [CC-BY-NC-SA 4.0 Int Lizenz](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
   
 
@@ -70,29 +70,32 @@ format:
     highlight-style: arrow
     monobackgroundcolor: "#F7F7F7"
     theme:
-      - theme.css
-      - theme.scss
+      light: [theme.scss]
+      dark: [darkly]
+    toggle: true
+    callout-icon: false  
     css: webex.css
     include-after-body: webex.js
     df-print: kable
 
   pdf:
+    output-file: Lehrbuch_M1_1
   # render pdf to separate folder -> do it manually via terminal
-  # "quarto render --to pdf --output SP_IDTD.pdf --output-dir pdf"
-    cover-image: cover.png
-    documentclass: book
-    mainfont: "Times New Roman"
-    sansfont: "Arial"
-    monofont: "Courier New"
+  # "quarto render --to pdf --output Lehrbuch_M1_1.pdf --output-dir pdf"
+    documentclass: scrreprt
+    classoption: ["oneside", "openany"]
+    cover-image: CoverLehrbuch.png
+
+    mainfont: "Alegreya"
+    sansfont: "Source Sans Pro"
     urlcolor: "blue"
+
     number-depth: 3
     papersize: a4
     fig-pos: "H"
-    classoption: openany
     pdf-engine: xelatex
-    metadata:
-      title: "book"
     callout-icon: false
+
     keep-tex: true
     tables: true
     include-in-header:
@@ -100,5 +103,15 @@ format:
         \usepackage{booktabs}
         \usepackage{longtable}
         \usepackage{microtype}
-        \usepackage[skins,breakable]{tcolorbox}
+        \usepackage{pdfpages}
+        \usepackage[font=footnotesize,labelfont={footnotesize}]{caption}
+        \renewcommand{\maketitle}{}
+        \usepackage[skins]{tcolorbox}
+        \makeatletter
+        \pgfkeys{/tcb/breakable/.code=\relax}
+        \makeatother
+
+    include-before-body:
+      text: |
+        \includepdf[pages=1]{CoverLehrbuch.pdf}
 
