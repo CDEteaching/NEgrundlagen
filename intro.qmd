@@ -1,9 +1,9 @@
 # Einleitung {.unnumbered}
 
 ::: {#wrapped-world layout-ncol="2"}
-!["Wrapped Globe (Eurasian Hemisphere)" von Christo (2019)](images/Intro1a_cristo.png){#fig-christo}
+!["Wrapped Globe (Eurasian Hemisphere)" von Christo (2019)](images/cristo.png){#fig-christo}
 
-!["Planet of the Year", Titelseite des Time Magazine (1989)](images/Intro2a_times.png){#fig-times}
+!["Planet of the Year", Titelseite des Time Magazine (1989)](images/times.png){#fig-times}
 :::
 
 Angesichts der wachsenden Herausforderungen der Nachhaltigen Entwicklung ist Christos und Jeanne-Claudes „Wrapped Globe" ein kraftvolles Symbol für die Verantwortung der Menschheit gegenüber unserem Planeten und seinen Ressourcen. Das Kunstwerk zeigt einen in Klarsichtfolie und ein filigranes Netz gehüllten Globus. In der Realität sieht sich die Welt einer „Polykrise" gegenüber – ein Begriff, der die vielen ernsten Krisen beschreibt, mit denen unsere Erde konfrontiert ist, darunter ökologische Krisen, wachsende Ungleichheit, exzessive Staatsverschuldung und die Folgen der Covid-19-Pandemie, um nur einige zu nennen. In einer Polykrise sind Krisen zunehmend miteinander verwoben und verstärken sich gegenseitig [@toozeWelcomeWorldPolycrisis2022]. Sie entstehen hauptsächlich durch eine strukturelle Wachstumsabhängigkeit (gemessen am Bruttoinlandsprodukt, BIP) [@hickelDegrowthCanWork2022], durch einen Teufelskreis zunehmender Konzentration wirtschaftlicher und politischer Macht in den Händen weniger [@pikettyCapitalTwentyFirstCentury2014] sowie durch anhaltende Ungleichheiten zwischen und innerhalb von Ländern [@chancelWorldInequalityReport2021; @milanovicGlobalInequalityNew2016]. Dennoch streben wir in Gesellschaft und Wirtschaft weiterhin nach BIP-Wachstum, um Arbeitsplätze zu erhalten und zu schaffen, Sozialsysteme zu finanzieren, Steuereinnahmen zu sichern und die Bedürfnisse von Unternehmen und Industrien zu erfüllen, die auf Wachstum angewiesen sind. Da diese Erwartungen zunehmend unrealistisch werden, hat die Idee der Entkopplung von Wirtschaftswachstum und Ressourcenverbrauch an Zugkraft gewonnen. Es gibt jedoch keine empirischen Belege dafür, dass dies in dem Ausmass gelingen kann, das erforderlich wäre, um einen multidimensionalen ökologischen Kollaps aufzuhalten [@hickelGreenGrowthPossible2020; @parriqueDecouplingDebunkedEvidence2019; @wiedmannScientistsWarningAffluence2020].

@@ -56,17 +56,17 @@ Bader, C., & Bezzola, N. (2025). Wirtschaftliche Nachhaltigkeit. In C. Bader (Hr
 
 Zur besseren Orientierung enthält das Lehrbuch drei Arten von Boxen:
 
-::: {.callout-note collapse="true"}
+::: {.callout-note collapse="false"}
 ### Definitionen und weiterführende Literatur
 Bieten prägnante Definitionen zentraler Begriffe sowie Hinweise auf vertiefende Literatur.
 :::
 
-::: {.callout-tip collapse="true"}
+::: {.callout-tip collapse="false"}
 ### Beispiele und Reflexionsfragen
 Illustrieren Konzepte anhand konkreter Fälle und regen zur kritischen Auseinandersetzung mit dem Gelesenen an.
 :::
 
-::: {.callout-caution collapse="true"}
+::: {.callout-caution collapse="false"}
 ### Übungen und Links zu ILIAS
 Enthalten praxisorientierte Aufgaben und Verweise auf ergänzende Materialien auf der Lernplattform ILIAS.
 :::
