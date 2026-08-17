@@ -1,3 +1,8 @@
+::: {.callout-note collapse="false"}
+### Disclaimer deutsche Übersetzung
+Die Originalfassung dieses Lehrbuch wurde auf Englisch geschrieben und vollständig editiert (https://cdeteaching.github.io/Basics-of-sustainability/). Die deutsche Version wurde basierend auf dem CDE Style Guide mittels Claude Code Sonnet 5 (Anthropic) erarbeitet und redigiert durch die Autorenschaft. Die deutsche Version ist aktuell auf EN V1.3 synchronisiert.
+:::
+
 # Vorwort {.unnumbered}
 
 Diese Einführung in die Grundlagen und Herausforderungen der Nachhaltigen Entwicklung richtet sich an Studierende und Lehrende, die sich aus unterschiedlichen disziplinären Perspektiven mit den drängendsten Fragen unserer Zeit befassen. Sie entstand aus dem Wunsch, ein gemeinsames Verständnis zu fördern – über Disziplingrenzen hinweg, in Lehre, Forschung und gesellschaftlicher Praxis.
@@ -57,8 +62,8 @@ Bader, C., & Bezzola, N. (2025). Wirtschaftliche Nachhaltigkeit. In C. Bader (Hr
 Zur besseren Orientierung enthält das Lehrbuch drei Arten von Boxen:
 
 ::: {.callout-note collapse="false"}
-### Definitionen und weiterführende Literatur
-Bieten prägnante Definitionen zentraler Begriffe sowie Hinweise auf vertiefende Literatur.
+### Definitionen
+Bieten prägnante Definitionen zentraler Begriffe.
 :::
 
 ::: {.callout-tip collapse="false"}
@@ -67,6 +72,6 @@ Illustrieren Konzepte anhand konkreter Fälle und regen zur kritischen Auseinand
 :::
 
 ::: {.callout-caution collapse="false"}
-### Übungen und Links zu ILIAS
-Enthalten praxisorientierte Aufgaben und Verweise auf ergänzende Materialien auf der Lernplattform ILIAS.
+### Weiterführende Literatur
+Verweise auf ergänzende Materialien.
 :::
