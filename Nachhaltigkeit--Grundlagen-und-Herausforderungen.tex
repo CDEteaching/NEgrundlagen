@@ -7,7 +7,10 @@
 \documentclass[
   nswissgerman,
   a4paper,
-  openany]{book}
+  DIV=11,
+  numbers=noendperiod,
+  oneside,
+  openany]{scrreprt}
 \usepackage{xcolor}
 \usepackage{amsmath,amssymb}
 \setcounter{secnumdepth}{3}
@@ -24,9 +27,8 @@
 \usepackage{lmodern}
 \ifPDFTeX\else
   % xetex/luatex font selection
-  \setmainfont[]{Times New Roman}
-  \setsansfont[]{Arial}
-  \setmonofont[]{Courier New}
+  \setmainfont[]{Alegreya}
+  \setsansfont[]{Source Sans Pro}
 \fi
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -138,7 +140,7 @@
 \fi
 \ifPDFTeX
 \else
-\babelfont{rm}[]{Times New Roman}
+\babelfont{rm}[]{Alegreya}
 \fi
 \ifLuaTeX
   \usepackage{selnolig} % disable illegal ligatures
@@ -173,7 +175,14 @@
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{microtype}
-\usepackage[skins,breakable]{tcolorbox}
+\usepackage{pdfpages}
+\usepackage[font=footnotesize,labelfont={footnotesize}]{caption}
+\renewcommand{\maketitle}{}
+\usepackage[skins]{tcolorbox}
+\makeatletter
+\pgfkeys{/tcb/breakable/.code=\relax}
+\makeatother
+\KOMAoption{captions}{tableheading}
 \makeatletter
 \@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
 \@ifpackageloaded{fontawesome5}{}{\usepackage{fontawesome5}}
@@ -243,7 +252,7 @@
   pdftitle={Nachhaltigkeit: Grundlagen und Herausforderungen},
   pdflang={de-CH},
   colorlinks=true,
-  linkcolor={Maroon},
+  linkcolor={blue},
   filecolor={Maroon},
   citecolor={Blue},
   urlcolor={blue},
@@ -262,8 +271,9 @@ Studienprogramm Nachhaltige Entwicklung}
 \author{}
 \date{}
 \begin{document}
-\frontmatter
 \maketitle
+
+\includepdf[pages=1]{CoverLehrbuch.pdf}
 
 \renewcommand*\contentsname{Inhaltsverzeichnis}
 {
@@ -271,7 +281,6 @@ Studienprogramm Nachhaltige Entwicklung}
 \tableofcontents
 }
 
-\mainmatter
 \bookmarksetup{startatroot}
 
 \chapter*{Disclaimer deutsche
@@ -509,27 +518,27 @@ ist Christos und Jeanne-Claudes „Wrapped Globe'' ein kraftvolles Symbol
 für die Verantwortung der Menschheit gegenüber unserem Planeten und
 seinen Ressourcen. Das Kunstwerk zeigt einen in Klarsichtfolie und ein
 filigranes Netz gehüllten Globus. In der Realität sieht sich die Welt
-einer „Polykrise'' gegenüber -- ein Begriff, der die vielen ernsten
+einer \emph{Polykrise} gegenüber -- ein Begriff, der die vielen ernsten
 Krisen beschreibt, mit denen unsere Erde konfrontiert ist, darunter
-ökologische Krisen, wachsende Ungleichheit, exzessive Staatsverschuldung
-und die Folgen der Covid-19-Pandemie, um nur einige zu nennen. In einer
-Polykrise sind Krisen zunehmend miteinander verwoben und verstärken sich
-gegenseitig (Tooze 2022). Sie entstehen hauptsächlich durch eine
-strukturelle Wachstumsabhängigkeit (gemessen am Bruttoinlandsprodukt,
-BIP) (Hickel u.~a. 2022), durch einen Teufelskreis zunehmender
-Konzentration wirtschaftlicher und politischer Macht in den Händen
-weniger (Piketty 2014) sowie durch anhaltende Ungleichheiten zwischen
-und innerhalb von Ländern (Chancel u.~a. 2021; Milanović 2016). Dennoch
-streben wir in Gesellschaft und Wirtschaft weiterhin nach BIP-Wachstum,
-um Arbeitsplätze zu erhalten und zu schaffen, Sozialsysteme zu
-finanzieren, Steuereinnahmen zu sichern und die Bedürfnisse von
-Unternehmen und Industrien zu erfüllen, die auf Wachstum angewiesen
-sind. Da diese Erwartungen zunehmend unrealistisch werden, hat die Idee
-der Entkopplung von Wirtschaftswachstum und Ressourcenverbrauch an
-Zugkraft gewonnen. Es gibt jedoch keine empirischen Belege dafür, dass
-dies in dem Ausmass gelingen kann, das erforderlich wäre, um einen
-multidimensionalen ökologischen Kollaps aufzuhalten (Hickel und Kallis
-2020; Parrique u.~a. 2019; Wiedmann u.~a. 2020).
+ökologische Krisen, wachsende Ungleichheit und die Folgen der
+Covid-19-Pandemie, um nur einige zu nennen. In einer Polykrise sind
+Krisen zunehmend miteinander verwoben und verstärken sich gegenseitig
+(Tooze 2022). Sie entstehen hauptsächlich durch eine strukturelle
+Wachstumsabhängigkeit (gemessen am Bruttoinlandsprodukt, BIP) (Hickel
+u.~a. 2022), durch einen Teufelskreis zunehmender Konzentration
+wirtschaftlicher und politischer Macht in den Händen weniger (Piketty
+2014) sowie durch anhaltende Ungleichheiten zwischen und innerhalb von
+Ländern (Chancel u.~a. 2021; Milanović 2016). Dennoch streben wir in
+Gesellschaft und Wirtschaft weiterhin nach BIP-Wachstum, um
+Arbeitsplätze zu erhalten und zu schaffen, Sozialsysteme zu finanzieren,
+Steuereinnahmen zu sichern und die Bedürfnisse von Unternehmen und
+Industrien zu erfüllen, die auf Wachstum angewiesen sind. Da diese
+Erwartungen zunehmend unrealistisch werden, hat die Idee der Entkopplung
+von Wirtschaftswachstum und Ressourcenverbrauch an Zugkraft gewonnen. Es
+gibt jedoch keine empirischen Belege dafür, dass dies in dem Ausmass
+gelingen kann, das erforderlich wäre, um einen multidimensionalen
+ökologischen Kollaps aufzuhalten (Hickel und Kallis 2020; Parrique u.~a.
+2019; Wiedmann u.~a. 2020).
 
 \section*{Volle und leere Welt}\label{volle-und-leere-welt}
 \addcontentsline{toc}{section}{Volle und leere Welt}
@@ -568,11 +577,11 @@ Wirtschafts- und Gesellschaftssystem nachhaltiger zu gestalten. Um zur
 Nachhaltigen Entwicklung beizutragen, müssen wir die Ursachen von
 Symptomen wie Biodiversitätsverlust oder Klimaerwärmung analysieren und
 lernen zu verstehen, wie sie zusammenhängen und interagieren. In unseren
-Studiengängen werden wir daher aktuelle Probleme und Herausforderungen
-wie Klimaerwärmung, Umweltverschmutzung, Biodiversitätsverlust, soziale
-Ungleichheit und wirtschaftliche Ungleichheiten untersuchen, um zu
-verstehen, wie diesen sowohl auf lokaler als auch auf globaler Ebene
-begegnet werden kann.
+Studienprogrammen werden wir daher aktuelle Probleme und
+Herausforderungen wie Klimaerwärmung, Umweltverschmutzung,
+Biodiversitätsverlust, soziale Ungleichheit und wirtschaftliche
+Ungleichheiten untersuchen, um zu verstehen, wie diesen sowohl auf
+lokaler als auch auf globaler Ebene begegnet werden kann.
 
 Dieses Lehrbuch soll Leser*innen dazu anregen, die Rolle von
 Einzelpersonen, Gemeinschaften, Unternehmen und Regierungen im Kontext
@@ -705,7 +714,7 @@ Nachhaltigkeit:
 
 \centering{
 
-\pandocbounded{\includegraphics[keepaspectratio]{1_understanding/images/SD_normative.jpg}}
+\pandocbounded{\includegraphics[keepaspectratio]{1_understanding/images/SD_normative.png}}
 
 }
 
@@ -903,9 +912,9 @@ treffend als „Grosse Beschleunigung'' bezeichnet wurde (Steffen u.~a.
 \end{minipage}%
 
 \caption{\label{fig-acceleration-trends}12 sozioökonomische und 12
-Erdsystem-Trends von 1750 bis heute sind ein starker Hinweis darauf,
-dass das Erdsystem einen neuen Zustand erreicht hat. Quelle:
-\url{https://futureearth.org/2015/01/16/the-great-acceleration/}.}
+Erdsystem-Trends von 1750 bis 2010 sind ein starker Hinweis darauf, dass
+das Erdsystem einen neuen Zustand erreicht hat. Quelle:
+\url{https://futureearth.org/the-great-acceleration/}.}
 
 \end{figure}%
 
@@ -1873,7 +1882,7 @@ Schnittmenge}\label{nachhaltigkeit-als-schnittmenge}
 
 \centering{
 
-\pandocbounded{\includegraphics[keepaspectratio]{1_understanding/images/sustainability-intersection.jpg}}
+\pandocbounded{\includegraphics[keepaspectratio]{1_understanding/images/sustainability-intersection.png}}
 
 }
 
@@ -1909,7 +1918,7 @@ gegenüber sozialen und ökologischen Überlegungen priorisiert zu werden.
 
 \centering{
 
-\pandocbounded{\includegraphics[keepaspectratio]{1_understanding/images/sustainability-nested.jpg}}
+\pandocbounded{\includegraphics[keepaspectratio]{1_understanding/images/sustainability-nested.png}}
 
 }
 
@@ -1935,7 +1944,7 @@ wirtschaftlichen und sozialen Belangen.
 
 \centering{
 
-\pandocbounded{\includegraphics[keepaspectratio]{1_understanding/images/sustainability-4-dimensions.jpg}}
+\pandocbounded{\includegraphics[keepaspectratio]{1_understanding/images/sustainability-4-dimensions.png}}
 
 }
 
@@ -2780,7 +2789,7 @@ doch für die Wissenschaft ist sie von entscheidender Bedeutung.
 
 \centering{
 
-\pandocbounded{\includegraphics[keepaspectratio]{1_understanding/images/emprical-analytical_normative.jpg}}
+\pandocbounded{\includegraphics[keepaspectratio]{1_understanding/images/emprical-analytical_normative.png}}
 
 }
 
@@ -2928,7 +2937,7 @@ Forschung.
 
 \centering{
 
-\pandocbounded{\includegraphics[keepaspectratio]{1_understanding/images/Three-Knowledge-Types.jpg}}
+\pandocbounded{\includegraphics[keepaspectratio]{1_understanding/images/Three-Knowledge-Types.png}}
 
 }
 
@@ -3004,15 +3013,15 @@ Brundtland-Bericht am treffendsten?
 \begin{itemize}
 \tightlist
 \item[$\square$]
+  Die Senkung der CO₂-Emissionen um 50\% bis 2030
+\item[$\square$]
+  Wirtschaftswachstum ohne Umweltschäden
+\item[$\square$]
   Die Verbesserung des Lebensstandards durch Industrialisierung
 \item[$\square$]
   Entwicklung, die die Bedürfnisse der Gegenwart befriedigt, ohne die
   Fähigkeit künftiger Generationen zu gefährden, ihre eigenen
   Bedürfnisse zu befriedigen
-\item[$\square$]
-  Die Senkung der CO₂-Emissionen um 50\% bis 2030
-\item[$\square$]
-  Wirtschaftswachstum ohne Umweltschäden
 \end{itemize}
 
 Der Brundtland-Bericht (1987) definiert Nachhaltige Entwicklung als eine
@@ -3025,11 +3034,11 @@ zu befriedigen.
 \item
   False
 \item
+  False
+\item
+  False
+\item
   True
-\item
-  False
-\item
-  False
 \end{itemize}
 
 Was ist Normativität?
@@ -3068,13 +3077,13 @@ Was ist die „Grosse Beschleunigung''?
   Der plötzliche Rückgang der Biodiversität zu Beginn des 21.
   Jahrhunderts
 \item[$\square$]
+  Das exponentielle Wachstum sozioökonomischer und Erdsystem-Trends, das
+  Mitte des 20. Jahrhunderts einsetzte
+\item[$\square$]
   Ein rascher Anstieg des globalen Ressourcenverbrauchs nach dem Ersten
   Weltkrieg
 \item[$\square$]
   Der rasche Rückgang der Industrialisierung in den 1960er-Jahren
-\item[$\square$]
-  Das exponentielle Wachstum sozioökonomischer und Erdsystem-Trends, das
-  Mitte des 20. Jahrhunderts einsetzte
 \end{itemize}
 
 Die „Grosse Beschleunigung'' bezeichnet den raschen und exponentiellen
@@ -3088,11 +3097,11 @@ einsetzten.
 \item
   False
 \item
-  False
-\item
-  False
-\item
   True
+\item
+  False
+\item
+  False
 \end{itemize}
 
 Was unterscheidet „starke'' von „schwacher'' Nachhaltigkeit?
@@ -3137,13 +3146,13 @@ sein.)
 \begin{itemize}
 \tightlist
 \item[$\square$]
-  Bei starker Nachhaltigkeit gilt Naturkapital als nicht substituierbar.
+  Starke Nachhaltigkeit akzeptiert eine unbegrenzte Substitution
+  zwischen Natur- und von Menschen geschaffenem Kapital.
 \item[$\square$]
   Schwache Nachhaltigkeit geht davon aus, dass technologische Innovation
   die Funktionen der Natur vollständig ersetzen kann.
 \item[$\square$]
-  Starke Nachhaltigkeit akzeptiert eine unbegrenzte Substitution
-  zwischen Natur- und von Menschen geschaffenem Kapital.
+  Bei starker Nachhaltigkeit gilt Naturkapital als nicht substituierbar.
 \item[$\square$]
   Bei schwacher Nachhaltigkeit können sich verschiedene Kapitalformen
   gegenseitig ersetzen.
@@ -3159,11 +3168,11 @@ irreversible Schäden zu riskieren.
 \begin{itemize}
 \tightlist
 \item
-  True
-\item
-  True
-\item
   False
+\item
+  True
+\item
+  True
 \item
   True
 \end{itemize}
@@ -3174,13 +3183,13 @@ als eine Aussage kann richtig sein.)
 \begin{itemize}
 \tightlist
 \item[$\square$]
-  Die Erhaltung von Naturkapital, wenn dies das menschliche Wohlergehen
-  fördert oder bewahrt.
+  Unzureichender Umweltschutz.
 \item[$\square$]
-  Ein Unternehmen erfüllt nur seine gesetzlichen Umwelt- und
-  Sozialpflichten.
+  Kapitalformen sind grundsätzlich gegenseitig austauschbar.
 \item[$\square$]
   Die Unersetzbarkeit von durch Menschen geschaffenem Kapital.
+\item[$\square$]
+  Steigendes BIP.
 \item[$\square$]
   Die Erhaltung der Gesamtsumme aller Kapitalformen von einer Generation
   zur nächsten.
@@ -3188,11 +3197,11 @@ als eine Aussage kann richtig sein.)
   Die Bedürfnisse der gegenwärtigen Generation werden gegenüber jenen
   künftiger Generationen bevorzugt.
 \item[$\square$]
-  Steigendes BIP.
+  Ein Unternehmen erfüllt nur seine gesetzlichen Umwelt- und
+  Sozialpflichten.
 \item[$\square$]
-  Kapitalformen sind grundsätzlich gegenseitig austauschbar.
-\item[$\square$]
-  Unzureichender Umweltschutz.
+  Die Erhaltung von Naturkapital, wenn dies das menschliche Wohlergehen
+  fördert oder bewahrt.
 \end{itemize}
 
 Schwache Nachhaltigkeit konzentriert sich darauf, den Gesamtbestand an
@@ -3204,10 +3213,6 @@ Wohlergehen beiträgt, statt als grundsätzlich unersetzbar zu gelten.
 \begin{itemize}
 \tightlist
 \item
-  True
-\item
-  False
-\item
   False
 \item
   True
@@ -3219,6 +3224,10 @@ Wohlergehen beiträgt, statt als grundsätzlich unersetzbar zu gelten.
   True
 \item
   False
+\item
+  False
+\item
+  True
 \end{itemize}
 
 Welche der folgenden Aussagen beschreiben starke Nachhaltigkeit? (Mehr
@@ -3227,21 +3236,21 @@ als eine Aussage kann richtig sein.)
 \begin{itemize}
 \tightlist
 \item[$\square$]
+  Die Natur wird als eine Form von Kapital betrachtet, die auf
+  unschätzbare Weise zum Wohlergehen der Menschen beiträgt.
+\item[$\square$]
+  Eine Zunahme der Gesamtsumme aller Kapitalformen wird gefordert.
+\item[$\square$]
+  Naturkapital und von Menschen geschaffenes Kapital ergänzen sich, und
+  Menschen können ohne beide nicht überleben.
+\item[$\square$]
+  Umweltprobleme werden durch innovative Energietechnologien gelöst.
+\item[$\square$]
   Das sechste Massenaussterben gilt als das wichtigste
   Nachhaltigkeitsproblem.
 \item[$\square$]
   Die Erhaltung kritischen Naturkapitals von einer Generation zur
   nächsten ist erforderlich.
-\item[$\square$]
-  Eine Zunahme der Gesamtsumme aller Kapitalformen wird gefordert.
-\item[$\square$]
-  Umweltprobleme werden durch innovative Energietechnologien gelöst.
-\item[$\square$]
-  Naturkapital und von Menschen geschaffenes Kapital ergänzen sich, und
-  Menschen können ohne beide nicht überleben.
-\item[$\square$]
-  Die Natur wird als eine Form von Kapital betrachtet, die auf
-  unschätzbare Weise zum Wohlergehen der Menschen beiträgt.
 \end{itemize}
 
 Starke Nachhaltigkeit betont die wesentliche und nicht substituierbare
@@ -3255,6 +3264,8 @@ werden können.
 \begin{itemize}
 \tightlist
 \item
+  True
+\item
   False
 \item
   True
@@ -3262,8 +3273,6 @@ werden können.
   False
 \item
   False
-\item
-  True
 \item
   True
 \end{itemize}
@@ -3273,14 +3282,14 @@ Was ist das primäre Ziel der Konsistenzstrategie in der Nachhaltigkeit?
 \begin{itemize}
 \tightlist
 \item[$\square$]
+  Den Rohstoffeinsatz in der Produktion minimieren
+\item[$\square$]
   Den Energieverbrauch in der Produktion senken
 \item[$\square$]
   Soziale Ungleichheit verringern
 \item[$\square$]
   Bedürfnisse der Konsument*innen mit ökologisch verträglichen Methoden
   erfüllen
-\item[$\square$]
-  Den Rohstoffeinsatz in der Produktion minimieren
 \end{itemize}
 
 Die Konsistenzstrategie zielt darauf ab, wirtschaftliche Aktivitäten und
@@ -3296,9 +3305,9 @@ erfüllen.
 \item
   False
 \item
-  True
-\item
   False
+\item
+  True
 \end{itemize}
 
 Welche der folgenden Aussagen zu Nachhaltigkeitsstrategien sind korrekt?
@@ -3309,14 +3318,14 @@ Welche der folgenden Aussagen zu Nachhaltigkeitsstrategien sind korrekt?
 \item[$\square$]
   Suffizienz fördert höhere Produktionsmengen.
 \item[$\square$]
-  Effizienz zielt darauf ab, weniger Ressourcen pro Produktionseinheit
-  einzusetzen.
-\item[$\square$]
   Alle drei Nachhaltigkeitsstrategien wirken sich gleich auf den Konsum
   aus.
 \item[$\square$]
   Konsistenz bedeutet, Güter herzustellen, die unendlich oft recycelt
   werden können.
+\item[$\square$]
+  Effizienz zielt darauf ab, weniger Ressourcen pro Produktionseinheit
+  einzusetzen.
 \end{itemize}
 
 Effizienz konzentriert sich auf die Senkung des Ressourceneinsatzes pro
@@ -3331,9 +3340,9 @@ den Konsum unterscheiden.
 \item
   False
 \item
-  True
-\item
   False
+\item
+  True
 \item
   True
 \end{itemize}
@@ -3851,7 +3860,7 @@ der Entwicklung alternativer Zukunftsvisionen.
 
 \centering{
 
-\pandocbounded{\includegraphics[keepaspectratio]{2_approaches/Images/Fig2_5_Schneidewind_turningpoints.jpg}}
+\pandocbounded{\includegraphics[keepaspectratio]{2_approaches/Images/Fig2_5_Schneidewind_turningpoints.png}}
 
 }
 
@@ -3876,7 +3885,7 @@ ressourcenintensive Industrien.
 
 \centering{
 
-\pandocbounded{\includegraphics[keepaspectratio]{2_approaches/Images/Fig2_6__double_decoupling.jpg}}
+\pandocbounded{\includegraphics[keepaspectratio]{2_approaches/Images/Fig2_6__double_decoupling.png}}
 
 }
 
@@ -4431,13 +4440,13 @@ Welche zwei planetaren Grenzen gelten als „Kerngrenzen''?
 \begin{itemize}
 \tightlist
 \item[$\square$]
-  Klimawandel und Integrität der Biosphäre
-\item[$\square$]
-  Ozonabbau und Landnutzung
+  Süsswasser und Aerosole
 \item[$\square$]
   Ozeanversauerung und Stickstoffkreisläufe
 \item[$\square$]
-  Süsswasser und Aerosole
+  Klimawandel und Integrität der Biosphäre
+\item[$\square$]
+  Ozonabbau und Landnutzung
 \end{itemize}
 
 Innerhalb des Rahmenwerks der planetaren Grenzen gelten Klimawandel und
@@ -4448,11 +4457,11 @@ planetaren Grenzen stark beeinflussen.
 \begin{itemize}
 \tightlist
 \item
+  False
+\item
+  False
+\item
   True
-\item
-  False
-\item
-  False
 \item
   False
 \end{itemize}
@@ -4463,11 +4472,11 @@ von Rockström et al.~identifiziert wurden?
 \begin{itemize}
 \tightlist
 \item[$\square$]
+  Globale Finanzstabilität
+\item[$\square$]
   Klimawandel
 \item[$\square$]
   Ozeanversauerung
-\item[$\square$]
-  Globale Finanzstabilität
 \item[$\square$]
   Integrität der Biosphäre
 \end{itemize}
@@ -4481,11 +4490,11 @@ keine planetare Grenze ist.
 \begin{itemize}
 \tightlist
 \item
-  False
-\item
-  False
-\item
   True
+\item
+  False
+\item
+  False
 \item
   False
 \end{itemize}
@@ -4495,13 +4504,13 @@ Welcher der folgenden Kipppunkte gehört NICHT zum Klimasystem der Erde?
 \begin{itemize}
 \tightlist
 \item[$\square$]
-  Kollaps des Amazonas-Regenwaldes
-\item[$\square$]
-  Kollaps des Golfstroms
+  Abschmelzen des grönländischen Eisschilds
 \item[$\square$]
   Verschmutzung der Ozeane durch Plastik
 \item[$\square$]
-  Abschmelzen des grönländischen Eisschilds
+  Kollaps des Golfstroms
+\item[$\square$]
+  Kollaps des Amazonas-Regenwaldes
 \end{itemize}
 
 Kipppunkte im Klimasystem der Erde bezeichnen grossräumige Komponenten
@@ -4517,9 +4526,9 @@ ist.
 \item
   False
 \item
-  False
-\item
   True
+\item
+  False
 \item
   False
 \end{itemize}
@@ -4561,13 +4570,13 @@ Wofür steht der innere Ring des Doughnut-Modells?
 \begin{itemize}
 \tightlist
 \item[$\square$]
-  Das soziale Fundament
-\item[$\square$]
   Die planetaren Grenzen
 \item[$\square$]
   Die ökologische Decke
 \item[$\square$]
   Der sichere und gerechte Raum für die Menschheit
+\item[$\square$]
+  Das soziale Fundament
 \end{itemize}
 
 Im Doughnut-Modell repräsentiert der innere Ring das soziale Fundament,
@@ -4577,13 +4586,13 @@ und würdevolles Leben aller Menschen notwendig sind.
 \begin{itemize}
 \tightlist
 \item
+  False
+\item
+  False
+\item
+  False
+\item
   True
-\item
-  False
-\item
-  False
-\item
-  False
 \end{itemize}
 
 Welche der folgenden Aussagen beschreiben Postwachstumsansätze? (Mehr
@@ -4671,7 +4680,7 @@ anthropozentrische Perspektive).
 
 \centering{
 
-\pandocbounded{\includegraphics[keepaspectratio]{3_ecological-sustainability/images/Fig3_1__NEecology.jpg}}
+\pandocbounded{\includegraphics[keepaspectratio]{3_ecological-sustainability/images/Fig3_1__NEecology.png}}
 
 }
 
@@ -4878,7 +4887,7 @@ angegebene Präferenzen und offenbarte Präferenzen.
 
 \centering{
 
-\pandocbounded{\includegraphics[keepaspectratio]{3_ecological-sustainability/images/Fig3_3__EcosystemValuation.jpg}}
+\pandocbounded{\includegraphics[keepaspectratio]{3_ecological-sustainability/images/Fig3_3__EcosystemValuation.png}}
 
 }
 
@@ -6091,34 +6100,34 @@ sind korrekt? (Mehr als eine Aussage kann richtig sein.)
 \begin{itemize}
 \tightlist
 \item[$\square$]
-  Der Begriff „Ökosystemdienstleistungen'' ist ein wissenschaftlicher
-  Begriff, der die Zusammenkünfte naturbezogener Religionen (sogenannter
-  Naturreligionen) wie des Animismus beschreibt, bei denen die Natur als
-  Ganzes verehrt wird.
+  Das Konzept der Ökosystemdienstleistungen bezeichnet die direkten und
+  indirekten Vorteile, die Menschen aus Ökosystemen ziehen.
+\item[$\square$]
+  Das Konzept der Ökosystemdienstleistungen umfasst alle Massnahmen, die
+  Menschen zur Erhaltung von Ökosystemen ergreifen.
 \item[$\square$]
   Es lassen sich vier Arten von Ökosystemdienstleistungen unterscheiden:
   Regulierungsdienstleistungen, Versorgungsdienstleistungen, kulturelle
   Dienstleistungen und Unterstützungsdienstleistungen.
 \item[$\square$]
-  Es lassen sich drei Arten von Ökosystemdienstleistungen unterscheiden:
-  Vermeidungs-, Verbesserungs- und Verlagerungsdienstleistungen.
-\item[$\square$]
-  Im Gegensatz zum Konzept der Nachhaltigen Entwicklung ist das Konzept
-  der Ökosystemdienstleistungen nicht anthropozentrisch, sondern
-  ökozentrisch.
+  Der Begriff „Ökosystemdienstleistungen'' ist ein wissenschaftlicher
+  Begriff, der die Zusammenkünfte naturbezogener Religionen (sogenannter
+  Naturreligionen) wie des Animismus beschreibt, bei denen die Natur als
+  Ganzes verehrt wird.
 \item[$\square$]
   Das Konzept der Ökosystemdienstleistungen bezeichnet die jährliche
   Biomasseanhäufung innerhalb eines Ökosystems, gemessen in Kilojoule.
+\item[$\square$]
+  Es lassen sich drei Arten von Ökosystemdienstleistungen unterscheiden:
+  Vermeidungs-, Verbesserungs- und Verlagerungsdienstleistungen.
 \item[$\square$]
   Das Konzept der Ökosystemdienstleistungen ist ein Mass für
   Biodiversität und damit auch ein Mass für die Resilienz eines
   Ökosystems.
 \item[$\square$]
-  Das Konzept der Ökosystemdienstleistungen umfasst alle Massnahmen, die
-  Menschen zur Erhaltung von Ökosystemen ergreifen.
-\item[$\square$]
-  Das Konzept der Ökosystemdienstleistungen bezeichnet die direkten und
-  indirekten Vorteile, die Menschen aus Ökosystemen ziehen.
+  Im Gegensatz zum Konzept der Nachhaltigen Entwicklung ist das Konzept
+  der Ökosystemdienstleistungen nicht anthropozentrisch, sondern
+  ökozentrisch.
 \end{itemize}
 
 Das Konzept der Ökosystemdienstleistungen bezeichnet die direkten und
@@ -6134,6 +6143,8 @@ kulturellen bzw. religiösen Konzepten.
 \begin{itemize}
 \tightlist
 \item
+  True
+\item
   False
 \item
   True
@@ -6147,8 +6158,6 @@ kulturellen bzw. religiösen Konzepten.
   False
 \item
   False
-\item
-  True
 \end{itemize}
 
 Was sind die vier Hauptkategorien von Ökosystemdienstleistungen?
@@ -6156,12 +6165,12 @@ Was sind die vier Hauptkategorien von Ökosystemdienstleistungen?
 \begin{itemize}
 \tightlist
 \item[$\square$]
+  Versorgungs-, Regulierungs-, kulturelle und
+  Unterstützungsdienstleistungen
+\item[$\square$]
   Wirtschaftliche, soziale, ökologische und kulturelle Dienstleistungen
 \item[$\square$]
   Materielle, spirituelle, industrielle und soziale Dienstleistungen
-\item[$\square$]
-  Versorgungs-, Regulierungs-, kulturelle und
-  Unterstützungsdienstleistungen
 \end{itemize}
 
 Ökosystemdienstleistungen werden gängigerweise in vier Hauptkategorien
@@ -6174,11 +6183,11 @@ Bodenbildung).
 \begin{itemize}
 \tightlist
 \item
-  False
-\item
-  False
-\item
   True
+\item
+  False
+\item
+  False
 \end{itemize}
 
 Welche der folgenden Aussagen treffen auf das Konzept der
@@ -6187,9 +6196,6 @@ richtig sein.)
 
 \begin{itemize}
 \tightlist
-\item[$\square$]
-  Ökosystemdienstleistungen bezeichnen die jährliche Biomasseanhäufung
-  innerhalb eines Ökosystems, gemessen in Kilojoule.
 \item[$\square$]
   Ökosystemdienstleistungen lassen sich in folgende Kategorien
   einteilen: Unterstützungs-, Versorgungs-, Regulierungs- und kulturelle
@@ -6200,6 +6206,9 @@ richtig sein.)
 \item[$\square$]
   Ökosystemdienstleistungen bezeichnen die direkten und indirekten
   Beiträge von Ökosystemen zum menschlichen Wohlergehen.
+\item[$\square$]
+  Ökosystemdienstleistungen bezeichnen die jährliche Biomasseanhäufung
+  innerhalb eines Ökosystems, gemessen in Kilojoule.
 \end{itemize}
 
 Das Konzept der Ökosystemdienstleistungen bezeichnet die direkten und
@@ -6213,13 +6222,13 @@ Biomasseanhäufung.
 \begin{itemize}
 \tightlist
 \item
-  False
-\item
   True
 \item
   False
 \item
   True
+\item
+  False
 \end{itemize}
 
 Welche der folgenden sind Arten von Rückkopplungsmechanismen im
@@ -6228,11 +6237,11 @@ Klimasystem? (Mehr als eine Aussage kann richtig sein.)
 \begin{itemize}
 \tightlist
 \item[$\square$]
-  Negative Rückkopplung
-\item[$\square$]
   Neutrale Rückkopplung
 \item[$\square$]
   Positive Rückkopplung
+\item[$\square$]
+  Negative Rückkopplung
 \end{itemize}
 
 Rückkopplungsmechanismen im Klimasystem beschreiben Prozesse, die
@@ -6244,9 +6253,9 @@ verwendet.
 \begin{itemize}
 \tightlist
 \item
-  True
-\item
   False
+\item
+  True
 \item
   True
 \end{itemize}
@@ -6257,13 +6266,13 @@ Welche der folgenden sind direkte Treiber des Biodiversitätsverlusts?
 \begin{itemize}
 \tightlist
 \item[$\square$]
-  Landnutzungsveränderungen
-\item[$\square$]
-  Wirtschaftspolitik
-\item[$\square$]
   Klimawandel
 \item[$\square$]
+  Landnutzungsveränderungen
+\item[$\square$]
   Umweltverschmutzung
+\item[$\square$]
+  Wirtschaftspolitik
 \end{itemize}
 
 Direkte Treiber des Biodiversitätsverlusts sind Faktoren, die
@@ -6279,11 +6288,11 @@ sozioökonomische Wirkungspfade beeinflusst und nicht durch direkten
 \item
   True
 \item
+  True
+\item
+  True
+\item
   False
-\item
-  True
-\item
-  True
 \end{itemize}
 
 Welche der folgenden Aussagen beschreiben Landnutzungsveränderungen und
@@ -6292,26 +6301,26 @@ verwandte Konzepte korrekt? (Mehr als eine Aussage kann richtig sein.)
 \begin{itemize}
 \tightlist
 \item[$\square$]
-  Landsysteme beschreiben ausschliesslich ökologische Prozesse und
-  schliessen soziale, wirtschaftliche und technologische Faktoren aus.
+  Landnutzungsveränderungen können Biodiversität, Ökosystemfunktionen
+  und Ökosystemdienstleistungen negativ beeinflussen und dadurch das
+  menschliche Wohlergehen einschränken.
 \item[$\square$]
   Landnutzungsveränderung bezeichnet ausschliesslich Veränderungen der
   Landbedeckung, unabhängig von menschlichen Aktivitäten.
+\item[$\square$]
+  Landbedeckung bezeichnet die physischen und biologischen Eigenschaften
+  der Landoberfläche, einschliesslich Vegetation, Topographie und
+  menschlicher Bauwerke.
+\item[$\square$]
+  Landnutzung beschreibt, wie Menschen die Landbedeckung nutzen,
+  beispielsweise für Landwirtschaft, Siedlung oder Infrastruktur.
 \item[$\square$]
   Landdegradation bezeichnet die Verringerung oder den Verlust der
   biologischen oder wirtschaftlichen Produktivität von Land infolge von
   Landnutzung, insbesondere in Trockengebieten.
 \item[$\square$]
-  Landnutzung beschreibt, wie Menschen die Landbedeckung nutzen,
-  beispielsweise für Landwirtschaft, Siedlung oder Infrastruktur.
-\item[$\square$]
-  Landnutzungsveränderungen können Biodiversität, Ökosystemfunktionen
-  und Ökosystemdienstleistungen negativ beeinflussen und dadurch das
-  menschliche Wohlergehen einschränken.
-\item[$\square$]
-  Landbedeckung bezeichnet die physischen und biologischen Eigenschaften
-  der Landoberfläche, einschliesslich Vegetation, Topographie und
-  menschlicher Bauwerke.
+  Landsysteme beschreiben ausschliesslich ökologische Prozesse und
+  schliessen soziale, wirtschaftliche und technologische Faktoren aus.
 \end{itemize}
 
 Landbedeckung beschreibt die biophysikalischen Eigenschaften der
@@ -6329,17 +6338,17 @@ Dimensionen.
 \begin{itemize}
 \tightlist
 \item
+  True
+\item
   False
 \item
+  True
+\item
+  True
+\item
+  True
+\item
   False
-\item
-  True
-\item
-  True
-\item
-  True
-\item
-  True
 \end{itemize}
 
 Welche Merkmale unterscheiden „Naturbeiträge für Menschen (NCP)'' von
@@ -6348,13 +6357,13 @@ Welche Merkmale unterscheiden „Naturbeiträge für Menschen (NCP)'' von
 \begin{itemize}
 \tightlist
 \item[$\square$]
-  Umfasst intrinsische und relationale Werte
-\item[$\square$]
-  Integriert indigene Perspektiven
-\item[$\square$]
   Konzentriert sich ausschliesslich auf Versorgungsfunktionen
 \item[$\square$]
   Beruht ausschliesslich auf monetärer Bewertung
+\item[$\square$]
+  Umfasst intrinsische und relationale Werte
+\item[$\square$]
+  Integriert indigene Perspektiven
 \end{itemize}
 
 Das von IPBES eingeführte Konzept der Naturbeiträge für Menschen (NCP)
@@ -6367,13 +6376,13 @@ auf Versorgungsfunktionen.
 \begin{itemize}
 \tightlist
 \item
-  True
-\item
-  True
-\item
   False
 \item
   False
+\item
+  True
+\item
+  True
 \end{itemize}
 
 \chapter{Soziale Nachhaltigkeit}\label{soziale-nachhaltigkeit}
@@ -7925,19 +7934,19 @@ werden, korrekt? (Mehr als eine Aussage kann richtig sein.)
 \begin{itemize}
 \tightlist
 \item[$\square$]
+  Verfahrensgerechtigkeit betont die Inklusivität und Fairness von
+  Entscheidungsprozessen und der Repräsentation.
+\item[$\square$]
+  Anerkennungsgerechtigkeit konzentriert sich auf den Respekt vor
+  sozialen und kulturellen Unterschieden und die Anerkennung
+  struktureller Ungerechtigkeiten.
+\item[$\square$]
   Verteilungsgerechtigkeit konzentriert sich auf die faire Verteilung
   von Gütern und Lasten, z. B. den Zugang zu sauberem Wasser oder die
   Belastung durch Umweltverschmutzung.
 \item[$\square$]
   Verfahrensgerechtigkeit befasst sich hauptsächlich mit den Ergebnissen
   von Politiken und nicht damit, wie Entscheidungen getroffen werden.
-\item[$\square$]
-  Anerkennungsgerechtigkeit konzentriert sich auf den Respekt vor
-  sozialen und kulturellen Unterschieden und die Anerkennung
-  struktureller Ungerechtigkeiten.
-\item[$\square$]
-  Verfahrensgerechtigkeit betont die Inklusivität und Fairness von
-  Entscheidungsprozessen und der Repräsentation.
 \item[$\square$]
   Verteilungsgerechtigkeit betrifft in erster Linie die Anerkennung
   kultureller Identitäten und historischer Erfahrungen.
@@ -7958,11 +7967,11 @@ Gerechtigkeitsdimension fälschlicherweise einer anderen zu.
 \item
   True
 \item
+  True
+\item
+  True
+\item
   False
-\item
-  True
-\item
-  True
 \item
   False
 \end{itemize}
@@ -7974,15 +7983,9 @@ sein.)
 \begin{itemize}
 \tightlist
 \item[$\square$]
-  Sozialer Zusammenhalt wird hauptsächlich durch das Fehlen von Vielfalt
-  innerhalb einer Gesellschaft definiert.
-\item[$\square$]
   Resilienz bezeichnet die Fähigkeit einer Gemeinschaft oder
   Gesellschaft, interne oder externe Schocks zu vermeiden, zu
   absorbieren oder zu bewältigen.
-\item[$\square$]
-  Inklusion konzentriert sich in erster Linie auf Wirtschaftswachstum
-  statt auf die Teilhabe am sozialen und politischen Leben.
 \item[$\square$]
   Sozialer Zusammenhalt beschreibt ein gemeinsames Zugehörigkeits- und
   Vertrauensgefühl, das Zusammenarbeit innerhalb von Gemeinschaften
@@ -7990,6 +7993,12 @@ sein.)
 \item[$\square$]
   Inklusion bezeichnet den Zugang aller Individuen und Gruppen zu
   wirtschaftlichen, politischen, sozialen und kulturellen Bereichen.
+\item[$\square$]
+  Sozialer Zusammenhalt wird hauptsächlich durch das Fehlen von Vielfalt
+  innerhalb einer Gesellschaft definiert.
+\item[$\square$]
+  Inklusion konzentriert sich in erster Linie auf Wirtschaftswachstum
+  statt auf die Teilhabe am sozialen und politischen Leben.
 \end{itemize}
 
 Inklusion betrifft den gleichberechtigten Zugang und die Teilhabe in
@@ -8005,15 +8014,15 @@ Merkmale zuschreiben.
 \begin{itemize}
 \tightlist
 \item
-  False
+  True
+\item
+  True
 \item
   True
 \item
   False
 \item
-  True
-\item
-  True
+  False
 \end{itemize}
 
 Welche der folgenden Aussagen ist gemäss dem Fähigkeitenansatz korrekt?
@@ -8021,17 +8030,17 @@ Welche der folgenden Aussagen ist gemäss dem Fähigkeitenansatz korrekt?
 \begin{itemize}
 \tightlist
 \item[$\square$]
-  Entwicklung muss anhand des BIP gemessen werden.
-\item[$\square$]
-  Ressourcen wie sauberes Trinkwasser müssen gleichmässig verteilt
-  werden.
-\item[$\square$]
   Ressourcen müssen so verteilt werden, dass alle Menschen Zugang zu den
   Fähigkeiten und Zuständen haben, die für ein gutes Leben notwendig
   sind.
 \item[$\square$]
+  Entwicklung muss anhand des BIP gemessen werden.
+\item[$\square$]
   Gleiche Rechtsansprüche reichen aus, damit eine Gesellschaft gerecht
   ist.
+\item[$\square$]
+  Ressourcen wie sauberes Trinkwasser müssen gleichmässig verteilt
+  werden.
 \end{itemize}
 
 Der Fähigkeitenansatz fragt danach, was Menschen tatsächlich sein und
@@ -8044,11 +8053,11 @@ BIP-Wachstum zu konzentrieren.
 \begin{itemize}
 \tightlist
 \item
-  False
-\item
-  False
-\item
   True
+\item
+  False
+\item
+  False
 \item
   False
 \end{itemize}
@@ -8063,20 +8072,20 @@ eine Aussage kann richtig sein.)
   Analysen individueller Ungleichheit konzentrieren sich auf
   sozioökonomische Merkmale wie Einkommen, Bildung und Berufsstatus.
 \item[$\square$]
-  Analysen individueller Ungleichheit gehen davon aus, dass
-  wirtschaftliche Unterschiede hauptsächlich auf persönliche
-  Eigenschaften und individuellen Einsatz zurückzuführen sind.
-\item[$\square$]
-  Strukturelle Ansätze zur Ungleichheit orientieren sich eng an der
-  Wohlfahrtsökonomie und dem Konzept der absoluten Ungleichheit.
+  Strukturelle Ungleichheit wird als Ergebnis des sozialen Rahmens
+  verstanden, z. B. der Position innerhalb der Produktionsweise,
+  sozialer Hierarchien oder der Nationalität.
 \item[$\square$]
   Analysen struktureller Ungleichheit sind mit Konzepten wie
   Gerechtigkeit, dem Fähigkeitenansatz und relativer Ungleichheit
   verknüpft.
 \item[$\square$]
-  Strukturelle Ungleichheit wird als Ergebnis des sozialen Rahmens
-  verstanden, z. B. der Position innerhalb der Produktionsweise,
-  sozialer Hierarchien oder der Nationalität.
+  Strukturelle Ansätze zur Ungleichheit orientieren sich eng an der
+  Wohlfahrtsökonomie und dem Konzept der absoluten Ungleichheit.
+\item[$\square$]
+  Analysen individueller Ungleichheit gehen davon aus, dass
+  wirtschaftliche Unterschiede hauptsächlich auf persönliche
+  Eigenschaften und individuellen Einsatz zurückzuführen sind.
 \end{itemize}
 
 Individuelle Ansätze zur Ungleichheit betonen Unterschiede zwischen
@@ -8096,9 +8105,9 @@ verbunden.
 \item
   True
 \item
-  False
-\item
   True
+\item
+  False
 \item
   True
 \end{itemize}
@@ -8112,14 +8121,14 @@ treffendsten?
   Der kurzfristige Einsatz von Ressourcen, um das Wirtschaftswachstum
   nach einer Krise zu stabilisieren.
 \item[$\square$]
-  Die Fähigkeit von Individuen und Gesellschaften, sich auf Schocks
-  vorzubereiten, mit ihnen umzugehen und sich von ihnen zu erholen.
-\item[$\square$]
   Die Fähigkeit von Gesellschaften, sämtliche internen und externen
   Schocks vollständig zu vermeiden.
 \item[$\square$]
   Die gleichmässige Verteilung von Einkommen, um soziale Konflikte zu
   verhindern.
+\item[$\square$]
+  Die Fähigkeit von Individuen und Gesellschaften, sich auf Schocks
+  vorzubereiten, mit ihnen umzugehen und sich von ihnen zu erholen.
 \end{itemize}
 
 Resilienz bezeichnet die Fähigkeit von Individuen, Haushalten,
@@ -8135,11 +8144,11 @@ wiederzuerlangen.
 \item
   False
 \item
+  False
+\item
+  False
+\item
   True
-\item
-  False
-\item
-  False
 \end{itemize}
 
 Welche Strategie zum Aufbau von Resilienz konzentriert sich auf
@@ -8152,13 +8161,13 @@ Schocks?
   Bewältigungsstrategien, wie das Zurückgreifen auf Ersparnisse oder
   soziale Netzwerke.
 \item[$\square$]
-  Transformative Strategien, wie institutionelle Reformen und
-  Veränderungen sozialer Normen.
+  Risikominderung und -reduktion, wie Impfungen oder
+  Schutzinfrastruktur.
 \item[$\square$]
   Sofortmassnahmen zur Nothilfe unmittelbar nach einer Katastrophe.
 \item[$\square$]
-  Risikominderung und -reduktion, wie Impfungen oder
-  Schutzinfrastruktur.
+  Transformative Strategien, wie institutionelle Reformen und
+  Veränderungen sozialer Normen.
 \end{itemize}
 
 Transformative Strategien zielen auf eine langfristige Steigerung der
@@ -8173,11 +8182,11 @@ institutionelle oder strukturelle Bedingungen verändern.
 \item
   False
 \item
+  False
+\item
+  False
+\item
   True
-\item
-  False
-\item
-  False
 \end{itemize}
 
 Welche der folgenden Aussagen geben korrekt wieder, wie verschiedene
@@ -8187,16 +8196,12 @@ beurteilen? (Mehr als eine Aussage kann richtig sein.)
 \begin{itemize}
 \tightlist
 \item[$\square$]
-  Kollektive Gerechtigkeitstheorien bewerten ein bedingungsloses
-  Grundeinkommen abhängig vom historischen, kulturellen und sozialen
-  Kontext.
-\item[$\square$]
-  Alle Gerechtigkeitstheorien sind sich einig, dass ein bedingungsloses
-  Grundeinkommen die gerechteste Form der Umverteilung ist.
-\item[$\square$]
   Liberale Theorien können ein bedingungsloses Grundeinkommen
   befürworten, da es den Gesamtnutzen steigern oder gleiche
   Grundfreiheiten stärken kann.
+\item[$\square$]
+  Alle Gerechtigkeitstheorien sind sich einig, dass ein bedingungsloses
+  Grundeinkommen die gerechteste Form der Umverteilung ist.
 \item[$\square$]
   Libertäre Theorien lehnen ein bedingungsloses Grundeinkommen im
   Allgemeinen ab, da Umverteilung durch Besteuerung als Eingriff in die
@@ -8205,6 +8210,10 @@ beurteilen? (Mehr als eine Aussage kann richtig sein.)
   Egalitaristische Perspektiven befürworten ein bedingungsloses
   Grundeinkommen unkritisch, da strikte Gleichheit automatisch
   Gerechtigkeit garantiert.
+\item[$\square$]
+  Kollektive Gerechtigkeitstheorien bewerten ein bedingungsloses
+  Grundeinkommen abhängig vom historischen, kulturellen und sozialen
+  Kontext.
 \end{itemize}
 
 Verschiedene Gerechtigkeitstheorien kommen zu unterschiedlichen
@@ -8227,9 +8236,9 @@ Theorien.
 \item
   True
 \item
-  True
-\item
   False
+\item
+  True
 \end{itemize}
 
 \chapter{Wirtschaftliche
@@ -9394,7 +9403,7 @@ einordnen:
 
 \centering{
 
-\pandocbounded{\includegraphics[keepaspectratio]{5_economic-sustainability/images/Fig5_6__NaÖk_en.jpg}}
+\pandocbounded{\includegraphics[keepaspectratio]{5_economic-sustainability/images/Fig5_6__NaÖk.png}}
 
 }
 
@@ -9609,15 +9618,15 @@ richtig sein.)
   Die Wirtschaftswissenschaft ist eine rein deskriptive Wissenschaft
   ohne Einfluss auf politische oder wirtschaftliche Entscheidungen.
 \item[$\square$]
+  Die Geschichte der Wirtschaftswissenschaft ist auch eine Geschichte
+  ihrer praktischen Auswirkungen auf Märkte, Politiken und
+  gesellschaftliche Strukturen.
+\item[$\square$]
   Die Wirtschaftswissenschaft beschreibt die soziale Wirklichkeit nicht
   nur, sondern prägt auch wirtschaftliches Denken, Politik und Praxis.
 \item[$\square$]
   Alle Definitionen der Wirtschaftswissenschaft sind theorieneutral und
   unabhängig von zugrunde liegenden Denkschulen.
-\item[$\square$]
-  Die Geschichte der Wirtschaftswissenschaft ist auch eine Geschichte
-  ihrer praktischen Auswirkungen auf Märkte, Politiken und
-  gesellschaftliche Strukturen.
 \end{itemize}
 
 Die Wirtschaftswissenschaft hat einen performativen Charakter, da sie
@@ -9639,9 +9648,9 @@ realen Auswirkungen verwoben.
 \item
   True
 \item
-  False
-\item
   True
+\item
+  False
 \end{itemize}
 
 Welche der folgenden Aussagen beschreiben verschiedene Typen von
@@ -9656,14 +9665,6 @@ Wirtschaftssystemen und ihre Eigentums- und Koordinationsformen korrekt?
   die Produktionsmittel befinden sich in der Regel im öffentlichen
   Eigentum.
 \item[$\square$]
-  Gemischte Wirtschaftssysteme verbinden Privateigentum mit staatlichen
-  Eingriffen, um Märkte zu regulieren und soziale Gerechtigkeit zu
-  fördern.
-\item[$\square$]
-  Gemeinschaftsbasierte Netzwerke und Commons-Wirtschaften beruhen in
-  erster Linie auf zentralisierter staatlicher Kontrolle und
-  Privateigentum.
-\item[$\square$]
   In einer kapitalistischen Marktwirtschaft erfolgt die Koordination
   weitgehend dezentral über Märkte, und die Produktionsmittel befinden
   sich überwiegend in Privatbesitz.
@@ -9671,6 +9672,14 @@ Wirtschaftssystemen und ihre Eigentums- und Koordinationsformen korrekt?
   Das Konzept der „Spielarten des Kapitalismus'' hebt hervor, dass
   kapitalistische Systeme im Laufe der Zeit und über Länder hinweg
   unterschiedliche institutionelle Formen angenommen haben.
+\item[$\square$]
+  Gemischte Wirtschaftssysteme verbinden Privateigentum mit staatlichen
+  Eingriffen, um Märkte zu regulieren und soziale Gerechtigkeit zu
+  fördern.
+\item[$\square$]
+  Gemeinschaftsbasierte Netzwerke und Commons-Wirtschaften beruhen in
+  erster Linie auf zentralisierter staatlicher Kontrolle und
+  Privateigentum.
 \end{itemize}
 
 Wirtschaftssysteme unterscheiden sich darin, wie Eigentum und
@@ -9692,11 +9701,11 @@ Modelle, die sich historisch entwickelt haben.
 \item
   True
 \item
+  True
+\item
+  True
+\item
   False
-\item
-  True
-\item
-  True
 \end{itemize}
 
 Welche der folgenden Aussagen beschreiben den Kapitalismus korrekt als
@@ -9706,13 +9715,13 @@ Ausgangspunkt für die Analyse wirtschaftlicher Nachhaltigkeitsfragen?
 \begin{itemize}
 \tightlist
 \item[$\square$]
-  Nachhaltigkeitstransformationen lassen sich erreichen, ohne die
-  zugrunde liegenden wirtschaftlichen Strukturen zu untersuchen, da
-  Umweltprobleme weitgehend isolierte Phänomene sind.
-\item[$\square$]
   Viele gegenwärtige Nachhaltigkeitsherausforderungen wie Klimawandel
   und soziale Ungleichheit sind mit den strukturellen Dynamiken des
   modernen globalen Kapitalismus verknüpft.
+\item[$\square$]
+  Kapitalismus wird als historisch gewachsenes wirtschaftliches und
+  gesellschaftliches System betrachtet, nicht als natürliche oder
+  universelle Form der Wirtschaftsorganisation.
 \item[$\square$]
   Die kapitalistische Produktionsweise ist gekennzeichnet durch die
   Trennung von Kapital und Arbeit, Privateigentum an den
@@ -9722,9 +9731,9 @@ Ausgangspunkt für die Analyse wirtschaftlicher Nachhaltigkeitsfragen?
   Konsolidierung des Kapitalismus durch technologische Innovation, den
   Einsatz fossiler Energie und Massenproduktion.
 \item[$\square$]
-  Kapitalismus wird als historisch gewachsenes wirtschaftliches und
-  gesellschaftliches System betrachtet, nicht als natürliche oder
-  universelle Form der Wirtschaftsorganisation.
+  Nachhaltigkeitstransformationen lassen sich erreichen, ohne die
+  zugrunde liegenden wirtschaftlichen Strukturen zu untersuchen, da
+  Umweltprobleme weitgehend isolierte Phänomene sind.
 \end{itemize}
 
 Aus einer systemischen Perspektive werden
@@ -9742,15 +9751,15 @@ Nachhaltigkeitsherausforderungen wirksam zu begegnen.
 \begin{itemize}
 \tightlist
 \item
+  True
+\item
+  True
+\item
+  True
+\item
+  True
+\item
   False
-\item
-  True
-\item
-  True
-\item
-  True
-\item
-  True
 \end{itemize}
 
 Warum sind Volkswirtschaften (gemessen am BIP pro Kopf) vor dem 19.
@@ -9760,17 +9769,17 @@ richtig sein.)
 \begin{itemize}
 \tightlist
 \item[$\square$]
-  Die wirtschaftliche Produktion war weitgehend durch die Verfügbarkeit
-  von Land und natürlichen Ressourcen begrenzt.
-\item[$\square$]
-  Regierungen schränkten das Wirtschaftswachstum gezielt ein, um
-  Inflation zu vermeiden.
-\item[$\square$]
   Die meisten Gesellschaften waren agrarisch geprägt, mit geringer
   Produktivität und wenig technologischer Innovation.
 \item[$\square$]
+  Die wirtschaftliche Produktion war weitgehend durch die Verfügbarkeit
+  von Land und natürlichen Ressourcen begrenzt.
+\item[$\square$]
   Globaler Handel und Industrialisierung hatten sich noch nicht in
   grossem Massstab entwickelt.
+\item[$\square$]
+  Regierungen schränkten das Wirtschaftswachstum gezielt ein, um
+  Inflation zu vermeiden.
 \end{itemize}
 
 Vor dem 19. Jahrhundert waren die meisten Volkswirtschaften durch
@@ -9787,11 +9796,11 @@ zu verhindern.
 \item
   True
 \item
+  True
+\item
+  True
+\item
   False
-\item
-  True
-\item
-  True
 \end{itemize}
 
 Was ist der Hauptkritikpunkt am BIP als Wohlstandsmass?
@@ -9799,9 +9808,9 @@ Was ist der Hauptkritikpunkt am BIP als Wohlstandsmass?
 \begin{itemize}
 \tightlist
 \item[$\square$]
-  Es berücksichtigt unbezahlte Arbeit und Umweltschäden.
-\item[$\square$]
   Es klammert unbezahlte Arbeit, Ungleichheit und Umweltschäden aus.
+\item[$\square$]
+  Es berücksichtigt unbezahlte Arbeit und Umweltschäden.
 \item[$\square$]
   Es misst nur die Wertentwicklung an den Finanzmärkten.
 \item[$\square$]
@@ -9817,9 +9826,9 @@ Wohlstands und Wohlergehens.
 \begin{itemize}
 \tightlist
 \item
-  False
-\item
   True
+\item
+  False
 \item
   False
 \item
@@ -9831,9 +9840,9 @@ Was versteht man unter Gewinnmaximierung?
 \begin{itemize}
 \tightlist
 \item[$\square$]
-  Unternehmen investieren ausschliesslich in öffentliche Güter.
-\item[$\square$]
   Unternehmen konzentrieren sich auf soziales Wohlergehen.
+\item[$\square$]
+  Unternehmen investieren ausschliesslich in öffentliche Güter.
 \item[$\square$]
   Unternehmen streben an, zum niedrigstmöglichen Preis zu verkaufen.
 \item[$\square$]
@@ -9865,14 +9874,14 @@ Was versteht man unter dem Begriff Finanzialisierung?
 \begin{itemize}
 \tightlist
 \item[$\square$]
+  Den Rückzug des Finanzsektors aus der Realwirtschaft.
+\item[$\square$]
+  Die Ablösung der Bankensysteme durch Genossenschaften.
+\item[$\square$]
   Die wachsende Bedeutung von Finanzmärkten, -institutionen und -motiven
   in der Wirtschaft.
 \item[$\square$]
-  Den Rückzug des Finanzsektors aus der Realwirtschaft.
-\item[$\square$]
   Die vollständige Abschaffung privater Kredite.
-\item[$\square$]
-  Die Ablösung der Bankensysteme durch Genossenschaften.
 \end{itemize}
 
 Finanzialisierung bezeichnet die zunehmende Dominanz von Finanzmärkten,
@@ -9885,11 +9894,11 @@ Realwirtschaft oder die Abschaffung privater Kredite.
 \begin{itemize}
 \tightlist
 \item
+  False
+\item
+  False
+\item
   True
-\item
-  False
-\item
-  False
 \item
   False
 \end{itemize}
@@ -9901,13 +9910,16 @@ korrekt? (Mehr als eine Aussage kann richtig sein.)
 \begin{itemize}
 \tightlist
 \item[$\square$]
+  Die Logik kapitalistischer Investitionen wird oft mit der Formel
+  G--W--G' beschrieben, die das Ziel widerspiegelt, aus Geld mehr Geld
+  zu machen.
+\item[$\square$]
   Moderne kapitalistische Volkswirtschaften sind strukturell auf
   kontinuierliches Wirtschaftswachstum angewiesen, um Beschäftigung,
   Sozialsysteme und öffentliche Finanzen aufrechtzuerhalten.
 \item[$\square$]
-  Die Logik kapitalistischer Investitionen wird oft mit der Formel
-  G--W--G' beschrieben, die das Ziel widerspiegelt, aus Geld mehr Geld
-  zu machen.
+  Unternehmen können langfristig profitabel und wettbewerbsfähig
+  bleiben, ohne Gewinne zu erzielen oder die Produktion auszuweiten.
 \item[$\square$]
   Der Wachstumszwang resultiert teilweise aus dem Marktwettbewerb, da
   Unternehmen expandieren und ihre Produktivität steigern müssen, um
@@ -9915,9 +9927,6 @@ korrekt? (Mehr als eine Aussage kann richtig sein.)
 \item[$\square$]
   Wirtschaftliche Stagnation oder Wachstumsrückgang kann Krisen wie
   Arbeitslosigkeit, Armut und Kürzungen bei Sozialleistungen auslösen.
-\item[$\square$]
-  Unternehmen können langfristig profitabel und wettbewerbsfähig
-  bleiben, ohne Gewinne zu erzielen oder die Produktion auszuweiten.
 \end{itemize}
 
 In kapitalistischen Volkswirtschaften ist kontinuierliches
@@ -9938,11 +9947,11 @@ Investition.
 \item
   True
 \item
-  True
-\item
-  True
-\item
   False
+\item
+  True
+\item
+  True
 \end{itemize}
 
 Welche der folgenden Aussagen beschreiben die Idee einer nachhaltigen
@@ -9956,29 +9965,29 @@ als eine Aussage kann richtig sein.)
   Machtverhältnisse und die Externalisierung sozialer und ökologischer
   Kosten in den Globalen Süden infrage zu stellen.
 \item[$\square$]
-  Viele Kerninstitutionen wie Rentensysteme, Arbeitsmärkte und
-  öffentliche Finanzen sind gegenwärtig strukturell vom
-  Wirtschaftswachstum abhängig.
-\item[$\square$]
-  Suffiziente Lebensstile konzentrieren sich ausschliesslich auf
-  individuellen Konsumverzicht und beinhalten keine Veränderungen bei
-  Infrastruktur oder Produktionssystemen.
-\item[$\square$]
   Commons, Genossenschaften und solidarische Produktionsformen gelten
   als Wege, Resilienz, sozialen Zusammenhalt und ökologische
   Verantwortung zu stärken.
 \item[$\square$]
-  Eine nachhaltige Wirtschaftstransformation lässt sich ohne
-  unterstützende steuer-, regulierungs- oder investitionspolitische
-  Rahmenbedingungen erreichen.
+  Viele Kerninstitutionen wie Rentensysteme, Arbeitsmärkte und
+  öffentliche Finanzen sind gegenwärtig strukturell vom
+  Wirtschaftswachstum abhängig.
+\item[$\square$]
+  Eine sorgende Wirtschaft betont die systematische Aufwertung von
+  Sorge- und Reproduktionsarbeit als Grundlage wirtschaftlicher
+  Tätigkeit.
 \item[$\square$]
   Die Gestaltung wachstumsunabhängiger Institutionen erfordert,
   Sozialsysteme und öffentliche Finanzen vom BIP-Wachstum zu entkoppeln
   und die politische Fixierung auf Wachstum infrage zu stellen.
 \item[$\square$]
-  Eine sorgende Wirtschaft betont die systematische Aufwertung von
-  Sorge- und Reproduktionsarbeit als Grundlage wirtschaftlicher
-  Tätigkeit.
+  Eine nachhaltige Wirtschaftstransformation lässt sich ohne
+  unterstützende steuer-, regulierungs- oder investitionspolitische
+  Rahmenbedingungen erreichen.
+\item[$\square$]
+  Suffiziente Lebensstile konzentrieren sich ausschliesslich auf
+  individuellen Konsumverzicht und beinhalten keine Veränderungen bei
+  Infrastruktur oder Produktionssystemen.
 \end{itemize}
 
 Wachstumsunabhängige Wirtschaftsbereiche zielen darauf ab, die
@@ -10001,15 +10010,15 @@ Nischenphänomene.
 \item
   True
 \item
-  False
+  True
+\item
+  True
 \item
   True
 \item
   False
 \item
-  True
-\item
-  True
+  False
 \end{itemize}
 
 \bookmarksetup{startatroot}
@@ -11550,7 +11559,6 @@ Age}? {Nope}, {Scientists Say}.»} \emph{The New York Times}, März.
 \end{CSLReferences}
 
 
-\backmatter
 
 
 \end{document}

@@ -62,10 +62,14 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-5d9b96da87e05193873217072765548c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-4fffde74ef3b9adfe0b82ba81ae250ba.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-e8282bee7637e0ceba70fdf198bf2ab0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-4fffde74ef3b9adfe0b82ba81ae250ba.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -130,7 +134,169 @@ window.Quarto = {
 <link rel="stylesheet" href="../webex.css">
 </head>
 
-<body class="nav-sidebar floating quarto-light">
+<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -159,8 +325,9 @@ window.Quarto = {
       </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="../">Nachhaltigkeit: Grundlagen und Herausforderungen</a> 
-        <div class="sidebar-tools-main">
-    <a href="https://cdeteaching.github.io/NEgrundlagen/pdf/NEgrundlagen.pdf" title="Skript (PDF)" class="quarto-navigation-tool px-1" aria-label="Skript (PDF)"><i class="bi bi-file-earmark-pdf"></i></a>
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://cdeteaching.github.io/NEgrundlagen/pdf/Lehrbuch_M1_1.pdf" title="Skript (PDF)" class="quarto-navigation-tool px-1" aria-label="Skript (PDF)"><i class="bi bi-file-earmark-pdf"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Dunkelmodus umschalten"><i class="bi"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Lesemodus umschalten">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
@@ -302,6 +469,7 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../2_approaches/2_intro.html">Ansätze zur Nachhaltigen Entwicklung</a></li><li class="breadcrumb-item"><a href="../2_approaches/2_intro.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ansätze zur Nachhaltigen Entwicklung</span></a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ansätze zur Nachhaltigen Entwicklung</span></h1>
@@ -391,10 +559,10 @@ Abbildung&nbsp;2.2: Räumliche Verteilung globaler und regionaler Kipppunkte. Di
 <li><p>Normativ gesehen zielt das Konzept darauf ab, den stabilen Erdsystemzustand („Gleichgewichtszustand”) des Holozäns aufrechtzuerhalten und damit Bedrohungen für das menschliche Überleben zu mindern.</p></li>
 <li><p>Das Rahmenwerk der planetaren Grenzen kann genutzt werden, um konkrete Ziele in der Umweltdimension festzulegen (z. B. auf globaler oder nationaler Ebene).</p></li>
 </ul>
-<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout callout-style-default callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Vorsicht</span>Weiterführende Literatur
@@ -475,7 +643,7 @@ Abbildung&nbsp;2.4: Neuer Gesellschaftsvertrag. Quelle: <span class="citation" d
 <div id="fig-turningpoints" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-turningpoints-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="Images/Fig2_5_Schneidewind_turningpoints.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Abbildung&nbsp;2.5: Verständnis des Zusammenspiels der sieben Wendepunkte der Grossen Transformation. Quelle: Eigene Darstellung basierend auf @schneidewindGrosseTransformationEinfuhrung2018."><img src="Images/Fig2_5_Schneidewind_turningpoints.jpg" class="img-fluid figure-img"></a>
+<a href="Images/Fig2_5_Schneidewind_turningpoints.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Abbildung&nbsp;2.5: Verständnis des Zusammenspiels der sieben Wendepunkte der Grossen Transformation. Quelle: Eigene Darstellung basierend auf @schneidewindGrosseTransformationEinfuhrung2018."><img src="Images/Fig2_5_Schneidewind_turningpoints.png" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-turningpoints-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;2.5: Verständnis des Zusammenspiels der sieben Wendepunkte der Grossen Transformation. Quelle: Eigene Darstellung basierend auf <span class="citation" data-cites="schneidewindGrosseTransformationEinfuhrung2018">Schneidewind (<a href="../references.html#ref-schneidewindGrosseTransformationEinfuhrung2018" role="doc-biblioref">2018</a>)</span>.
@@ -486,7 +654,7 @@ Abbildung&nbsp;2.5: Verständnis des Zusammenspiels der sieben Wendepunkte der G
 <div id="fig-double-decoupling" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-double-decoupling-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="Images/Fig2_6__double_decoupling.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Abbildung&nbsp;2.6: Doppelte Entkopplung. Verknüpfung von Technologie und Wohlstandsmodellen. Quelle: Eigene Darstellung basierend auf @schneidewindGrosseTransformationEinfuhrung2018."><img src="Images/Fig2_6__double_decoupling.jpg" class="img-fluid figure-img"></a>
+<a href="Images/Fig2_6__double_decoupling.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Abbildung&nbsp;2.6: Doppelte Entkopplung. Verknüpfung von Technologie und Wohlstandsmodellen. Quelle: Eigene Darstellung basierend auf @schneidewindGrosseTransformationEinfuhrung2018."><img src="Images/Fig2_6__double_decoupling.png" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-double-decoupling-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;2.6: Doppelte Entkopplung. Verknüpfung von Technologie und Wohlstandsmodellen. Quelle: Eigene Darstellung basierend auf <span class="citation" data-cites="schneidewindGrosseTransformationEinfuhrung2018">Schneidewind (<a href="../references.html#ref-schneidewindGrosseTransformationEinfuhrung2018" role="doc-biblioref">2018</a>)</span>.
@@ -523,10 +691,10 @@ Abbildung&nbsp;2.7: Hebel und Einstiegspunkte zur Erreichung der SDGs. Quelle: <
 <li><p>sind ganzheitliche Konzepte zur Steuerung der gesellschaftlichen Entwicklung. Sie schlagen Einstiegspunkte in verschiedenen Bereichen der Gesellschaft und auf mehreren Handlungsebenen vor.</p></li>
 <li><p>schlagen Schlüsselbereiche mit grosser Hebelwirkung vor (z. B. schlägt der WBGU eine Energietransformation, eine Stadttransformation, eine Landnutzungstransformation und transformative Bildung und Forschung vor).</p></li>
 </ul>
-<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout callout-style-default callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Vorsicht</span>Weiterführende Literatur
@@ -619,10 +787,10 @@ Abbildung&nbsp;2.10: Zusammenhang zwischen Ökologischem Fussabdruck und Human D
 <p>Der <strong>Happy Planet Index (HPI)</strong> bietet einen subjektiveren Ansatz und kombiniert Lebenszufriedenheit (auf Umfragebasis), Lebenserwartung und Ökologischen Fussabdruck, um das „Wohlbefinden pro Einheit Umweltverbrauch” zu berechnen. Entwickelt von der New Economics Foundation zeigt der HPI, dass eine hohe Lebenszufriedenheit nicht zwangsläufig einen hohen Ressourcenverbrauch erfordert. Mitteleinkommensländer wie Costa Rica schneiden häufig besser ab als Industrienationen mit nicht nachhaltigen Konsummustern <span class="citation" data-cites="nefHappyPlanetIndex2006">(<a href="../references.html#ref-nefHappyPlanetIndex2006" role="doc-biblioref">NEF 2006</a>)</span>.</p>
 <p>Im deutschsprachigen Raum wurde der <strong>Nationale Wohlfahrtsindex (NWI)</strong> als ein auf nationale Datenverfügbarkeit angepasstes GPI-Instrument eingeführt. Er umfasst Dimensionen wie Einkommensverteilung, Umweltbelastung und Gesundheitskosten. Der NWI wurde ursprünglich vom Institut für ökologische Wirtschaftsforschung (IÖW) und dem Forschungszentrum für Umweltpolitik (FFU) an der FU Berlin entwickelt und in mehreren deutschen Bundesländern erprobt <span class="citation" data-cites="diefenbacherWoranSichWohlstand2011">(<a href="../references.html#ref-diefenbacherWoranSichWohlstand2011" role="doc-biblioref">Diefenbacher und Zieschank 2011</a>)</span>.</p>
 <p>Ein weiteres besonders relevantes Mass ist der <strong>Multidimensionale Armutsindex (MPI)</strong>, der von der Oxford Poverty and Human Development Initiative (OPHI) in Zusammenarbeit mit dem UNDP entwickelt wurde. Er erfasst Armut in drei Kerndimensionen: Gesundheit, Bildung und Lebensstandard. Zu den Indikatoren gehören Kindersterblichkeit, Schulbesuch, Zugang zu Elektrizität und Wohnbedingungen. Im Gegensatz zu einkommensbasierten Massstäben bietet der MPI ein differenzierteres Verständnis von Deprivation über sich überschneidende Dimensionen hinweg. <span class="citation" data-cites="baderEconomicGrowthIncreasing2017">Bader u.&nbsp;a. (<a href="../references.html#ref-baderEconomicGrowthIncreasing2017" role="doc-biblioref">2017</a>)</span> zeigen den Wert des MPI in einer Längsschnittstudie zur Armut in der Demokratischen Volksrepublik Laos, die aufzeigt, wie schnelles Wirtschaftswachstum die Einkommensarmut verringerte und gleichzeitig Disparitäten in Bildung, Infrastruktur und Gesundheitsversorgung verschärfte.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Tipp</span>Der Ökologische Fussabdruck – Erklärung und Kritik
@@ -657,8 +825,8 @@ Abbildung&nbsp;2.10: Zusammenhang zwischen Ökologischem Fussabdruck und Human D
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche zwei planetaren Grenzen gelten als „Kerngrenzen”?</p>
-<div id="webex-93730bdd4087b117799f456bfa1384ec" class="webex-radiogroup" data-answer="YgMbAxxTSFRp">
-<label><input type="radio" autocomplete="off" name="93730bdd4087b117799f456bfa1384ec"><span>Süsswasser und Aerosole</span></label><label><input type="radio" autocomplete="off" name="93730bdd4087b117799f456bfa1384ec"><span>Ozonabbau und Landnutzung</span></label><label><input type="radio" autocomplete="off" name="93730bdd4087b117799f456bfa1384ec"><span>Klimawandel und Integrität der Biosphäre</span></label><label><input type="radio" autocomplete="off" name="93730bdd4087b117799f456bfa1384ec"><span>Ozeanversauerung und Stickstoffkreisläufe</span></label>
+<div id="webex-e270e96e3d232374afb269a30086845d" class="webex-radiogroup" data-answer="PgIbAEkIGlVu">
+<label><input type="radio" autocomplete="off" name="e270e96e3d232374afb269a30086845d"><span>Ozeanversauerung und Stickstoffkreisläufe</span></label><label><input type="radio" autocomplete="off" name="e270e96e3d232374afb269a30086845d"><span>Ozonabbau und Landnutzung</span></label><label><input type="radio" autocomplete="off" name="e270e96e3d232374afb269a30086845d"><span>Klimawandel und Integrität der Biosphäre</span></label><label><input type="radio" autocomplete="off" name="e270e96e3d232374afb269a30086845d"><span>Süsswasser und Aerosole</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -674,25 +842,25 @@ Abbildung&nbsp;2.10: Zusammenhang zwischen Ökologischem Fussabdruck und Human D
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche der folgenden gehört NICHT zu den neun planetaren Grenzen, die von Rockström et al.&nbsp;identifiziert wurden?</p>
-<div id="webex-a049a95c75ac0b4db3ee52f853f9a1ed" class="webex-radiogroup" data-answer="OgAYCU0JGVJq">
-<label><input type="radio" autocomplete="off" name="a049a95c75ac0b4db3ee52f853f9a1ed"><span>Ozeanversauerung</span></label><label><input type="radio" autocomplete="off" name="a049a95c75ac0b4db3ee52f853f9a1ed"><span>Klimawandel</span></label><label><input type="radio" autocomplete="off" name="a049a95c75ac0b4db3ee52f853f9a1ed"><span>Integrität der Biosphäre</span></label><label><input type="radio" autocomplete="off" name="a049a95c75ac0b4db3ee52f853f9a1ed"><span>Globale Finanzstabilität</span></label>
+<div id="webex-a64338dfd2bb8f8e750865865034496d" class="webex-radiogroup" data-answer="OgcYAx8ISFY5">
+<label><input type="radio" autocomplete="off" name="a64338dfd2bb8f8e750865865034496d"><span>Globale Finanzstabilität</span></label><label><input type="radio" autocomplete="off" name="a64338dfd2bb8f8e750865865034496d"><span>Integrität der Biosphäre</span></label><label><input type="radio" autocomplete="off" name="a64338dfd2bb8f8e750865865034496d"><span>Ozeanversauerung</span></label><label><input type="radio" autocomplete="off" name="a64338dfd2bb8f8e750865865034496d"><span>Klimawandel</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Das Rahmenwerk der planetaren Grenzen identifiziert biophysikalische Erdsystemprozesse, die die Stabilität und Resilienz des Planeten regulieren. Klimawandel, Ozeanversauerung und die Integrität der Biosphäre sind Teil dieses Rahmenwerks, während globale Finanzstabilität keine planetare Grenze ist.</p>
 <ul>
-<li>False</li>
-<li>False</li>
-<li>False</li>
 <li>True</li>
+<li>False</li>
+<li>False</li>
+<li>False</li>
 </ul>
 </div>
 </div>
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welcher der folgenden Kipppunkte gehört NICHT zum Klimasystem der Erde?</p>
-<div id="webex-f398b0bdfbf76a5c351037a208d65d58" class="webex-radiogroup" data-answer="PQIVCE4ATlQ7">
-<label><input type="radio" autocomplete="off" name="f398b0bdfbf76a5c351037a208d65d58"><span>Verschmutzung der Ozeane durch Plastik</span></label><label><input type="radio" autocomplete="off" name="f398b0bdfbf76a5c351037a208d65d58"><span>Kollaps des Amazonas-Regenwaldes</span></label><label><input type="radio" autocomplete="off" name="f398b0bdfbf76a5c351037a208d65d58"><span>Kollaps des Golfstroms</span></label><label><input type="radio" autocomplete="off" name="f398b0bdfbf76a5c351037a208d65d58"><span>Abschmelzen des grönländischen Eisschilds</span></label>
+<div id="webex-d3e7a86053733eccdc771b7f57419530" class="webex-radiogroup" data-answer="PwJJB00IGgBo">
+<label><input type="radio" autocomplete="off" name="d3e7a86053733eccdc771b7f57419530"><span>Verschmutzung der Ozeane durch Plastik</span></label><label><input type="radio" autocomplete="off" name="d3e7a86053733eccdc771b7f57419530"><span>Kollaps des Amazonas-Regenwaldes</span></label><label><input type="radio" autocomplete="off" name="d3e7a86053733eccdc771b7f57419530"><span>Abschmelzen des grönländischen Eisschilds</span></label><label><input type="radio" autocomplete="off" name="d3e7a86053733eccdc771b7f57419530"><span>Kollaps des Golfstroms</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -708,42 +876,42 @@ Abbildung&nbsp;2.10: Zusammenhang zwischen Ökologischem Fussabdruck und Human D
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welcher Begriff bezeichnet die Entkopplung von Wirtschaftswachstum und Umweltschäden bei gleichzeitiger Wahrung des Wohlstands?</p>
-<div id="webex-327f92189b2246ac5073391b92f59e03" class="webex-radiogroup" data-answer="aAIbVhUCHQlk">
-<label><input type="radio" autocomplete="off" name="327f92189b2246ac5073391b92f59e03"><span>Planetare Grenzen</span></label><label><input type="radio" autocomplete="off" name="327f92189b2246ac5073391b92f59e03"><span>Resilienz</span></label><label><input type="radio" autocomplete="off" name="327f92189b2246ac5073391b92f59e03"><span>Doppelte Entkopplung</span></label><label><input type="radio" autocomplete="off" name="327f92189b2246ac5073391b92f59e03"><span>Grüne Wirtschaft</span></label>
+<div id="webex-8699ac149c7adac00744a318d8beb86d" class="webex-radiogroup" data-answer="YwcVCU1THQRk">
+<label><input type="radio" autocomplete="off" name="8699ac149c7adac00744a318d8beb86d"><span>Grüne Wirtschaft</span></label><label><input type="radio" autocomplete="off" name="8699ac149c7adac00744a318d8beb86d"><span>Doppelte Entkopplung</span></label><label><input type="radio" autocomplete="off" name="8699ac149c7adac00744a318d8beb86d"><span>Planetare Grenzen</span></label><label><input type="radio" autocomplete="off" name="8699ac149c7adac00744a318d8beb86d"><span>Resilienz</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Das Konzept der Grünen Wirtschaft bezeichnet ein Wirtschaftsmodell, das Wirtschaftswachstum und menschliches Wohlergehen bei gleichzeitiger Verringerung von Umweltrisiken und ökologischer Knappheit anstrebt und damit Wohlstand von Umweltschäden entkoppelt.</p>
 <ul>
-<li>False</li>
-<li>False</li>
-<li>False</li>
 <li>True</li>
+<li>False</li>
+<li>False</li>
+<li>False</li>
 </ul>
 </div>
 </div>
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Wofür steht der innere Ring des Doughnut-Modells?</p>
-<div id="webex-b25d309528751f9b4bb04f1e0634a547" class="webex-radiogroup" data-answer="OQIZVB8AFQRv">
-<label><input type="radio" autocomplete="off" name="b25d309528751f9b4bb04f1e0634a547"><span>Der sichere und gerechte Raum für die Menschheit</span></label><label><input type="radio" autocomplete="off" name="b25d309528751f9b4bb04f1e0634a547"><span>Die ökologische Decke</span></label><label><input type="radio" autocomplete="off" name="b25d309528751f9b4bb04f1e0634a547"><span>Die planetaren Grenzen</span></label><label><input type="radio" autocomplete="off" name="b25d309528751f9b4bb04f1e0634a547"><span>Das soziale Fundament</span></label>
+<div id="webex-e443193db4cdc1c174783b1236fb0db0" class="webex-radiogroup" data-answer="PgQYAh0JH1Q/">
+<label><input type="radio" autocomplete="off" name="e443193db4cdc1c174783b1236fb0db0"><span>Die planetaren Grenzen</span></label><label><input type="radio" autocomplete="off" name="e443193db4cdc1c174783b1236fb0db0"><span>Das soziale Fundament</span></label><label><input type="radio" autocomplete="off" name="e443193db4cdc1c174783b1236fb0db0"><span>Die ökologische Decke</span></label><label><input type="radio" autocomplete="off" name="e443193db4cdc1c174783b1236fb0db0"><span>Der sichere und gerechte Raum für die Menschheit</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Im Doughnut-Modell repräsentiert der innere Ring das soziale Fundament, das die minimalen sozialen Standards definiert, die für ein gerechtes und würdevolles Leben aller Menschen notwendig sind.</p>
 <ul>
 <li>False</li>
-<li>False</li>
-<li>False</li>
 <li>True</li>
+<li>False</li>
+<li>False</li>
 </ul>
 </div>
 </div>
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche der folgenden Aussagen beschreiben Postwachstumsansätze? (Mehr als eine Aussage kann richtig sein.)</p>
-<div id="webex-4d71e4e2f27816fecab87c329acba4ed" class="webex-checkboxgroup" data-answer="b1UbAEkESQM7">
-<label><input type="checkbox" autocomplete="off" name="4d71e4e2f27816fecab87c329acba4ed"><span>Fokus auf Suffizienz und Wohlbefinden</span></label><label><input type="checkbox" autocomplete="off" name="4d71e4e2f27816fecab87c329acba4ed"><span>Eintreten für strukturellen Wandel</span></label><label><input type="checkbox" autocomplete="off" name="4d71e4e2f27816fecab87c329acba4ed"><span>Betonung des BIP-Wachstums</span></label><label><input type="checkbox" autocomplete="off" name="4d71e4e2f27816fecab87c329acba4ed"><span>Kritik an der Wachstumsabhängigkeit</span></label>
+<div id="webex-2affbaa0db86c684571cf002ac7f3843" class="webex-checkboxgroup" data-answer="aVBKV05QTQA5">
+<label><input type="checkbox" autocomplete="off" name="2affbaa0db86c684571cf002ac7f3843"><span>Fokus auf Suffizienz und Wohlbefinden</span></label><label><input type="checkbox" autocomplete="off" name="2affbaa0db86c684571cf002ac7f3843"><span>Eintreten für strukturellen Wandel</span></label><label><input type="checkbox" autocomplete="off" name="2affbaa0db86c684571cf002ac7f3843"><span>Kritik an der Wachstumsabhängigkeit</span></label><label><input type="checkbox" autocomplete="off" name="2affbaa0db86c684571cf002ac7f3843"><span>Betonung des BIP-Wachstums</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -751,8 +919,8 @@ Abbildung&nbsp;2.10: Zusammenhang zwischen Ökologischem Fussabdruck und Human D
 <ul>
 <li>True</li>
 <li>True</li>
-<li>False</li>
 <li>True</li>
+<li>False</li>
 </ul>
 </div>
 </div>
@@ -2051,6 +2219,19 @@ window.onload = function() {
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {

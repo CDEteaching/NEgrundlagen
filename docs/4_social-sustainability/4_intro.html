@@ -62,10 +62,14 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-5d9b96da87e05193873217072765548c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-4fffde74ef3b9adfe0b82ba81ae250ba.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-e8282bee7637e0ceba70fdf198bf2ab0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-4fffde74ef3b9adfe0b82ba81ae250ba.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -105,7 +109,169 @@ div.csl-indent {
 <link rel="stylesheet" href="../webex.css">
 </head>
 
-<body class="nav-sidebar floating quarto-light">
+<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -134,8 +300,9 @@ div.csl-indent {
       </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="../">Nachhaltigkeit: Grundlagen und Herausforderungen</a> 
-        <div class="sidebar-tools-main">
-    <a href="https://cdeteaching.github.io/NEgrundlagen/pdf/NEgrundlagen.pdf" title="Skript (PDF)" class="quarto-navigation-tool px-1" aria-label="Skript (PDF)"><i class="bi bi-file-earmark-pdf"></i></a>
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://cdeteaching.github.io/NEgrundlagen/pdf/Lehrbuch_M1_1.pdf" title="Skript (PDF)" class="quarto-navigation-tool px-1" aria-label="Skript (PDF)"><i class="bi bi-file-earmark-pdf"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Dunkelmodus umschalten"><i class="bi"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Lesemodus umschalten">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
@@ -269,6 +436,7 @@ div.csl-indent {
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
+
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../3_ecological-sustainability/3_intro.html">Handlungsfelder der Nachhaltigkeit: Analyse und Strategien zur Transformation von (un-)nachhaltigen Systemen</a></li><li class="breadcrumb-item"><a href="../4_social-sustainability/4_intro.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Soziale Nachhaltigkeit</span></a></li></ol></nav>
 <div class="quarto-title">
@@ -683,10 +851,10 @@ Abbildung&nbsp;4.10: Die Flüsse globaler Nahrungsenergie (kcal/Person/Tag) zeig
 <p>Historisch gesehen waren Diskussionen über Verteilungsgerechtigkeit in erster Linie auf politische Gemeinschaften wie nationale Regierungen beschränkt und konzentrierten sich ausschliesslich auf die gegenwärtige Generation. Nachhaltigkeitsfragen erfordern jedoch eine breitere Perspektive. Verteilungsgerechtigkeit muss global und intergenerational betrachtet werden sowie im Hinblick auf unsere Verantwortung gegenüber der Umwelt und anderen betroffenen Spezies. Klimaziele sind ein Paradebeispiel: Wie sollten Emissionsreduktionsziele zwischen Ländern, zwischen Generationen oder zwischen verschiedenen sozialen Gruppen verteilt werden? Wer sollte die Kosten der Anpassung an den Klimawandel tragen?</p>
 <p>Verteilungsgerechtigkeit umfasst daher ein breites Themenspektrum. Nehmen wir die Frage des Einkommens. In der Schweiz verdienen Frauen trotz des seit 1981 in der Bundesverfassung verankerten Grundsatzes „gleicher Lohn für gleichwertige Arbeit” im Durchschnitt 1.364 CHF weniger pro Monat als Männer. Rund die Hälfte dieses Unterschieds lässt sich durch objektive Faktoren wie Bildung oder Branche erklären, aber die andere Hälfte – die bisher unerklärlich ist – könnte auf Lohndiskriminierung hinweisen <span class="citation" data-cites="ebgLohngleichheit2023">(<a href="../references.html#ref-ebgLohngleichheit2023" role="doc-biblioref">EBG 2023</a>)</span>. Das Prinzip ist weitgehend akzeptiert und wird selten bestritten. Folglich neigen Gegner*innen von Massnahmen zur Umsetzung der Lohngleichheit dazu, nicht das Prinzip selbst in Frage zu stellen, sondern stattdessen zu versuchen, die Lücke durch angeblich objektive Faktoren zu rechtfertigen.</p>
 <p>In anderen Fragen der Verteilungsgerechtigkeit ist ein gesellschaftlicher Konsens jedoch weit schwieriger zu erzielen. Verschiedene Theorien (vgl. <a href="#tip-justice" class="quarto-xref">Kasten&nbsp;<span>4.1</span></a>) und Konzepte (vgl. <a href="#tip-concepts" class="quarto-xref">Kasten&nbsp;<span>4.2</span></a>) versuchen, die Frage „Was ist fair?” zu beantworten. Sie bieten unterschiedliche Perspektiven darauf, was Einzelpersonen oder Gruppen als fair empfinden, und geben Orientierung darüber, wie soziale Vorteile und Nachteile verteilt werden sollten. Ein kontroverses Beispiel ist das <strong>bedingungslose Grundeinkommen</strong>. Aus einer Perspektive der Verteilungsgerechtigkeit könnte dieses Konzept als fair gelten, da es Ressourcen gleich verteilt und soziale Chancen angleicht. Einige argumentieren jedoch, dass ein solches Modell Arbeitsanreize schwächen und damit Produktivität und Innovation beeinträchtigen könnte. Je nach angewendeter Theorie (vgl. <a href="#tip-justice" class="quarto-xref">Kasten&nbsp;<span>4.1</span></a>) lassen sich zu solchen Themen sehr unterschiedliche Schlüsse ziehen – wie die Überlegungen nach <a href="#tip-concepts" class="quarto-xref">Kasten&nbsp;<span>4.2</span></a> zeigen.</p>
-<div id="tip-justice" class="callout callout-style-default callout-note callout-titled">
+<div id="tip-justice" class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 Hinweis&nbsp;4.1: Gerechtigkeitstheorien
@@ -760,10 +928,10 @@ Tabelle&nbsp;4.4: Bewertung der Einführung eines bedingungslosen Grundeinkommen
 </div>
 </div>
 <p>Während <strong>Gerechtigkeitstheorien</strong> allgemeine Rahmenwerke oder Modelle sind, die definieren, was Gerechtigkeit ist und wie sie in einer Gesellschaft erreicht werden kann, konzentrieren sich <strong>Gerechtigkeitskonzepte</strong> stärker auf spezifische Aspekte. Wie der Überblick in <a href="#tip-concepts" class="quarto-xref">Kasten&nbsp;<span>4.2</span></a> zeigt, können Fragen der Verteilungsgerechtigkeit aus einer Vielzahl unterschiedlicher Perspektiven betrachtet werden.</p>
-<div id="tip-concepts" class="callout callout-style-default callout-note callout-titled">
+<div id="tip-concepts" class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 Hinweis&nbsp;4.2: Normative Gerechtigkeitskonzepte nach <span class="citation" data-cites="novyZukunftsfaehigesWirtschaften2023">(<a href="../references.html#ref-novyZukunftsfaehigesWirtschaften2023" role="doc-biblioref">Novy u.&nbsp;a. 2023</a>)</span>
@@ -829,44 +997,44 @@ Inklusion, sozialer Zusammenhalt, Resilienz und Verfahrensgerechtigkeit sind die
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche der folgenden Aussagen beschreiben die drei Dimensionen der Gerechtigkeit, die in der sozialen Nachhaltigkeit häufig diskutiert werden, korrekt? (Mehr als eine Aussage kann richtig sein.)</p>
-<div id="webex-74e6595f436b85c1292caeb64fed7e2a" class="webex-checkboxgroup" data-answer="bAVJBhkJGVcYAms=">
-<label><input type="checkbox" autocomplete="off" name="74e6595f436b85c1292caeb64fed7e2a"><span>Verteilungsgerechtigkeit konzentriert sich auf die faire Verteilung von Gütern und Lasten, z. B. den Zugang zu sauberem Wasser oder die Belastung durch Umweltverschmutzung.</span></label><label><input type="checkbox" autocomplete="off" name="74e6595f436b85c1292caeb64fed7e2a"><span>Verfahrensgerechtigkeit befasst sich hauptsächlich mit den Ergebnissen von Politiken und nicht damit, wie Entscheidungen getroffen werden.</span></label><label><input type="checkbox" autocomplete="off" name="74e6595f436b85c1292caeb64fed7e2a"><span>Verteilungsgerechtigkeit betrifft in erster Linie die Anerkennung kultureller Identitäten und historischer Erfahrungen.</span></label><label><input type="checkbox" autocomplete="off" name="74e6595f436b85c1292caeb64fed7e2a"><span>Anerkennungsgerechtigkeit konzentriert sich auf den Respekt vor sozialen und kulturellen Unterschieden und die Anerkennung struktureller Ungerechtigkeiten.</span></label><label><input type="checkbox" autocomplete="off" name="74e6595f436b85c1292caeb64fed7e2a"><span>Verfahrensgerechtigkeit betont die Inklusivität und Fairness von Entscheidungsprozessen und der Repräsentation.</span></label>
+<div id="webex-e4264c8a79a8eeec1a8324919d4406ed" class="webex-checkboxgroup" data-answer="PgQeBxhSFFAbCTw=">
+<label><input type="checkbox" autocomplete="off" name="e4264c8a79a8eeec1a8324919d4406ed"><span>Verfahrensgerechtigkeit befasst sich hauptsächlich mit den Ergebnissen von Politiken und nicht damit, wie Entscheidungen getroffen werden.</span></label><label><input type="checkbox" autocomplete="off" name="e4264c8a79a8eeec1a8324919d4406ed"><span>Verfahrensgerechtigkeit betont die Inklusivität und Fairness von Entscheidungsprozessen und der Repräsentation.</span></label><label><input type="checkbox" autocomplete="off" name="e4264c8a79a8eeec1a8324919d4406ed"><span>Anerkennungsgerechtigkeit konzentriert sich auf den Respekt vor sozialen und kulturellen Unterschieden und die Anerkennung struktureller Ungerechtigkeiten.</span></label><label><input type="checkbox" autocomplete="off" name="e4264c8a79a8eeec1a8324919d4406ed"><span>Verteilungsgerechtigkeit konzentriert sich auf die faire Verteilung von Gütern und Lasten, z. B. den Zugang zu sauberem Wasser oder die Belastung durch Umweltverschmutzung.</span></label><label><input type="checkbox" autocomplete="off" name="e4264c8a79a8eeec1a8324919d4406ed"><span>Verteilungsgerechtigkeit betrifft in erster Linie die Anerkennung kultureller Identitäten und historischer Erfahrungen.</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>In Debatten zur sozialen Nachhaltigkeit befasst sich Verteilungsgerechtigkeit mit der fairen Verteilung von Vorteilen und Lasten. Verfahrensgerechtigkeit konzentriert sich darauf, wer in Entscheidungsprozesse einbezogen wird und wie Entscheidungen getroffen werden. Anerkennungsgerechtigkeit betont die Bedeutung des Respekts vor vielfältigen Identitäten, kulturellen Kontexten und historischen Erfahrungen sowie die Auseinandersetzung mit strukturellen Ungerechtigkeiten. Die übrigen Aussagen ordnen den Schwerpunkt einer Gerechtigkeitsdimension fälschlicherweise einer anderen zu.</p>
 <ul>
-<li>True</li>
-<li>False</li>
 <li>False</li>
 <li>True</li>
 <li>True</li>
+<li>True</li>
+<li>False</li>
 </ul>
 </div>
 </div>
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche der folgenden Aussagen beschreiben zentrale Dimensionen der sozialen Nachhaltigkeit korrekt? (Mehr als eine Aussage kann richtig sein.)</p>
-<div id="webex-a62fda37d9e20329ae93f41e29277a84" class="webex-checkboxgroup" data-answer="OgceVkhRHwZICDg=">
-<label><input type="checkbox" autocomplete="off" name="a62fda37d9e20329ae93f41e29277a84"><span>Inklusion bezeichnet den Zugang aller Individuen und Gruppen zu wirtschaftlichen, politischen, sozialen und kulturellen Bereichen.</span></label><label><input type="checkbox" autocomplete="off" name="a62fda37d9e20329ae93f41e29277a84"><span>Inklusion konzentriert sich in erster Linie auf Wirtschaftswachstum statt auf die Teilhabe am sozialen und politischen Leben.</span></label><label><input type="checkbox" autocomplete="off" name="a62fda37d9e20329ae93f41e29277a84"><span>Sozialer Zusammenhalt wird hauptsächlich durch das Fehlen von Vielfalt innerhalb einer Gesellschaft definiert.</span></label><label><input type="checkbox" autocomplete="off" name="a62fda37d9e20329ae93f41e29277a84"><span>Resilienz bezeichnet die Fähigkeit einer Gemeinschaft oder Gesellschaft, interne oder externe Schocks zu vermeiden, zu absorbieren oder zu bewältigen.</span></label><label><input type="checkbox" autocomplete="off" name="a62fda37d9e20329ae93f41e29277a84"><span>Sozialer Zusammenhalt beschreibt ein gemeinsames Zugehörigkeits- und Vertrauensgefühl, das Zusammenarbeit innerhalb von Gemeinschaften ermöglicht.</span></label>
+<div id="webex-9a7cafdc94ab17766b4fa77a9dc529e3" class="webex-checkboxgroup" data-answer="YlAbUk1XSFMVBDw=">
+<label><input type="checkbox" autocomplete="off" name="9a7cafdc94ab17766b4fa77a9dc529e3"><span>Resilienz bezeichnet die Fähigkeit einer Gemeinschaft oder Gesellschaft, interne oder externe Schocks zu vermeiden, zu absorbieren oder zu bewältigen.</span></label><label><input type="checkbox" autocomplete="off" name="9a7cafdc94ab17766b4fa77a9dc529e3"><span>Sozialer Zusammenhalt beschreibt ein gemeinsames Zugehörigkeits- und Vertrauensgefühl, das Zusammenarbeit innerhalb von Gemeinschaften ermöglicht.</span></label><label><input type="checkbox" autocomplete="off" name="9a7cafdc94ab17766b4fa77a9dc529e3"><span>Inklusion bezeichnet den Zugang aller Individuen und Gruppen zu wirtschaftlichen, politischen, sozialen und kulturellen Bereichen.</span></label><label><input type="checkbox" autocomplete="off" name="9a7cafdc94ab17766b4fa77a9dc529e3"><span>Sozialer Zusammenhalt wird hauptsächlich durch das Fehlen von Vielfalt innerhalb einer Gesellschaft definiert.</span></label><label><input type="checkbox" autocomplete="off" name="9a7cafdc94ab17766b4fa77a9dc529e3"><span>Inklusion konzentriert sich in erster Linie auf Wirtschaftswachstum statt auf die Teilhabe am sozialen und politischen Leben.</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Inklusion betrifft den gleichberechtigten Zugang und die Teilhabe in wirtschaftlichen, politischen, sozialen und kulturellen Bereichen. Sozialer Zusammenhalt betont Vertrauen, Zugehörigkeit und die Fähigkeit von Gruppen, konstruktiv zusammenzuarbeiten. Resilienz beschreibt die Fähigkeit von Gesellschaften oder Gemeinschaften, Schocks wie Umweltveränderungen oder politische Krisen zu bewältigen oder sich an sie anzupassen. Die übrigen Aussagen stellen diese Konzepte falsch dar, indem sie ihren Geltungsbereich einschränken oder ihnen unzutreffende Merkmale zuschreiben.</p>
 <ul>
 <li>True</li>
-<li>False</li>
-<li>False</li>
 <li>True</li>
 <li>True</li>
+<li>False</li>
+<li>False</li>
 </ul>
 </div>
 </div>
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche der folgenden Aussagen ist gemäss dem Fähigkeitenansatz korrekt?</p>
-<div id="webex-779c77acc6c008f5579278e0c411ec53" class="webex-radiogroup" data-answer="bAcVUxsGTVM+">
-<label><input type="radio" autocomplete="off" name="779c77acc6c008f5579278e0c411ec53"><span>Gleiche Rechtsansprüche reichen aus, damit eine Gesellschaft gerecht ist.</span></label><label><input type="radio" autocomplete="off" name="779c77acc6c008f5579278e0c411ec53"><span>Entwicklung muss anhand des BIP gemessen werden.</span></label><label><input type="radio" autocomplete="off" name="779c77acc6c008f5579278e0c411ec53"><span>Ressourcen müssen so verteilt werden, dass alle Menschen Zugang zu den Fähigkeiten und Zuständen haben, die für ein gutes Leben notwendig sind.</span></label><label><input type="radio" autocomplete="off" name="779c77acc6c008f5579278e0c411ec53"><span>Ressourcen wie sauberes Trinkwasser müssen gleichmässig verteilt werden.</span></label>
+<div id="webex-16618a330ea6c3d1e3b41794aed6fb01" class="webex-radiogroup" data-answer="agYaARRQHwNt">
+<label><input type="radio" autocomplete="off" name="16618a330ea6c3d1e3b41794aed6fb01"><span>Entwicklung muss anhand des BIP gemessen werden.</span></label><label><input type="radio" autocomplete="off" name="16618a330ea6c3d1e3b41794aed6fb01"><span>Gleiche Rechtsansprüche reichen aus, damit eine Gesellschaft gerecht ist.</span></label><label><input type="radio" autocomplete="off" name="16618a330ea6c3d1e3b41794aed6fb01"><span>Ressourcen müssen so verteilt werden, dass alle Menschen Zugang zu den Fähigkeiten und Zuständen haben, die für ein gutes Leben notwendig sind.</span></label><label><input type="radio" autocomplete="off" name="16618a330ea6c3d1e3b41794aed6fb01"><span>Ressourcen wie sauberes Trinkwasser müssen gleichmässig verteilt werden.</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -882,16 +1050,16 @@ Inklusion, sozialer Zusammenhalt, Resilienz und Verfahrensgerechtigkeit sind die
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche der folgenden Aussagen unterscheiden individuelle und strukturelle Ansätze zur Analyse von Ungleichheit korrekt? (Mehr als eine Aussage kann richtig sein.)</p>
-<div id="webex-4be237aa84c60c361c48e9f82a43cce0" class="webex-checkboxgroup" data-answer="b1NJAx8HTVAUBT4=">
-<label><input type="checkbox" autocomplete="off" name="4be237aa84c60c361c48e9f82a43cce0"><span>Analysen individueller Ungleichheit gehen davon aus, dass wirtschaftliche Unterschiede hauptsächlich auf persönliche Eigenschaften und individuellen Einsatz zurückzuführen sind.</span></label><label><input type="checkbox" autocomplete="off" name="4be237aa84c60c361c48e9f82a43cce0"><span>Analysen individueller Ungleichheit konzentrieren sich auf sozioökonomische Merkmale wie Einkommen, Bildung und Berufsstatus.</span></label><label><input type="checkbox" autocomplete="off" name="4be237aa84c60c361c48e9f82a43cce0"><span>Strukturelle Ansätze zur Ungleichheit orientieren sich eng an der Wohlfahrtsökonomie und dem Konzept der absoluten Ungleichheit.</span></label><label><input type="checkbox" autocomplete="off" name="4be237aa84c60c361c48e9f82a43cce0"><span>Analysen struktureller Ungleichheit sind mit Konzepten wie Gerechtigkeit, dem Fähigkeitenansatz und relativer Ungleichheit verknüpft.</span></label><label><input type="checkbox" autocomplete="off" name="4be237aa84c60c361c48e9f82a43cce0"><span>Strukturelle Ungleichheit wird als Ergebnis des sozialen Rahmens verstanden, z. B. der Position innerhalb der Produktionsweise, sozialer Hierarchien oder der Nationalität.</span></label>
+<div id="webex-f857e174a105a192cb204914bf84744c" class="webex-checkboxgroup" data-answer="PQgZBkkAGwVNAG0=">
+<label><input type="checkbox" autocomplete="off" name="f857e174a105a192cb204914bf84744c"><span>Strukturelle Ansätze zur Ungleichheit orientieren sich eng an der Wohlfahrtsökonomie und dem Konzept der absoluten Ungleichheit.</span></label><label><input type="checkbox" autocomplete="off" name="f857e174a105a192cb204914bf84744c"><span>Strukturelle Ungleichheit wird als Ergebnis des sozialen Rahmens verstanden, z. B. der Position innerhalb der Produktionsweise, sozialer Hierarchien oder der Nationalität.</span></label><label><input type="checkbox" autocomplete="off" name="f857e174a105a192cb204914bf84744c"><span>Analysen individueller Ungleichheit konzentrieren sich auf sozioökonomische Merkmale wie Einkommen, Bildung und Berufsstatus.</span></label><label><input type="checkbox" autocomplete="off" name="f857e174a105a192cb204914bf84744c"><span>Analysen struktureller Ungleichheit sind mit Konzepten wie Gerechtigkeit, dem Fähigkeitenansatz und relativer Ungleichheit verknüpft.</span></label><label><input type="checkbox" autocomplete="off" name="f857e174a105a192cb204914bf84744c"><span>Analysen individueller Ungleichheit gehen davon aus, dass wirtschaftliche Unterschiede hauptsächlich auf persönliche Eigenschaften und individuellen Einsatz zurückzuführen sind.</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Individuelle Ansätze zur Ungleichheit betonen Unterschiede zwischen Einzelpersonen und stützen sich typischerweise auf die Wohlfahrtsökonomie und absolute Ungleichheit, wobei Ungleichheiten weitgehend auf persönliche Eigenschaften und Einsatz zurückgeführt werden. Strukturelle Ansätze hingegen konzentrieren sich auf die sozialen, wirtschaftlichen und politischen Rahmenbedingungen, die ungleiche Ergebnisse prägen, und sind eng mit Konzepten wie Gerechtigkeit, dem Fähigkeitenansatz und relativer Ungleichheit verbunden.</p>
 <ul>
-<li>True</li>
-<li>True</li>
 <li>False</li>
+<li>True</li>
+<li>True</li>
 <li>True</li>
 <li>True</li>
 </ul>
@@ -900,16 +1068,16 @@ Inklusion, sozialer Zusammenhalt, Resilienz und Verfahrensgerechtigkeit sind die
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Was beschreibt Resilienz im Kontext sozialer Nachhaltigkeit am treffendsten?</p>
-<div id="webex-72228ac70a5665590d6273219c171d84" class="webex-radiogroup" data-answer="bAMeAhRRTwdt">
-<label><input type="radio" autocomplete="off" name="72228ac70a5665590d6273219c171d84"><span>Die Fähigkeit von Individuen und Gesellschaften, sich auf Schocks vorzubereiten, mit ihnen umzugehen und sich von ihnen zu erholen.</span></label><label><input type="radio" autocomplete="off" name="72228ac70a5665590d6273219c171d84"><span>Die Fähigkeit von Gesellschaften, sämtliche internen und externen Schocks vollständig zu vermeiden.</span></label><label><input type="radio" autocomplete="off" name="72228ac70a5665590d6273219c171d84"><span>Die gleichmässige Verteilung von Einkommen, um soziale Konflikte zu verhindern.</span></label><label><input type="radio" autocomplete="off" name="72228ac70a5665590d6273219c171d84"><span>Der kurzfristige Einsatz von Ressourcen, um das Wirtschaftswachstum nach einer Krise zu stabilisieren.</span></label>
+<div id="webex-e62034a890e268ba75def22cefac25c7" class="webex-radiogroup" data-answer="PgYeAB8FTQhk">
+<label><input type="radio" autocomplete="off" name="e62034a890e268ba75def22cefac25c7"><span>Die Fähigkeit von Gesellschaften, sämtliche internen und externen Schocks vollständig zu vermeiden.</span></label><label><input type="radio" autocomplete="off" name="e62034a890e268ba75def22cefac25c7"><span>Der kurzfristige Einsatz von Ressourcen, um das Wirtschaftswachstum nach einer Krise zu stabilisieren.</span></label><label><input type="radio" autocomplete="off" name="e62034a890e268ba75def22cefac25c7"><span>Die Fähigkeit von Individuen und Gesellschaften, sich auf Schocks vorzubereiten, mit ihnen umzugehen und sich von ihnen zu erholen.</span></label><label><input type="radio" autocomplete="off" name="e62034a890e268ba75def22cefac25c7"><span>Die gleichmässige Verteilung von Einkommen, um soziale Konflikte zu verhindern.</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Resilienz bezeichnet die Fähigkeit von Individuen, Haushalten, Gemeinschaften oder ganzen Gesellschaften, sich auf Schocks wie Wirtschaftskrisen, Naturkatastrophen oder soziale Konflikte vorzubereiten, mit ihnen umzugehen und sich von ihnen zu erholen. Sie bedeutet nicht die vollständige Vermeidung von Schocks, sondern die Fähigkeit, mit ihnen umzugehen und Lebensqualität und Stabilität wiederzuerlangen.</p>
 <ul>
+<li>False</li>
+<li>False</li>
 <li>True</li>
-<li>False</li>
-<li>False</li>
 <li>False</li>
 </ul>
 </div>
@@ -917,15 +1085,15 @@ Inklusion, sozialer Zusammenhalt, Resilienz und Verfahrensgerechtigkeit sind die
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche Strategie zum Aufbau von Resilienz konzentriert sich auf langfristigen systemischen Wandel statt auf unmittelbare Reaktionen auf Schocks?</p>
-<div id="webex-f619e129f5fe5fd601315e93b99a06ee" class="webex-radiogroup" data-answer="PQYdCEkBHgk7">
-<label><input type="radio" autocomplete="off" name="f619e129f5fe5fd601315e93b99a06ee"><span>Sofortmassnahmen zur Nothilfe unmittelbar nach einer Katastrophe.</span></label><label><input type="radio" autocomplete="off" name="f619e129f5fe5fd601315e93b99a06ee"><span>Transformative Strategien, wie institutionelle Reformen und Veränderungen sozialer Normen.</span></label><label><input type="radio" autocomplete="off" name="f619e129f5fe5fd601315e93b99a06ee"><span>Bewältigungsstrategien, wie das Zurückgreifen auf Ersparnisse oder soziale Netzwerke.</span></label><label><input type="radio" autocomplete="off" name="f619e129f5fe5fd601315e93b99a06ee"><span>Risikominderung und -reduktion, wie Impfungen oder Schutzinfrastruktur.</span></label>
+<div id="webex-1ed0cae3a8b63e929368fa877e54133c" class="webex-radiogroup" data-answer="alRIAE9RSQM8">
+<label><input type="radio" autocomplete="off" name="1ed0cae3a8b63e929368fa877e54133c"><span>Transformative Strategien, wie institutionelle Reformen und Veränderungen sozialer Normen.</span></label><label><input type="radio" autocomplete="off" name="1ed0cae3a8b63e929368fa877e54133c"><span>Sofortmassnahmen zur Nothilfe unmittelbar nach einer Katastrophe.</span></label><label><input type="radio" autocomplete="off" name="1ed0cae3a8b63e929368fa877e54133c"><span>Bewältigungsstrategien, wie das Zurückgreifen auf Ersparnisse oder soziale Netzwerke.</span></label><label><input type="radio" autocomplete="off" name="1ed0cae3a8b63e929368fa877e54133c"><span>Risikominderung und -reduktion, wie Impfungen oder Schutzinfrastruktur.</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Transformative Strategien zielen auf eine langfristige Steigerung der Resilienz ab, indem sie weitreichende Reformen oder neue Institutionen einführen. Sie kombinieren typischerweise Elemente der Risikominderung und Bewältigung, gehen aber über kurzfristige Reaktionen hinaus, indem sie zugrunde liegende Verwundbarkeiten adressieren und soziale, institutionelle oder strukturelle Bedingungen verändern.</p>
 <ul>
-<li>False</li>
 <li>True</li>
+<li>False</li>
 <li>False</li>
 <li>False</li>
 </ul>
@@ -934,16 +1102,16 @@ Inklusion, sozialer Zusammenhalt, Resilienz und Verfahrensgerechtigkeit sind die
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche der folgenden Aussagen geben korrekt wieder, wie verschiedene Gerechtigkeitstheorien die Idee eines bedingungslosen Grundeinkommens beurteilen? (Mehr als eine Aussage kann richtig sein.)</p>
-<div id="webex-22d8bc0b71ff85f2fb2e8e8bbf5bd7f3" class="webex-checkboxgroup" data-answer="aQNICE5SHFIbADs=">
-<label><input type="checkbox" autocomplete="off" name="22d8bc0b71ff85f2fb2e8e8bbf5bd7f3"><span>Kollektive Gerechtigkeitstheorien bewerten ein bedingungsloses Grundeinkommen abhängig vom historischen, kulturellen und sozialen Kontext.</span></label><label><input type="checkbox" autocomplete="off" name="22d8bc0b71ff85f2fb2e8e8bbf5bd7f3"><span>Alle Gerechtigkeitstheorien sind sich einig, dass ein bedingungsloses Grundeinkommen die gerechteste Form der Umverteilung ist.</span></label><label><input type="checkbox" autocomplete="off" name="22d8bc0b71ff85f2fb2e8e8bbf5bd7f3"><span>Libertäre Theorien lehnen ein bedingungsloses Grundeinkommen im Allgemeinen ab, da Umverteilung durch Besteuerung als Eingriff in die individuelle Freiheit und Eigentumsrechte gilt.</span></label><label><input type="checkbox" autocomplete="off" name="22d8bc0b71ff85f2fb2e8e8bbf5bd7f3"><span>Egalitaristische Perspektiven befürworten ein bedingungsloses Grundeinkommen unkritisch, da strikte Gleichheit automatisch Gerechtigkeit garantiert.</span></label><label><input type="checkbox" autocomplete="off" name="22d8bc0b71ff85f2fb2e8e8bbf5bd7f3"><span>Liberale Theorien können ein bedingungsloses Grundeinkommen befürworten, da es den Gesamtnutzen steigern oder gleiche Grundfreiheiten stärken kann.</span></label>
+<div id="webex-d20f793817ff91221e36c043408888cd" class="webex-checkboxgroup" data-answer="PwMcVxsJHwgdBjs=">
+<label><input type="checkbox" autocomplete="off" name="d20f793817ff91221e36c043408888cd"><span>Libertäre Theorien lehnen ein bedingungsloses Grundeinkommen im Allgemeinen ab, da Umverteilung durch Besteuerung als Eingriff in die individuelle Freiheit und Eigentumsrechte gilt.</span></label><label><input type="checkbox" autocomplete="off" name="d20f793817ff91221e36c043408888cd"><span>Liberale Theorien können ein bedingungsloses Grundeinkommen befürworten, da es den Gesamtnutzen steigern oder gleiche Grundfreiheiten stärken kann.</span></label><label><input type="checkbox" autocomplete="off" name="d20f793817ff91221e36c043408888cd"><span>Alle Gerechtigkeitstheorien sind sich einig, dass ein bedingungsloses Grundeinkommen die gerechteste Form der Umverteilung ist.</span></label><label><input type="checkbox" autocomplete="off" name="d20f793817ff91221e36c043408888cd"><span>Egalitaristische Perspektiven befürworten ein bedingungsloses Grundeinkommen unkritisch, da strikte Gleichheit automatisch Gerechtigkeit garantiert.</span></label><label><input type="checkbox" autocomplete="off" name="d20f793817ff91221e36c043408888cd"><span>Kollektive Gerechtigkeitstheorien bewerten ein bedingungsloses Grundeinkommen abhängig vom historischen, kulturellen und sozialen Kontext.</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Verschiedene Gerechtigkeitstheorien kommen zu unterschiedlichen Schlüssen hinsichtlich eines bedingungslosen Grundeinkommens. Libertäre Theorien lehnen es typischerweise wegen Bedenken über staatliche Eingriffe und Eigentumsrechte ab. Liberale Theorien wie der Utilitarismus oder der Rawls’sche Kontraktarismus können es unter bestimmten Bedingungen befürworten, während egalitaristische Ansätze betonen, dass Gleichheit von Fairness unterschieden werden muss. Kollektive Theorien betonen, dass Urteile vom sozialen und kulturellen Kontext abhängen. Es besteht kein universeller Konsens unter allen Theorien.</p>
 <ul>
 <li>True</li>
-<li>False</li>
 <li>True</li>
+<li>False</li>
 <li>False</li>
 <li>True</li>
 </ul>
@@ -2313,6 +2481,19 @@ window.onload = function() {
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {

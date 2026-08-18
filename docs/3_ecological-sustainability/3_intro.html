@@ -63,10 +63,14 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-5d9b96da87e05193873217072765548c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-4fffde74ef3b9adfe0b82ba81ae250ba.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-e8282bee7637e0ceba70fdf198bf2ab0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-4fffde74ef3b9adfe0b82ba81ae250ba.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -128,7 +132,169 @@ window.Quarto = {
 <link rel="stylesheet" href="../webex.css">
 </head>
 
-<body class="nav-sidebar floating quarto-light">
+<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -157,8 +323,9 @@ window.Quarto = {
       </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="../">Nachhaltigkeit: Grundlagen und Herausforderungen</a> 
-        <div class="sidebar-tools-main">
-    <a href="https://cdeteaching.github.io/NEgrundlagen/pdf/NEgrundlagen.pdf" title="Skript (PDF)" class="quarto-navigation-tool px-1" aria-label="Skript (PDF)"><i class="bi bi-file-earmark-pdf"></i></a>
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://cdeteaching.github.io/NEgrundlagen/pdf/Lehrbuch_M1_1.pdf" title="Skript (PDF)" class="quarto-navigation-tool px-1" aria-label="Skript (PDF)"><i class="bi bi-file-earmark-pdf"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Dunkelmodus umschalten"><i class="bi"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Lesemodus umschalten">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
@@ -285,6 +452,7 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../3_ecological-sustainability/3_intro.html">Handlungsfelder der Nachhaltigkeit: Analyse und Strategien zur Transformation von (un-)nachhaltigen Systemen</a></li><li class="breadcrumb-item"><a href="../3_ecological-sustainability/3_intro.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Ökologische Nachhaltigkeit</span></a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Ökologische Nachhaltigkeit</span></h1>
@@ -318,7 +486,7 @@ window.Quarto = {
 <div id="fig-normative-dimension" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-normative-dimension-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/Fig3_1__NEecology.jpg" class="img-fluid figure-img">
+<img src="images/Fig3_1__NEecology.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-normative-dimension-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;3.1: Die normative Dimension ökologischer Nachhaltigkeit. Quelle: Eigene Darstellung.
@@ -326,10 +494,10 @@ Abbildung&nbsp;3.1: Die normative Dimension ökologischer Nachhaltigkeit. Quelle
 </figure>
 </div>
 <p>Ethische Urteile und Begründungen prägen, welche ökologischen Eigenschaften und Funktionen wir für künftige Generationen erhalten und welche wir als intrinsisch wertvoll in der Natur erachten. Was ist ein wünschenswerter Zustand für Ökosysteme, und warum? Welche Aspekte der ökologischen Umwelt verdienen Schutz, und welches Ziel verfolgt dieser Schutz? Ist es notwendig, Ökosysteme so unberührt wie möglich zu halten, und wie definieren wir „Natürlichkeit”? In welchem Umfang sollten wir Ökosysteme uneingeschränkt für menschliche Zwecke nutzen, und gibt es Bereiche, die wir Organismen überlassen sollten, mit minimalen menschlichen Eingriffen? Interpretationen ökologischer Nachhaltigkeit hängen von den verfolgten Zielen ab: für wen, warum und wie (<a href="#fig-normative-dimension" class="quarto-xref">Abbildung&nbsp;<span>3.1</span></a>).</p>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Tipp</span>Konkrete Beispiele ethischer Beurteilungen im Kontext ökologischer Nachhaltigkeit
@@ -361,10 +529,10 @@ Abbildung&nbsp;3.2: Millennium Ecosystem Assessment. Quelle: <span class="citati
 </figure>
 </div>
 <p>Laut <span class="citation" data-cites="milleniumecosystemassessmentEcosystemsHumanWellBeing2005">Millenium Ecosystem Assessment (<a href="../references.html#ref-milleniumecosystemassessmentEcosystemsHumanWellBeing2005" role="doc-biblioref">2005</a>)</span> können diese Ökosystemdienstleistungen unsere Lebensqualität und unsere Wirtschaft verbessern (vgl. blauer Kasten in <a href="#fig-ecosystem" class="quarto-xref">Abbildung&nbsp;<span>3.2</span></a>). Diese Betrachtungsweise von Ökosystemen sieht den Menschen zwar als von der Umwelt getrennt, betont aber die Relevanz von Ökosystemdienstleistungen für das menschliche Wohlergehen. Das Konzept der Ökosystemdienstleistungen zielt letztlich darauf ab, den Wert der Natur stärker in politische und wirtschaftliche Entscheidungen einzubeziehen. Das Konzept spielt jedoch auch in der Landschafts- und Raumplanung eine Rolle. Es wird beispielsweise genutzt, um zu analysieren, wie sich räumlich wirksame (rechtliche) Regelungen auf Ökosystemdienstleistungen und damit auf das menschliche Wohlergehen auswirken <span class="citation" data-cites="albertApplyingEcosystemServices2016">(vgl. <a href="../references.html#ref-albertApplyingEcosystemServices2016" role="doc-biblioref"><span class="nocase">Albert u.&nbsp;a.</span> 2016</a>)</span>.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Tipp</span>Fallstudie: Ökosystemdienstleistungen in Madagaskar
@@ -387,7 +555,7 @@ Abbildung&nbsp;3.2: Millennium Ecosystem Assessment. Quelle: <span class="citati
 <div id="fig-monetary-value" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-monetary-value-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/Fig3_3__EcosystemValuation.jpg" class="img-fluid figure-img">
+<img src="images/Fig3_3__EcosystemValuation.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-monetary-value-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;3.3: Der monetäre Wert von Ökosystemdienstleistungen. Quelle: Eigene Darstellung.
@@ -490,10 +658,10 @@ Abbildung&nbsp;3.9: Der Klimawandel in der Schweiz von 1864 bis 2024. Quelle: <a
 </figure>
 </div>
 <p>Das <strong>Pariser Klimaabkommen</strong>, das im Dezember 2015 verabschiedet wurde, war der erste internationale Vertrag, in dem Industrie- und Schwellenländer gemeinsam zusagten, die Treibhausgasemissionen zu reduzieren. Sein Kernziel ist es, den globalen Temperaturanstieg auf maximal 2°C zu begrenzen, mit Bemühungen um eine Beschränkung auf 1,5°C gegenüber dem vorindustriellen Niveau. Im Jahr 2018 veröffentlichte der Zwischenstaatliche Ausschuss für Klimaänderungen (IPCC) einen Sonderbericht mit einigen bemerkenswerten Erkenntnissen: vor allem, dass wir nur noch wenige Jahre – bis 2030 – Zeit haben, um zu verhindern, dass die 2°C-Grenze überschritten wird. Die nächste wichtige Entscheidung im Rahmen der internationalen Klimabemühungen im Anschluss an das Pariser Abkommen war die Klimakonferenz COP 27 im Jahr 2022. Auf der COP 27 einigten sich die Unterzeichnenden auf die Einrichtung des Fonds für Verluste und Schäden (Loss and Damage Fund) – das Ergebnis jahrzehntelanger Diskussionen –, der Entwicklungsländern nach extremen Wetterereignissen finanzielle Unterstützung ermöglichen soll.</p>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Hinweis</span>Der Zwischenstaatliche Ausschuss für Klimaänderungen (IPCC)
@@ -554,10 +722,10 @@ Abbildung&nbsp;3.12: Struktur und Funktionsweise bewirtschafteter und unbewirtsc
 </figure>
 </div>
 <p>Über ihre Auswirkungen auf klimarelevante Treibhausgasflüsse hinaus stören Landnutzung und Landnutzungsveränderungen auch andere <strong>biogeochemische Materialkreisläufe</strong>, wie Nitrat-, Phosphor- oder Schwefelkreisläufe, und verknüpfen sie mit einer weiteren bereits überschrittenen planetaren Grenze – derjenigen der biogeochemischen Kreisläufe <span class="citation" data-cites="richardsonEarthSixNine2023">(<a href="../references.html#ref-richardsonEarthSixNine2023" role="doc-biblioref">Richardson u.&nbsp;a. 2023</a>)</span>. Ein klassisches Beispiel hierfür ist die <strong>Eutrophierung</strong>, ein Prozess, der auftritt, wenn landwirtschaftliche Düngemittel wie Phosphor in nährstoffarme Gewässer gelangen und zu übermässigem Algenwachstum, sogenannten Algenblüten, führen. Wenn diese Blüten verrotten, verringern sie den Sauerstoffgehalt, was aquatisches Leben letztlich einschränkt oder gar verhindert <span class="citation" data-cites="gallowayTransformationNitrogenCycle2008 smithEutrophicationFreshwaterMarine2006">(<a href="../references.html#ref-gallowayTransformationNitrogenCycle2008" role="doc-biblioref">Galloway u.&nbsp;a. 2008</a>; <a href="../references.html#ref-smithEutrophicationFreshwaterMarine2006" role="doc-biblioref">Smith u.&nbsp;a. 2006</a>)</span>.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Tipp</span>Landnutzungsveränderungen in den Tropen: das Beispiel Madagaskar
@@ -572,10 +740,10 @@ Abbildung&nbsp;3.12: Struktur und Funktionsweise bewirtschafteter und unbewirtsc
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Tipp</span>Landnutzungskonflikte in der Schweiz: der Solar Express
@@ -589,10 +757,10 @@ Abbildung&nbsp;3.12: Struktur und Funktionsweise bewirtschafteter und unbewirtsc
 </div>
 </div>
 <p>Die Entwaldung in tropischen Regionen ist eine Form der Landnutzungsveränderung, die nicht nur von lokalen Bedürfnissen, sondern auch von internationalen Entscheidungen und Nachfragen beeinflusst wird <span class="citation" data-cites="curtisClassifyingDriversGlobal2018">(<a href="../references.html#ref-curtisClassifyingDriversGlobal2018" role="doc-biblioref">Curtis u.&nbsp;a. 2018</a>)</span>. Dies legt nahe, dass die Verhinderung von Entwaldung sowohl auf lokaler als auch auf internationaler Ebene angegangen werden muss <span class="citation" data-cites="defriesDeforestationDrivenUrban2010">(<a href="../references.html#ref-defriesDeforestationDrivenUrban2010" role="doc-biblioref">DeFries u.&nbsp;a. 2010</a>)</span>. Doch nicht nur die Entwaldung, sondern Landnutzungsveränderungen allgemein werden von entfernten Faktoren beeinflusst <span class="citation" data-cites="meyfroidtGlobalizationLandUse2013a">(<a href="../references.html#ref-meyfroidtGlobalizationLandUse2013a" role="doc-biblioref">Meyfroidt u.&nbsp;a. 2013</a>)</span>. In der Wissenschaft werden solche Phänomene und Prozesse als <strong>Telekopplung</strong> bezeichnet <span class="citation" data-cites="liuFramingSustainabilityTelecoupled2013">(<a href="../references.html#ref-liuFramingSustainabilityTelecoupled2013" role="doc-biblioref"><span class="nocase">Liu u.&nbsp;a.</span> 2013</a>)</span>. Telekopplung beschreibt die sozioökonomischen und ökologischen Wechselwirkungen zwischen weit entfernten menschlichen und natürlichen Systemen und analysiert, wie Handlungen an einem Ort (dem Sendesystem) einen anderen Ort (das Empfangssystem) beeinflussen können. So verlangen neue EU-Verordnungen, dass Produkte, die ab Ende 2024 in den EU-Markt eingeführt werden, entwaldungsfrei sein müssen (<a href="https://environment.ec.europa.eu/topics/forests/deforestation/regulation-deforestation-free-products_en">Verordnung über entwaldungsfreie Produkte – Europäische Kommission (europa.eu)</a>). Diese Verordnungen werden voraussichtlich erhebliche ökologische (und soziale) Auswirkungen in den Anbauländern haben <span class="citation" data-cites="coenenTelecoupledImplicationsNew2023">(<a href="../references.html#ref-coenenTelecoupledImplicationsNew2023" role="doc-biblioref">Coenen u.&nbsp;a. 2023</a>)</span>.</p>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Hinweis</span>Landrechte und Landbesitz
@@ -616,10 +784,10 @@ Abbildung&nbsp;3.13: Zehn empirische Realitäten (Fakten) über Landsysteme mit 
 </figcaption>
 </figure>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Tipp</span>Beispiel: Landinvestitionen in Laos
@@ -641,10 +809,10 @@ Abbildung&nbsp;3.13: Zehn empirische Realitäten (Fakten) über Landsysteme mit 
 <h2 data-number="3.4" class="anchored" data-anchor-id="biodiversitätsverlust"><span class="header-section-number">3.4</span> Biodiversitätsverlust</h2>
 <p>Biodiversität ist definiert als die Vielfalt des Lebens in all seinen Formen, von Genen über Arten bis hin zu Ökosystemen <span class="citation" data-cites="unConventionBiologicalDiversity1992">(<a href="../references.html#ref-unConventionBiologicalDiversity1992" role="doc-biblioref">UN 1992</a>)</span>. Sie ist eine wesentliche Grundlage für das Wohlergehen der Menschheit und damit ein wesentlicher Bestandteil der <strong>ökologischen Nachhaltigkeit</strong>, die die Basis für zahlreiche Ökosystemdienstleistungen <span class="citation" data-cites="haines-youngLinksBiodiversityEcosystem2010">(<a href="../references.html#ref-haines-youngLinksBiodiversityEcosystem2010" role="doc-biblioref">Haines-Young und Potschin-Young 2010</a>)</span> oder Naturbeiträge für Menschen <span class="citation" data-cites="antunesLinkingBiodiversityEcosystem2024">(<a href="../references.html#ref-antunesLinkingBiodiversityEcosystem2024" role="doc-biblioref">Antunes u.&nbsp;a. 2024</a>)</span> bildet. Biodiversität ist auch eng mit mehreren <strong>planetaren Grenzen</strong> verknüpft, insbesondere mit Landnutzungsveränderungen und der Integrität der Biosphäre <span class="citation" data-cites="steffenPlanetaryBoundariesGuiding2015">(<a href="../references.html#ref-steffenPlanetaryBoundariesGuiding2015" role="doc-biblioref"><span class="nocase">Steffen u.&nbsp;a.</span> 2015</a>)</span>. Es ist klar, dass ein unkontrollierter Biodiversitätsverlust Kipppunkte in Ökosystemen auslösen, das Gleichgewicht der Erde stören und die Fähigkeit unseres Planeten, menschliches Leben zu erhalten, schwer beeinträchtigen könnte. Der Schutz und die Wiederherstellung der Biodiversität gelten daher als Schlüssel zu einer nachhaltigen Zukunft.</p>
 <p>Dennoch befindet sich die <strong>Biodiversität</strong> derzeit in einem alarmierenden Zustand (vgl. Infokasten unten). Weltweit nimmt die Artenvielfalt seit mehreren Jahrzehnten ab <span class="citation" data-cites="butchartGlobalBiodiversityIndicators2010 diazBiodiversityConceptsPatterns2022">(<a href="../references.html#ref-butchartGlobalBiodiversityIndicators2010" role="doc-biblioref"><span class="nocase">Butchart u.&nbsp;a.</span> 2010</a>; <a href="../references.html#ref-diazBiodiversityConceptsPatterns2022" role="doc-biblioref">Díaz und Malhi 2022</a>)</span>, ein Abwärtstrend, der laut Prognosen anhalten wird <span class="citation" data-cites="diazBiodiversityConceptsPatterns2022">(<a href="../references.html#ref-diazBiodiversityConceptsPatterns2022" role="doc-biblioref">Díaz und Malhi 2022</a>)</span>. Infolgedessen wird bereits ein sechstes Massenaussterben diskutiert <span class="citation" data-cites="ceballosVertebratesBrinkIndicators2020">(<a href="../references.html#ref-ceballosVertebratesBrinkIndicators2020" role="doc-biblioref">Ceballos u.&nbsp;a. 2020</a>)</span>. Um dieser Entwicklung entgegenzuwirken, wurde das <strong>Übereinkommen über die biologische Vielfalt (CBD)</strong> auf dem Rio-Erdgipfel 1992 ratifiziert <span class="citation" data-cites="unConventionBiologicalDiversity1992">(<a href="../references.html#ref-unConventionBiologicalDiversity1992" role="doc-biblioref">UN 1992</a>)</span>, unter Schweizer Beteiligung. Dieses rechtlich bindende Abkommen bedeutet, dass neue Bestimmungen, die an nachfolgenden Konferenzen beschlossen werden, rechtlich umgesetzt werden müssen, wenn die Schweiz Delegierte schickt.</p>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Hinweis</span>Monitoring
@@ -690,10 +858,10 @@ Abbildung&nbsp;3.16: Globaler Biodiversitätsrahmen. Quelle: <span class="citati
 </figure>
 </div>
 <p>Studien und Wissenschaftler*innen haben jedoch Bedenken hinsichtlich der Wirksamkeit und der (Umwelt-)Gerechtigkeit von <strong>Schutzgebiets- und Half-Earth-Ansätzen</strong> geäussert <span class="citation" data-cites="buscherHalfEarthWholeEarth2017a schleicherProtectingHalfPlanet2019">(vgl. <a href="../references.html#ref-buscherHalfEarthWholeEarth2017a" role="doc-biblioref">Büscher u.&nbsp;a. 2017</a>; <a href="../references.html#ref-schleicherProtectingHalfPlanet2019" role="doc-biblioref">Schleicher u.&nbsp;a. 2019</a>)</span>. Trotz einer Zunahme der von Schutzgebieten bedeckten Fläche in den letzten Jahrzehnten nimmt die Biodiversität weiterhin ab. Einerseits können prozentbasierte Ziele falsche Anreize setzen, indem Regierungen dazu verleitet werden, Naturschutzgebiete in Gebieten auszuweisen, in denen sie wenig Nutzen bringen oder nur als Papiertiger dienen <span class="citation" data-cites="viscontiProtectedAreaTargets2019a">(<a href="../references.html#ref-viscontiProtectedAreaTargets2019a" role="doc-biblioref">Visconti u.&nbsp;a. 2019</a>)</span>. Andererseits entzieht die Ausweisung strenger Schutzgebiete lokalen Bevölkerungsgruppen, insbesondere indigenen Gruppen, oft den Zugang zu den Gebieten, auf die sie für ihren Lebensunterhalt angewiesen sind – oder sie zwingt sie zur Umsiedlung. Studien haben gezeigt, dass die Beteiligung lokaler Bevölkerungsgruppen ein entscheidender Faktor für den langfristigen Erhalt und die Integrität von Schutzgebieten und damit der Biodiversität ist <span class="citation" data-cites="andradeProtectedAreasLocal2012a">(<a href="../references.html#ref-andradeProtectedAreasLocal2012a" role="doc-biblioref">Andrade und Rhodes 2012</a>)</span>. IPBES <span class="citation" data-cites="ipbesGlobalAssessmentReport2019">(<a href="../references.html#ref-ipbesGlobalAssessmentReport2019" role="doc-biblioref">2019, p.32</a>)</span> erkennt ebenfalls die Bedeutung indigener und lokaler Gemeinschaften für den Schutz von Biodiversität und Ökosystemdienstleistungen an. Eine Studie von <span class="citation" data-cites="faImportanceIndigenousPeoples2020">Fa u.&nbsp;a. (<a href="../references.html#ref-faImportanceIndigenousPeoples2020" role="doc-biblioref">2020</a>)</span> beispielsweise zeigt, wie die Einbeziehung indigener Gemeinschaften dem Naturschutz zugutekommen kann. Die Studie zeigt, dass indigene Territorien weltweit – und insbesondere in den Tropen – eine entscheidende Rolle beim Schutz der Biodiversität und der Eindämmung der Entwaldung spielen. Die Studie vergleicht die Entwaldungsraten in verschiedenen Schutzgebieten und zeigt, dass die Entwaldung in Gebieten unter indigener Verwaltung deutlich geringer ist als in staatlich geschützten Regionen.</p>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Hinweis</span>Was ist IPBES?
@@ -773,10 +941,10 @@ Der Kapazitätsaufbau zur Unterstützung der Transformation zur Erreichung der S
 <li><p>Unterstützung lokaler Initiativen zur Verbesserung des Wissenstransfers</p></li>
 </ul>
 <p>Hinweis: Es ist wichtig zu beachten, dass Ansätze nicht immer synergetisch sind; oft gehen Ansätze, die eine ökologische Dimension der Nachhaltigkeit adressieren, mit Zielkonflikten mit anderen Ansätzen oder mit der sozialen oder wirtschaftlichen Dimension der Nachhaltigkeit einher.</p>
-<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout callout-style-default callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Vorsicht</span>Weiterführende Literatur
@@ -797,19 +965,19 @@ Der Kapazitätsaufbau zur Unterstützung der Transformation zur Erreichung der S
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche der folgenden Aussagen zum Konzept der Ökosystemdienstleistungen sind korrekt? (Mehr als eine Aussage kann richtig sein.)</p>
-<div id="webex-1b4e5e6f9657153d33fada4359b14dd4" class="webex-checkboxgroup" data-answer="alIYVBlVGlYVBxkHHQUfVG4=">
-<label><input type="checkbox" autocomplete="off" name="1b4e5e6f9657153d33fada4359b14dd4"><span>Es lassen sich drei Arten von Ökosystemdienstleistungen unterscheiden: Vermeidungs-, Verbesserungs- und Verlagerungsdienstleistungen.</span></label><label><input type="checkbox" autocomplete="off" name="1b4e5e6f9657153d33fada4359b14dd4"><span>Es lassen sich vier Arten von Ökosystemdienstleistungen unterscheiden: Regulierungsdienstleistungen, Versorgungsdienstleistungen, kulturelle Dienstleistungen und Unterstützungsdienstleistungen.</span></label><label><input type="checkbox" autocomplete="off" name="1b4e5e6f9657153d33fada4359b14dd4"><span>Der Begriff „Ökosystemdienstleistungen” ist ein wissenschaftlicher Begriff, der die Zusammenkünfte naturbezogener Religionen (sogenannter Naturreligionen) wie des Animismus beschreibt, bei denen die Natur als Ganzes verehrt wird.</span></label><label><input type="checkbox" autocomplete="off" name="1b4e5e6f9657153d33fada4359b14dd4"><span>Im Gegensatz zum Konzept der Nachhaltigen Entwicklung ist das Konzept der Ökosystemdienstleistungen nicht anthropozentrisch, sondern ökozentrisch.</span></label><label><input type="checkbox" autocomplete="off" name="1b4e5e6f9657153d33fada4359b14dd4"><span>Das Konzept der Ökosystemdienstleistungen bezeichnet die direkten und indirekten Vorteile, die Menschen aus Ökosystemen ziehen.</span></label><label><input type="checkbox" autocomplete="off" name="1b4e5e6f9657153d33fada4359b14dd4"><span>Das Konzept der Ökosystemdienstleistungen umfasst alle Massnahmen, die Menschen zur Erhaltung von Ökosystemen ergreifen.</span></label><label><input type="checkbox" autocomplete="off" name="1b4e5e6f9657153d33fada4359b14dd4"><span>Das Konzept der Ökosystemdienstleistungen bezeichnet die jährliche Biomasseanhäufung innerhalb eines Ökosystems, gemessen in Kilojoule.</span></label><label><input type="checkbox" autocomplete="off" name="1b4e5e6f9657153d33fada4359b14dd4"><span>Das Konzept der Ökosystemdienstleistungen ist ein Mass für Biodiversität und damit auch ein Mass für die Resilienz eines Ökosystems.</span></label>
+<div id="webex-436fc9040e547a60991133e3626e8bfb" class="webex-checkboxgroup" data-answer="bwMaVk8JHAUcVRkFG1EaAGQ=">
+<label><input type="checkbox" autocomplete="off" name="436fc9040e547a60991133e3626e8bfb"><span>Das Konzept der Ökosystemdienstleistungen bezeichnet die jährliche Biomasseanhäufung innerhalb eines Ökosystems, gemessen in Kilojoule.</span></label><label><input type="checkbox" autocomplete="off" name="436fc9040e547a60991133e3626e8bfb"><span>Das Konzept der Ökosystemdienstleistungen ist ein Mass für Biodiversität und damit auch ein Mass für die Resilienz eines Ökosystems.</span></label><label><input type="checkbox" autocomplete="off" name="436fc9040e547a60991133e3626e8bfb"><span>Das Konzept der Ökosystemdienstleistungen umfasst alle Massnahmen, die Menschen zur Erhaltung von Ökosystemen ergreifen.</span></label><label><input type="checkbox" autocomplete="off" name="436fc9040e547a60991133e3626e8bfb"><span>Es lassen sich vier Arten von Ökosystemdienstleistungen unterscheiden: Regulierungsdienstleistungen, Versorgungsdienstleistungen, kulturelle Dienstleistungen und Unterstützungsdienstleistungen.</span></label><label><input type="checkbox" autocomplete="off" name="436fc9040e547a60991133e3626e8bfb"><span>Der Begriff „Ökosystemdienstleistungen” ist ein wissenschaftlicher Begriff, der die Zusammenkünfte naturbezogener Religionen (sogenannter Naturreligionen) wie des Animismus beschreibt, bei denen die Natur als Ganzes verehrt wird.</span></label><label><input type="checkbox" autocomplete="off" name="436fc9040e547a60991133e3626e8bfb"><span>Das Konzept der Ökosystemdienstleistungen bezeichnet die direkten und indirekten Vorteile, die Menschen aus Ökosystemen ziehen.</span></label><label><input type="checkbox" autocomplete="off" name="436fc9040e547a60991133e3626e8bfb"><span>Es lassen sich drei Arten von Ökosystemdienstleistungen unterscheiden: Vermeidungs-, Verbesserungs- und Verlagerungsdienstleistungen.</span></label><label><input type="checkbox" autocomplete="off" name="436fc9040e547a60991133e3626e8bfb"><span>Im Gegensatz zum Konzept der Nachhaltigen Entwicklung ist das Konzept der Ökosystemdienstleistungen nicht anthropozentrisch, sondern ökozentrisch.</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Das Konzept der Ökosystemdienstleistungen bezeichnet die direkten und indirekten Vorteile, die Menschen aus Ökosystemen ziehen, und ist damit ausdrücklich anthropozentrisch. Eine gängige Klassifikation unterscheidet vier Arten von Ökosystemdienstleistungen: Versorgungs-, Regulierungs-, kulturelle und Unterstützungsdienstleistungen. Die übrigen Aussagen verwechseln Ökosystemdienstleistungen mit Biodiversitätsmassen, ökologischen Produktivitätsmassen, Schutzmassnahmen, alternativen Klassifikationen oder unverwandten kulturellen bzw. religiösen Konzepten.</p>
 <ul>
 <li>False</li>
-<li>True</li>
 <li>False</li>
 <li>False</li>
 <li>True</li>
 <li>False</li>
+<li>True</li>
 <li>False</li>
 <li>False</li>
 </ul>
@@ -818,8 +986,8 @@ Der Kapazitätsaufbau zur Unterstützung der Transformation zur Erreichung der S
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Was sind die vier Hauptkategorien von Ökosystemdienstleistungen?</p>
-<div id="webex-c2717d9c8e1a63b11ecdbc096831e4ab" class="webex-radiogroup" data-answer="OAMbARtUZA==">
-<label><input type="radio" autocomplete="off" name="c2717d9c8e1a63b11ecdbc096831e4ab"><span>Versorgungs-, Regulierungs-, kulturelle und Unterstützungsdienstleistungen</span></label><label><input type="radio" autocomplete="off" name="c2717d9c8e1a63b11ecdbc096831e4ab"><span>Materielle, spirituelle, industrielle und soziale Dienstleistungen</span></label><label><input type="radio" autocomplete="off" name="c2717d9c8e1a63b11ecdbc096831e4ab"><span>Wirtschaftliche, soziale, ökologische und kulturelle Dienstleistungen</span></label>
+<div id="webex-a4dc80b50383f9efbc2227e4c4f317b4" class="webex-radiogroup" data-answer="OgVIUxQAPw==">
+<label><input type="radio" autocomplete="off" name="a4dc80b50383f9efbc2227e4c4f317b4"><span>Versorgungs-, Regulierungs-, kulturelle und Unterstützungsdienstleistungen</span></label><label><input type="radio" autocomplete="off" name="a4dc80b50383f9efbc2227e4c4f317b4"><span>Materielle, spirituelle, industrielle und soziale Dienstleistungen</span></label><label><input type="radio" autocomplete="off" name="a4dc80b50383f9efbc2227e4c4f317b4"><span>Wirtschaftliche, soziale, ökologische und kulturelle Dienstleistungen</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -834,16 +1002,16 @@ Der Kapazitätsaufbau zur Unterstützung der Transformation zur Erreichung der S
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche der folgenden Aussagen treffen auf das Konzept der Ökosystemdienstleistungen zu, welche nicht? (Mehr als eine Aussage kann richtig sein.)</p>
-<div id="webex-e1d303308042f916c479384d7c2d0509" class="webex-checkboxgroup" data-answer="PgBIAxwCHwBl">
-<label><input type="checkbox" autocomplete="off" name="e1d303308042f916c479384d7c2d0509"><span>Ökosystemdienstleistungen bezeichnen die direkten und indirekten Beiträge von Ökosystemen zum menschlichen Wohlergehen.</span></label><label><input type="checkbox" autocomplete="off" name="e1d303308042f916c479384d7c2d0509"><span>Ökosystemdienstleistungen sind ein Mass für Biodiversität und folglich für die Resilienz eines Ökosystems.</span></label><label><input type="checkbox" autocomplete="off" name="e1d303308042f916c479384d7c2d0509"><span>Ökosystemdienstleistungen lassen sich in folgende Kategorien einteilen: Unterstützungs-, Versorgungs-, Regulierungs- und kulturelle Dienstleistungen.</span></label><label><input type="checkbox" autocomplete="off" name="e1d303308042f916c479384d7c2d0509"><span>Ökosystemdienstleistungen bezeichnen die jährliche Biomasseanhäufung innerhalb eines Ökosystems, gemessen in Kilojoule.</span></label>
+<div id="webex-2813a3b5442800ffe03591b8f2c13d7b" class="webex-checkboxgroup" data-answer="aQkdAk0DTgVp">
+<label><input type="checkbox" autocomplete="off" name="2813a3b5442800ffe03591b8f2c13d7b"><span>Ökosystemdienstleistungen lassen sich in folgende Kategorien einteilen: Unterstützungs-, Versorgungs-, Regulierungs- und kulturelle Dienstleistungen.</span></label><label><input type="checkbox" autocomplete="off" name="2813a3b5442800ffe03591b8f2c13d7b"><span>Ökosystemdienstleistungen bezeichnen die direkten und indirekten Beiträge von Ökosystemen zum menschlichen Wohlergehen.</span></label><label><input type="checkbox" autocomplete="off" name="2813a3b5442800ffe03591b8f2c13d7b"><span>Ökosystemdienstleistungen bezeichnen die jährliche Biomasseanhäufung innerhalb eines Ökosystems, gemessen in Kilojoule.</span></label><label><input type="checkbox" autocomplete="off" name="2813a3b5442800ffe03591b8f2c13d7b"><span>Ökosystemdienstleistungen sind ein Mass für Biodiversität und folglich für die Resilienz eines Ökosystems.</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Das Konzept der Ökosystemdienstleistungen bezeichnet die direkten und indirekten Beiträge von Ökosystemen zum menschlichen Wohlergehen und wird meist in vier Kategorien gegliedert: Versorgungs-, Regulierungs-, kulturelle und Unterstützungsdienstleistungen. Es dient weder als direktes Mass für Biodiversität oder Ökosystemresilienz, noch beschreibt es biophysikalische Produktivitätsmasse wie die jährliche Biomasseanhäufung.</p>
 <ul>
 <li>True</li>
-<li>False</li>
 <li>True</li>
+<li>False</li>
 <li>False</li>
 </ul>
 </div>
@@ -851,15 +1019,15 @@ Der Kapazitätsaufbau zur Unterstützung der Transformation zur Erreichung der S
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche der folgenden sind Arten von Rückkopplungsmechanismen im Klimasystem? (Mehr als eine Aussage kann richtig sein.)</p>
-<div id="webex-815e49a7db19cc204476cfe92860c030" class="webex-checkboxgroup" data-answer="YwAZVRgIPA==">
-<label><input type="checkbox" autocomplete="off" name="815e49a7db19cc204476cfe92860c030"><span>Positive Rückkopplung</span></label><label><input type="checkbox" autocomplete="off" name="815e49a7db19cc204476cfe92860c030"><span>Neutrale Rückkopplung</span></label><label><input type="checkbox" autocomplete="off" name="815e49a7db19cc204476cfe92860c030"><span>Negative Rückkopplung</span></label>
+<div id="webex-f862b74934e49f4d236121e4c96225d9" class="webex-checkboxgroup" data-answer="PQgaA04GaQ==">
+<label><input type="checkbox" autocomplete="off" name="f862b74934e49f4d236121e4c96225d9"><span>Neutrale Rückkopplung</span></label><label><input type="checkbox" autocomplete="off" name="f862b74934e49f4d236121e4c96225d9"><span>Negative Rückkopplung</span></label><label><input type="checkbox" autocomplete="off" name="f862b74934e49f4d236121e4c96225d9"><span>Positive Rückkopplung</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Rückkopplungsmechanismen im Klimasystem beschreiben Prozesse, die Veränderungen im Klimasystem entweder verstärken (positive Rückkopplung) oder abschwächen (negative Rückkopplung). Neutrale Rückkopplung wird in der Klimawissenschaft üblicherweise nicht als eigene Kategorie verwendet.</p>
 <ul>
-<li>True</li>
 <li>False</li>
+<li>True</li>
 <li>True</li>
 </ul>
 </div>
@@ -867,8 +1035,8 @@ Der Kapazitätsaufbau zur Unterstützung der Transformation zur Erreichung der S
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche der folgenden sind direkte Treiber des Biodiversitätsverlusts? (Mehr als eine Aussage kann richtig sein.)</p>
-<div id="webex-9d62684b37ee05953abdf97560c89573" class="webex-checkboxgroup" data-answer="YlUaAxoIGFNu">
-<label><input type="checkbox" autocomplete="off" name="9d62684b37ee05953abdf97560c89573"><span>Umweltverschmutzung</span></label><label><input type="checkbox" autocomplete="off" name="9d62684b37ee05953abdf97560c89573"><span>Landnutzungsveränderungen</span></label><label><input type="checkbox" autocomplete="off" name="9d62684b37ee05953abdf97560c89573"><span>Wirtschaftspolitik</span></label><label><input type="checkbox" autocomplete="off" name="9d62684b37ee05953abdf97560c89573"><span>Klimawandel</span></label>
+<div id="webex-188d61f4fab2f459cfebd8b6ff08f5d4" class="webex-checkboxgroup" data-answer="agkUVRoBSgU7">
+<label><input type="checkbox" autocomplete="off" name="188d61f4fab2f459cfebd8b6ff08f5d4"><span>Umweltverschmutzung</span></label><label><input type="checkbox" autocomplete="off" name="188d61f4fab2f459cfebd8b6ff08f5d4"><span>Klimawandel</span></label><label><input type="checkbox" autocomplete="off" name="188d61f4fab2f459cfebd8b6ff08f5d4"><span>Wirtschaftspolitik</span></label><label><input type="checkbox" autocomplete="off" name="188d61f4fab2f459cfebd8b6ff08f5d4"><span>Landnutzungsveränderungen</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -884,17 +1052,17 @@ Der Kapazitätsaufbau zur Unterstützung der Transformation zur Erreichung der S
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche der folgenden Aussagen beschreiben Landnutzungsveränderungen und verwandte Konzepte korrekt? (Mehr als eine Aussage kann richtig sein.)</p>
-<div id="webex-382936c4867873a4cb156cb0e7cc9982" class="webex-checkboxgroup" data-answer="aAkeCR8HTwUUBhsJag==">
-<label><input type="checkbox" autocomplete="off" name="382936c4867873a4cb156cb0e7cc9982"><span>Landdegradation bezeichnet die Verringerung oder den Verlust der biologischen oder wirtschaftlichen Produktivität von Land infolge von Landnutzung, insbesondere in Trockengebieten.</span></label><label><input type="checkbox" autocomplete="off" name="382936c4867873a4cb156cb0e7cc9982"><span>Landnutzungsveränderung bezeichnet ausschliesslich Veränderungen der Landbedeckung, unabhängig von menschlichen Aktivitäten.</span></label><label><input type="checkbox" autocomplete="off" name="382936c4867873a4cb156cb0e7cc9982"><span>Landnutzung beschreibt, wie Menschen die Landbedeckung nutzen, beispielsweise für Landwirtschaft, Siedlung oder Infrastruktur.</span></label><label><input type="checkbox" autocomplete="off" name="382936c4867873a4cb156cb0e7cc9982"><span>Landnutzungsveränderungen können Biodiversität, Ökosystemfunktionen und Ökosystemdienstleistungen negativ beeinflussen und dadurch das menschliche Wohlergehen einschränken.</span></label><label><input type="checkbox" autocomplete="off" name="382936c4867873a4cb156cb0e7cc9982"><span>Landsysteme beschreiben ausschliesslich ökologische Prozesse und schliessen soziale, wirtschaftliche und technologische Faktoren aus.</span></label><label><input type="checkbox" autocomplete="off" name="382936c4867873a4cb156cb0e7cc9982"><span>Landbedeckung bezeichnet die physischen und biologischen Eigenschaften der Landoberfläche, einschliesslich Vegetation, Topographie und menschlicher Bauwerke.</span></label>
+<div id="webex-8106ffbb2272260fea1b7308f05bfadc" class="webex-checkboxgroup" data-answer="YwAcB0pXTlIeAhsDbw==">
+<label><input type="checkbox" autocomplete="off" name="8106ffbb2272260fea1b7308f05bfadc"><span>Landdegradation bezeichnet die Verringerung oder den Verlust der biologischen oder wirtschaftlichen Produktivität von Land infolge von Landnutzung, insbesondere in Trockengebieten.</span></label><label><input type="checkbox" autocomplete="off" name="8106ffbb2272260fea1b7308f05bfadc"><span>Landbedeckung bezeichnet die physischen und biologischen Eigenschaften der Landoberfläche, einschliesslich Vegetation, Topographie und menschlicher Bauwerke.</span></label><label><input type="checkbox" autocomplete="off" name="8106ffbb2272260fea1b7308f05bfadc"><span>Landnutzungsveränderungen können Biodiversität, Ökosystemfunktionen und Ökosystemdienstleistungen negativ beeinflussen und dadurch das menschliche Wohlergehen einschränken.</span></label><label><input type="checkbox" autocomplete="off" name="8106ffbb2272260fea1b7308f05bfadc"><span>Landsysteme beschreiben ausschliesslich ökologische Prozesse und schliessen soziale, wirtschaftliche und technologische Faktoren aus.</span></label><label><input type="checkbox" autocomplete="off" name="8106ffbb2272260fea1b7308f05bfadc"><span>Landnutzungsveränderung bezeichnet ausschliesslich Veränderungen der Landbedeckung, unabhängig von menschlichen Aktivitäten.</span></label><label><input type="checkbox" autocomplete="off" name="8106ffbb2272260fea1b7308f05bfadc"><span>Landnutzung beschreibt, wie Menschen die Landbedeckung nutzen, beispielsweise für Landwirtschaft, Siedlung oder Infrastruktur.</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Landbedeckung beschreibt die biophysikalischen Eigenschaften der Landoberfläche, während Landnutzung bezeichnet, wie Menschen dieses Land nutzen. Landnutzungsveränderung umfasst den Wechsel von einer Landnutzungsart zu einer anderen und ist eng mit menschlichen Aktivitäten verknüpft. Solche Veränderungen können die Biodiversität bedrohen, Ökosystemfunktionen stören, Treibhausgasemissionen erhöhen und Ökosystemdienstleistungen verringern, was wiederum das menschliche Wohlergehen beeinträchtigt. Landdegradation erfasst den Verlust der Landproduktivität infolge von Landnutzung, und Landsysteme integrieren ausdrücklich soziale, wirtschaftliche, technologische und ökologische Dimensionen.</p>
 <ul>
 <li>True</li>
+<li>True</li>
+<li>True</li>
 <li>False</li>
-<li>True</li>
-<li>True</li>
 <li>False</li>
 <li>True</li>
 </ul>
@@ -903,8 +1071,8 @@ Der Kapazitätsaufbau zur Unterstützung der Transformation zur Erreichung der S
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche Merkmale unterscheiden „Naturbeiträge für Menschen (NCP)” von „Ökosystemdienstleistungen”? (Mehr als eine Aussage kann richtig sein.)</p>
-<div id="webex-2f9096904377992e3c6160fd3f860790" class="webex-checkboxgroup" data-answer="aVcVABUGFQFp">
-<label><input type="checkbox" autocomplete="off" name="2f9096904377992e3c6160fd3f860790"><span>Integriert indigene Perspektiven</span></label><label><input type="checkbox" autocomplete="off" name="2f9096904377992e3c6160fd3f860790"><span>Konzentriert sich ausschliesslich auf Versorgungsfunktionen</span></label><label><input type="checkbox" autocomplete="off" name="2f9096904377992e3c6160fd3f860790"><span>Beruht ausschliesslich auf monetärer Bewertung</span></label><label><input type="checkbox" autocomplete="off" name="2f9096904377992e3c6160fd3f860790"><span>Umfasst intrinsische und relationale Werte</span></label>
+<div id="webex-5375ac60cde8728d5a9383d8870316aa" class="webex-checkboxgroup" data-answer="bgIbBU1TGgE+">
+<label><input type="checkbox" autocomplete="off" name="5375ac60cde8728d5a9383d8870316aa"><span>Umfasst intrinsische und relationale Werte</span></label><label><input type="checkbox" autocomplete="off" name="5375ac60cde8728d5a9383d8870316aa"><span>Beruht ausschliesslich auf monetärer Bewertung</span></label><label><input type="checkbox" autocomplete="off" name="5375ac60cde8728d5a9383d8870316aa"><span>Konzentriert sich ausschliesslich auf Versorgungsfunktionen</span></label><label><input type="checkbox" autocomplete="off" name="5375ac60cde8728d5a9383d8870316aa"><span>Integriert indigene Perspektiven</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -2362,6 +2530,19 @@ window.onload = function() {
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {

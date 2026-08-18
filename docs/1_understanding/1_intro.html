@@ -62,10 +62,14 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-5d9b96da87e05193873217072765548c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-4fffde74ef3b9adfe0b82ba81ae250ba.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-e8282bee7637e0ceba70fdf198bf2ab0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-4fffde74ef3b9adfe0b82ba81ae250ba.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -105,7 +109,169 @@ div.csl-indent {
 <link rel="stylesheet" href="../webex.css">
 </head>
 
-<body class="nav-sidebar floating quarto-light">
+<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -134,8 +300,9 @@ div.csl-indent {
       </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="../">Nachhaltigkeit: Grundlagen und Herausforderungen</a> 
-        <div class="sidebar-tools-main">
-    <a href="https://cdeteaching.github.io/NEgrundlagen/pdf/NEgrundlagen.pdf" title="Skript (PDF)" class="quarto-navigation-tool px-1" aria-label="Skript (PDF)"><i class="bi bi-file-earmark-pdf"></i></a>
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://cdeteaching.github.io/NEgrundlagen/pdf/Lehrbuch_M1_1.pdf" title="Skript (PDF)" class="quarto-navigation-tool px-1" aria-label="Skript (PDF)"><i class="bi bi-file-earmark-pdf"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Dunkelmodus umschalten"><i class="bi"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Lesemodus umschalten">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
@@ -308,6 +475,7 @@ div.csl-indent {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../1_understanding/1_intro.html">Die Herausforderungen des 21. Jahrhunderts für Nachhaltigkeit erfassen und verstehen lernen</a></li><li class="breadcrumb-item"><a href="../1_understanding/1_intro.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Verständnisse und Konzepte Nachhaltiger Entwicklung</span></a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Verständnisse und Konzepte Nachhaltiger Entwicklung</span></h1>
@@ -367,7 +535,7 @@ Abbildung&nbsp;1.1: Häufigkeit der Verwendung des Wortes „sustainable“ in U
 <div id="fig-sd-normative" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-sd-normative-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/SD_normative.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Abbildung&nbsp;1.2: Nachhaltige Entwicklung als normatives Konzept. Quelle: Eigene Darstellung."><img src="images/SD_normative.jpg" class="img-fluid figure-img"></a>
+<a href="images/SD_normative.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Abbildung&nbsp;1.2: Nachhaltige Entwicklung als normatives Konzept. Quelle: Eigene Darstellung."><img src="images/SD_normative.png" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sd-normative-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;1.2: Nachhaltige Entwicklung als normatives Konzept. Quelle: Eigene Darstellung.
@@ -428,23 +596,23 @@ Abbildung&nbsp;1.3: Nachhaltigkeitsherausforderungen als Wicked Problems. Quelle
 <div aria-describedby="fig-acceleration-trends-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><a href="images/Great-Acceleration_socio-economic_trends.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Abbildung&nbsp;1.4: 12 sozioökonomische und 12 Erdsystem-Trends von 1750 bis heute sind ein starker Hinweis darauf, dass das Erdsystem einen neuen Zustand erreicht hat. Quelle: https://futureearth.org/2015/01/16/the-great-acceleration/."><img src="images/Great-Acceleration_socio-economic_trends.jpg" class="img-fluid figure-img"></a></p>
+<p><a href="images/Great-Acceleration_socio-economic_trends.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Abbildung&nbsp;1.4: 12 sozioökonomische und 12 Erdsystem-Trends von 1750 bis 2010 sind ein starker Hinweis darauf, dass das Erdsystem einen neuen Zustand erreicht hat. Quelle: https://futureearth.org/the-great-acceleration/."><img src="images/Great-Acceleration_socio-economic_trends.jpg" class="img-fluid figure-img"></a></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><a href="images/Great-Acceleration_earth-system_trends.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Abbildung&nbsp;1.4: 12 sozioökonomische und 12 Erdsystem-Trends von 1750 bis heute sind ein starker Hinweis darauf, dass das Erdsystem einen neuen Zustand erreicht hat. Quelle: https://futureearth.org/2015/01/16/the-great-acceleration/."><img src="images/Great-Acceleration_earth-system_trends.jpg" class="img-fluid figure-img"></a></p>
+<p><a href="images/Great-Acceleration_earth-system_trends.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Abbildung&nbsp;1.4: 12 sozioökonomische und 12 Erdsystem-Trends von 1750 bis 2010 sind ein starker Hinweis darauf, dass das Erdsystem einen neuen Zustand erreicht hat. Quelle: https://futureearth.org/the-great-acceleration/."><img src="images/Great-Acceleration_earth-system_trends.jpg" class="img-fluid figure-img"></a></p>
 </div>
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-acceleration-trends-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Abbildung&nbsp;1.4: 12 sozioökonomische und 12 Erdsystem-Trends von 1750 bis heute sind ein starker Hinweis darauf, dass das Erdsystem einen neuen Zustand erreicht hat. Quelle: <a href="https://futureearth.org/2015/01/16/the-great-acceleration/" class="uri">https://futureearth.org/2015/01/16/the-great-acceleration/</a>.
+Abbildung&nbsp;1.4: 12 sozioökonomische und 12 Erdsystem-Trends von 1750 bis 2010 sind ein starker Hinweis darauf, dass das Erdsystem einen neuen Zustand erreicht hat. Quelle: <a href="https://futureearth.org/the-great-acceleration/" class="uri">https://futureearth.org/the-great-acceleration/</a>.
 </figcaption>
 </figure>
 </div>
 <p>Die Grosse Beschleunigung beschrieb die exponentiellen Wachstumsdynamiken, die infolge der Industriellen Revolution entstanden und zu einem Produktivitätsschub und einem deutlichen Anstieg des materiellen Wohlstands führten. Gleichzeitig, aber in deutlich geringerem Ausmass, kam es zu einem massiven Anstieg des Ressourcenverbrauchs und der Emissionen. Das sozioökonomische Wachstum ging Hand in Hand mit der Beschleunigung biophysikalischer Trends. <a href="#fig-acceleration-trends" class="quarto-xref">Abbildung&nbsp;<span>1.4</span></a> zeigt einige Beispiele wichtiger biophysikalischer und sozioökonomischer Indikatoren, die alle mit der Industriellen Revolution zu steigen beginnen. Ab der Mitte des 20. Jahrhunderts wird der Trend zum exponentiellen Wachstum deutlich.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Tipp</span>Das Weizenkorn- und Schachbrettproblem: eine Illustration des exponentiellen Wachstums
@@ -519,10 +687,10 @@ Abbildung&nbsp;1.6: Demonstration gegen Luftverschmutzung, Zürich, Dezember 198
 <li>Die intergenerationelle Perspektive: Verantwortung gegenüber künftigen Generationen.</li>
 <li>Die intragenerationelle Perspektive: Verantwortung gegenüber den heute lebenden Menschen, insbesondere in Entwicklungsländern, und die Sicherstellung von Chancengleichheit innerhalb der Länder.</li>
 </ol>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Hinweis</span>Nachhaltigkeit und Nachhaltige Entwicklung
@@ -567,10 +735,10 @@ Abbildung&nbsp;1.6: Demonstration gegen Luftverschmutzung, Zürich, Dezember 198
 <p>„Wir sind die erste Generation, die der Armut ein Ende setzen kann, und wir sind die letzte Generation, die den Klimawandel stoppen kann, also [müssen wir] den Klimawandel angehen.” Ban-Ki Moon, UNO-Generalsekretär 2007–2016, zur Agenda 2030</p>
 </blockquote>
 <p>Rio+20 legte den Grundstein für die Agenda 2030, die die UNO im Jahr 2015 verabschiedete. Die Agenda 2030 baut auf den Ergebnissen von Rio+20 auf und legt einen umfassenden Rahmen für Nachhaltige Entwicklung fest. Die Agenda 2030 basiert auf fünf Schlüsselprinzipien oder -säulen (den 5 Ps) und führt die 17 Ziele für Nachhaltige Entwicklung (SDGs) ein, die darauf abzielen, bis 2030 eine nachhaltige und gerechte Welt zu schaffen.</p>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Hinweis</span>Die 5 Ps der SDGs
@@ -632,10 +800,10 @@ Abbildung&nbsp;1.7: Die verschiedenen Zweige der philosophischen Ethik. Quelle: 
 <p>Die allgemeine Ethik stellt uns Methoden und Konzepte zur Verfügung, um grundlegende moralische Probleme zu diskutieren. Sie besteht aus drei Zweigen: normative Ethik, deskriptive Ethik und Metaethik. Die normative Ethik konzentriert sich auf die Bestimmung dessen, was moralisch richtig oder falsch ist. Fragen nach dem, was ein gutes Leben ausmacht, können beispielsweise je nach den individuellen Wertvorstellungen der Menschen unterschiedliche Antworten haben.</p>
 <p>Aus diesem Grund wird die normative Ethik weiter in teleologische und deontologische Ansätze unterteilt. Die teleologische Ethik (verwurzelt in <em>telos</em>, dem griechischen Wort für „Ende”, „Zweck” oder „Ziel”) bewertet Handlungen anhand des Guten, das sie hervorbringen. Der Utilitarismus beispielsweise ist eine teleologische Theorie, die Handlungen nach dem daraus resultierenden Nutzen oder Glück bewertet. Eine der ersten systematischen Ausarbeitungen des Utilitarismus ist Jeremy Benthams (1748–1832) <em>An Introduction to the Principles of Morals and Legislation</em> (1780). Die deontologische Ethik hingegen bewertet Handlungen anhand ihrer Eigenschaften und nicht anhand ihrer Konsequenzen. Ihr Ursprung liegt in <em>deon</em>, dem griechischen Wort für „Pflicht”. Ein Beispiel für eine deontologische Ethiktheorie ist die Kantische Ethik, die vom deutschen Philosophen Immanuel Kant entwickelt wurde.</p>
 <p>Die Unterscheidung zwischen teleologischen und deontologischen Ansätzen wird häufig anhand des „Trolley-Problems” diskutiert <span class="citation" data-cites="sandelJusticeWhatsRight2009 sandelGerechtigkeitWieWir2013">(vgl. <a href="../references.html#ref-sandelJusticeWhatsRight2009" role="doc-biblioref"><em>Justice</em> 2009</a>; <a href="../references.html#ref-sandelGerechtigkeitWieWir2013" role="doc-biblioref">Sandel 2013</a> für weiterführende Lektüre)</span>.</p>
-<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout callout-style-default callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Vorsicht</span>Weiterführende Literatur
@@ -748,10 +916,10 @@ Tabelle&nbsp;1.1: Überblick über Entwicklungsdebatten. Quelle: Erweiterte Tabe
 </figure>
 </div>
 </div>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Hinweis</span>Entwicklungstheorien
@@ -781,7 +949,7 @@ Tabelle&nbsp;1.1: Überblick über Entwicklungsdebatten. Quelle: Erweiterte Tabe
 <div id="fig-sustainability-intersection" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-sustainability-intersection-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/sustainability-intersection.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="Abbildung&nbsp;1.9: Nachhaltigkeit als Schnittmenge. Quelle: Eigene Darstellung."><img src="images/sustainability-intersection.jpg" class="img-fluid figure-img"></a>
+<a href="images/sustainability-intersection.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="Abbildung&nbsp;1.9: Nachhaltigkeit als Schnittmenge. Quelle: Eigene Darstellung."><img src="images/sustainability-intersection.png" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sustainability-intersection-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;1.9: Nachhaltigkeit als Schnittmenge. Quelle: Eigene Darstellung.
@@ -796,7 +964,7 @@ Abbildung&nbsp;1.9: Nachhaltigkeit als Schnittmenge. Quelle: Eigene Darstellung.
 <div id="fig-sustainability-nested" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-sustainability-nested-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/sustainability-nested.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Abbildung&nbsp;1.10: Das verschachtelte Modell der Nachhaltigkeit. Quelle: Eigene Darstellung basierend auf @giddingsEnvironmentEconomySociety2002 [pp. 192])."><img src="images/sustainability-nested.jpg" class="img-fluid figure-img"></a>
+<a href="images/sustainability-nested.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Abbildung&nbsp;1.10: Das verschachtelte Modell der Nachhaltigkeit. Quelle: Eigene Darstellung basierend auf @giddingsEnvironmentEconomySociety2002 [pp. 192])."><img src="images/sustainability-nested.png" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sustainability-nested-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;1.10: Das verschachtelte Modell der Nachhaltigkeit. Quelle: Eigene Darstellung basierend auf <span class="citation" data-cites="giddingsEnvironmentEconomySociety2002">Giddings u.&nbsp;a. (<a href="../references.html#ref-giddingsEnvironmentEconomySociety2002" role="doc-biblioref">2002</a>, pp.&nbsp;192)</span>).
@@ -810,7 +978,7 @@ Abbildung&nbsp;1.10: Das verschachtelte Modell der Nachhaltigkeit. Quelle: Eigen
 <div id="fig-sustainability-4-dimensions" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-sustainability-4-dimensions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/sustainability-4-dimensions.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-12" title="Abbildung&nbsp;1.11: Vierdimensionales Nachhaltigkeitsmodell. Quelle: Eigene Darstellung, adaptiert von @hawkesFourthPillarSustainability2001."><img src="images/sustainability-4-dimensions.jpg" class="img-fluid figure-img"></a>
+<a href="images/sustainability-4-dimensions.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12" title="Abbildung&nbsp;1.11: Vierdimensionales Nachhaltigkeitsmodell. Quelle: Eigene Darstellung, adaptiert von @hawkesFourthPillarSustainability2001."><img src="images/sustainability-4-dimensions.png" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sustainability-4-dimensions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;1.11: Vierdimensionales Nachhaltigkeitsmodell. Quelle: Eigene Darstellung, adaptiert von <span class="citation" data-cites="hawkesFourthPillarSustainability2001">Hawkes (<a href="../references.html#ref-hawkesFourthPillarSustainability2001" role="doc-biblioref">2001</a>)</span>.
@@ -920,10 +1088,10 @@ Abbildung&nbsp;1.12: Nachhaltigkeitsstrategien. Quelle: Eigene Darstellung.
 <section id="effizienzstrategie" class="level3" data-number="1.10.1">
 <h3 data-number="1.10.1" class="anchored" data-anchor-id="effizienzstrategie"><span class="header-section-number">1.10.1</span> Effizienzstrategie</h3>
 <p>Die Effizienzstrategie konzentriert sich auf die Minimierung des Ressourceneinsatzes (d.&nbsp;h. Rohstoffe und Energie) bei der Herstellung oder Erbringung von Dienstleistungen. Dies bedeutet die Reduzierung des Materialverbrauchs (Materialintensität), des Energieverbrauchs (Energieintensität) und der Emissionen von Schadstoffen wie CO<sub>2</sub>. Diese auch als „Ökoeffizienz” bekannte Strategie ist für Wirtschaft und Gesellschaft attraktiv, da sie Kosten, Ressourcenverbrauch und Umweltbelastung senken kann. Die Umsetzung der Effizienzstrategie beginnt mit der Verbesserung von Produktionsprozessen, in erster Linie durch technologische Fortschritte. Befürworter*innen glauben, dass es möglich ist, den Wohlstand zu verdoppeln und gleichzeitig den Naturressourcenverbrauch zu halbieren <span class="citation" data-cites="vonweizsackerFaktorVierDoppelter1995">(<a href="../references.html#ref-vonweizsackerFaktorVierDoppelter1995" role="doc-biblioref"><span class="nocase">von Weizsäcker u.&nbsp;a.</span> 1995</a>)</span>. Kritiker*innen der Effizienzstrategie sind jedoch weniger optimistisch und warnen davor, ihre Wirkung auf eine nachhaltige Wirtschaftstätigkeit zu überschätzen. Sie verweisen auf „Rebound-Effekte”, die die Gewinne aus Effizienzsteigerungen verringern oder sogar zunichte machen können <span class="citation" data-cites="paechBefreiungVomUberfluss2012 santariusReboundEffektBlinderFleck2014">(<a href="../references.html#ref-paechBefreiungVomUberfluss2012" role="doc-biblioref">Paech 2012</a>; <a href="../references.html#ref-santariusReboundEffektBlinderFleck2014" role="doc-biblioref">Santarius 2014</a>)</span>.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Tipp</span>Effizienzstrategien in der Praxis: Beispiele
@@ -948,10 +1116,10 @@ Abbildung&nbsp;1.12: Nachhaltigkeitsstrategien. Quelle: Eigene Darstellung.
 <p>„Jeder materielle Wirtschaftsprozess führt zu einer Zunahme der Entropie, d.&nbsp;h. vereinfacht ausgedrückt, dass die Elemente auf materieller Ebene immer gleichmässiger verteilt werden, was letztlich nur bedeutet, dass Dinge und Körper sich abnutzen und eine neue Konzentration immer mehr Energie erfordert.” <span class="citation" data-cites="hankeEnergiewendeAusWachstumskritischer2013">(Übersetzt aus <a href="../references.html#ref-hankeEnergiewendeAusWachstumskritischer2013" role="doc-biblioref">Hanke und Best 2013</a>, pp.&nbsp;11)</span></p>
 </blockquote>
 <p>Eine Besonderheit des Ökosystems Erde ist die Sonnenenergie, die von aussen eine konstante Energiezufuhr liefert und der Zunahme der Entropie auf der Erde entgegenwirkt. Wir benötigen jedoch weiterhin sogenannte „graue Energie”, um Energieerzeugungssysteme herzustellen, z. B. Biokraftstoffsysteme, Solarzellen, Elektroautobatterien und Windturbinen. Konsistenzstrategien können die Industrie anreizen, eine Reduzierung des Ressourcenverbrauchs und der Emissionen anzustreben.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Tipp</span>Konsistenzstrategien in der Praxis: Beispiele
@@ -971,10 +1139,10 @@ Abbildung&nbsp;1.12: Nachhaltigkeitsstrategien. Quelle: Eigene Darstellung.
 <h3 data-number="1.10.3" class="anchored" data-anchor-id="suffizienzstrategie"><span class="header-section-number">1.10.3</span> Suffizienzstrategie</h3>
 <p>Das Konzept der Suffizienz, das im lateinischen Wort <em>sufficere</em> (genügen) verwurzelt ist, stellt unsere Annahmen darüber in Frage, wie viel wir für ein gutes Leben brauchen. Es fördert eine Reduzierung des Ressourcen- und Energieverbrauchs durch die Fokussierung auf die Senkung der Nachfrage nach ressourcenintensiven Gütern und Dienstleistungen. Suffizienz – die man auch als Genügsamkeit oder Angemessenheit beschreiben könnte – kritisiert die ständige Schaffung neuer Bedürfnisse durch Technologie und Werbung angesichts eines begrenzten Angebots an natürlichen Ressourcen. Suffizienz mahnt uns, nicht jedem neu geschaffenen Bedürfnis nachzujagen und unsere Bedürfnisse ohne Konsum zu erfüllen. Während sich Effizienz- und Konsistenzstrategien auf die Produktion konzentrieren, richtet sich die Suffizienzstrategie auf den Konsum – wenn auch nicht ausschliesslich: Suffizienz kann in unterschiedlichem Ausmass und auf verschiedenen Ebenen praktiziert werden, von kleinen Verhaltensänderungen (Teilen statt Kaufen) bis hin zu erheblichen Änderungen des Lebensstils (Verzicht auf Flugreisen). Obwohl sie auf individueller Ebene beginnt, kann Suffizienz auf verschiedenen Ebenen angewendet werden, etwa von Unternehmen (suffizienzorientiertes Produktdesign) und Regierungen (Suffizienzpolitik). Suffizienz strebt daher die richtige Balance an: Wie viel brauchen wir für ein gutes Leben? Und was brauchen wir nicht?</p>
 <p>Kritiker*innen sind der Ansicht, dass die Suffizienzstrategie nur begrenzte Potenziale hat und keine breite soziokulturelle Akzeptanz finden wird. Befürworter*innen hingegen sehen sie als entscheidend für die Nachhaltigkeitspolitik, insbesondere dort, wo Effizienz- und Konsistenzstrategien nicht ausreichen. Das Konzept einer Postwachstumswirtschaft stützt sich auf die Prinzipien der Suffizienzstrategie.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Tipp</span>Suffizienzstrategien in der Praxis: Beispiele
@@ -1040,10 +1208,10 @@ Abbildung&nbsp;1.14: Indirekte und direkte Rebound-Effekte energiesparender Pers
 <li><p>Sozialpsychologische Einflüsse umfassen das „mentale Buchhalten” der einzelnen Verbraucher*innen. Verbraucher*innen, die ein effizientes Produkt gekauft haben, „gestatten sich” beispielsweise möglicherweise, mehr zu konsumieren. Deshalb können Effizienzsteigerungen bei Produkten, die zuvor als umweltschädlich galten, paradoxerweise zu einem Anstieg des Konsums führen. Dieser direkte Rebound-Effekt wird in der Sozialpsychologie oft als „Moral-Hazard-Effekt” bezeichnet. Wenn die Entscheidung, den Konsum zu steigern, nicht rational getroffen wird, spricht man vom „Moral-Leaking-Effekt”. Zum Beispiel, wenn man nach dem Kauf eines ressourceneffizienten Autos mehr fährt, weil allein der Kauf als umweltbewusst wahrgenommen wird. Auch der indirekte Rebound-Effekt kann auf sozialpsychologische Faktoren zurückgeführt werden. Der „Moral-Licensing-Effekt” besagt, dass der Kauf ressourceneffizienter Produkte zu einem Anstieg des Konsums anderer Produkte führen kann, die möglicherweise umweltschädlich sind. Zum Beispiel, wenn der Kauf eines kraftstoffsparenden Autos häufigere Flugreisen rechtfertigt.</p></li>
 <li><p>Manchmal können staatliche Regulierungen oder Anreize zur Förderung effizienter Technologien unbeabsichtigte Konsequenzen haben – das bezeichnen wir als „regulatorischen Effekt”. Wenn Menschen beispielsweise durch staatliche Anreize für energieeffiziente Modelle zum Kauf grosser Elektrogeräte animiert werden. Solche Anreize können zu häufigeren Käufen von Geräten führen, was – selbst wenn das neuere Modell effizienter ist als das alte – den Energieeinspareffekt teilweise aufhebt. Darüber hinaus führt die Einführung von Effizienztechnologien zu neuen Kapazitäten und Infrastrukturen, was zur Entstehung neuer Märkte führen kann. Windkraftanlagen beispielsweise fördern die Entwicklung neuer Infrastrukturen und Arbeitsplätze, benötigen aber gleichzeitig erhebliche Ressourcen. Ausserdem müssen Verbraucher*innen, die ein effizienteres Produkt kaufen, ihr altes Produkt nicht unbedingt entsorgen. Einige nutzen am Ende beide Produkte, was zu einem insgesamt höheren Gesamtkonsum führen kann <span class="citation" data-cites="santariusReboundEffektBlinderFleck2014">(<a href="../references.html#ref-santariusReboundEffektBlinderFleck2014" role="doc-biblioref">Santarius 2014</a>)</span>.</p></li>
 </ol>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Hinweis</span>Rebound-Effekte
@@ -1155,7 +1323,7 @@ Tabelle&nbsp;1.3: Mode-1- und Mode-2-Wissenschaft. Quelle: Basierend auf <span c
 <div id="fig-emprical-analytical_normative" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-emprical-analytical_normative-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/emprical-analytical_normative.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-17" title="Abbildung&nbsp;1.16: Unterscheidung zwischen empirisch-analytisch und normativ. Quelle: Eigene Darstellung."><img src="images/emprical-analytical_normative.jpg" class="img-fluid figure-img"></a>
+<a href="images/emprical-analytical_normative.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17" title="Abbildung&nbsp;1.16: Unterscheidung zwischen empirisch-analytisch und normativ. Quelle: Eigene Darstellung."><img src="images/emprical-analytical_normative.png" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-emprical-analytical_normative-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;1.16: Unterscheidung zwischen empirisch-analytisch und normativ. Quelle: Eigene Darstellung.
@@ -1182,7 +1350,7 @@ Abbildung&nbsp;1.16: Unterscheidung zwischen empirisch-analytisch und normativ. 
 <div id="fig-Three-Knowledge-Types" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-Three-Knowledge-Types-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/Three-Knowledge-Types.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-18" title="Abbildung&nbsp;1.17: Die drei Wissensarten. Quelle: Eigene Darstellung basierend auf @proclimResearchSustainabilityGlobal1997."><img src="images/Three-Knowledge-Types.jpg" class="img-fluid figure-img"></a>
+<a href="images/Three-Knowledge-Types.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18" title="Abbildung&nbsp;1.17: Die drei Wissensarten. Quelle: Eigene Darstellung basierend auf @proclimResearchSustainabilityGlobal1997."><img src="images/Three-Knowledge-Types.png" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-Three-Knowledge-Types-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;1.17: Die drei Wissensarten. Quelle: Eigene Darstellung basierend auf <span class="citation" data-cites="proclimResearchSustainabilityGlobal1997">ProClim (<a href="../references.html#ref-proclimResearchSustainabilityGlobal1997" role="doc-biblioref">1997</a>)</span>.
@@ -1206,16 +1374,16 @@ Abbildung&nbsp;1.17: Die drei Wissensarten. Quelle: Eigene Darstellung basierend
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche Aussage definiert „Nachhaltige Entwicklung” gemäss dem Brundtland-Bericht am treffendsten?</p>
-<div id="webex-08eef215c1adac0f0407027731e6cedd" class="webex-radiogroup" data-answer="awhJVUoDHQU+">
-<label><input type="radio" autocomplete="off" name="08eef215c1adac0f0407027731e6cedd"><span>Die Senkung der CO₂-Emissionen um 50% bis 2030</span></label><label><input type="radio" autocomplete="off" name="08eef215c1adac0f0407027731e6cedd"><span>Wirtschaftswachstum ohne Umweltschäden</span></label><label><input type="radio" autocomplete="off" name="08eef215c1adac0f0407027731e6cedd"><span>Entwicklung, die die Bedürfnisse der Gegenwart befriedigt, ohne die Fähigkeit künftiger Generationen zu gefährden, ihre eigenen Bedürfnisse zu befriedigen</span></label><label><input type="radio" autocomplete="off" name="08eef215c1adac0f0407027731e6cedd"><span>Die Verbesserung des Lebensstandards durch Industrialisierung</span></label>
+<div id="webex-c0c19664696867b1bcdcebc25203152b" class="webex-radiogroup" data-answer="OABPABUGGgRr">
+<label><input type="radio" autocomplete="off" name="c0c19664696867b1bcdcebc25203152b"><span>Die Verbesserung des Lebensstandards durch Industrialisierung</span></label><label><input type="radio" autocomplete="off" name="c0c19664696867b1bcdcebc25203152b"><span>Entwicklung, die die Bedürfnisse der Gegenwart befriedigt, ohne die Fähigkeit künftiger Generationen zu gefährden, ihre eigenen Bedürfnisse zu befriedigen</span></label><label><input type="radio" autocomplete="off" name="c0c19664696867b1bcdcebc25203152b"><span>Die Senkung der CO₂-Emissionen um 50% bis 2030</span></label><label><input type="radio" autocomplete="off" name="c0c19664696867b1bcdcebc25203152b"><span>Wirtschaftswachstum ohne Umweltschäden</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Der Brundtland-Bericht (1987) definiert Nachhaltige Entwicklung als eine Entwicklung, die die Bedürfnisse der Gegenwart befriedigt, ohne die Fähigkeit künftiger Generationen zu gefährden, ihre eigenen Bedürfnisse zu befriedigen.</p>
 <ul>
 <li>False</li>
-<li>False</li>
 <li>True</li>
+<li>False</li>
 <li>False</li>
 </ul>
 </div>
@@ -1223,15 +1391,15 @@ Abbildung&nbsp;1.17: Die drei Wissensarten. Quelle: Eigene Darstellung basierend
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Was ist Normativität?</p>
-<div id="webex-2b652c71031fbe08b9f35f87f633abcc" class="webex-radiogroup" data-answer="aVMaBR5Tag==">
-<label><input type="radio" autocomplete="off" name="2b652c71031fbe08b9f35f87f633abcc"><span>Bezieht sich auf Werte und moralisch begründete Vorstellungen davon, was getan werden sollte und wie die Dinge sein sollten</span></label><label><input type="radio" autocomplete="off" name="2b652c71031fbe08b9f35f87f633abcc"><span>Bezieht sich darauf, wie die Dinge gegenwärtig sind</span></label><label><input type="radio" autocomplete="off" name="2b652c71031fbe08b9f35f87f633abcc"><span>Bedeutet, dass Handlungen auf gemeinsam vereinbarten Gesetzen und Normen beruhen sollten</span></label>
+<div id="webex-52d72db821cfd957d3efa6662989ce5b" class="webex-radiogroup" data-answer="bgJIBh5UPw==">
+<label><input type="radio" autocomplete="off" name="52d72db821cfd957d3efa6662989ce5b"><span>Bezieht sich darauf, wie die Dinge gegenwärtig sind</span></label><label><input type="radio" autocomplete="off" name="52d72db821cfd957d3efa6662989ce5b"><span>Bezieht sich auf Werte und moralisch begründete Vorstellungen davon, was getan werden sollte und wie die Dinge sein sollten</span></label><label><input type="radio" autocomplete="off" name="52d72db821cfd957d3efa6662989ce5b"><span>Bedeutet, dass Handlungen auf gemeinsam vereinbarten Gesetzen und Normen beruhen sollten</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Normativität bezieht sich auf Werte, Normen und moralisch begründete Vorstellungen davon, was getan werden sollte und wie die Dinge sein sollten, anstatt zu beschreiben, wie die Dinge gegenwärtig sind.</p>
 <ul>
-<li>True</li>
 <li>False</li>
+<li>True</li>
 <li>False</li>
 </ul>
 </div>
@@ -1239,16 +1407,16 @@ Abbildung&nbsp;1.17: Die drei Wissensarten. Quelle: Eigene Darstellung basierend
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Was ist die „Grosse Beschleunigung”?</p>
-<div id="webex-e466cc31919a705dfb873aad6597adbd" class="webex-radiogroup" data-answer="PgQaB09THwFk">
-<label><input type="radio" autocomplete="off" name="e466cc31919a705dfb873aad6597adbd"><span>Ein rascher Anstieg des globalen Ressourcenverbrauchs nach dem Ersten Weltkrieg</span></label><label><input type="radio" autocomplete="off" name="e466cc31919a705dfb873aad6597adbd"><span>Das exponentielle Wachstum sozioökonomischer und Erdsystem-Trends, das Mitte des 20. Jahrhunderts einsetzte</span></label><label><input type="radio" autocomplete="off" name="e466cc31919a705dfb873aad6597adbd"><span>Der plötzliche Rückgang der Biodiversität zu Beginn des 21. Jahrhunderts</span></label><label><input type="radio" autocomplete="off" name="e466cc31919a705dfb873aad6597adbd"><span>Der rasche Rückgang der Industrialisierung in den 1960er-Jahren</span></label>
+<div id="webex-8f3f2d70444de64bbca2bef6814441da" class="webex-radiogroup" data-answer="Y1YfVh5VGwBp">
+<label><input type="radio" autocomplete="off" name="8f3f2d70444de64bbca2bef6814441da"><span>Ein rascher Anstieg des globalen Ressourcenverbrauchs nach dem Ersten Weltkrieg</span></label><label><input type="radio" autocomplete="off" name="8f3f2d70444de64bbca2bef6814441da"><span>Der plötzliche Rückgang der Biodiversität zu Beginn des 21. Jahrhunderts</span></label><label><input type="radio" autocomplete="off" name="8f3f2d70444de64bbca2bef6814441da"><span>Das exponentielle Wachstum sozioökonomischer und Erdsystem-Trends, das Mitte des 20. Jahrhunderts einsetzte</span></label><label><input type="radio" autocomplete="off" name="8f3f2d70444de64bbca2bef6814441da"><span>Der rasche Rückgang der Industrialisierung in den 1960er-Jahren</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Die „Grosse Beschleunigung” bezeichnet den raschen und exponentiellen Anstieg sozioökonomischer Aktivitäten (wie Bevölkerungswachstum, Industrialisierung und Ressourcenverbrauch) sowie die entsprechenden Veränderungen der Erdsystemprozesse, die etwa Mitte des 20. Jahrhunderts einsetzten.</p>
 <ul>
 <li>False</li>
-<li>True</li>
 <li>False</li>
+<li>True</li>
 <li>False</li>
 </ul>
 </div>
@@ -1256,8 +1424,8 @@ Abbildung&nbsp;1.17: Die drei Wissensarten. Quelle: Eigene Darstellung basierend
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Was unterscheidet „starke” von „schwacher” Nachhaltigkeit?</p>
-<div id="webex-3d6af88bd0beb93f3946252dc7cc845d" class="webex-radiogroup" data-answer="aFQaUUoJFFI5">
-<label><input type="radio" autocomplete="off" name="3d6af88bd0beb93f3946252dc7cc845d"><span>Beide Konzepte bedeuten dasselbe.</span></label><label><input type="radio" autocomplete="off" name="3d6af88bd0beb93f3946252dc7cc845d"><span>Schwache Nachhaltigkeit schränkt jegliche technologische Innovation ein.</span></label><label><input type="radio" autocomplete="off" name="3d6af88bd0beb93f3946252dc7cc845d"><span>Starke Nachhaltigkeit verlangt, Naturkapital als nicht substituierbar zu erhalten.</span></label><label><input type="radio" autocomplete="off" name="3d6af88bd0beb93f3946252dc7cc845d"><span>Starke Nachhaltigkeit erlaubt die vollständige Substitution von Naturkapital.</span></label>
+<div id="webex-d814696fc2cd8bfc6d6e312d5a6e1504" class="webex-radiogroup" data-answer="PwgdBBoIGlY+">
+<label><input type="radio" autocomplete="off" name="d814696fc2cd8bfc6d6e312d5a6e1504"><span>Schwache Nachhaltigkeit schränkt jegliche technologische Innovation ein.</span></label><label><input type="radio" autocomplete="off" name="d814696fc2cd8bfc6d6e312d5a6e1504"><span>Beide Konzepte bedeuten dasselbe.</span></label><label><input type="radio" autocomplete="off" name="d814696fc2cd8bfc6d6e312d5a6e1504"><span>Starke Nachhaltigkeit verlangt, Naturkapital als nicht substituierbar zu erhalten.</span></label><label><input type="radio" autocomplete="off" name="d814696fc2cd8bfc6d6e312d5a6e1504"><span>Starke Nachhaltigkeit erlaubt die vollständige Substitution von Naturkapital.</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -1273,8 +1441,8 @@ Abbildung&nbsp;1.17: Die drei Wissensarten. Quelle: Eigene Darstellung basierend
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche Aussagen beschreiben den Unterschied zwischen starker und schwacher Nachhaltigkeit korrekt? (Mehr als eine Aussage kann richtig sein.)</p>
-<div id="webex-9e4ab925c077e65c8e1acb574d02d010" class="webex-checkboxgroup" data-answer="YlQYUE4JHgQ+">
-<label><input type="checkbox" autocomplete="off" name="9e4ab925c077e65c8e1acb574d02d010"><span>Bei starker Nachhaltigkeit gilt Naturkapital als nicht substituierbar.</span></label><label><input type="checkbox" autocomplete="off" name="9e4ab925c077e65c8e1acb574d02d010"><span>Schwache Nachhaltigkeit geht davon aus, dass technologische Innovation die Funktionen der Natur vollständig ersetzen kann.</span></label><label><input type="checkbox" autocomplete="off" name="9e4ab925c077e65c8e1acb574d02d010"><span>Starke Nachhaltigkeit akzeptiert eine unbegrenzte Substitution zwischen Natur- und von Menschen geschaffenem Kapital.</span></label><label><input type="checkbox" autocomplete="off" name="9e4ab925c077e65c8e1acb574d02d010"><span>Bei schwacher Nachhaltigkeit können sich verschiedene Kapitalformen gegenseitig ersetzen.</span></label>
+<div id="webex-efd969c47cd19fe535c0d9d82238a8ce" class="webex-checkboxgroup" data-answer="PldICBoJTwVq">
+<label><input type="checkbox" autocomplete="off" name="efd969c47cd19fe535c0d9d82238a8ce"><span>Schwache Nachhaltigkeit geht davon aus, dass technologische Innovation die Funktionen der Natur vollständig ersetzen kann.</span></label><label><input type="checkbox" autocomplete="off" name="efd969c47cd19fe535c0d9d82238a8ce"><span>Bei starker Nachhaltigkeit gilt Naturkapital als nicht substituierbar.</span></label><label><input type="checkbox" autocomplete="off" name="efd969c47cd19fe535c0d9d82238a8ce"><span>Starke Nachhaltigkeit akzeptiert eine unbegrenzte Substitution zwischen Natur- und von Menschen geschaffenem Kapital.</span></label><label><input type="checkbox" autocomplete="off" name="efd969c47cd19fe535c0d9d82238a8ce"><span>Bei schwacher Nachhaltigkeit können sich verschiedene Kapitalformen gegenseitig ersetzen.</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -1290,29 +1458,29 @@ Abbildung&nbsp;1.17: Die drei Wissensarten. Quelle: Eigene Darstellung basierend
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche der folgenden Aussagen beschreiben schwache Nachhaltigkeit? (Mehr als eine Aussage kann richtig sein.)</p>
-<div id="webex-4366192810700bcd62126ac27a83155d" class="webex-checkboxgroup" data-answer="bwIaBh0JHgkdABsAHFNPVGs=">
-<label><input type="checkbox" autocomplete="off" name="4366192810700bcd62126ac27a83155d"><span>Kapitalformen sind grundsätzlich gegenseitig austauschbar.</span></label><label><input type="checkbox" autocomplete="off" name="4366192810700bcd62126ac27a83155d"><span>Die Unersetzbarkeit von durch Menschen geschaffenem Kapital.</span></label><label><input type="checkbox" autocomplete="off" name="4366192810700bcd62126ac27a83155d"><span>Steigendes BIP.</span></label><label><input type="checkbox" autocomplete="off" name="4366192810700bcd62126ac27a83155d"><span>Die Erhaltung von Naturkapital, wenn dies das menschliche Wohlergehen fördert oder bewahrt.</span></label><label><input type="checkbox" autocomplete="off" name="4366192810700bcd62126ac27a83155d"><span>Unzureichender Umweltschutz.</span></label><label><input type="checkbox" autocomplete="off" name="4366192810700bcd62126ac27a83155d"><span>Ein Unternehmen erfüllt nur seine gesetzlichen Umwelt- und Sozialpflichten.</span></label><label><input type="checkbox" autocomplete="off" name="4366192810700bcd62126ac27a83155d"><span>Die Erhaltung der Gesamtsumme aller Kapitalformen von einer Generation zur nächsten.</span></label><label><input type="checkbox" autocomplete="off" name="4366192810700bcd62126ac27a83155d"><span>Die Bedürfnisse der gegenwärtigen Generation werden gegenüber jenen künftiger Generationen bevorzugt.</span></label>
+<div id="webex-702e9293c48d7f883b5523dcc3d5eedf" class="webex-checkboxgroup" data-answer="bAAeVRUCFQJPBBRVG1YUCW4=">
+<label><input type="checkbox" autocomplete="off" name="702e9293c48d7f883b5523dcc3d5eedf"><span>Ein Unternehmen erfüllt nur seine gesetzlichen Umwelt- und Sozialpflichten.</span></label><label><input type="checkbox" autocomplete="off" name="702e9293c48d7f883b5523dcc3d5eedf"><span>Die Bedürfnisse der gegenwärtigen Generation werden gegenüber jenen künftiger Generationen bevorzugt.</span></label><label><input type="checkbox" autocomplete="off" name="702e9293c48d7f883b5523dcc3d5eedf"><span>Unzureichender Umweltschutz.</span></label><label><input type="checkbox" autocomplete="off" name="702e9293c48d7f883b5523dcc3d5eedf"><span>Die Erhaltung von Naturkapital, wenn dies das menschliche Wohlergehen fördert oder bewahrt.</span></label><label><input type="checkbox" autocomplete="off" name="702e9293c48d7f883b5523dcc3d5eedf"><span>Steigendes BIP.</span></label><label><input type="checkbox" autocomplete="off" name="702e9293c48d7f883b5523dcc3d5eedf"><span>Die Erhaltung der Gesamtsumme aller Kapitalformen von einer Generation zur nächsten.</span></label><label><input type="checkbox" autocomplete="off" name="702e9293c48d7f883b5523dcc3d5eedf"><span>Die Unersetzbarkeit von durch Menschen geschaffenem Kapital.</span></label><label><input type="checkbox" autocomplete="off" name="702e9293c48d7f883b5523dcc3d5eedf"><span>Kapitalformen sind grundsätzlich gegenseitig austauschbar.</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Schwache Nachhaltigkeit konzentriert sich darauf, den Gesamtbestand an Kapital über Generationen hinweg zu erhalten, unter der Annahme, dass sich verschiedene Kapitalformen gegenseitig ersetzen können. Naturkapital wird vor allem insoweit erhalten, als es zum menschlichen Wohlergehen beiträgt, statt als grundsätzlich unersetzbar zu gelten.</p>
 <ul>
-<li>True</li>
 <li>False</li>
-<li>False</li>
-<li>True</li>
 <li>False</li>
 <li>False</li>
 <li>True</li>
 <li>False</li>
+<li>True</li>
+<li>False</li>
+<li>True</li>
 </ul>
 </div>
 </div>
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche der folgenden Aussagen beschreiben starke Nachhaltigkeit? (Mehr als eine Aussage kann richtig sein.)</p>
-<div id="webex-b7e5c797bbd0b4f76b5b58cc6e1e6b0f" class="webex-checkboxgroup" data-answer="OQdJBE8GFQdOU0gAPw==">
-<label><input type="checkbox" autocomplete="off" name="b7e5c797bbd0b4f76b5b58cc6e1e6b0f"><span>Eine Zunahme der Gesamtsumme aller Kapitalformen wird gefordert.</span></label><label><input type="checkbox" autocomplete="off" name="b7e5c797bbd0b4f76b5b58cc6e1e6b0f"><span>Die Natur wird als eine Form von Kapital betrachtet, die auf unschätzbare Weise zum Wohlergehen der Menschen beiträgt.</span></label><label><input type="checkbox" autocomplete="off" name="b7e5c797bbd0b4f76b5b58cc6e1e6b0f"><span>Die Erhaltung kritischen Naturkapitals von einer Generation zur nächsten ist erforderlich.</span></label><label><input type="checkbox" autocomplete="off" name="b7e5c797bbd0b4f76b5b58cc6e1e6b0f"><span>Das sechste Massenaussterben gilt als das wichtigste Nachhaltigkeitsproblem.</span></label><label><input type="checkbox" autocomplete="off" name="b7e5c797bbd0b4f76b5b58cc6e1e6b0f"><span>Naturkapital und von Menschen geschaffenes Kapital ergänzen sich, und Menschen können ohne beide nicht überleben.</span></label><label><input type="checkbox" autocomplete="off" name="b7e5c797bbd0b4f76b5b58cc6e1e6b0f"><span>Umweltprobleme werden durch innovative Energietechnologien gelöst.</span></label>
+<div id="webex-5dd24db96d06318c9853221aba73095f" class="webex-checkboxgroup" data-answer="blRIAxhVTgkaVRwGbg==">
+<label><input type="checkbox" autocomplete="off" name="5dd24db96d06318c9853221aba73095f"><span>Das sechste Massenaussterben gilt als das wichtigste Nachhaltigkeitsproblem.</span></label><label><input type="checkbox" autocomplete="off" name="5dd24db96d06318c9853221aba73095f"><span>Die Natur wird als eine Form von Kapital betrachtet, die auf unschätzbare Weise zum Wohlergehen der Menschen beiträgt.</span></label><label><input type="checkbox" autocomplete="off" name="5dd24db96d06318c9853221aba73095f"><span>Die Erhaltung kritischen Naturkapitals von einer Generation zur nächsten ist erforderlich.</span></label><label><input type="checkbox" autocomplete="off" name="5dd24db96d06318c9853221aba73095f"><span>Eine Zunahme der Gesamtsumme aller Kapitalformen wird gefordert.</span></label><label><input type="checkbox" autocomplete="off" name="5dd24db96d06318c9853221aba73095f"><span>Naturkapital und von Menschen geschaffenes Kapital ergänzen sich, und Menschen können ohne beide nicht überleben.</span></label><label><input type="checkbox" autocomplete="off" name="5dd24db96d06318c9853221aba73095f"><span>Umweltprobleme werden durch innovative Energietechnologien gelöst.</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -1330,33 +1498,33 @@ Abbildung&nbsp;1.17: Die drei Wissensarten. Quelle: Eigene Darstellung basierend
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Was ist das primäre Ziel der Konsistenzstrategie in der Nachhaltigkeit?</p>
-<div id="webex-4eb6fd344c3cf5d018e272246a619b83" class="webex-radiogroup" data-answer="b1VOBkpUHwVp">
-<label><input type="radio" autocomplete="off" name="4eb6fd344c3cf5d018e272246a619b83"><span>Soziale Ungleichheit verringern</span></label><label><input type="radio" autocomplete="off" name="4eb6fd344c3cf5d018e272246a619b83"><span>Den Rohstoffeinsatz in der Produktion minimieren</span></label><label><input type="radio" autocomplete="off" name="4eb6fd344c3cf5d018e272246a619b83"><span>Den Energieverbrauch in der Produktion senken</span></label><label><input type="radio" autocomplete="off" name="4eb6fd344c3cf5d018e272246a619b83"><span>Bedürfnisse der Konsument*innen mit ökologisch verträglichen Methoden erfüllen</span></label>
+<div id="webex-0f5b42963e5ed0da65eadb41b4ca8275" class="webex-radiogroup" data-answer="a1cZUhgCFQZu">
+<label><input type="radio" autocomplete="off" name="0f5b42963e5ed0da65eadb41b4ca8275"><span>Bedürfnisse der Konsument*innen mit ökologisch verträglichen Methoden erfüllen</span></label><label><input type="radio" autocomplete="off" name="0f5b42963e5ed0da65eadb41b4ca8275"><span>Den Energieverbrauch in der Produktion senken</span></label><label><input type="radio" autocomplete="off" name="0f5b42963e5ed0da65eadb41b4ca8275"><span>Soziale Ungleichheit verringern</span></label><label><input type="radio" autocomplete="off" name="0f5b42963e5ed0da65eadb41b4ca8275"><span>Den Rohstoffeinsatz in der Produktion minimieren</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Die Konsistenzstrategie zielt darauf ab, wirtschaftliche Aktivitäten und Konsummuster mit natürlichen Systemen in Einklang zu bringen, indem Produkte, Prozesse und Dienstleistungen so gestaltet werden, dass sie ökologisch verträglich sind und gleichzeitig menschliche Bedürfnisse erfüllen.</p>
 <ul>
-<li>False</li>
-<li>False</li>
-<li>False</li>
 <li>True</li>
+<li>False</li>
+<li>False</li>
+<li>False</li>
 </ul>
 </div>
 </div>
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche der folgenden Aussagen zu Nachhaltigkeitsstrategien sind korrekt? (Mehr als eine Aussage kann richtig sein.)</p>
-<div id="webex-8ed43250ec6095f385a551a3f1ef9c9c" class="webex-checkboxgroup" data-answer="Y1VIBR8CGQE4">
-<label><input type="checkbox" autocomplete="off" name="8ed43250ec6095f385a551a3f1ef9c9c"><span>Suffizienz fördert höhere Produktionsmengen.</span></label><label><input type="checkbox" autocomplete="off" name="8ed43250ec6095f385a551a3f1ef9c9c"><span>Effizienz zielt darauf ab, weniger Ressourcen pro Produktionseinheit einzusetzen.</span></label><label><input type="checkbox" autocomplete="off" name="8ed43250ec6095f385a551a3f1ef9c9c"><span>Alle drei Nachhaltigkeitsstrategien wirken sich gleich auf den Konsum aus.</span></label><label><input type="checkbox" autocomplete="off" name="8ed43250ec6095f385a551a3f1ef9c9c"><span>Konsistenz bedeutet, Güter herzustellen, die unendlich oft recycelt werden können.</span></label>
+<div id="webex-f472edafa2052207741b4aa562319416" class="webex-checkboxgroup" data-answer="PQQbAklVTVc8">
+<label><input type="checkbox" autocomplete="off" name="f472edafa2052207741b4aa562319416"><span>Suffizienz fördert höhere Produktionsmengen.</span></label><label><input type="checkbox" autocomplete="off" name="f472edafa2052207741b4aa562319416"><span>Alle drei Nachhaltigkeitsstrategien wirken sich gleich auf den Konsum aus.</span></label><label><input type="checkbox" autocomplete="off" name="f472edafa2052207741b4aa562319416"><span>Konsistenz bedeutet, Güter herzustellen, die unendlich oft recycelt werden können.</span></label><label><input type="checkbox" autocomplete="off" name="f472edafa2052207741b4aa562319416"><span>Effizienz zielt darauf ab, weniger Ressourcen pro Produktionseinheit einzusetzen.</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Effizienz konzentriert sich auf die Senkung des Ressourceneinsatzes pro Produktionseinheit. Konsistenz zielt darauf ab, die Produktion an natürliche Kreisläufe anzupassen, etwa durch geschlossene oder unendlich recycelbare Systeme. Suffizienz stellt das Ausmass von Produktion und Konsum infrage, weshalb sich die drei Strategien in ihrer Wirkung auf den Konsum unterscheiden.</p>
 <ul>
 <li>False</li>
-<li>True</li>
 <li>False</li>
+<li>True</li>
 <li>True</li>
 </ul>
 </div>
@@ -2732,6 +2900,19 @@ window.onload = function() {
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
