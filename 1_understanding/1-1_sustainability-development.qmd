@@ -1,6 +1,6 @@
 ## Ein normatives Konzept
 
-![Nachhaltige Entwicklung als normatives Konzept. Quelle: Eigene Darstellung.](images/SD_normative.jpg){#fig-sd-normative}
+![Nachhaltige Entwicklung als normatives Konzept. Quelle: Eigene Darstellung.](images/SD_normative.png){#fig-sd-normative}
 
 Um Nachhaltigkeit zu erreichen, brauchen wir **Nachhaltige Entwicklung**: einen strategischen Prozess, der Veränderungen in unseren sozial-ökologischen Systemen und Institutionen erfordert. „Entwicklung" impliziert eine gezielte Verbesserung, und die ethische Frage, was genau „besser" bedeutet, ist dabei zentral. Die Verwendung des Begriffs „Entwicklung" wird von einigen kritisiert [z. B. @langDevelopmentAlternativeVisions2013; @kothariPluriversePostdevelopmentDictionary2019], da er häufig mit ungebremstem Wachstum gleichgesetzt wird. Ungebremstes Wachstum des „ökologischen Fussabdrucks" – des Anteils der Biosphäre, der für menschliche Produktion, Konsum und Abfall genutzt wird – ist langfristig nicht tragfähig. Dennoch gibt es unterschiedliche Interpretationen von „Entwicklung", die von Wirtschaftswachstum bis hin zur Verbesserung der Lebensqualität reichen. Nachhaltige Entwicklung bleibt daher ein anregendes und umstrittenes Konzept. Nachhaltigkeit und Nachhaltige Entwicklung spielen im heutigen politischen Diskurs eine zentrale Rolle. Der Begriff „Nicht-Nachhaltigkeit" verweist auf Zustände oder Entwicklungen, die als negativ bewertet werden, während „Nachhaltigkeit" einen positiven Zustand beschreibt.
 
@@ -49,7 +49,7 @@ Bei der Analyse dieser umfassenden Herausforderungen müssen wir auch die zeitli
 
 ![](images/Great-Acceleration_earth-system_trends.jpg)
 
-12 sozioökonomische und 12 Erdsystem-Trends von 1750 bis heute sind ein starker Hinweis darauf, dass das Erdsystem einen neuen Zustand erreicht hat. Quelle: <https://futureearth.org/2015/01/16/the-great-acceleration/>.
+12 sozioökonomische und 12 Erdsystem-Trends von 1750 bis 2010 sind ein starker Hinweis darauf, dass das Erdsystem einen neuen Zustand erreicht hat. Quelle: <https://futureearth.org/the-great-acceleration/>.
 :::
 
 Die Grosse Beschleunigung beschrieb die exponentiellen Wachstumsdynamiken, die infolge der Industriellen Revolution entstanden und zu einem Produktivitätsschub und einem deutlichen Anstieg des materiellen Wohlstands führten. Gleichzeitig, aber in deutlich geringerem Ausmass, kam es zu einem massiven Anstieg des Ressourcenverbrauchs und der Emissionen. Das sozioökonomische Wachstum ging Hand in Hand mit der Beschleunigung biophysikalischer Trends. @fig-acceleration-trends zeigt einige Beispiele wichtiger biophysikalischer und sozioökonomischer Indikatoren, die alle mit der Industriellen Revolution zu steigen beginnen. Ab der Mitte des 20. Jahrhunderts wird der Trend zum exponentiellen Wachstum deutlich.

@@ -18,7 +18,7 @@ In jüngerer Zeit wurden viele spezifische Reformvorschläge formuliert, die ver
 
 Diese Reformvorschläge verdeutlichen, dass Nachhaltigkeit eine Kombination verschiedener sektoraler Hebel erfordert: Statt rein technischer Lösungen braucht es neue institutionelle, soziale und kulturelle Leitplanken. Im Diskurs über wirtschaftliche Nachhaltigkeit lassen sich diese vielfältigen Vorschläge in drei übergeordnete Makrostrategien mit unterschiedlichen Grundannahmen und Zielen einordnen:
 
-![Positionierung von Green Growth, Degrowth und Nachhaltige Wirtschaft anhand ihrer Annahmen über Entkopplung und das Potenzial für hohe Lebensqualität bei niedrigerem BIP. Quelle: Eigene Darstellung basierend auf Petschow (2018).](images/Fig5_6__NaÖk_en.jpg){#fig-naök}
+![Positionierung von Green Growth, Degrowth und Nachhaltige Wirtschaft anhand ihrer Annahmen über Entkopplung und das Potenzial für hohe Lebensqualität bei niedrigerem BIP. Quelle: Eigene Darstellung basierend auf Petschow (2018).](images/Fig5_6__NaÖk.png){#fig-naök}
 
 -   **Green Growth** fokussiert auf eine relative oder absolute Entkopplung von Wirtschaftswachstum und Umweltnutzung. Grüne Technologien, Effizienzsteigerungen und Umweltinnovationsmanagement dienen dazu, Umweltgrenzen einzuhalten – ohne das Wachstumsparadigma grundsätzlich in Frage zu stellen.
 

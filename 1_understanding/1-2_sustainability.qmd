@@ -133,7 +133,7 @@ Das etablierte Drei-Säulen-Modell der Nachhaltigkeit, das im Brundtland-Bericht
 
 ### Nachhaltigkeit als Schnittmenge
 
-![Nachhaltigkeit als Schnittmenge. Quelle: Eigene Darstellung.](images/sustainability-intersection.jpg){#fig-sustainability-intersection}
+![Nachhaltigkeit als Schnittmenge. Quelle: Eigene Darstellung.](images/sustainability-intersection.png){#fig-sustainability-intersection}
 
 Ein Modell, das die drei Sektoren als Venn-Diagramm (überlappende Ringe oder Kreise, manchmal auch als Schnittmengen- oder Triadenmodell bezeichnet) darstellt, bietet eine Alternative zu den separaten Säulen und betont die Verflechtung der drei Dimensionen. Dieses Modell veranschaulicht, dass zwischen zwei Bereichen eine engere Verbindung bestehen kann und dass die Grenzen fliessend sind.
 
@@ -141,13 +141,13 @@ Ein Modell, das die drei Sektoren als Venn-Diagramm (überlappende Ringe oder Kr
 
 @giddingsEnvironmentEconomySociety2002 stellen die Idee separater Sphären für Wirtschaft, Gesellschaft und Umwelt in Frage. Sie schlagen ein „verschachteltes" Modell vor, bei dem die Wirtschaft als Teil der Gesellschaft betrachtet wird, die wiederum in die Umwelt eingebettet ist. Dieses Modell, so ihre Argumentation, stellt sicher, dass wirtschaftliche Entscheidungen stets durch soziale und ökologische Faktoren begrenzt werden. Globale Ökosysteme bilden die Grundlage für soziale Systeme (d. h. die Gesellschaft). Darin eingebettet ist die Wirtschaft, die den Bedürfnissen der Gesellschaft dient. Ein potenzieller Nachteil dieses Modells besteht jedoch darin, dass die Wirtschaft, wenn sie der Ausgangspunkt aller Nachhaltigkeitsüberlegungen ist, Gefahr läuft, gegenüber sozialen und ökologischen Überlegungen priorisiert zu werden.
 
-![Das verschachtelte Modell der Nachhaltigkeit. Quelle: Eigene Darstellung basierend auf @giddingsEnvironmentEconomySociety2002 [pp. 192]).](images/sustainability-nested.jpg){#fig-sustainability-nested}
+![Das verschachtelte Modell der Nachhaltigkeit. Quelle: Eigene Darstellung basierend auf @giddingsEnvironmentEconomySociety2002 [pp. 192]).](images/sustainability-nested.png){#fig-sustainability-nested}
 
 ### Ein vierdimensionales Nachhaltigkeitsmodell
 
 Ein Problem des Drei-Säulen-Modells der Nachhaltigkeit besteht darin, dass unklar ist, was unter den weit gefassten „sozialen" Bereich fällt. Es wurde daher vorgeschlagen, eine vierte Dimension hinzuzufügen, um bestimmte Aspekte zu betonen, die sonst im sozialen Sektor verborgen bleiben könnten. Der australische Kulturkommentator Jon Hawkes hat beispielsweise vorgeschlagen, „kulturelle Vitalität" als vierte Säule der Nachhaltigkeit hinzuzufügen, zusätzlich zu ökologischen, wirtschaftlichen und sozialen Belangen.
 
-![Vierdimensionales Nachhaltigkeitsmodell. Quelle: Eigene Darstellung, adaptiert von @hawkesFourthPillarSustainability2001.](images/sustainability-4-dimensions.jpg){#fig-sustainability-4-dimensions}
+![Vierdimensionales Nachhaltigkeitsmodell. Quelle: Eigene Darstellung, adaptiert von @hawkesFourthPillarSustainability2001.](images/sustainability-4-dimensions.png){#fig-sustainability-4-dimensions}
 
 Kulturelle Nachhaltigkeit wird oft als Teil der sozialen Nachhaltigkeit betrachtet. Manchmal wird auch der Begriff „soziokulturelle Nachhaltigkeit" verwendet. In diesem Zusammenhang bezieht sich „Kultur" auf Aspekte wie Chancengleichheit, Partizipationsmöglichkeiten, Nachhaltigkeitsbewusstsein und allgemeine Betriebs- und Verhaltensmodelle [@murphySocialPillarSustainable2012]. Es ist offensichtlich, dass die sozialen und kulturellen Dimensionen eng miteinander verknüpft sind. Kulturelle Prozesse beeinflussen unser soziales Leben und unsere Sichtweise auf soziale Nachhaltigkeit, wie zum Beispiel den Wert, den wir Gleichheit als soziales Ziel beimessen. Umgekehrt beeinflussen soziale Strukturen und Institutionen kulturelle Praktiken und Urteile. Trotz dieser engen Verbindung können kulturelle und soziale Nachhaltigkeit auch als separate Dimensionen oder Perspektiven der Nachhaltigkeit betrachtet werden.
 

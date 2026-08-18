@@ -73,7 +73,7 @@ df |>
 
 Da Nachhaltige Entwicklung ein normatives Leitbild ist, ist es wichtig, zwischen deskriptiver (empirisch-analytischer) und präskriptiver (normativer) Forschung zu unterscheiden. Deskriptive Aussagen beschreiben den aktuellen Zustand („Sein"), während normative Aussagen den idealen Zustand („Sollen") darstellen. Im Alltag wird diese Unterscheidung zwischen „Sein" und „Sollen" oft nicht wahrgenommen, doch für die Wissenschaft ist sie von entscheidender Bedeutung.
 
-![Unterscheidung zwischen empirisch-analytisch und normativ. Quelle: Eigene Darstellung.](images/emprical-analytical_normative.jpg){#fig-emprical-analytical_normative}
+![Unterscheidung zwischen empirisch-analytisch und normativ. Quelle: Eigene Darstellung.](images/emprical-analytical_normative.png){#fig-emprical-analytical_normative}
 
 Es ist wichtig zu beachten, dass „Sein"- und „Sollen"-Aussagen unterschiedliche Qualitäten und Gegenstandsbereiche haben und nicht ohne weitere Erklärung miteinander verknüpft werden können. Dieses Verständnis bildet die Grundlage von Humes Gesetz, das besagt, dass normative Aussagen darüber, „was sein soll", nicht aus deskriptiven Aussagen darüber, „was ist", abgeleitet werden können. Ein drastisches Beispiel: Die Tatsache, dass täglich rund 24.000 Menschen verhungern, erlaubt keinerlei Schluss darüber, ob dies gut oder schlecht ist. Ohne eine Bewertung kann keine normative Aussage darüber getroffen werden, ob dies verhindert werden sollte. Hume wies darauf hin, dass viele Wissenschaftler\*innen seiner Zeit diese entscheidende Unterscheidung häufig vernachlässigten – und dies gilt bis heute:
 
@@ -95,7 +95,7 @@ Webers Forderung nach Wertfreiheit in der empirischen Wissenschaft wurde häufig
 
 Die Nachhaltigkeitsforschung befasst sich mit Herausforderungen, die die langfristige Sicherung der gesellschaftlichen Entwicklungsbedingungen bedrohen. Im Kontext der Nachhaltigen Entwicklung als gesamtgesellschaftlicher Aufgabe beschreibt das Forum für Klima und Globalen Wandel der Akademie der Naturwissenschaften Schweiz drei verschiedene Wissensarten [@proclimResearchSustainabilityGlobal1997]: System-, Ziel- und Transformationswissen. Diese drei Wissensarten lassen sich drei grundlegenden Ebenen zuordnen: 1) der analytischen Ebene, die auf die Generierung von Systemwissen abzielt, 2) der normativen Ebene, die Ziel- und Orientierungswissen entwickelt, und 3) der operativen Ebene, die auf die Erzeugung von Gestaltungs- bzw. Transformationswissen ausgerichtet ist. @fig-Three-Knowledge-Types zeigt die drei Wissensarten in Relation zu empirisch-analytischer und normativer Forschung.
 
-![Die drei Wissensarten. Quelle: Eigene Darstellung basierend auf @proclimResearchSustainabilityGlobal1997.](images/Three-Knowledge-Types.jpg){#fig-Three-Knowledge-Types}
+![Die drei Wissensarten. Quelle: Eigene Darstellung basierend auf @proclimResearchSustainabilityGlobal1997.](images/Three-Knowledge-Types.png){#fig-Three-Knowledge-Types}
 
 **Systemwissen** bezieht sich auf das Verständnis des aktuellen Zustands. Im Kontext Nachhaltiger Entwicklung untersucht die Forschung relevante Strukturen und Prozesse, beschreibt und erklärt deren Komplexität und Dynamik. Dabei kommen verschiedene Methoden zum Einsatz, darunter qualitative und quantitative Ansätze, Mixed-Methods-Verfahren, Experimente und systemdynamische Ansätze. Ebenso werden Prognosen, Rückblicke und Szenarioanalysen genutzt. Die meisten Studien, die Systemwissen erzeugen, fallen in den Bereich der empirischen Forschung.
 
