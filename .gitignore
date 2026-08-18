@@ -6,3 +6,13 @@
 /.quarto/
 
 **/*.quarto_ipynb
+
+# stray root-level renders (output-dir is docs/, these are duplicates left by
+# running `quarto render` without --output-dir)
+/index.html
+/intro.html
+/1_understanding/1_intro.html
+/2_approaches/2_intro.html
+/3_ecological-sustainability/3_intro.html
+/4_social-sustainability/4_intro.html
+/5_economic-sustainability/5_intro.html
