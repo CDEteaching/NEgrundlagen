@@ -80,10 +80,10 @@ df <- data.frame(
   Kategorie = c("Narrativ", "Grundidee", "Theorien", "Ziele", "Folgen"),
   `1950er/60er Jahre` = c(
     "Wirtschaftswachstum, Modernisierung und Integration in die Weltwirtschaft",
-    "Aufholentwicklung durch Industrialisierung und Grossprojekte", "Modernisierungstheorien (Stufentheorien)","Geopolitische Einordnung der „Dritten Welt“; Eindämmung des Kommunismus, Modernisierung der Landwirtschaft, rasche Industrialisierung und technologischer Fortschritt, Erschliessung neuer Märkte", "Wirtschaftliche Abhängigkeit und Verschuldung nehmen zu, Einkommensgefälle wächst, Armut steigt, ökologische Schäden durch Übernutzung und unangepasste Technologien, undemokratische Regime werden aus geopolitischen Gründen unterstützt"),
+    "Aufholentwicklung durch Industrialisierung und Grossprojekte", "Modernisierungs­theorien (Stufentheorien)","Geopolitische Einordnung der „Dritten Welt“; Eindämmung des Kommunismus, Modernisierung der Landwirtschaft, rasche Industrialisierung und technologischer Fortschritt, Erschliessung neuer Märkte", "Wirtschaftliche Abhängigkeit und Verschuldung nehmen zu, Einkommensgefälle wächst, Armut steigt, ökologische Schäden durch Übernutzung und unangepasste Technologien, undemokratische Regime werden aus geopolitischen Gründen unterstützt"),
   `1970er Jahre` = c(
     "Bekämpfung extremer Armut und Ungleichheit",
-    "Befriedigung der Grundbedürfnisse, Wachstum und effektive Verteilung", "Dependenztheorien versus Modernisierungstheorien","Hilfe zur Selbsthilfe, angepasste Technologien, ländliche Entwicklung, Frauenförderung", "Selektive Fortschritte in Bildung und Gesundheit, Probleme mit Verschuldung und Umweltschäden"),
+    "Befriedigung der Grundbedürfnisse, Wachstum und effektive Verteilung", "Dependenztheorien versus Modernisierungs­theorien","Hilfe zur Selbsthilfe, angepasste Technologien, ländliche Entwicklung, Frauenförderung", "Selektive Fortschritte in Bildung und Gesundheit, Probleme mit Verschuldung und Umweltschäden"),
   `1980er Jahre` = c(
     "Verlorenes Jahrzehnt: Zusammenbruch der Rohstoffpreise; Zunahme der Verschuldung",
     "Überwindung der Schuldenkrise durch Strukturanpassungsmassnahmen, Abbau staatlicher Leistungen","Marktliberalismus und Neoliberalismus","Steigerung der Exporte, ausgeglichene Staatshaushalte", "Lebensstandard der ärmsten Bevölkerungsgruppen verschlechtert sich stark, Umweltausbeutung, Schuldenspirale, zunehmende Abhängigkeit des Globalen Südens vom Globalen Norden"),
@@ -191,11 +191,11 @@ library(kableExtra)
 is_pdf <- knitr::is_latex_output()
 
 df <- data.frame(
-  Kategorie = c("Was soll erhalten werden?", "Warum?", "Wie? (Massnahmen)", "Substituierbarkeit", "Ethik"),
+  Kategorie = c("Was soll erhalten werden?", "Warum?", "Wie? (Massnahmen)", "Substituier­barkeit", "Ethik"),
   `Sehr schwache Nachhaltigkeit` = c(
     "Gesamtkapital",
     "Maximierung des wirtschaftlichen Gewinns und des individuellen Wohlbefindens (BIP)",
-    "Wachstumsorientierung durch Förderung von Technologie und Innovation",
+    "Wachstums­orientierung durch Förderung von Technologie und Innovation",
     "Im Prinzip unbegrenzt, natürliche Ressourcen können durch Technologie und Handel ersetzt werden",
     "Anthropozentrisch, kurzfristige Vorteile haben Vorrang"),
   `Schwache Nachhaltigkeit` = c(

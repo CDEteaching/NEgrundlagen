@@ -58,7 +58,7 @@ library(kableExtra)
 is_pdf <- knitr::is_latex_output()
 
 df <- data.frame(
-  Dimension = c("Verteilungsgerechtigkeit", "Verfahrensgerechtigkeit", "Anerkennungsgerechtigkeit"),
+  Dimension = c("Verteilungs­gerechtigkeit", "Verfahrens­gerechtigkeit", "Anerkennungs­gerechtigkeit"),
   `Verteilungsgerechtigkeit` = c(
     "—",
     "Die Teilnahme an Entscheidungsprozessen kann deren Ergebnisse beeinflussen – und damit, wie Vor- und Nachteile zwischen Einzelpersonen und Gruppen verteilt werden.",
@@ -205,7 +205,7 @@ df |>
   ) |>
   row_spec(0, bold = TRUE) |>
   column_spec(1, width = if (is_pdf) "1.6cm" else NA, bold = TRUE) |>
-  column_spec(2:4, width = if (is_pdf) "3.0cm" else NA)
+  column_spec(2:5, width = if (is_pdf) "2.5cm" else NA)
 
 
 ```
@@ -264,12 +264,12 @@ make_bullets <- function(items, pdf = is_pdf) {
 }
 
 df <- data.frame(
-  `Schlüsselelement [@schieferEssentialsSocialCohesion2017]` = c(
+  `Schlüsselelement (Schiefer und van der Noll 2017)` = c(
     "Soziale Beziehungen",
     "Identifikation mit der Gesellschaft",
     "Orientierung am Gemeinwohl",
     "Querschnittsthema"),
-  `Indikatoren [@fsoSocialCohesion2025]`= c(
+  `Indikatoren (FSO 2025)`= c(
     make_bullets(c("Politische Teilhabe (z. B. Wahlen und Abstimmungen)",
                    "Kulturelle Teilhabe",
                    "Erfahrung von Diskriminierung")),
@@ -284,7 +284,7 @@ df <- data.frame(
 )
 
 df |>
-  kbl(booktabs = TRUE, align = "l", longtable = is_pdf) |>
+  kbl(booktabs = TRUE, align = "l", longtable = is_pdf, escape = FALSE) |>
   kable_styling(
     bootstrap_options = c("striped", "hover", "condensed"),
     latex_options = if (is_pdf) c("hold_position", "repeat_header") else NULL,

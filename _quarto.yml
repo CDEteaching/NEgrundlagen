@@ -106,10 +106,7 @@ format:
         \usepackage{pdfpages}
         \usepackage[font=footnotesize,labelfont={footnotesize}]{caption}
         \renewcommand{\maketitle}{}
-        \usepackage[skins]{tcolorbox}
-        \makeatletter
-        \pgfkeys{/tcb/breakable/.code=\relax}
-        \makeatother
+        \usepackage[skins,breakable]{tcolorbox}
 
     include-before-body:
       text: |
