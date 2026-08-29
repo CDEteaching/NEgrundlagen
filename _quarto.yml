@@ -30,7 +30,7 @@ book:
     logo: images/cdelogo_e.png
     tools:
       - icon: file-earmark-pdf
-        href: https://cdeteaching.github.io/NEgrundlagen/pdf/Lehrbuch_M1_1.pdf
+        href: https://github.com/CDEteaching/NEgrundlagen/blob/main/pdf/Lehrbuch_M1_1.pdf
         text: "Skript (PDF)"
     
   page-footer:

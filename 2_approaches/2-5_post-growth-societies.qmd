@@ -8,7 +8,7 @@ Das Dilemma in dieser Debatte besteht darin, dass die meisten Ansätze für eine
 
 Das Konzept der „Suffizienz" ist ein integraler Bestandteil der Postwachstumsdebatte [@schneidewindDamitGutesLeben2013]. Suffizienz zielt darauf ab, Überkonsum zu reduzieren und alternative Lebensstile, Konsumgewohnheiten und Produktionsmuster zu fördern. Um eine weitverbreitete Akzeptanz von Suffizienz zu fördern, ist ein rechtlicher und institutioneller Rahmen erforderlich, der suffizienzorientierte Praktiken anreizt und erleichtert.
 
-![Die vier Bereiche einer Suffizienzpolitik. Quelle: @schneidewindInstitutionalFrameworkSufficiency2014](Images/Fig2_8__PoliticsSufficiency.png){#fig-development-planetary-boundaries}
+![Die vier Bereiche einer Suffizienzpolitik. Quelle: @schneidewindInstitutionalFrameworkSufficiency2014](images/Fig2_8__PoliticsSufficiency.png){#fig-development-planetary-boundaries}
 
 Eine Politik zur Förderung von Suffizienz kann unsere Entscheidungen aktiv gestalten, durch attraktive suffizienzorientierte Angebote und Dienstleistungen. Sie kann auch das Bewusstsein schärfen und Orientierung für die Übernahme suffizienzorientierter Lebensstile und Praktiken bieten. Dieser umfassende Ansatz zielt darauf ab, den Konsum auf das Notwendige und Sinnvolle zu lenken und so den übermässigen Ressourcenverbrauch zu reduzieren.
 
@@ -42,11 +42,11 @@ Ein bedeutender Meilenstein war die Entwicklung des **Human Development Index (H
 
 Ein weiterführender Ansatz ist der **Genuine Progress Indicator (GPI)**, der beim persönlichen Konsum ansetzt (wie das BIP), aber externe Kosten wie Umweltzerstörung, Ressourcenverbrauch, Kriminalität und Einkommensungleichheit abzieht, um das Verhältnis von Kosten und Nutzen des Wirtschaftswachstums offenzulegen. Er berücksichtigt zudem den Wert unbezahlter Leistungen wie Hausarbeit und ehrenamtliches Engagement. Erstmals von @dalyCommonGoodRedirecting1989 als Sustainable Economic Welfare (ISEW) vorgeschlagen, ist der GPI in der ökologischen Ökonomie etabliert [vgl. @talberthGenuineProgressIndicator2007a]. Im Gegensatz zum BIP, das typischerweise im Laufe der Zeit steigt, stagniert oder sinkt der GPI in vielen Hocheinkommensländern seit den 1980er Jahren – was auf eine mögliche Entkopplung von Wachstum und Wohlbefinden hindeutet.
 
-![Vergleich von globalem Bruttoinlandsprodukt (BIP) und Genuine Progress Indicator (GPI). Quelle: Eigene Darstellung basierend auf @kubiszewskiFutureValueEcosystem2017](Images/Fig2_9__GDPxGPI.jpg){#fig-GDPxGPI}
+![Vergleich von globalem Bruttoinlandsprodukt (BIP) und Genuine Progress Indicator (GPI). Quelle: Eigene Darstellung basierend auf @kubiszewskiFutureValueEcosystem2017](images/Fig2_9__GDPxGPI.jpg){#fig-GDPxGPI}
 
 Ein weiteres häufig verwendetes Mass ist der **Ökologische Fussabdruck**, der den menschlichen Ressourcenverbrauch in globale Hektar umrechnet. Er steht für die biologisch produktive Fläche, die benötigt wird, um den Ressourcenbedarf einer Person, Region oder eines Landes zu decken – einschliesslich Fläche für Nahrungsmittelproduktion, Siedlungen und Kohlenstoffabsorption. Entwickelt von @wackernagelOurEcologicalFootprint1996 und gefördert durch das Global Footprint Network, ist er insbesondere in der Umweltbildung weit verbreitet. Der Ökologische Fussabdruck zeigt auf, ob eine Bevölkerung innerhalb ihrer ökologischen Verhältnisse lebt – d. h. ob sie ihren gerechten Anteil an der globalen Biokapazität überschreitet.
 
-![Zusammenhang zwischen Ökologischem Fussabdruck und Human Development Index (Quelle: https://www.footprintnetwork.org)](Images/Fig2_10__EcoFootprintHDI.png){#fig-EcoFootprintHDI}
+![Zusammenhang zwischen Ökologischem Fussabdruck und Human Development Index (Quelle: https://www.footprintnetwork.org)](images/Fig2_10__EcoFootprintHDI.png){#fig-EcoFootprintHDI}
 
 Der **Happy Planet Index (HPI)** bietet einen subjektiveren Ansatz und kombiniert Lebenszufriedenheit (auf Umfragebasis), Lebenserwartung und Ökologischen Fussabdruck, um das „Wohlbefinden pro Einheit Umweltverbrauch" zu berechnen. Entwickelt von der New Economics Foundation zeigt der HPI, dass eine hohe Lebenszufriedenheit nicht zwangsläufig einen hohen Ressourcenverbrauch erfordert. Mitteleinkommensländer wie Costa Rica schneiden häufig besser ab als Industrienationen mit nicht nachhaltigen Konsummustern [@nefHappyPlanetIndex2006].
 
