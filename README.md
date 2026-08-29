@@ -18,7 +18,7 @@ Absolvent*innen sind darauf vorbereitet, in Wissenschaft, öffentlicher Verwaltu
 
 ## 📚 Über diese Plattform – Ergänzende Lernangebote
 
-Derzeit stellen wir ergänzende Lernangebote für Studierende des Bachelor Studienprogramms Nachhaltige Entwicklung bereit.
+Wir stellen ergänzende Lernangebote für Studierende der CDE Studienprogramme bereit.
 
 Diese Kurse sind darauf ausgerichtet:
 
