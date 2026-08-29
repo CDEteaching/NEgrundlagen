@@ -28,7 +28,7 @@ Diese Kurse sind darauf ausgerichtet:
 
 ## 📜 Lizenz
 
-Sofern nicht anders angegeben, stehen alle Materialien unter der Creative Commons BY-NC-SA 4.0 Lizenz. Für das Online-Buch und den PDF-Ausdruck wurde <a href="https://quarto.org/">Quarto</a> verwendet, für die *Quiz me if you can*-Abschnitte in jedem Kapitel das quelloffene R-Paket <a href="https://cran.r-project.org/package=exams">"exams"</a>.
+Sofern nicht anders angegeben, stehen alle Materialien unter der Creative Commons BY-NC-SA 4.0 Lizenz. Für das Online-Buch und den PDF-Ausdruck wurde <a href="https://quarto.org/">Quarto</a> verwendet, für die Quiz-Abschnitte in jedem Kapitel das quelloffene R-Paket <a href="https://cran.r-project.org/package=exams">"exams"</a>.
 
 ## 📖 Zitierhinweis
 
