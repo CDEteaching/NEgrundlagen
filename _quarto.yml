@@ -12,6 +12,7 @@ execute:
   echo: false
 
 lang: de-CH
+csl: chicago-author-date-de.csl
 
 book:
   title: "Nachhaltigkeit: Grundlagen und Herausforderungen"
