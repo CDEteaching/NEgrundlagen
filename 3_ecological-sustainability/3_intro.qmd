@@ -21,13 +21,13 @@ Ethische Urteile und Begründungen prägen, welche ökologischen Eigenschaften u
 ::: {.callout-tip collapse="true"}
 #### Konkrete Beispiele ethischer Beurteilungen im Kontext ökologischer Nachhaltigkeit
 
-Wildtierschutz: Sollten wir in natürliche Wildtierpopulationen eingreifen, um gefährdete Arten zu schützen und das Gleichgewicht der Ökosysteme zu erhalten? Oder sollten wir die Natur so unberührt wie möglich lassen, auch wenn dies den Verlust einiger Arten bedeutet?
+**Wildtierschutz**: Sollten wir in natürliche Wildtierpopulationen eingreifen, um gefährdete Arten zu schützen und das Gleichgewicht der Ökosysteme zu erhalten? Oder sollten wir die Natur so unberührt wie möglich lassen, auch wenn dies den Verlust einiger Arten bedeutet?
 
-Biotechnologische Eingriffe: Ist es moralisch vertretbar, biotechnologische Methoden wie Gentechnik einzusetzen, um die ökologischen Eigenschaften von Organismen zu verändern und möglicherweise Ökosysteme zu beeinflussen?
+**Biotechnologische Eingriffe**: Ist es moralisch vertretbar, biotechnologische Methoden wie Gentechnik einzusetzen, um die ökologischen Eigenschaften von Organismen zu verändern und möglicherweise Ökosysteme zu beeinflussen?
 
-Schutz gefährdeter Arten: Sollten wir uns auf den Schutz und die Erhaltung gefährdeter Arten konzentrieren, um die Biodiversität zu erhalten, oder sollten wir uns auf die Erhaltung weit verbreiteter Arten konzentrieren, die für die menschliche Ernährung oder die Wirtschaft wichtiger sind?
+**Schutz gefährdeter Arten**: Sollten wir uns auf den Schutz und die Erhaltung gefährdeter Arten konzentrieren, um die Biodiversität zu erhalten, oder sollten wir uns auf die Erhaltung weit verbreiteter Arten konzentrieren, die für die menschliche Ernährung oder die Wirtschaft wichtiger sind?
 
-Schutz von Ökosystemen: Sollten wir Schutzgebiete einrichten, um bedrohte Ökosysteme und Arten zu erhalten, auch wenn dies lokale Gemeinschaften in ihren wirtschaftlichen Aktivitäten einschränkt? Wie können wir eine Balance zwischen Schutz und nachhaltiger Nutzung herstellen?
+**Schutz von Ökosystemen**: Sollten wir Schutzgebiete einrichten, um bedrohte Ökosysteme und Arten zu erhalten, auch wenn dies lokale Gemeinschaften in ihren wirtschaftlichen Aktivitäten einschränkt? Wie können wir eine Balance zwischen Schutz und nachhaltiger Nutzung herstellen?
 :::
 
 {{< include "3-1_Ecosystems.qmd" >}}

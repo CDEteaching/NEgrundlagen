@@ -62,6 +62,8 @@ book:
 
 bibliography: references.bib
 
+number-depth: 3
+
 format:
   html:
     cover-image: cover.png

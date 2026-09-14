@@ -1,10 +1,10 @@
+# Vorwort {.unnumbered}
+
 ::: {.callout-note collapse="false"}
-### Disclaimer deutsche Übersetzung {.unnumbered}
+#### Disclaimer deutsche Übersetzung {.unnumbered}
 
 Die Originalfassung dieses Lehrbuch wurde auf Englisch geschrieben und vollständig editiert (<https://cdeteaching.github.io/Basics-of-sustainability/>). Die deutsche Version wurde basierend auf dem CDE Style Guide mittels Claude Code Sonnet 5 (Anthropic) erarbeitet und redigiert durch die Autorenschaft. Die deutsche Version ist aktuell auf EN V1.3 synchronisiert.
 :::
-
-# Vorwort {.unnumbered}
 
 Diese Einführung in die Grundlagen und Herausforderungen der Nachhaltigen Entwicklung richtet sich an Studierende und Lehrende, die sich aus unterschiedlichen disziplinären Perspektiven mit den drängendsten Fragen unserer Zeit befassen. Sie entstand aus dem Wunsch, ein gemeinsames Verständnis zu fördern – über Disziplingrenzen hinweg, in Lehre, Forschung und gesellschaftlicher Praxis.
 
