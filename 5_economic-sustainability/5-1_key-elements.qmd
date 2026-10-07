@@ -17,7 +17,7 @@ Dies ist auch die Grundlage für den einfachen Wirtschaftskreislauf, der die kom
 
 ![**Erweiterter Wirtschaftskreislauf** -- Umfasst Banken, Staat und Aussenhandel und zeigt, wie Ersparnisse, Steuern und Importe als *Abflüsse* wirken, während Kredite, Staatsausgaben und Exporte als *Zuflüsse* fungieren.](images/Fig5_2b_EconCycle_complex.png){#fig-ext-cycle}
 
-Quelle: Eigene Darstellungen.
+Quelle: Eigene Darstellungen nach @rogallVolkswirtschaftslehreFuerSozialwissenschaftler2013 [S. 32] und @bauerleGrundfragenOkonomie2026 [S. 29].
 :::
 
 #### Kritik an der konventionellen Wirtschaftskreislaufanalyse

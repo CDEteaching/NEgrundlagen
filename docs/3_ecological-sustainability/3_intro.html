@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="de-CH" xml:lang="de-CH"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -14,10 +14,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -63,14 +66,14 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-4fffde74ef3b9adfe0b82ba81ae250ba.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-e8282bee7637e0ceba70fdf198bf2ab0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-4fffde74ef3b9adfe0b82ba81ae250ba.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-5ce2f31a78f6e740b8aa0df8838b0625.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-db150b37408ade8d98d47d3c9edab02a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-5ce2f31a78f6e740b8aa0df8838b0625.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -98,9 +101,12 @@ div.csl-indent {
     "search-label": "Suchen"
   }
 }</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&amp;family=Fira+Code:wght@400;500&amp;display=swap" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -965,19 +971,19 @@ Der Kapazitätsaufbau zur Unterstützung der Transformation zur Erreichung der S
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche der folgenden Aussagen zum Konzept der Ökosystemdienstleistungen sind korrekt? (Mehr als eine Aussage kann richtig sein.)</p>
-<div id="webex-b0f0845e6d022b98d1d34643ae2673ea" class="webex-checkboxgroup" data-answer="OQBKARQEGVUaVBwCHlMVCDk=">
-<label><input type="checkbox" autocomplete="off" name="b0f0845e6d022b98d1d34643ae2673ea"><span>Das Konzept der Ökosystemdienstleistungen bezeichnet die jährliche Biomasseanhäufung innerhalb eines Ökosystems, gemessen in Kilojoule.</span></label><label><input type="checkbox" autocomplete="off" name="b0f0845e6d022b98d1d34643ae2673ea"><span>Es lassen sich vier Arten von Ökosystemdienstleistungen unterscheiden: Regulierungsdienstleistungen, Versorgungsdienstleistungen, kulturelle Dienstleistungen und Unterstützungsdienstleistungen.</span></label><label><input type="checkbox" autocomplete="off" name="b0f0845e6d022b98d1d34643ae2673ea"><span>Das Konzept der Ökosystemdienstleistungen ist ein Mass für Biodiversität und damit auch ein Mass für die Resilienz eines Ökosystems.</span></label><label><input type="checkbox" autocomplete="off" name="b0f0845e6d022b98d1d34643ae2673ea"><span>Der Begriff „Ökosystemdienstleistungen” ist ein wissenschaftlicher Begriff, der die Zusammenkünfte naturbezogener Religionen (sogenannter Naturreligionen) wie des Animismus beschreibt, bei denen die Natur als Ganzes verehrt wird.</span></label><label><input type="checkbox" autocomplete="off" name="b0f0845e6d022b98d1d34643ae2673ea"><span>Es lassen sich drei Arten von Ökosystemdienstleistungen unterscheiden: Vermeidungs-, Verbesserungs- und Verlagerungsdienstleistungen.</span></label><label><input type="checkbox" autocomplete="off" name="b0f0845e6d022b98d1d34643ae2673ea"><span>Im Gegensatz zum Konzept der Nachhaltigen Entwicklung ist das Konzept der Ökosystemdienstleistungen nicht anthropozentrisch, sondern ökozentrisch.</span></label><label><input type="checkbox" autocomplete="off" name="b0f0845e6d022b98d1d34643ae2673ea"><span>Das Konzept der Ökosystemdienstleistungen bezeichnet die direkten und indirekten Vorteile, die Menschen aus Ökosystemen ziehen.</span></label><label><input type="checkbox" autocomplete="off" name="b0f0845e6d022b98d1d34643ae2673ea"><span>Das Konzept der Ökosystemdienstleistungen umfasst alle Massnahmen, die Menschen zur Erhaltung von Ökosystemen ergreifen.</span></label>
+<div id="webex-9f31ed02ad4809ebd5e10d9e9fd5b8b9" class="webex-checkboxgroup" data-answer="YlYfAUlUHAJNVBgJHAhJUjk=">
+<label><input type="checkbox" autocomplete="off" name="9f31ed02ad4809ebd5e10d9e9fd5b8b9"><span>Das Konzept der Ökosystemdienstleistungen bezeichnet die jährliche Biomasseanhäufung innerhalb eines Ökosystems, gemessen in Kilojoule.</span></label><label><input type="checkbox" autocomplete="off" name="9f31ed02ad4809ebd5e10d9e9fd5b8b9"><span>Das Konzept der Ökosystemdienstleistungen ist ein Mass für Biodiversität und damit auch ein Mass für die Resilienz eines Ökosystems.</span></label><label><input type="checkbox" autocomplete="off" name="9f31ed02ad4809ebd5e10d9e9fd5b8b9"><span>Im Gegensatz zum Konzept der Nachhaltigen Entwicklung ist das Konzept der Ökosystemdienstleistungen nicht anthropozentrisch, sondern ökozentrisch.</span></label><label><input type="checkbox" autocomplete="off" name="9f31ed02ad4809ebd5e10d9e9fd5b8b9"><span>Es lassen sich drei Arten von Ökosystemdienstleistungen unterscheiden: Vermeidungs-, Verbesserungs- und Verlagerungsdienstleistungen.</span></label><label><input type="checkbox" autocomplete="off" name="9f31ed02ad4809ebd5e10d9e9fd5b8b9"><span>Das Konzept der Ökosystemdienstleistungen umfasst alle Massnahmen, die Menschen zur Erhaltung von Ökosystemen ergreifen.</span></label><label><input type="checkbox" autocomplete="off" name="9f31ed02ad4809ebd5e10d9e9fd5b8b9"><span>Das Konzept der Ökosystemdienstleistungen bezeichnet die direkten und indirekten Vorteile, die Menschen aus Ökosystemen ziehen.</span></label><label><input type="checkbox" autocomplete="off" name="9f31ed02ad4809ebd5e10d9e9fd5b8b9"><span>Es lassen sich vier Arten von Ökosystemdienstleistungen unterscheiden: Regulierungsdienstleistungen, Versorgungsdienstleistungen, kulturelle Dienstleistungen und Unterstützungsdienstleistungen.</span></label><label><input type="checkbox" autocomplete="off" name="9f31ed02ad4809ebd5e10d9e9fd5b8b9"><span>Der Begriff „Ökosystemdienstleistungen” ist ein wissenschaftlicher Begriff, der die Zusammenkünfte naturbezogener Religionen (sogenannter Naturreligionen) wie des Animismus beschreibt, bei denen die Natur als Ganzes verehrt wird.</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Das Konzept der Ökosystemdienstleistungen bezeichnet die direkten und indirekten Vorteile, die Menschen aus Ökosystemen ziehen, und ist damit ausdrücklich anthropozentrisch. Eine gängige Klassifikation unterscheidet vier Arten von Ökosystemdienstleistungen: Versorgungs-, Regulierungs-, kulturelle und Unterstützungsdienstleistungen. Die übrigen Aussagen verwechseln Ökosystemdienstleistungen mit Biodiversitätsmassen, ökologischen Produktivitätsmassen, Schutzmassnahmen, alternativen Klassifikationen oder unverwandten kulturellen bzw. religiösen Konzepten.</p>
 <ul>
 <li>False</li>
+<li>False</li>
+<li>False</li>
+<li>False</li>
+<li>False</li>
 <li>True</li>
-<li>False</li>
-<li>False</li>
-<li>False</li>
-<li>False</li>
 <li>True</li>
 <li>False</li>
 </ul>
@@ -986,41 +992,41 @@ Der Kapazitätsaufbau zur Unterstützung der Transformation zur Erreichung der S
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Was sind die vier Hauptkategorien von Ökosystemdienstleistungen?</p>
-<div id="webex-f6d58be39e760d19796ac4f24af4a67a" class="webex-radiogroup" data-answer="PQZIBRRTOA==">
-<label><input type="radio" autocomplete="off" name="f6d58be39e760d19796ac4f24af4a67a"><span>Wirtschaftliche, soziale, ökologische und kulturelle Dienstleistungen</span></label><label><input type="radio" autocomplete="off" name="f6d58be39e760d19796ac4f24af4a67a"><span>Materielle, spirituelle, industrielle und soziale Dienstleistungen</span></label><label><input type="radio" autocomplete="off" name="f6d58be39e760d19796ac4f24af4a67a"><span>Versorgungs-, Regulierungs-, kulturelle und Unterstützungsdienstleistungen</span></label>
+<div id="webex-bcb63d15bc9bcb581ffe4ea7528820cf" class="webex-radiogroup" data-answer="OVNOBx9UbA==">
+<label><input type="radio" autocomplete="off" name="bcb63d15bc9bcb581ffe4ea7528820cf"><span>Wirtschaftliche, soziale, ökologische und kulturelle Dienstleistungen</span></label><label><input type="radio" autocomplete="off" name="bcb63d15bc9bcb581ffe4ea7528820cf"><span>Versorgungs-, Regulierungs-, kulturelle und Unterstützungsdienstleistungen</span></label><label><input type="radio" autocomplete="off" name="bcb63d15bc9bcb581ffe4ea7528820cf"><span>Materielle, spirituelle, industrielle und soziale Dienstleistungen</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Ökosystemdienstleistungen werden gängigerweise in vier Hauptkategorien eingeteilt: Versorgungsdienstleistungen (z. B. Nahrung und Rohstoffe), Regulierungsdienstleistungen (z. B. Klimaregulierung), kulturelle Dienstleistungen (z. B. Erholung und spirituelle Werte) und Unterstützungsdienstleistungen (z. B. Nährstoffkreisläufe und Bodenbildung).</p>
 <ul>
 <li>False</li>
-<li>False</li>
 <li>True</li>
+<li>False</li>
 </ul>
 </div>
 </div>
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche der folgenden Aussagen treffen auf das Konzept der Ökosystemdienstleistungen zu, welche nicht? (Mehr als eine Aussage kann richtig sein.)</p>
-<div id="webex-2bae90d43c02491539b2c1ec0f527346" class="webex-checkboxgroup" data-answer="aVJNVBUBSARu">
-<label><input type="checkbox" autocomplete="off" name="2bae90d43c02491539b2c1ec0f527346"><span>Ökosystemdienstleistungen sind ein Mass für Biodiversität und folglich für die Resilienz eines Ökosystems.</span></label><label><input type="checkbox" autocomplete="off" name="2bae90d43c02491539b2c1ec0f527346"><span>Ökosystemdienstleistungen lassen sich in folgende Kategorien einteilen: Unterstützungs-, Versorgungs-, Regulierungs- und kulturelle Dienstleistungen.</span></label><label><input type="checkbox" autocomplete="off" name="2bae90d43c02491539b2c1ec0f527346"><span>Ökosystemdienstleistungen bezeichnen die direkten und indirekten Beiträge von Ökosystemen zum menschlichen Wohlergehen.</span></label><label><input type="checkbox" autocomplete="off" name="2bae90d43c02491539b2c1ec0f527346"><span>Ökosystemdienstleistungen bezeichnen die jährliche Biomasseanhäufung innerhalb eines Ökosystems, gemessen in Kilojoule.</span></label>
+<div id="webex-911b6a6423f8e6c77c1b67fc2fddbe51" class="webex-checkboxgroup" data-answer="YgAdUhpRGgVv">
+<label><input type="checkbox" autocomplete="off" name="911b6a6423f8e6c77c1b67fc2fddbe51"><span>Ökosystemdienstleistungen bezeichnen die direkten und indirekten Beiträge von Ökosystemen zum menschlichen Wohlergehen.</span></label><label><input type="checkbox" autocomplete="off" name="911b6a6423f8e6c77c1b67fc2fddbe51"><span>Ökosystemdienstleistungen sind ein Mass für Biodiversität und folglich für die Resilienz eines Ökosystems.</span></label><label><input type="checkbox" autocomplete="off" name="911b6a6423f8e6c77c1b67fc2fddbe51"><span>Ökosystemdienstleistungen bezeichnen die jährliche Biomasseanhäufung innerhalb eines Ökosystems, gemessen in Kilojoule.</span></label><label><input type="checkbox" autocomplete="off" name="911b6a6423f8e6c77c1b67fc2fddbe51"><span>Ökosystemdienstleistungen lassen sich in folgende Kategorien einteilen: Unterstützungs-, Versorgungs-, Regulierungs- und kulturelle Dienstleistungen.</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Das Konzept der Ökosystemdienstleistungen bezeichnet die direkten und indirekten Beiträge von Ökosystemen zum menschlichen Wohlergehen und wird meist in vier Kategorien gegliedert: Versorgungs-, Regulierungs-, kulturelle und Unterstützungsdienstleistungen. Es dient weder als direktes Mass für Biodiversität oder Ökosystemresilienz, noch beschreibt es biophysikalische Produktivitätsmasse wie die jährliche Biomasseanhäufung.</p>
 <ul>
-<li>False</li>
-<li>True</li>
 <li>True</li>
 <li>False</li>
+<li>False</li>
+<li>True</li>
 </ul>
 </div>
 </div>
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche der folgenden sind Arten von Rückkopplungsmechanismen im Klimasystem? (Mehr als eine Aussage kann richtig sein.)</p>
-<div id="webex-7eea4a07f8cf6ccef9d961e86f89f15b" class="webex-checkboxgroup" data-answer="bFVJUBhQbQ==">
-<label><input type="checkbox" autocomplete="off" name="7eea4a07f8cf6ccef9d961e86f89f15b"><span>Neutrale Rückkopplung</span></label><label><input type="checkbox" autocomplete="off" name="7eea4a07f8cf6ccef9d961e86f89f15b"><span>Negative Rückkopplung</span></label><label><input type="checkbox" autocomplete="off" name="7eea4a07f8cf6ccef9d961e86f89f15b"><span>Positive Rückkopplung</span></label>
+<div id="webex-420c3a4414c4a869675c7c7a3f4c444e" class="webex-checkboxgroup" data-answer="bwIcUh9QaQ==">
+<label><input type="checkbox" autocomplete="off" name="420c3a4414c4a869675c7c7a3f4c444e"><span>Neutrale Rückkopplung</span></label><label><input type="checkbox" autocomplete="off" name="420c3a4414c4a869675c7c7a3f4c444e"><span>Negative Rückkopplung</span></label><label><input type="checkbox" autocomplete="off" name="420c3a4414c4a869675c7c7a3f4c444e"><span>Positive Rückkopplung</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -1035,25 +1041,25 @@ Der Kapazitätsaufbau zur Unterstützung der Transformation zur Erreichung der S
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche der folgenden sind direkte Treiber des Biodiversitätsverlusts? (Mehr als eine Aussage kann richtig sein.)</p>
-<div id="webex-2872d0641f58b4791348665a4feada7c" class="webex-checkboxgroup" data-answer="aQkbA0gBGgRs">
-<label><input type="checkbox" autocomplete="off" name="2872d0641f58b4791348665a4feada7c"><span>Umweltverschmutzung</span></label><label><input type="checkbox" autocomplete="off" name="2872d0641f58b4791348665a4feada7c"><span>Landnutzungsveränderungen</span></label><label><input type="checkbox" autocomplete="off" name="2872d0641f58b4791348665a4feada7c"><span>Klimawandel</span></label><label><input type="checkbox" autocomplete="off" name="2872d0641f58b4791348665a4feada7c"><span>Wirtschaftspolitik</span></label>
+<div id="webex-3f36b5f00603353d41de55b1e88adf12" class="webex-checkboxgroup" data-answer="aFcfBk4ESgFt">
+<label><input type="checkbox" autocomplete="off" name="3f36b5f00603353d41de55b1e88adf12"><span>Klimawandel</span></label><label><input type="checkbox" autocomplete="off" name="3f36b5f00603353d41de55b1e88adf12"><span>Wirtschaftspolitik</span></label><label><input type="checkbox" autocomplete="off" name="3f36b5f00603353d41de55b1e88adf12"><span>Landnutzungsveränderungen</span></label><label><input type="checkbox" autocomplete="off" name="3f36b5f00603353d41de55b1e88adf12"><span>Umweltverschmutzung</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Direkte Treiber des Biodiversitätsverlusts sind Faktoren, die unmittelbar auf Ökosysteme und Arten einwirken. Dazu gehören Landnutzungsveränderungen (z. B. Zerstörung von Lebensräumen), Umweltverschmutzung und Klimawandel. Wirtschaftspolitik hingegen gilt als indirekter Treiber, da sie den Biodiversitätsverlust über sozioökonomische Wirkungspfade beeinflusst und nicht durch direkten ökologischen Druck.</p>
 <ul>
 <li>True</li>
-<li>True</li>
-<li>True</li>
 <li>False</li>
+<li>True</li>
+<li>True</li>
 </ul>
 </div>
 </div>
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche der folgenden Aussagen beschreiben Landnutzungsveränderungen und verwandte Konzepte korrekt? (Mehr als eine Aussage kann richtig sein.)</p>
-<div id="webex-e69bbe9540c92bbdcf08a0a632045d96" class="webex-checkboxgroup" data-answer="PgcVU05UFQUYAU8Jbw==">
-<label><input type="checkbox" autocomplete="off" name="e69bbe9540c92bbdcf08a0a632045d96"><span>Landbedeckung bezeichnet die physischen und biologischen Eigenschaften der Landoberfläche, einschliesslich Vegetation, Topographie und menschlicher Bauwerke.</span></label><label><input type="checkbox" autocomplete="off" name="e69bbe9540c92bbdcf08a0a632045d96"><span>Landnutzungsveränderungen können Biodiversität, Ökosystemfunktionen und Ökosystemdienstleistungen negativ beeinflussen und dadurch das menschliche Wohlergehen einschränken.</span></label><label><input type="checkbox" autocomplete="off" name="e69bbe9540c92bbdcf08a0a632045d96"><span>Landdegradation bezeichnet die Verringerung oder den Verlust der biologischen oder wirtschaftlichen Produktivität von Land infolge von Landnutzung, insbesondere in Trockengebieten.</span></label><label><input type="checkbox" autocomplete="off" name="e69bbe9540c92bbdcf08a0a632045d96"><span>Landsysteme beschreiben ausschliesslich ökologische Prozesse und schliessen soziale, wirtschaftliche und technologische Faktoren aus.</span></label><label><input type="checkbox" autocomplete="off" name="e69bbe9540c92bbdcf08a0a632045d96"><span>Landnutzung beschreibt, wie Menschen die Landbedeckung nutzen, beispielsweise für Landwirtschaft, Siedlung oder Infrastruktur.</span></label><label><input type="checkbox" autocomplete="off" name="e69bbe9540c92bbdcf08a0a632045d96"><span>Landnutzungsveränderung bezeichnet ausschliesslich Veränderungen der Landbedeckung, unabhängig von menschlichen Aktivitäten.</span></label>
+<div id="webex-f0dc966d2ba7cb772b761e50d4d9c5d7" class="webex-checkboxgroup" data-answer="PQFIUhUGGlUeU00HPg==">
+<label><input type="checkbox" autocomplete="off" name="f0dc966d2ba7cb772b761e50d4d9c5d7"><span>Landnutzung beschreibt, wie Menschen die Landbedeckung nutzen, beispielsweise für Landwirtschaft, Siedlung oder Infrastruktur.</span></label><label><input type="checkbox" autocomplete="off" name="f0dc966d2ba7cb772b761e50d4d9c5d7"><span>Landbedeckung bezeichnet die physischen und biologischen Eigenschaften der Landoberfläche, einschliesslich Vegetation, Topographie und menschlicher Bauwerke.</span></label><label><input type="checkbox" autocomplete="off" name="f0dc966d2ba7cb772b761e50d4d9c5d7"><span>Landsysteme beschreiben ausschliesslich ökologische Prozesse und schliessen soziale, wirtschaftliche und technologische Faktoren aus.</span></label><label><input type="checkbox" autocomplete="off" name="f0dc966d2ba7cb772b761e50d4d9c5d7"><span>Landdegradation bezeichnet die Verringerung oder den Verlust der biologischen oder wirtschaftlichen Produktivität von Land infolge von Landnutzung, insbesondere in Trockengebieten.</span></label><label><input type="checkbox" autocomplete="off" name="f0dc966d2ba7cb772b761e50d4d9c5d7"><span>Landnutzungsveränderungen können Biodiversität, Ökosystemfunktionen und Ökosystemdienstleistungen negativ beeinflussen und dadurch das menschliche Wohlergehen einschränken.</span></label><label><input type="checkbox" autocomplete="off" name="f0dc966d2ba7cb772b761e50d4d9c5d7"><span>Landnutzungsveränderung bezeichnet ausschliesslich Veränderungen der Landbedeckung, unabhängig von menschlichen Aktivitäten.</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -1061,8 +1067,8 @@ Der Kapazitätsaufbau zur Unterstützung der Transformation zur Erreichung der S
 <ul>
 <li>True</li>
 <li>True</li>
-<li>True</li>
 <li>False</li>
+<li>True</li>
 <li>True</li>
 <li>False</li>
 </ul>
@@ -1071,16 +1077,16 @@ Der Kapazitätsaufbau zur Unterstützung der Transformation zur Erreichung der S
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche Merkmale unterscheiden „Naturbeiträge für Menschen (NCP)” von „Ökosystemdienstleistungen”? (Mehr als eine Aussage kann richtig sein.)</p>
-<div id="webex-cd249b937db969124b005b7a813b9464" class="webex-checkboxgroup" data-answer="OFQeBBVTFQJq">
-<label><input type="checkbox" autocomplete="off" name="cd249b937db969124b005b7a813b9464"><span>Beruht ausschliesslich auf monetärer Bewertung</span></label><label><input type="checkbox" autocomplete="off" name="cd249b937db969124b005b7a813b9464"><span>Konzentriert sich ausschliesslich auf Versorgungsfunktionen</span></label><label><input type="checkbox" autocomplete="off" name="cd249b937db969124b005b7a813b9464"><span>Integriert indigene Perspektiven</span></label><label><input type="checkbox" autocomplete="off" name="cd249b937db969124b005b7a813b9464"><span>Umfasst intrinsische und relationale Werte</span></label>
+<div id="webex-4a57497dd117fb7cc698c660e4520625" class="webex-checkboxgroup" data-answer="b1EZBhgJG1U5">
+<label><input type="checkbox" autocomplete="off" name="4a57497dd117fb7cc698c660e4520625"><span>Konzentriert sich ausschliesslich auf Versorgungsfunktionen</span></label><label><input type="checkbox" autocomplete="off" name="4a57497dd117fb7cc698c660e4520625"><span>Umfasst intrinsische und relationale Werte</span></label><label><input type="checkbox" autocomplete="off" name="4a57497dd117fb7cc698c660e4520625"><span>Beruht ausschliesslich auf monetärer Bewertung</span></label><label><input type="checkbox" autocomplete="off" name="4a57497dd117fb7cc698c660e4520625"><span>Integriert indigene Perspektiven</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Das von IPBES eingeführte Konzept der Naturbeiträge für Menschen (NCP) erweitert das Rahmenwerk der Ökosystemdienstleistungen, indem es ausdrücklich intrinsische und relationale Werte der Natur einbezieht und indigene sowie lokale Wissenssysteme integriert. Es ist weder auf monetäre Bewertung beschränkt, noch konzentriert es sich ausschliesslich auf Versorgungsfunktionen.</p>
 <ul>
 <li>False</li>
-<li>False</li>
 <li>True</li>
+<li>False</li>
 <li>True</li>
 </ul>
 </div>
@@ -2960,7 +2966,7 @@ window.onload = function() {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>“Ein Angebot von <a href="www.cde.unibe.ch/"><img src="..\images/cdelogo_e.png" class="img-fluid" style="width: auto; height: 35px; padding-left: 10px; padding-right: 10px; margin-bottom:5px;"></a></p>
+<p>“Ein Angebot von <a href="www.cde.unibe.ch/"><img src="../images/cdelogo_e.png" class="img-fluid" style="width: auto; height: 35px; padding-left: 10px; padding-right: 10px; margin-bottom:5px;"></a></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

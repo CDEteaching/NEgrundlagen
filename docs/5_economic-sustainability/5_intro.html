@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="de-CH" xml:lang="de-CH"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -14,10 +14,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -63,14 +66,14 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-4fffde74ef3b9adfe0b82ba81ae250ba.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-e8282bee7637e0ceba70fdf198bf2ab0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-4fffde74ef3b9adfe0b82ba81ae250ba.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-5ce2f31a78f6e740b8aa0df8838b0625.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-db150b37408ade8d98d47d3c9edab02a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-5ce2f31a78f6e740b8aa0df8838b0625.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -101,6 +104,9 @@ div.csl-indent {
     "search-label": "Suchen"
   }
 }</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&amp;family=Fira+Code:wght@400;500&amp;display=swap" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../webex.css">
@@ -560,7 +566,7 @@ Abbildung&nbsp;5.3: <strong>Erweiterter Wirtschaftskreislauf</strong> – Umfass
 </div>
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p>Quelle: Eigene Darstellungen.</p>
+<p>Quelle: Eigene Darstellungen nach <span class="citation" data-cites="rogallVolkswirtschaftslehreFuerSozialwissenschaftler2013">(<a href="../references.html#ref-rogallVolkswirtschaftslehreFuerSozialwissenschaftler2013" role="doc-biblioref"><strong>rogallVolkswirtschaftslehreFuerSozialwissenschaftler2013?</strong></a>)</span> und <span class="citation" data-cites="bauerleGrundfragenOkonomie2026">(<a href="../references.html#ref-bauerleGrundfragenOkonomie2026" role="doc-biblioref"><strong>bauerleGrundfragenOkonomie2026?</strong></a>)</span>.</p>
 </div>
 </div>
 </div>
@@ -866,8 +872,8 @@ Abbildung&nbsp;5.6: Positionierung von Green Growth, Degrowth und Nachhaltige Wi
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche der folgenden Aussagen beschreiben die Wirtschaftswissenschaft als performative Wissenschaft korrekt? (Mehr als eine Aussage kann richtig sein.)</p>
-<div id="webex-80ecf09210f4d3fb3630b12bde64de1a" class="webex-checkboxgroup" data-answer="YwBJUkoBFQIdATs=">
-<label><input type="checkbox" autocomplete="off" name="80ecf09210f4d3fb3630b12bde64de1a"><span>Alle Definitionen der Wirtschaftswissenschaft sind theorieneutral und unabhängig von zugrunde liegenden Denkschulen.</span></label><label><input type="checkbox" autocomplete="off" name="80ecf09210f4d3fb3630b12bde64de1a"><span>Konzepte wie der Homo oeconomicus, Gewinnmaximierung und Effizienz haben reale wirtschaftliche Institutionen und Politiken beeinflusst.</span></label><label><input type="checkbox" autocomplete="off" name="80ecf09210f4d3fb3630b12bde64de1a"><span>Die Wirtschaftswissenschaft beschreibt die soziale Wirklichkeit nicht nur, sondern prägt auch wirtschaftliches Denken, Politik und Praxis.</span></label><label><input type="checkbox" autocomplete="off" name="80ecf09210f4d3fb3630b12bde64de1a"><span>Die Wirtschaftswissenschaft ist eine rein deskriptive Wissenschaft ohne Einfluss auf politische oder wirtschaftliche Entscheidungen.</span></label><label><input type="checkbox" autocomplete="off" name="80ecf09210f4d3fb3630b12bde64de1a"><span>Die Geschichte der Wirtschaftswissenschaft ist auch eine Geschichte ihrer praktischen Auswirkungen auf Märkte, Politiken und gesellschaftliche Strukturen.</span></label>
+<div id="webex-8d1bd863bf52572b22ec944c86d18656" class="webex-checkboxgroup" data-answer="Y1QdU0gJGgNOV2g=">
+<label><input type="checkbox" autocomplete="off" name="8d1bd863bf52572b22ec944c86d18656"><span>Alle Definitionen der Wirtschaftswissenschaft sind theorieneutral und unabhängig von zugrunde liegenden Denkschulen.</span></label><label><input type="checkbox" autocomplete="off" name="8d1bd863bf52572b22ec944c86d18656"><span>Konzepte wie der Homo oeconomicus, Gewinnmaximierung und Effizienz haben reale wirtschaftliche Institutionen und Politiken beeinflusst.</span></label><label><input type="checkbox" autocomplete="off" name="8d1bd863bf52572b22ec944c86d18656"><span>Die Wirtschaftswissenschaft beschreibt die soziale Wirklichkeit nicht nur, sondern prägt auch wirtschaftliches Denken, Politik und Praxis.</span></label><label><input type="checkbox" autocomplete="off" name="8d1bd863bf52572b22ec944c86d18656"><span>Die Wirtschaftswissenschaft ist eine rein deskriptive Wissenschaft ohne Einfluss auf politische oder wirtschaftliche Entscheidungen.</span></label><label><input type="checkbox" autocomplete="off" name="8d1bd863bf52572b22ec944c86d18656"><span>Die Geschichte der Wirtschaftswissenschaft ist auch eine Geschichte ihrer praktischen Auswirkungen auf Märkte, Politiken und gesellschaftliche Strukturen.</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -884,26 +890,26 @@ Abbildung&nbsp;5.6: Positionierung von Green Growth, Degrowth und Nachhaltige Wi
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche der folgenden Aussagen beschreiben verschiedene Typen von Wirtschaftssystemen und ihre Eigentums- und Koordinationsformen korrekt? (Mehr als eine Aussage kann richtig sein.)</p>
-<div id="webex-5432cadb8a1a27144f53b4775fb97d8a" class="webex-checkboxgroup" data-answer="bgUfA09QSFMUUWw=">
-<label><input type="checkbox" autocomplete="off" name="5432cadb8a1a27144f53b4775fb97d8a"><span>Das Konzept der „Spielarten des Kapitalismus” hebt hervor, dass kapitalistische Systeme im Laufe der Zeit und über Länder hinweg unterschiedliche institutionelle Formen angenommen haben.</span></label><label><input type="checkbox" autocomplete="off" name="5432cadb8a1a27144f53b4775fb97d8a"><span>In einer kapitalistischen Marktwirtschaft erfolgt die Koordination weitgehend dezentral über Märkte, und die Produktionsmittel befinden sich überwiegend in Privatbesitz.</span></label><label><input type="checkbox" autocomplete="off" name="5432cadb8a1a27144f53b4775fb97d8a"><span>In einer sozialistischen, zentralisierten Wirtschaft werden Produktion und Verteilung hauptsächlich durch staatliche Planung koordiniert, und die Produktionsmittel befinden sich in der Regel im öffentlichen Eigentum.</span></label><label><input type="checkbox" autocomplete="off" name="5432cadb8a1a27144f53b4775fb97d8a"><span>Gemischte Wirtschaftssysteme verbinden Privateigentum mit staatlichen Eingriffen, um Märkte zu regulieren und soziale Gerechtigkeit zu fördern.</span></label><label><input type="checkbox" autocomplete="off" name="5432cadb8a1a27144f53b4775fb97d8a"><span>Gemeinschaftsbasierte Netzwerke und Commons-Wirtschaften beruhen in erster Linie auf zentralisierter staatlicher Kontrolle und Privateigentum.</span></label>
+<div id="webex-9ceec0b70c50cf40fdc24788c7856935" class="webex-checkboxgroup" data-answer="YlJJVU8BTgYcUmg=">
+<label><input type="checkbox" autocomplete="off" name="9ceec0b70c50cf40fdc24788c7856935"><span>Gemischte Wirtschaftssysteme verbinden Privateigentum mit staatlichen Eingriffen, um Märkte zu regulieren und soziale Gerechtigkeit zu fördern.</span></label><label><input type="checkbox" autocomplete="off" name="9ceec0b70c50cf40fdc24788c7856935"><span>Gemeinschaftsbasierte Netzwerke und Commons-Wirtschaften beruhen in erster Linie auf zentralisierter staatlicher Kontrolle und Privateigentum.</span></label><label><input type="checkbox" autocomplete="off" name="9ceec0b70c50cf40fdc24788c7856935"><span>Das Konzept der „Spielarten des Kapitalismus” hebt hervor, dass kapitalistische Systeme im Laufe der Zeit und über Länder hinweg unterschiedliche institutionelle Formen angenommen haben.</span></label><label><input type="checkbox" autocomplete="off" name="9ceec0b70c50cf40fdc24788c7856935"><span>In einer kapitalistischen Marktwirtschaft erfolgt die Koordination weitgehend dezentral über Märkte, und die Produktionsmittel befinden sich überwiegend in Privatbesitz.</span></label><label><input type="checkbox" autocomplete="off" name="9ceec0b70c50cf40fdc24788c7856935"><span>In einer sozialistischen, zentralisierten Wirtschaft werden Produktion und Verteilung hauptsächlich durch staatliche Planung koordiniert, und die Produktionsmittel befinden sich in der Regel im öffentlichen Eigentum.</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Wirtschaftssysteme unterscheiden sich darin, wie Eigentum und Koordination organisiert sind. Kapitalistische Marktwirtschaften beruhen auf dezentraler Marktkoordination und Privateigentum, während sozialistische Wirtschaften durch zentralisierte staatliche Planung und öffentliches Eigentum gekennzeichnet sind. Gemischte Wirtschaftssysteme verbinden Marktmechanismen mit staatlichen Eingriffen, um Marktversagen zu begegnen und soziale Ziele zu fördern. Gemeinschafts- und Commons-basierte Wirtschaftsformen betonen Selbstorganisation und Gemeinschaftseigentum statt zentralisierter Kontrolle. Das Konzept der „Spielarten des Kapitalismus” erfasst die Vielfalt kapitalistischer Modelle, die sich historisch entwickelt haben.</p>
 <ul>
 <li>True</li>
-<li>True</li>
-<li>True</li>
-<li>True</li>
 <li>False</li>
+<li>True</li>
+<li>True</li>
+<li>True</li>
 </ul>
 </div>
 </div>
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche der folgenden Aussagen beschreiben den Kapitalismus korrekt als Ausgangspunkt für die Analyse wirtschaftlicher Nachhaltigkeitsfragen? (Mehr als eine Aussage kann richtig sein.)</p>
-<div id="webex-58289c8813f2e3113f9c5815c440c5f7" class="webex-checkboxgroup" data-answer="bgkeCRVSFAkdAzs=">
-<label><input type="checkbox" autocomplete="off" name="58289c8813f2e3113f9c5815c440c5f7"><span>Kapitalismus wird als historisch gewachsenes wirtschaftliches und gesellschaftliches System betrachtet, nicht als natürliche oder universelle Form der Wirtschaftsorganisation.</span></label><label><input type="checkbox" autocomplete="off" name="58289c8813f2e3113f9c5815c440c5f7"><span>Die Industrielle Revolution spielte eine Schlüsselrolle bei der Konsolidierung des Kapitalismus durch technologische Innovation, den Einsatz fossiler Energie und Massenproduktion.</span></label><label><input type="checkbox" autocomplete="off" name="58289c8813f2e3113f9c5815c440c5f7"><span>Viele gegenwärtige Nachhaltigkeitsherausforderungen wie Klimawandel und soziale Ungleichheit sind mit den strukturellen Dynamiken des modernen globalen Kapitalismus verknüpft.</span></label><label><input type="checkbox" autocomplete="off" name="58289c8813f2e3113f9c5815c440c5f7"><span>Die kapitalistische Produktionsweise ist gekennzeichnet durch die Trennung von Kapital und Arbeit, Privateigentum an den Produktionsmitteln und Gewinnmaximierung.</span></label><label><input type="checkbox" autocomplete="off" name="58289c8813f2e3113f9c5815c440c5f7"><span>Nachhaltigkeitstransformationen lassen sich erreichen, ohne die zugrunde liegenden wirtschaftlichen Strukturen zu untersuchen, da Umweltprobleme weitgehend isolierte Phänomene sind.</span></label>
+<div id="webex-72c7d8b005eb146919072bceacb097fb" class="webex-checkboxgroup" data-answer="bANPBkgJTgAcBDg=">
+<label><input type="checkbox" autocomplete="off" name="72c7d8b005eb146919072bceacb097fb"><span>Viele gegenwärtige Nachhaltigkeitsherausforderungen wie Klimawandel und soziale Ungleichheit sind mit den strukturellen Dynamiken des modernen globalen Kapitalismus verknüpft.</span></label><label><input type="checkbox" autocomplete="off" name="72c7d8b005eb146919072bceacb097fb"><span>Kapitalismus wird als historisch gewachsenes wirtschaftliches und gesellschaftliches System betrachtet, nicht als natürliche oder universelle Form der Wirtschaftsorganisation.</span></label><label><input type="checkbox" autocomplete="off" name="72c7d8b005eb146919072bceacb097fb"><span>Die Industrielle Revolution spielte eine Schlüsselrolle bei der Konsolidierung des Kapitalismus durch technologische Innovation, den Einsatz fossiler Energie und Massenproduktion.</span></label><label><input type="checkbox" autocomplete="off" name="72c7d8b005eb146919072bceacb097fb"><span>Nachhaltigkeitstransformationen lassen sich erreichen, ohne die zugrunde liegenden wirtschaftlichen Strukturen zu untersuchen, da Umweltprobleme weitgehend isolierte Phänomene sind.</span></label><label><input type="checkbox" autocomplete="off" name="72c7d8b005eb146919072bceacb097fb"><span>Die kapitalistische Produktionsweise ist gekennzeichnet durch die Trennung von Kapital und Arbeit, Privateigentum an den Produktionsmitteln und Gewinnmaximierung.</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -912,16 +918,16 @@ Abbildung&nbsp;5.6: Positionierung von Green Growth, Degrowth und Nachhaltige Wi
 <li>True</li>
 <li>True</li>
 <li>True</li>
-<li>True</li>
 <li>False</li>
+<li>True</li>
 </ul>
 </div>
 </div>
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Warum sind Volkswirtschaften (gemessen am BIP pro Kopf) vor dem 19. Jahrhundert nicht wesentlich gewachsen? (Mehr als eine Antwort kann richtig sein.)</p>
-<div id="webex-f1d5b595b9e2739ba434ba5a291f7eb2" class="webex-checkboxgroup" data-answer="PQBIBU4EFQQ/">
-<label><input type="checkbox" autocomplete="off" name="f1d5b595b9e2739ba434ba5a291f7eb2"><span>Die wirtschaftliche Produktion war weitgehend durch die Verfügbarkeit von Land und natürlichen Ressourcen begrenzt.</span></label><label><input type="checkbox" autocomplete="off" name="f1d5b595b9e2739ba434ba5a291f7eb2"><span>Regierungen schränkten das Wirtschaftswachstum gezielt ein, um Inflation zu vermeiden.</span></label><label><input type="checkbox" autocomplete="off" name="f1d5b595b9e2739ba434ba5a291f7eb2"><span>Globaler Handel und Industrialisierung hatten sich noch nicht in grossem Massstab entwickelt.</span></label><label><input type="checkbox" autocomplete="off" name="f1d5b595b9e2739ba434ba5a291f7eb2"><span>Die meisten Gesellschaften waren agrarisch geprägt, mit geringer Produktivität und wenig technologischer Innovation.</span></label>
+<div id="webex-d8685b5e49f3a4d7652a8c69975f1644" class="webex-checkboxgroup" data-answer="PwkaCBlTGVRp">
+<label><input type="checkbox" autocomplete="off" name="d8685b5e49f3a4d7652a8c69975f1644"><span>Die wirtschaftliche Produktion war weitgehend durch die Verfügbarkeit von Land und natürlichen Ressourcen begrenzt.</span></label><label><input type="checkbox" autocomplete="off" name="d8685b5e49f3a4d7652a8c69975f1644"><span>Regierungen schränkten das Wirtschaftswachstum gezielt ein, um Inflation zu vermeiden.</span></label><label><input type="checkbox" autocomplete="off" name="d8685b5e49f3a4d7652a8c69975f1644"><span>Globaler Handel und Industrialisierung hatten sich noch nicht in grossem Massstab entwickelt.</span></label><label><input type="checkbox" autocomplete="off" name="d8685b5e49f3a4d7652a8c69975f1644"><span>Die meisten Gesellschaften waren agrarisch geprägt, mit geringer Produktivität und wenig technologischer Innovation.</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -937,16 +943,16 @@ Abbildung&nbsp;5.6: Positionierung von Green Growth, Degrowth und Nachhaltige Wi
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Was ist der Hauptkritikpunkt am BIP als Wohlstandsmass?</p>
-<div id="webex-ae89fc3d5f8b7240b91ed13a3650f784" class="webex-radiogroup" data-answer="OlUUCUpSH1Ro">
-<label><input type="radio" autocomplete="off" name="ae89fc3d5f8b7240b91ed13a3650f784"><span>Es erfasst sowohl Wohlbefinden als auch Glück.</span></label><label><input type="radio" autocomplete="off" name="ae89fc3d5f8b7240b91ed13a3650f784"><span>Es berücksichtigt unbezahlte Arbeit und Umweltschäden.</span></label><label><input type="radio" autocomplete="off" name="ae89fc3d5f8b7240b91ed13a3650f784"><span>Es klammert unbezahlte Arbeit, Ungleichheit und Umweltschäden aus.</span></label><label><input type="radio" autocomplete="off" name="ae89fc3d5f8b7240b91ed13a3650f784"><span>Es misst nur die Wertentwicklung an den Finanzmärkten.</span></label>
+<div id="webex-bb85f7362879d8a53af59600a3fa5479" class="webex-radiogroup" data-answer="OVIUBEoHHwZv">
+<label><input type="radio" autocomplete="off" name="bb85f7362879d8a53af59600a3fa5479"><span>Es misst nur die Wertentwicklung an den Finanzmärkten.</span></label><label><input type="radio" autocomplete="off" name="bb85f7362879d8a53af59600a3fa5479"><span>Es klammert unbezahlte Arbeit, Ungleichheit und Umweltschäden aus.</span></label><label><input type="radio" autocomplete="off" name="bb85f7362879d8a53af59600a3fa5479"><span>Es erfasst sowohl Wohlbefinden als auch Glück.</span></label><label><input type="radio" autocomplete="off" name="bb85f7362879d8a53af59600a3fa5479"><span>Es berücksichtigt unbezahlte Arbeit und Umweltschäden.</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Das BIP misst den monetären Wert der in einer Wirtschaft produzierten Güter und Dienstleistungen, berücksichtigt jedoch nicht unbezahlte Arbeit, soziale Ungleichheiten oder Umweltschäden. Dadurch liefert es ein begrenztes und möglicherweise irreführendes Bild des allgemeinen Wohlstands und Wohlergehens.</p>
 <ul>
 <li>False</li>
-<li>False</li>
 <li>True</li>
+<li>False</li>
 <li>False</li>
 </ul>
 </div>
@@ -954,8 +960,8 @@ Abbildung&nbsp;5.6: Positionierung von Green Growth, Degrowth und Nachhaltige Wi
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Was versteht man unter Gewinnmaximierung?</p>
-<div id="webex-335799db81ec518686614c6d02568eee" class="webex-radiogroup" data-answer="aAMZBxUJSFNl">
-<label><input type="radio" autocomplete="off" name="335799db81ec518686614c6d02568eee"><span>Unternehmen konzentrieren sich auf soziales Wohlergehen.</span></label><label><input type="radio" autocomplete="off" name="335799db81ec518686614c6d02568eee"><span>Unternehmen streben an, zum niedrigstmöglichen Preis zu verkaufen.</span></label><label><input type="radio" autocomplete="off" name="335799db81ec518686614c6d02568eee"><span>Unternehmen investieren ausschliesslich in öffentliche Güter.</span></label><label><input type="radio" autocomplete="off" name="335799db81ec518686614c6d02568eee"><span>Unternehmen streben die höchstmögliche Rendite auf ihre Investitionen an.</span></label>
+<div id="webex-9dd1e6e9a32aef6971039ee050335fdf" class="webex-radiogroup" data-answer="YlRIAUkGSQg8">
+<label><input type="radio" autocomplete="off" name="9dd1e6e9a32aef6971039ee050335fdf"><span>Unternehmen konzentrieren sich auf soziales Wohlergehen.</span></label><label><input type="radio" autocomplete="off" name="9dd1e6e9a32aef6971039ee050335fdf"><span>Unternehmen streben an, zum niedrigstmöglichen Preis zu verkaufen.</span></label><label><input type="radio" autocomplete="off" name="9dd1e6e9a32aef6971039ee050335fdf"><span>Unternehmen investieren ausschliesslich in öffentliche Güter.</span></label><label><input type="radio" autocomplete="off" name="9dd1e6e9a32aef6971039ee050335fdf"><span>Unternehmen streben die höchstmögliche Rendite auf ihre Investitionen an.</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -971,53 +977,53 @@ Abbildung&nbsp;5.6: Positionierung von Green Growth, Degrowth und Nachhaltige Wi
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Was versteht man unter dem Begriff Finanzialisierung?</p>
-<div id="webex-974c08939407ec6cd132c1cebc1dea83" class="webex-radiogroup" data-answer="YgcYUhwIFQNk">
-<label><input type="radio" autocomplete="off" name="974c08939407ec6cd132c1cebc1dea83"><span>Die Ablösung der Bankensysteme durch Genossenschaften.</span></label><label><input type="radio" autocomplete="off" name="974c08939407ec6cd132c1cebc1dea83"><span>Die wachsende Bedeutung von Finanzmärkten, -institutionen und -motiven in der Wirtschaft.</span></label><label><input type="radio" autocomplete="off" name="974c08939407ec6cd132c1cebc1dea83"><span>Den Rückzug des Finanzsektors aus der Realwirtschaft.</span></label><label><input type="radio" autocomplete="off" name="974c08939407ec6cd132c1cebc1dea83"><span>Die vollständige Abschaffung privater Kredite.</span></label>
+<div id="webex-da285693bd124b173b5f36b7a505c1e7" class="webex-radiogroup" data-answer="P1EeCBkGFQI/">
+<label><input type="radio" autocomplete="off" name="da285693bd124b173b5f36b7a505c1e7"><span>Die Ablösung der Bankensysteme durch Genossenschaften.</span></label><label><input type="radio" autocomplete="off" name="da285693bd124b173b5f36b7a505c1e7"><span>Die vollständige Abschaffung privater Kredite.</span></label><label><input type="radio" autocomplete="off" name="da285693bd124b173b5f36b7a505c1e7"><span>Den Rückzug des Finanzsektors aus der Realwirtschaft.</span></label><label><input type="radio" autocomplete="off" name="da285693bd124b173b5f36b7a505c1e7"><span>Die wachsende Bedeutung von Finanzmärkten, -institutionen und -motiven in der Wirtschaft.</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Finanzialisierung bezeichnet die zunehmende Dominanz von Finanzmärkten, Finanzinstitutionen und finanziellen Motiven bei der Gestaltung wirtschaftlicher Aktivitäten, unternehmerischen Verhaltens und öffentlicher Politik. Sie bedeutet weder das Verschwinden der Bankensysteme noch einen Rückzug des Finanzsektors aus der Realwirtschaft oder die Abschaffung privater Kredite.</p>
 <ul>
 <li>False</li>
+<li>False</li>
+<li>False</li>
 <li>True</li>
-<li>False</li>
-<li>False</li>
 </ul>
 </div>
 </div>
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche der folgenden Aussagen beschreiben Wachstumsabhängigkeit und strukturelle Wachstumszwänge in kapitalistischen Volkswirtschaften korrekt? (Mehr als eine Aussage kann richtig sein.)</p>
-<div id="webex-09448d951b2549dc8162feb12d6c9634" class="webex-checkboxgroup" data-answer="awgYBRRVFQQdUm8=">
-<label><input type="checkbox" autocomplete="off" name="09448d951b2549dc8162feb12d6c9634"><span>Die Logik kapitalistischer Investitionen wird oft mit der Formel G–W–G’ beschrieben, die das Ziel widerspiegelt, aus Geld mehr Geld zu machen.</span></label><label><input type="checkbox" autocomplete="off" name="09448d951b2549dc8162feb12d6c9634"><span>Moderne kapitalistische Volkswirtschaften sind strukturell auf kontinuierliches Wirtschaftswachstum angewiesen, um Beschäftigung, Sozialsysteme und öffentliche Finanzen aufrechtzuerhalten.</span></label><label><input type="checkbox" autocomplete="off" name="09448d951b2549dc8162feb12d6c9634"><span>Der Wachstumszwang resultiert teilweise aus dem Marktwettbewerb, da Unternehmen expandieren und ihre Produktivität steigern müssen, um wettbewerbsfähig zu bleiben.</span></label><label><input type="checkbox" autocomplete="off" name="09448d951b2549dc8162feb12d6c9634"><span>Wirtschaftliche Stagnation oder Wachstumsrückgang kann Krisen wie Arbeitslosigkeit, Armut und Kürzungen bei Sozialleistungen auslösen.</span></label><label><input type="checkbox" autocomplete="off" name="09448d951b2549dc8162feb12d6c9634"><span>Unternehmen können langfristig profitabel und wettbewerbsfähig bleiben, ohne Gewinne zu erzielen oder die Produktion auszuweiten.</span></label>
+<div id="webex-3d782cd31a4fb2ef78e266953d361043" class="webex-checkboxgroup" data-answer="aFUbCB5SSAIdUGk=">
+<label><input type="checkbox" autocomplete="off" name="3d782cd31a4fb2ef78e266953d361043"><span>Wirtschaftliche Stagnation oder Wachstumsrückgang kann Krisen wie Arbeitslosigkeit, Armut und Kürzungen bei Sozialleistungen auslösen.</span></label><label><input type="checkbox" autocomplete="off" name="3d782cd31a4fb2ef78e266953d361043"><span>Unternehmen können langfristig profitabel und wettbewerbsfähig bleiben, ohne Gewinne zu erzielen oder die Produktion auszuweiten.</span></label><label><input type="checkbox" autocomplete="off" name="3d782cd31a4fb2ef78e266953d361043"><span>Moderne kapitalistische Volkswirtschaften sind strukturell auf kontinuierliches Wirtschaftswachstum angewiesen, um Beschäftigung, Sozialsysteme und öffentliche Finanzen aufrechtzuerhalten.</span></label><label><input type="checkbox" autocomplete="off" name="3d782cd31a4fb2ef78e266953d361043"><span>Der Wachstumszwang resultiert teilweise aus dem Marktwettbewerb, da Unternehmen expandieren und ihre Produktivität steigern müssen, um wettbewerbsfähig zu bleiben.</span></label><label><input type="checkbox" autocomplete="off" name="3d782cd31a4fb2ef78e266953d361043"><span>Die Logik kapitalistischer Investitionen wird oft mit der Formel G–W–G’ beschrieben, die das Ziel widerspiegelt, aus Geld mehr Geld zu machen.</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>In kapitalistischen Volkswirtschaften ist kontinuierliches Wirtschaftswachstum strukturell notwendig, um die Stabilität von Arbeitsmärkten, Sozialsystemen und öffentlichen Finanzen zu gewährleisten. Marktwettbewerb und finanzieller Druck verstärken auf Unternehmensebene eine „Wachsen oder Sterben”-Logik, die sich in der Investitionsformel G–W–G’ widerspiegelt. Wenn das Wachstum stockt oder sich umkehrt, können wirtschaftliche Krisen mit erheblichen sozialen und politischen Folgen entstehen. Die übrige Aussage widerspricht der Grundlogik kapitalistischen Wettbewerbs und kapitalistischer Investition.</p>
 <ul>
 <li>True</li>
-<li>True</li>
-<li>True</li>
-<li>True</li>
 <li>False</li>
+<li>True</li>
+<li>True</li>
+<li>True</li>
 </ul>
 </div>
 </div>
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche der folgenden Aussagen beschreiben die Idee einer nachhaltigen Wirtschaft mit wachstumsunabhängigen Wirtschaftsbereichen korrekt? (Mehr als eine Aussage kann richtig sein.)</p>
-<div id="webex-8e177dea771631af2a127d8d6484b501" class="webex-checkboxgroup" data-answer="Y1UdBxtVSVAbBh0HHwA8">
-<label><input type="checkbox" autocomplete="off" name="8e177dea771631af2a127d8d6484b501"><span>Eine nachhaltige Wirtschaftstransformation lässt sich ohne unterstützende steuer-, regulierungs- oder investitionspolitische Rahmenbedingungen erreichen.</span></label><label><input type="checkbox" autocomplete="off" name="8e177dea771631af2a127d8d6484b501"><span>Suffiziente Lebensstile konzentrieren sich ausschliesslich auf individuellen Konsumverzicht und beinhalten keine Veränderungen bei Infrastruktur oder Produktionssystemen.</span></label><label><input type="checkbox" autocomplete="off" name="8e177dea771631af2a127d8d6484b501"><span>Viele Kerninstitutionen wie Rentensysteme, Arbeitsmärkte und öffentliche Finanzen sind gegenwärtig strukturell vom Wirtschaftswachstum abhängig.</span></label><label><input type="checkbox" autocomplete="off" name="8e177dea771631af2a127d8d6484b501"><span>Die Gestaltung wachstumsunabhängiger Institutionen erfordert, Sozialsysteme und öffentliche Finanzen vom BIP-Wachstum zu entkoppeln und die politische Fixierung auf Wachstum infrage zu stellen.</span></label><label><input type="checkbox" autocomplete="off" name="8e177dea771631af2a127d8d6484b501"><span>Commons, Genossenschaften und solidarische Produktionsformen gelten als Wege, Resilienz, sozialen Zusammenhalt und ökologische Verantwortung zu stärken.</span></label><label><input type="checkbox" autocomplete="off" name="8e177dea771631af2a127d8d6484b501"><span>Die Überwindung der „imperialen Lebensweise” beinhaltet, globale Machtverhältnisse und die Externalisierung sozialer und ökologischer Kosten in den Globalen Süden infrage zu stellen.</span></label><label><input type="checkbox" autocomplete="off" name="8e177dea771631af2a127d8d6484b501"><span>Eine sorgende Wirtschaft betont die systematische Aufwertung von Sorge- und Reproduktionsarbeit als Grundlage wirtschaftlicher Tätigkeit.</span></label>
+<div id="webex-7486eb0b33610a9a42cb1f0a6d35dbec" class="webex-checkboxgroup" data-answer="bAUUB0lTHFIfAxoAHFBk">
+<label><input type="checkbox" autocomplete="off" name="7486eb0b33610a9a42cb1f0a6d35dbec"><span>Die Überwindung der „imperialen Lebensweise” beinhaltet, globale Machtverhältnisse und die Externalisierung sozialer und ökologischer Kosten in den Globalen Süden infrage zu stellen.</span></label><label><input type="checkbox" autocomplete="off" name="7486eb0b33610a9a42cb1f0a6d35dbec"><span>Commons, Genossenschaften und solidarische Produktionsformen gelten als Wege, Resilienz, sozialen Zusammenhalt und ökologische Verantwortung zu stärken.</span></label><label><input type="checkbox" autocomplete="off" name="7486eb0b33610a9a42cb1f0a6d35dbec"><span>Eine sorgende Wirtschaft betont die systematische Aufwertung von Sorge- und Reproduktionsarbeit als Grundlage wirtschaftlicher Tätigkeit.</span></label><label><input type="checkbox" autocomplete="off" name="7486eb0b33610a9a42cb1f0a6d35dbec"><span>Eine nachhaltige Wirtschaftstransformation lässt sich ohne unterstützende steuer-, regulierungs- oder investitionspolitische Rahmenbedingungen erreichen.</span></label><label><input type="checkbox" autocomplete="off" name="7486eb0b33610a9a42cb1f0a6d35dbec"><span>Suffiziente Lebensstile konzentrieren sich ausschliesslich auf individuellen Konsumverzicht und beinhalten keine Veränderungen bei Infrastruktur oder Produktionssystemen.</span></label><label><input type="checkbox" autocomplete="off" name="7486eb0b33610a9a42cb1f0a6d35dbec"><span>Viele Kerninstitutionen wie Rentensysteme, Arbeitsmärkte und öffentliche Finanzen sind gegenwärtig strukturell vom Wirtschaftswachstum abhängig.</span></label><label><input type="checkbox" autocomplete="off" name="7486eb0b33610a9a42cb1f0a6d35dbec"><span>Die Gestaltung wachstumsunabhängiger Institutionen erfordert, Sozialsysteme und öffentliche Finanzen vom BIP-Wachstum zu entkoppeln und die politische Fixierung auf Wachstum infrage zu stellen.</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Wachstumsunabhängige Wirtschaftsbereiche zielen darauf ab, die strukturelle Abhängigkeit von Gesellschaften vom kontinuierlichen Wirtschaftswachstum zu verringern. Dies umfasst die Neugestaltung von Institutionen, die Förderung suffizienter Lebensstile durch geeignete Infrastruktur, die Stärkung von Commons-basierten und genossenschaftlichen Produktionsformen sowie die Anerkennung von Sorgearbeit als zentraler Pfeiler wirtschaftlicher Tätigkeit. Aus globaler Perspektive erfordert dies zudem, ungleiche Machtverhältnisse und die Externalisierung von Kosten zu adressieren. Solche Transformationen sind auf unterstützende politische Rahmenbedingungen angewiesen – ohne diese bleiben alternative Wirtschaftspraktiken meist Nischenphänomene.</p>
 <ul>
+<li>True</li>
+<li>True</li>
+<li>True</li>
 <li>False</li>
 <li>False</li>
-<li>True</li>
-<li>True</li>
-<li>True</li>
 <li>True</li>
 <li>True</li>
 </ul>
@@ -2754,7 +2760,7 @@ window.onload = function() {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>“Ein Angebot von <a href="www.cde.unibe.ch/"><img src="..\images/cdelogo_e.png" class="img-fluid" style="width: auto; height: 35px; padding-left: 10px; padding-right: 10px; margin-bottom:5px;"></a></p>
+<p>“Ein Angebot von <a href="www.cde.unibe.ch/"><img src="../images/cdelogo_e.png" class="img-fluid" style="width: auto; height: 35px; padding-left: 10px; padding-right: 10px; margin-bottom:5px;"></a></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

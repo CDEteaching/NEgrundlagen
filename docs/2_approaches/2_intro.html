@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="de-CH" xml:lang="de-CH"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -13,10 +13,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -62,14 +65,14 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-4fffde74ef3b9adfe0b82ba81ae250ba.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-e8282bee7637e0ceba70fdf198bf2ab0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-4fffde74ef3b9adfe0b82ba81ae250ba.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-5ce2f31a78f6e740b8aa0df8838b0625.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-db150b37408ade8d98d47d3c9edab02a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-5ce2f31a78f6e740b8aa0df8838b0625.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -100,9 +103,12 @@ div.csl-indent {
     "search-label": "Suchen"
   }
 }</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&amp;family=Fira+Code:wght@400;500&amp;display=swap" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -825,8 +831,8 @@ Abbildung&nbsp;2.10: Zusammenhang zwischen Ökologischem Fussabdruck und Human D
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche zwei planetaren Grenzen gelten als „Kerngrenzen”?</p>
-<div id="webex-8dccac70f869b0e591841c9e8f1f95cb" class="webex-radiogroup" data-answer="Y1VPU01TGwA7">
-<label><input type="radio" autocomplete="off" name="8dccac70f869b0e591841c9e8f1f95cb"><span>Klimawandel und Integrität der Biosphäre</span></label><label><input type="radio" autocomplete="off" name="8dccac70f869b0e591841c9e8f1f95cb"><span>Ozeanversauerung und Stickstoffkreisläufe</span></label><label><input type="radio" autocomplete="off" name="8dccac70f869b0e591841c9e8f1f95cb"><span>Süsswasser und Aerosole</span></label><label><input type="radio" autocomplete="off" name="8dccac70f869b0e591841c9e8f1f95cb"><span>Ozonabbau und Landnutzung</span></label>
+<div id="webex-3ec8cc204e79888fb7f0f64e57fba968" class="webex-radiogroup" data-answer="aFRPCE9THgBp">
+<label><input type="radio" autocomplete="off" name="3ec8cc204e79888fb7f0f64e57fba968"><span>Klimawandel und Integrität der Biosphäre</span></label><label><input type="radio" autocomplete="off" name="3ec8cc204e79888fb7f0f64e57fba968"><span>Ozonabbau und Landnutzung</span></label><label><input type="radio" autocomplete="off" name="3ec8cc204e79888fb7f0f64e57fba968"><span>Ozeanversauerung und Stickstoffkreisläufe</span></label><label><input type="radio" autocomplete="off" name="3ec8cc204e79888fb7f0f64e57fba968"><span>Süsswasser und Aerosole</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -842,15 +848,15 @@ Abbildung&nbsp;2.10: Zusammenhang zwischen Ökologischem Fussabdruck und Human D
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche der folgenden gehört NICHT zu den neun planetaren Grenzen, die von Rockström et al.&nbsp;identifiziert wurden?</p>
-<div id="webex-8b260fe835ad91fe819920d4bcabb246" class="webex-radiogroup" data-answer="Y1MeBhxWSQhu">
-<label><input type="radio" autocomplete="off" name="8b260fe835ad91fe819920d4bcabb246"><span>Globale Finanzstabilität</span></label><label><input type="radio" autocomplete="off" name="8b260fe835ad91fe819920d4bcabb246"><span>Ozeanversauerung</span></label><label><input type="radio" autocomplete="off" name="8b260fe835ad91fe819920d4bcabb246"><span>Klimawandel</span></label><label><input type="radio" autocomplete="off" name="8b260fe835ad91fe819920d4bcabb246"><span>Integrität der Biosphäre</span></label>
+<div id="webex-b30413160ac8dd8220a2c3846ffea293" class="webex-radiogroup" data-answer="OQMcBR0DHQZt">
+<label><input type="radio" autocomplete="off" name="b30413160ac8dd8220a2c3846ffea293"><span>Ozeanversauerung</span></label><label><input type="radio" autocomplete="off" name="b30413160ac8dd8220a2c3846ffea293"><span>Globale Finanzstabilität</span></label><label><input type="radio" autocomplete="off" name="b30413160ac8dd8220a2c3846ffea293"><span>Integrität der Biosphäre</span></label><label><input type="radio" autocomplete="off" name="b30413160ac8dd8220a2c3846ffea293"><span>Klimawandel</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Das Rahmenwerk der planetaren Grenzen identifiziert biophysikalische Erdsystemprozesse, die die Stabilität und Resilienz des Planeten regulieren. Klimawandel, Ozeanversauerung und die Integrität der Biosphäre sind Teil dieses Rahmenwerks, während globale Finanzstabilität keine planetare Grenze ist.</p>
 <ul>
-<li>True</li>
 <li>False</li>
+<li>True</li>
 <li>False</li>
 <li>False</li>
 </ul>
@@ -859,15 +865,15 @@ Abbildung&nbsp;2.10: Zusammenhang zwischen Ökologischem Fussabdruck und Human D
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welcher der folgenden Kipppunkte gehört NICHT zum Klimasystem der Erde?</p>
-<div id="webex-e34859270e23f856f96cee9224a6c286" class="webex-radiogroup" data-answer="PgIYCBkJHgdt">
-<label><input type="radio" autocomplete="off" name="e34859270e23f856f96cee9224a6c286"><span>Verschmutzung der Ozeane durch Plastik</span></label><label><input type="radio" autocomplete="off" name="e34859270e23f856f96cee9224a6c286"><span>Abschmelzen des grönländischen Eisschilds</span></label><label><input type="radio" autocomplete="off" name="e34859270e23f856f96cee9224a6c286"><span>Kollaps des Amazonas-Regenwaldes</span></label><label><input type="radio" autocomplete="off" name="e34859270e23f856f96cee9224a6c286"><span>Kollaps des Golfstroms</span></label>
+<div id="webex-0f85f651a5cbab471ecf2600a0dcaa3f" class="webex-radiogroup" data-answer="a1YUBEoGGQE8">
+<label><input type="radio" autocomplete="off" name="0f85f651a5cbab471ecf2600a0dcaa3f"><span>Kollaps des Amazonas-Regenwaldes</span></label><label><input type="radio" autocomplete="off" name="0f85f651a5cbab471ecf2600a0dcaa3f"><span>Verschmutzung der Ozeane durch Plastik</span></label><label><input type="radio" autocomplete="off" name="0f85f651a5cbab471ecf2600a0dcaa3f"><span>Kollaps des Golfstroms</span></label><label><input type="radio" autocomplete="off" name="0f85f651a5cbab471ecf2600a0dcaa3f"><span>Abschmelzen des grönländischen Eisschilds</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Kipppunkte im Klimasystem der Erde bezeichnen grossräumige Komponenten des Klimas, die abrupte und potenziell irreversible Veränderungen durchlaufen können. Der grönländische Eisschild, der Golfstrom (AMOC) und der Amazonas-Regenwald gelten allesamt als häufig diskutierte klimatische Kippelemente, während die Verschmutzung der Ozeane durch Plastik zwar ein Umweltproblem, aber kein Kipppunkt des Klimasystems ist.</p>
 <ul>
-<li>True</li>
 <li>False</li>
+<li>True</li>
 <li>False</li>
 <li>False</li>
 </ul>
@@ -876,33 +882,33 @@ Abbildung&nbsp;2.10: Zusammenhang zwischen Ökologischem Fussabdruck und Human D
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welcher Begriff bezeichnet die Entkopplung von Wirtschaftswachstum und Umweltschäden bei gleichzeitiger Wahrung des Wohlstands?</p>
-<div id="webex-621c5eb72f0e8329f876ee9a13131eae" class="webex-radiogroup" data-answer="bQIdUxlVTgZv">
-<label><input type="radio" autocomplete="off" name="621c5eb72f0e8329f876ee9a13131eae"><span>Resilienz</span></label><label><input type="radio" autocomplete="off" name="621c5eb72f0e8329f876ee9a13131eae"><span>Planetare Grenzen</span></label><label><input type="radio" autocomplete="off" name="621c5eb72f0e8329f876ee9a13131eae"><span>Doppelte Entkopplung</span></label><label><input type="radio" autocomplete="off" name="621c5eb72f0e8329f876ee9a13131eae"><span>Grüne Wirtschaft</span></label>
+<div id="webex-3c8998ec4023a9254ae92d4a21e18ff7" class="webex-radiogroup" data-answer="aFMUCBUISVNp">
+<label><input type="radio" autocomplete="off" name="3c8998ec4023a9254ae92d4a21e18ff7"><span>Planetare Grenzen</span></label><label><input type="radio" autocomplete="off" name="3c8998ec4023a9254ae92d4a21e18ff7"><span>Grüne Wirtschaft</span></label><label><input type="radio" autocomplete="off" name="3c8998ec4023a9254ae92d4a21e18ff7"><span>Doppelte Entkopplung</span></label><label><input type="radio" autocomplete="off" name="3c8998ec4023a9254ae92d4a21e18ff7"><span>Resilienz</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Das Konzept der Grünen Wirtschaft bezeichnet ein Wirtschaftsmodell, das Wirtschaftswachstum und menschliches Wohlergehen bei gleichzeitiger Verringerung von Umweltrisiken und ökologischer Knappheit anstrebt und damit Wohlstand von Umweltschäden entkoppelt.</p>
 <ul>
 <li>False</li>
-<li>False</li>
-<li>False</li>
 <li>True</li>
+<li>False</li>
+<li>False</li>
 </ul>
 </div>
 </div>
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Wofür steht der innere Ring des Doughnut-Modells?</p>
-<div id="webex-4936119a62a010ca3eba6734fb1b7469" class="webex-radiogroup" data-answer="bwkfBh0AFVFr">
-<label><input type="radio" autocomplete="off" name="4936119a62a010ca3eba6734fb1b7469"><span>Die ökologische Decke</span></label><label><input type="radio" autocomplete="off" name="4936119a62a010ca3eba6734fb1b7469"><span>Die planetaren Grenzen</span></label><label><input type="radio" autocomplete="off" name="4936119a62a010ca3eba6734fb1b7469"><span>Das soziale Fundament</span></label><label><input type="radio" autocomplete="off" name="4936119a62a010ca3eba6734fb1b7469"><span>Der sichere und gerechte Raum für die Menschheit</span></label>
+<div id="webex-1b89546cbf50d23ec431456237aff5c4" class="webex-radiogroup" data-answer="alMUCRkEGlM/">
+<label><input type="radio" autocomplete="off" name="1b89546cbf50d23ec431456237aff5c4"><span>Das soziale Fundament</span></label><label><input type="radio" autocomplete="off" name="1b89546cbf50d23ec431456237aff5c4"><span>Die ökologische Decke</span></label><label><input type="radio" autocomplete="off" name="1b89546cbf50d23ec431456237aff5c4"><span>Der sichere und gerechte Raum für die Menschheit</span></label><label><input type="radio" autocomplete="off" name="1b89546cbf50d23ec431456237aff5c4"><span>Die planetaren Grenzen</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Im Doughnut-Modell repräsentiert der innere Ring das soziale Fundament, das die minimalen sozialen Standards definiert, die für ein gerechtes und würdevolles Leben aller Menschen notwendig sind.</p>
 <ul>
-<li>False</li>
-<li>False</li>
 <li>True</li>
+<li>False</li>
+<li>False</li>
 <li>False</li>
 </ul>
 </div>
@@ -910,17 +916,17 @@ Abbildung&nbsp;2.10: Zusammenhang zwischen Ökologischem Fussabdruck und Human D
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welche der folgenden Aussagen beschreiben Postwachstumsansätze? (Mehr als eine Aussage kann richtig sein.)</p>
-<div id="webex-d38563dce1b4ad573132deddc566dccb" class="webex-checkboxgroup" data-answer="PwIUBBoCSFM4">
-<label><input type="checkbox" autocomplete="off" name="d38563dce1b4ad573132deddc566dccb"><span>Fokus auf Suffizienz und Wohlbefinden</span></label><label><input type="checkbox" autocomplete="off" name="d38563dce1b4ad573132deddc566dccb"><span>Kritik an der Wachstumsabhängigkeit</span></label><label><input type="checkbox" autocomplete="off" name="d38563dce1b4ad573132deddc566dccb"><span>Eintreten für strukturellen Wandel</span></label><label><input type="checkbox" autocomplete="off" name="d38563dce1b4ad573132deddc566dccb"><span>Betonung des BIP-Wachstums</span></label>
+<div id="webex-5569d3ffa1f4e210aab8a8b9b9d0bc3d" class="webex-checkboxgroup" data-answer="bgUaCEgCSlc8">
+<label><input type="checkbox" autocomplete="off" name="5569d3ffa1f4e210aab8a8b9b9d0bc3d"><span>Betonung des BIP-Wachstums</span></label><label><input type="checkbox" autocomplete="off" name="5569d3ffa1f4e210aab8a8b9b9d0bc3d"><span>Eintreten für strukturellen Wandel</span></label><label><input type="checkbox" autocomplete="off" name="5569d3ffa1f4e210aab8a8b9b9d0bc3d"><span>Fokus auf Suffizienz und Wohlbefinden</span></label><label><input type="checkbox" autocomplete="off" name="5569d3ffa1f4e210aab8a8b9b9d0bc3d"><span>Kritik an der Wachstumsabhängigkeit</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>Postwachstumsansätze stellen die Abhängigkeit moderner Gesellschaften von kontinuierlichem Wirtschaftswachstum kritisch infrage. Sie betonen Suffizienz, Wohlbefinden und Lebensqualität anstelle von BIP-Wachstum und fordern strukturelle Veränderungen der wirtschaftlichen und sozialen Systeme, um nachhaltige und gerechte Zukünfte zu ermöglichen.</p>
 <ul>
-<li>True</li>
-<li>True</li>
-<li>True</li>
 <li>False</li>
+<li>True</li>
+<li>True</li>
+<li>True</li>
 </ul>
 </div>
 </div>
@@ -2646,7 +2652,7 @@ window.onload = function() {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>“Ein Angebot von <a href="www.cde.unibe.ch/"><img src="..\images/cdelogo_e.png" class="img-fluid" style="width: auto; height: 35px; padding-left: 10px; padding-right: 10px; margin-bottom:5px;"></a></p>
+<p>“Ein Angebot von <a href="www.cde.unibe.ch/"><img src="../images/cdelogo_e.png" class="img-fluid" style="width: auto; height: 35px; padding-left: 10px; padding-right: 10px; margin-bottom:5px;"></a></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
